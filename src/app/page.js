@@ -3,30 +3,88 @@
 import ScriptsLoader from "@/components/ScriptsLoader";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
 import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
-import Banner8Contact from "@/sections/home/Banner8Contact";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
+ 
+const services = [
+  {
+    title: "Expert Witness Recruitment",
+    img: "/assets/images/shapes/expert-witness-requirement.png",
+    sectionId: "expert-witness",
+    description:
+      "We recruit qualified experts across every field, with depth in medical, product liability, personal injury, and forensic cases.",
+  },
+  {
+    title: "Merit Reviews & Legal Nurse Services",
+    img: "/assets/images/shapes/legal-nurse.png",
+    sectionId: "nurse-services",
+    description:
+      "In-house legal nurses and paralegals analyze medical records to determine case merit accurately.",
+  },
+  {
+    title: "Expert Background Checks",
+    sectionId: "expert-witness-profile-challenge-study",
+    img: "/assets/images/shapes/background-check.png",
+    description:
+      "We verify expert credibility with thorough background research, challenge studies, and detailed expert profiles.",
+  },
+];
 
-const items = [
+export const ServiceSteps = [
   {
-    number: "01",
-    title: "Submit Case",
-    text: ` We begin with a detailed intake to understand your case objectives and the type of expertise required. Our process ensures every search starts with clarity and precision.`,
+    img: "/assets/images/backgrounds/support-1-icon.png",
+    alt: "support-1-icon",
+    title: "Targeted Case Intake",
+    text: (
+      <>
+        We start with a focused conversation to define your case needs and the
+        expertise required.
+        <br className="d-none d-lg-inline" />
+        Every search begins with clarity and purpose.
+      </>
+    ),
   },
   {
-    number: "02",
-    title: "Expert Search",
-    text: ` Leveraging our nationwide network, we identify qualified experts across disciplines. When needed, our team conducts targeted outreach to find the precise fit your case demands.`,
+    img: "/assets/images/backgrounds/support-2-icon.png",
+    alt: "support-2-icon",
+    title: "Expert Sourcing & Vetting",
+    text: (
+      <>
+        Our team identifies and recruits qualified experts through both trusted
+        connections and new outreach.
+        <br className="d-none d-lg-inline" />
+        Each candidate is evaluated for credentials, relevance, and
+        communication strength.
+      </>
+    ),
   },
   {
-    number: "03",
-    title: "Vetting",
-    text: ` Each expert is verified for credentials, relevance, and experience. We review qualifications, case history, and communication style to ensure they meet your standards.`,
+    img: "/assets/images/backgrounds/support-3-icon.png",
+    alt: "support-3-icon",
+    title: "Coordination & Communication",
+    text: (
+      <>
+        We facilitate introductions, schedule consult calls, and oversee
+        document sharing.
+        <br className="d-none d-lg-inline" /> Our case managers ensure every
+        step runs smoothly.
+      </>
+    ),
   },
   {
-    number: "04",
-    title: "Connection",
-    text: `You’re introduced to top candidates ready to discuss your case. We manage all scheduling, communication, and documentation to keep your process seamless from start to finish.`,
+    img: "/assets/images/backgrounds/support-4-icon.png",
+    alt: "support-4-icon",
+    title: "Follow-Through Until Close",
+    text: (
+      <>
+        Our support continues through reports, deposition prep, and trial
+        appearances.
+        <br className="d-none d-lg-inline" />
+        You can depend on us for responsiveness and consistency from start to
+        finish.
+      </>
+    ),
   },
 ];
 
@@ -175,206 +233,131 @@ export default function Home() {
           </div>
         </section>
 
-        {/* our process  */}
-        <section className="team-one" style={{ background: "#0E222A" }}>
+        {/* Services Grid */}
+        <section className="service-one" id="tailored-background">
           <div className="container">
             <div className="sec-title text-left">
               <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                How We <br /> <span>Find and Vet Experts</span>
+                More Than <span>Expert Matching</span>
               </h2>
-            </div>
-            <div className="custom-max-width2">
-              <p className="why-choose-four__content__text text-white">
-                Each Homestead expert is sourced through a rigorous process of
-                credential verification, experience review, and case-specific
-                matching. Our in-house team handles outreach, screening, and
-                coordination so you can focus on case strategy. From the first
-                consultation to final testimony, we ensure every expert is
-                prepared, professional, and aligned with your case needs.
+              <p className="about-four__text text-white custom-max-width2">
+                Homestead offers comprehensive litigation support, from initial
+                case screening to expert background checks. Our goal is to provide
+                attorneys with confidence and clarity at every stage of
+                litigation.
               </p>
             </div>
 
             <div className="row gutter-y-30">
-              {items.map((item, index) => (
+              {services.map((item, index) => (
                 <div
                   key={index}
-                  className="col-lg-3 col-md-6 wow fadeInUp"
+                  className="col-lg-4 col-md-6 wow fadeInUp"
                   data-wow-delay={`${index * 100}ms`}
                 >
                   <div
-                    className="service-details__item text-white"
-                    style={{ height: "100%", alignItems: "start" }}
+                    className="service-details__item text-white h-100"
+                    style={{
+                      background: "#fff",
+                      borderRadius: "12px",
+                      boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
+                      padding: "30px 25px",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                      textAlign: "center",
+                      transition: "transform 0.3s, box-shadow 0.3s",
+                    }}
                   >
-                    <div className="service-details__item__content">
-                      <div
-                        className="number-badge"
+                    <div
+                      className="service-details__item__content h-100"
+                      style={{ display: "flex", flexDirection: "column" }}
+                    >
+                      <div>
+                        {/* <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 100 100"
+                        fill="none"
+                      >
+                        <rect width="100" height="100" fill="none" />
+                        <g
+                          stroke="#0B2C5A"
+                          strokeWidth="4"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <rect
+                            x="15"
+                            y="30"
+                            width="70"
+                            height="45"
+                            rx="5"
+                            ry="5"
+                            fill="none"
+                          />
+                          <path
+                            d="M35 30v-8a4 4 0 0 1 4-4h22a4 4 0 0 1 4 4v8"
+                            fill="none"
+                          />
+
+                          <circle cx="70" cy="70" r="14" fill="none" />
+                          <line x1="80" y1="80" x2="90" y2="90" />
+                          <circle cx="70" cy="66" r="4" fill="none" />
+                          <path d="M62 76c2-4 14-4 16 0" fill="none" />
+                        </g>
+                                             </svg> */}
+                        <Image
+                          src={item.img}
+                          alt={item.title}
+                          width={64}
+                          height={64}
+                          className="object-cover my-2"
+                        />
+                      </div>
+
+                      <h3
                         style={{
-                          fontSize: "28px",
-                          fontWeight: "700",
-                          color: "#247BA0",
+                          fontSize: "24px",
+                          fontWeight: "600",
                           marginBottom: "10px",
+                          color: "#0E222A",
                         }}
                       >
-                        {item.number}
-                      </div>
-                      <h4 className="service-details__item__title text-white">
                         {item.title}
-                      </h4>
-                      <p className="service-details__item__text text-white mt-3">
-                        {item.text}
+                      </h3>
+
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "#0E222A",
+                          flex: 1,
+                        }}
+                        className="mb-0"
+                      >
+                        {item.description}
                       </p>
+
+                      <Link
+                        // href="#"
+                        href={`/${item.sectionId}/`}
+                        className="procounsel-btn mt-3"
+                        style={{ fontSize: "14px", whiteSpace: "normal" }}
+                      >
+                        <i>Learn More</i>
+                        <span>Learn More</span>
+                      </Link>
                     </div>
                   </div>
                 </div>
               ))}
-            </div>
-            <div></div>
-          </div>
-        </section>
-
-        {/* Experts You Can */}
-        <section className="about-one" id="about" style={{ position: "relative", backgroundColor: "#0E222A" }}>
-          <Image
-            src="/assets/images/backgrounds/section-2-1-b-new.png"
-            fill
-            style={{
-              objectFit: "cover",
-              objectPosition: "bottom",
-              overflow: "hidden",
-            }}
-            alt="about-background"
-          />
-          <div className="container position-relative z-3">
-            {/* <div className="margin-about"> */}
-            <div className="wow fadeInRight" data-wow-delay="300ms">
-              <div className="about-one__inner1">
-                <div className="about-one__content1">
-                  <div className="sec-title text-left ">
-                    <h3 className="sec-title__title bw-split-in-up text-white">
-                      Experts You Can <span> Build On</span>
-                    </h3>
-                    <h4 className="font-Merriweather mt-2 fw-normal text-white">
-                      Credibility You Can Rely On, Coast to Coast
-                    </h4>
-                  </div>
-
-                  <p className="about-one__content__text text-white">
-                    Every expert in our network is hand-vetted for
-                    <br className="d-none d-lg-inline" /> qualifications, credibility, and
-                    courtroom readiness. With
-                    <br className="d-none d-lg-inline" /> national reach and specialized
-                    knowledge across
-                    <br className="d-none d-lg-inline" />
-                    disciplines, we match you with professionals who support
-                    <br className="d-none d-lg-inline" /> your case with clarity and conviction.
-                  </p>
-
-                  <ul className="list-unstyled about-four__list">
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">Rigorously Vetted Professionals</p>
-                    </li>
-
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">Nationwide Network</p>
-                    </li>
-
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">Trial-Tested Experience</p>
-                    </li>
-                  </ul>
-
-                  <div className="">
-                    <div className="d-flex flex-column justify-content-between align-items-start">
-                      <a href="#contact-service" className="procounsel-btn">
-                        <i>SPEAK TO AN EXPERT</i>
-                        <span>SPEAK TO AN EXPERT</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* </div> */}
-          </div>
-        </section>
-
-        {/*Tailored Section  */}
-        <section className="tailored-section" id="tailored-background">
-          <div className="container">
-            <div
-              style={{
-                textAlign: "start",
-                display: "flex",
-                justifyContent: "end",
-              }}
-            >
-              <div style={{ maxWidth: "780px", width: "100%" }}>
-                <h3 className="sec-title__title text-white bw-split-in-up">
-                  Tailored Search. Every Time.
-                </h3>
-                <h4 className="tailored-subtitle font-Merriweather text-white">
-                  Custom Recruitment for Complex Matters
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div className="tailored-redline1 test" style={{ position: "relative", objectFit: "cover" }}>
-            <Image
-              src="/assets/images/backgrounds/red-line-09.png"
-              alt="redline"
-              width={2000}
-              height={14}
-              style={{
-                transform: "rotateY(180deg)",
-                width: "100%",
-                position: "relative",
-              }}
-            />
-          </div>
-
-          <div className="container">
-            <div
-              style={{
-                textAlign: "start",
-                display: "flex",
-                justifyContent: "end",
-              }}
-            >
-              <div
-                style={{
-                  maxWidth: "780px",
-                  width: "100%",
-                }}
-              >
-                <p
-                  className="tailored-para about-one__content__text"
-                  style={{
-                    position: "relative",
-                    color: "#fff",
-                    maxWidth: "750px",
-                  }}
-                >
-                  We don&apos;t pull from static databases. When your case calls for niche expertise,
-                  our team actively recruits and verifies new experts on your behalf, managing
-                  outreach, vetting, and scheduling so you can stay focused on strategy.
-                </p>
-                {/* <a href="#contact-service" className="tailored-btn">
-                                    <i>REQUEST AN EXPERT</i>
-                                    <span>REQUEST AN EXPERT</span>
-                                </a> */}
-              </div>
             </div>
           </div>
         </section>
  
         {/* case study */}
         <Banner5CaseStudy />
-
-        <Banner8Contact />
 
       </div>
 

@@ -487,6 +487,89 @@ const ServicePage = () => {
         </div>
       </section>
 
+      {/* section 4 */}
+      <section
+        className="team-one"
+        id="nurse-services"
+        style={{ background: "#0E222A" }}
+      >
+        <div className="container">
+          <div style={{ display: "flex", justifyContent: "end" }}>
+            <div className="custom-max-width">
+              <div className="sec-title text-left">
+                <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
+                  Merit Reviews & Legal Nurse Services
+                </h2>
+
+                <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+                  Clinical clarity from experienced Legal Nurse Consultants.
+                </p>
+              </div>
+
+              <div className="wow fadeInUp" data-wow-delay="0ms">
+                <div style={{ marginLeft: 0, marginRight: 0 }}>
+                  <p className="about-four__text text-white">
+                    Our in-house nurse consultants provide independent insight
+                    and documentation support at every stage of your case.
+                    Whether you’re assessing the strength of a claim or
+                    preparing for trial, our team ensures the medical facts are
+                    clear, credible, and defensible.
+                  </p>
+
+                  <p className="text-white mt-4">
+                    <strong>Services Include: </strong>
+                  </p>
+
+                  <ul className="list-unstyled about-four__list">
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">
+                        <strong>Merit Reviews: </strong> Objective evaluation of
+                        case validity based on medical records and timelines.
+                      </p>
+                    </li>
+
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">
+                        <strong>Medical Summaries: </strong> Concise
+                        documentation that highlights key events and clinical
+                        milestones.
+                      </p>
+                    </li>
+
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">
+                        <strong>Medical Chronologies: </strong>
+                        Detailed timelines of care for litigation, deposition,
+                        and trial preparation.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <p className="about-four__text text-white">
+                    Homestead’s nurse team bridges the gap between medicine and
+                    law, helping you understand what really happened, what
+                    matters most, and what’s worth pursuing.
+                  </p>
+                  <div className="about-four__btns">
+                    <a
+                      href="/nurse-services/"
+                      className="procounsel-btn"
+                      style={{ fontSize: "14px", whiteSpace: "normal" }}
+                    >
+                      <i>Learn More About Nurse Services</i>
+                      <span>Learn More About Nurse Services</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid */}
       <section
         className="service-one service-two--page"
@@ -710,78 +793,6 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="why-choose-four">
-        <div
-          className="why-choose-four__bg jarallax"
-          data-jarallax
-          data-speed="0.3"
-          style={{
-            backgroundImage:
-              "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
-              <div className="why-choose-four__content">
-                <div className="sec-title text-left">
-                  <h2 className="sec-title__title bw-split-in-up font-Montserrat">
-                    The Homestead
-                    <span> Advantage</span>
-                  </h2>
-                  <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-                    More than a directory, a partner in your case.
-                  </p>
-                </div>
-
-                <p className="why-choose-four__content__text text-white">
-                  At Homestead, we do more than maintain a list, we build
-                  relationships. Every referral begins with understanding your
-                  case and ends with connecting you to the expert best equipped
-                  to support it. We draw from a trusted network of professionals
-                  we’ve worked with before and recruit new experts when needed,
-                  going beyond what’s convenient to find the right fit, even in
-                  niche or emerging specialties
-                </p>
-                <p className="why-choose-four__content__text text-white">
-                  This hands-on approach sets us apart from directories and
-                  automated platforms. Whether you’re assessing case merit or
-                  preparing for trial, we provide personalized, fully managed
-                  support that keeps your case moving forward with confidence.
-                </p>
-                <a href="#contact-service" className="procounsel-btn">
-                  <i>Request an Expert Witness</i>
-                  <span>Request an Expert Witness</span>
-                </a>
-              </div>
-            </div>
-            <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
-              <div className=" why-choose-four__right">
-                <div className="why-choose-four__img">
-                  {/* <img
-                    src="/assets/photos/services/services_module_1.jpg"
-                    // src="/assets/images/backgrounds/why_choose_us_3rd_section.jpg"
-                    alt="why-choose-us"
-                    className="mx-auto"
-                  /> */}
-                  <Image
-                    src="/assets/photos/services/services_module_1.jpg"
-                    width={340}
-                    height={570}
-                    alt="why-choose-us"
-                    className="mx-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
- 
       {/* faq */}
       <section className="faq-one" style={{ background: "#0E222A" }}>
         <div className="container">

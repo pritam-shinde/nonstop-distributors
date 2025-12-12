@@ -2,7 +2,6 @@
 
 import ScriptsLoader from "@/components/ScriptsLoader";
 import { ExpertWitnessAbout } from "@/sections/about/ExpertWitnessAbout";
-import Testimonials3 from "@/sections/about/Testimonials3";
 import Image from "next/image";
 
 const About = () => {
@@ -182,7 +181,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stand For */}
+      {/* Expert Witnesses  */}
+      <ExpertWitnessAbout />
+
+      {/* Stand For /Core values*/}
       <section className="team-one" style={{ background: "#0E222A" }}>
         <div className="container">
           {/* <h3 className="service-details__sub-title text-white">Why Choose Our ProCounsel?</h3> */}
@@ -268,9 +270,9 @@ const About = () => {
               data-wow-delay="100ms"
             >
               <div className="service-details__item" style={{ height: "100%" }}>
-                <div className="service-details__item__icon"> 
+                <div className="service-details__item__icon">
                   <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
-                  <span className="service-details__item__icon__zoom"> 
+                  <span className="service-details__item__icon__zoom">
                     <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
                   </span>
                 </div>
@@ -367,47 +369,6 @@ const About = () => {
           </div>
         </div>
       </section>
- 
-      {/* Expert Partner */}
-      <section className="about-one" id="about" style={{ position: "relative", backgroundColor: "#0E222A", }}>
-        <Image src="/assets/images/backgrounds/section-2-1-b-new.png" fill
-          style={{ objectFit: "cover", objectPosition: "bottom", overflow: "hidden", }} alt="about-background" />
-        <div className="container position-relative z-3">
-          <div className="">
-            <div className="wow fadeInRight" data-wow-delay="300ms">
-              <div className="about-one__inner1">
-                <div className="about-one__content1">
-                  <div className="sec-title text-left ">
-                    <h3 className="sec-title__title bw-split-in-up text-white">
-                      Your Expert Partner, <br /> <span> Every Step of the Way</span>
-                    </h3>
-                  </div>
-
-                  <p className="about-one__content__text text-white mb-3">
-                    For more than a decade, Homestead has been helping attorneys <br className="d-none d-lg-inline" /> strengthen their cases
-                    with dependable expert witness support.
-                  </p>
-
-                  <p className="about-one__content__text text-white">
-                    We don’t just find experts, we stand behind them.
-                  </p>
-
-                  <div className="about-one__content__box">
-                    <div className="d-flex flex-column justify-content-between align-items-start">
-                      {/* <strong className="text-white mb-2">Find the right expert for your next case?</strong> */}
-                      <a href="/contact-us/#contact-service" className="procounsel-btn text-uppercase">
-                        <i>Request an expert</i>
-                        <span>Request an expert</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <ScriptsLoader />
     </>
   );
