@@ -7,6 +7,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
  
+const items = [
+  {
+    number: "01",
+    title: "Submit Case",
+    text: ` We begin with a detailed intake to understand your case objectives and the type of expertise required. Our process ensures every search starts with clarity and precision.`,
+  },
+  {
+    number: "02",
+    title: "Expert Search",
+    text: ` Leveraging our nationwide network, we identify qualified experts across disciplines. When needed, our team conducts targeted outreach to find the precise fit your case demands.`,
+  },
+  {
+    number: "03",
+    title: "Vetting",
+    text: ` Each expert is verified for credentials, relevance, and experience. We review qualifications, case history, and communication style to ensure they meet your standards.`,
+  },
+  {
+    number: "04",
+    title: "Connection",
+    text: `You’re introduced to top candidates ready to discuss your case. We manage all scheduling, communication, and documentation to keep your process seamless from start to finish.`,
+  },
+];
+
 const services = [
   {
     title: "Expert Witness Recruitment",
@@ -137,7 +160,11 @@ export default function Home() {
             className="why-choose-four__bg jarallax"
             data-jarallax
             data-speed="0.3"
-            style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
+            style={{
+              backgroundImage:
+                "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
+            }}
+          ></div>
           <div className="container">
             <div className="margin-about">
               <div className="row">
@@ -155,7 +182,12 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             {/* <i className="icon-innovation"></i> */}
-                            <Image width={22} height={22} src="/assets/images/shapes/icon-01.png" alt="response" />
+                            <Image
+                              width={22}
+                              height={22}
+                              src="/assets/images/shapes/icon-01.png"
+                              alt="response"
+                            />
                             {/* <i className="icon-podium"></i> */}
                           </div>
                           <h3 className="why-choose-four__item__title">
@@ -187,7 +219,12 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             {/* <i className="icon-podium"></i> */}
-                            <Image width={22} height={22} src="/assets/images/shapes/icon-03.png" alt="response" />
+                            <Image
+                              width={22}
+                              height={22}
+                              src="/assets/images/shapes/icon-03.png"
+                              alt="response"
+                            />
                           </div>
                           <h3 className="why-choose-four__item__title">
                             National Network. <br />
@@ -203,15 +240,20 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             {/* <i className="icon-collaboration"></i> */}
-                            <Image width={22} height={22} src="/assets/images/shapes/icon-04.png" alt="response" />
+                            <Image
+                              width={22}
+                              height={22}
+                              src="/assets/images/shapes/icon-04.png"
+                              alt="response"
+                            />
                           </div>
                           <h3 className="why-choose-four__item__title">
                             Responsive <br /> and Reliable
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Our process keeps cases moving and clients supported when
-                          timing matters most.
+                          Our process keeps cases moving and clients supported
+                          when timing matters most.
                         </p>
                       </div>
                     </div>
@@ -233,140 +275,156 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="service-one" id="tailored-background">
+        {/*Tailored Section  */}
+        <section className="tailored-section" id="tailored-background">
+          <div className="container">
+            <div
+              style={{
+                textAlign: "start",
+                display: "flex",
+                justifyContent: "end",
+              }}
+            >
+              <div style={{ maxWidth: "780px", width: "100%" }}>
+                <h3 className="sec-title__title text-white bw-split-in-up">
+                  Tailored Search. Every Time.
+                </h3>
+                <h4 className="tailored-subtitle font-Merriweather text-white">
+                  Custom Recruitment for Complex Matters
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="tailored-redline1 test"
+            style={{ position: "relative", objectFit: "cover" }}
+          >
+            <Image
+              src="/assets/images/backgrounds/red-line-09.png"
+              alt="redline"
+              width={2000}
+              height={14}
+              style={{
+                transform: "rotateY(180deg)",
+                width: "100%",
+                position: "relative",
+              }}
+            />
+          </div>
+
+          <div className="container">
+            <div
+              style={{
+                textAlign: "start",
+                display: "flex",
+                justifyContent: "end",
+              }}
+            >
+              <div
+                style={{
+                  maxWidth: "780px",
+                  width: "100%",
+                }}
+              >
+                <p
+                  className="tailored-para about-one__content__text"
+                  style={{
+                    position: "relative",
+                    color: "#fff",
+                    maxWidth: "750px",
+                  }}
+                >
+                  We don&apos;t pull from static databases. When your case calls
+                  for niche expertise, our team actively recruits and verifies
+                  new experts on your behalf, managing outreach, vetting, and
+                  scheduling so you can stay focused on strategy.
+                </p>
+                <a href="#contact-service" className="tailored-btn">
+                  <i>REQUEST AN EXPERT</i>
+                  <span>REQUEST AN EXPERT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* our process  */}
+        <section className="team-one" style={{ background: "#0E222A" }}>
           <div className="container">
             <div className="sec-title text-left">
               <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                More Than <span>Expert Matching</span>
+                How We <br /> <span>Find and Vet Experts</span>
               </h2>
-              <p className="about-four__text text-white custom-max-width2">
-                Homestead offers comprehensive litigation support, from initial
-                case screening to expert background checks. Our goal is to provide
-                attorneys with confidence and clarity at every stage of
-                litigation.
+            </div>
+            <div className="custom-max-width2">
+              <p className="why-choose-four__content__text text-white">
+                Each Homestead expert is sourced through a rigorous process of
+                credential verification, experience review, and case-specific
+                matching. Our in-house team handles outreach, screening, and
+                coordination so you can focus on case strategy. From the first
+                consultation to final testimony, we ensure every expert is
+                prepared, professional, and aligned with your case needs.
               </p>
             </div>
 
             <div className="row gutter-y-30">
-              {services.map((item, index) => (
+              {items.map((item, index) => (
                 <div
                   key={index}
-                  className="col-lg-4 col-md-6 wow fadeInUp"
+                  className="col-lg-3 col-md-6 wow fadeInUp"
                   data-wow-delay={`${index * 100}ms`}
                 >
                   <div
-                    className="service-details__item text-white h-100"
-                    style={{
-                      background: "#fff",
-                      borderRadius: "12px",
-                      boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
-                      padding: "30px 25px",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      textAlign: "center",
-                      transition: "transform 0.3s, box-shadow 0.3s",
-                    }}
+                    className="service-details__item text-white"
+                    style={{ height: "100%", alignItems: "start" }}
                   >
-                    <div
-                      className="service-details__item__content h-100"
-                      style={{ display: "flex", flexDirection: "column" }}
-                    >
-                      <div>
-                        {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 100 100"
-                        fill="none"
-                      >
-                        <rect width="100" height="100" fill="none" />
-                        <g
-                          stroke="#0B2C5A"
-                          strokeWidth="4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <rect
-                            x="15"
-                            y="30"
-                            width="70"
-                            height="45"
-                            rx="5"
-                            ry="5"
-                            fill="none"
-                          />
-                          <path
-                            d="M35 30v-8a4 4 0 0 1 4-4h22a4 4 0 0 1 4 4v8"
-                            fill="none"
-                          />
-
-                          <circle cx="70" cy="70" r="14" fill="none" />
-                          <line x1="80" y1="80" x2="90" y2="90" />
-                          <circle cx="70" cy="66" r="4" fill="none" />
-                          <path d="M62 76c2-4 14-4 16 0" fill="none" />
-                        </g>
-                                             </svg> */}
-                        <Image
-                          src={item.img}
-                          alt={item.title}
-                          width={64}
-                          height={64}
-                          className="object-cover my-2"
-                        />
-                      </div>
-
-                      <h3
+                    <div className="service-details__item__content">
+                      <div
+                        className="number-badge"
                         style={{
-                          fontSize: "24px",
-                          fontWeight: "600",
+                          fontSize: "28px",
+                          fontWeight: "700",
+                          color: "#247BA0",
                           marginBottom: "10px",
-                          color: "#0E222A",
                         }}
                       >
+                        {item.number}
+                      </div>
+                      <h4 className="service-details__item__title text-white">
                         {item.title}
-                      </h3>
-
-                      <p
-                        style={{
-                          fontSize: "14px",
-                          color: "#0E222A",
-                          flex: 1,
-                        }}
-                        className="mb-0"
-                      >
-                        {item.description}
+                      </h4>
+                      <p className="service-details__item__text text-white mt-3">
+                        {item.text}
                       </p>
-
-                      <Link
-                        // href="#"
-                        href={`/${item.sectionId}/`}
-                        className="procounsel-btn mt-3"
-                        style={{ fontSize: "14px", whiteSpace: "normal" }}
-                      >
-                        <i>Learn More</i>
-                        <span>Learn More</span>
-                      </Link>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
+            <div></div>
           </div>
         </section>
- 
+
         {/* case study */}
         <Banner5CaseStudy />
-
       </div>
 
       <div className="search-popup">
         <div className="search-popup__overlay search-toggler"></div>
         <div className="search-popup__content">
-          <form role="search" method="get" className="search-popup__form" action="#">
+          <form
+            role="search"
+            method="get"
+            className="search-popup__form"
+            action="#"
+          >
             <input type="text" id="search" placeholder="Search Here..." />
-            <button type="submit" aria-label="search submit" className="procounsel-btn">
+            <button
+              type="submit"
+              aria-label="search submit"
+              className="procounsel-btn"
+            >
               <i>
                 <i className="icon-search"></i>
               </i>
