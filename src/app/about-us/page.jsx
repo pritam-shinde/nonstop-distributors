@@ -46,7 +46,6 @@ const About = () => {
       <section className="" style={{ background: "#0E222A" }}>
         <div className="hero-slide hero-about-slide"
           style={{ backgroundImage: "url('/assets/photos/about/about_hero.jpg')", }}
-        // style={{ backgroundImage: "url('assets/images/backgrounds/banner_slide1-new.jpg')", }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
@@ -183,206 +182,107 @@ const About = () => {
         </div>
       </section>
 
-      {/* How We Work */}
-      <section className="why-choose-three">
-        <div
-          className="why-choose-three__bg"
-          style={{ backgroundImage: "url('assets/images/shapes/why-choose-three-bg.png')", }}>
-        </div>
-        {/* <div className="why-choose-three__right wow slideInRight" style={{ backgroundImage: "url('assets/images/backgrounds/why-choose-three-bg.jpg')" }}></div> */}
+      {/* Stand For */}
+      <section className="team-one" style={{ background: "#0E222A" }}>
         <div className="container">
-          <div className="row">
-            {/* <div className="col-xl-8 col-lg-9"> */}
-            <div className="col-xl-6">
-              <div className="why-choose-three__content wow fadeInUp" data-wow-delay="300ms">
-                <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
-                    How We <span> Work</span>
-                  </h3>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        No-Risk, No-Commitment Model
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        You don’t pay until you’ve spoken with your expert and
-                        are ready to retain. ensuring every engagement starts
-                        with trust and certainty.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Fast, Reliable Expert Matching
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        We identify the best-fit expert for your matter and
-                        confirm availability quickly, so your case continues
-                        moving without delay.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        End-to-End Case Management
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        Your dedicated case manager handles everything from
-                        introductions and scheduling to billing and
-                        communication so your team can focus on strategy, not
-                        logistics.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Merit Review Services
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        For medical or malpractice matters, our in-house legal nurse consultants can review records to assess case viability before you commit time or expense.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="why-choose-three__right wow slideInRight"
-                style={{ backgroundImage: "url('/assets/photos/about/how_we_work.jpg')" }}
-              // style={{ backgroundImage: "url('assets/images/backgrounds/why-choose-three-bg.jpg')" }}
-              ></div>
-            </div>
+          {/* <h3 className="service-details__sub-title text-white">Why Choose Our ProCounsel?</h3> */}
+          <div className="sec-title text-left">
+            <h3 className="sec-title__title bw-split-in-up text-white">
+              What We <span>Stand For</span>
+            </h3>
           </div>
-        </div>
-      </section>
-
-      {/* Expert Witnesses  */}
-      <ExpertWitnessAbout />
-
-      {/* Why Attorneys */}
-      <section className="why-choose-four">
-        <div
-          className="why-choose-four__bg jarallax"
-          data-jarallax
-          data-speed="0.3"
-          style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
-              <div className="why-choose-four__content">
-                <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
-                    Why Attorneys <br />
-                    <span>Choose Homestead</span>
-                  </h3>
+          <div className="row gutter-y-30">
+            <div
+              className="col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="00ms"
+            >
+              <div className="service-details__item" style={{ height: "100%" }}>
+                <div className="service-details__item__icon">
+                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
+                  <span className="service-details__item__icon__zoom">
+                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
+                  </span>
                 </div>
+                <div className="service-details__item__content">
+                  <h4 className="service-details__item__title text-white">
+                    Integrity First
+                  </h4>
 
-                <div className="why-choose-four__list">
-                  <div className="why-choose-four__item">
-                    <div className="why-choose-four__item__top">
-                      <div className="why-choose-four__item__icon">
-                        {/* <i className="icon-innovation"></i> */}
-                        <Image width={22} height={22} src="/assets/images/shapes/icon-01.png" alt="response" />
-                        {/* <i className="icon-podium"></i> */}
-                      </div>
-                      <h3 className="why-choose-four__item__title">
-                        Independent and <br /> Attorney-Focused.
-                      </h3>
-                    </div>
-                    <p className="why-choose-four__item__text text-white">
-                      Because we answer only to our clients, we prioritize
-                      long-term trust and measurable results.
-                    </p>
-                  </div>
-                  <div className="why-choose-four__item">
-                    <div className="why-choose-four__item__top">
-                      <div className="why-choose-four__item__icon">
-                        <i className="icon-collaboration"></i>
-                      </div>
-                      <h3 className="why-choose-four__item__title">
-                        Transparency <br /> You Can Trust.
-                      </h3>
-                    </div>
-                    <p className="why-choose-four__item__text text-white">
-                      Clear pricing, open communication, and no hidden fees.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="why-choose-four__list">
-                  <div className="why-choose-four__item">
-                    <div className="why-choose-four__item__top">
-                      <div className="why-choose-four__item__icon">
-                        {/* <i className="icon-podium"></i> */}
-                        <Image width={22} height={22} src="/assets/images/shapes/icon-03.png" alt="response" />
-                      </div>
-                      <h3 className="why-choose-four__item__title">
-                        National Network. <br />
-                        Local Attention.
-                      </h3>
-                    </div>
-                    <p className="why-choose-four__item__text text-white">
-                      Thousands of vetted experts across every state and
-                      specialty.
-                    </p>
-                  </div>
-                  <div className="why-choose-four__item">
-                    <div className="why-choose-four__item__top">
-                      <div className="why-choose-four__item__icon">
-                        {/* <i className="icon-collaboration"></i> */}
-                        <Image width={22} height={22} src="/assets/images/shapes/icon-04.png" alt="response" />
-                      </div>
-                      <h3 className="why-choose-four__item__title">
-                        Responsive <br /> and Reliable
-                      </h3>
-                    </div>
-                    <p className="why-choose-four__item__text text-white">
-                      Our process keeps cases moving and clients supported when
-                      timing matters most.
-                    </p>
-                  </div>
+                  <p className="service-details__item__text text-white">
+                    We believe credibility is earned, not claimed. We only place
+                    experts we believe in and never force a fit.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
-              <div className="why-choose-four__right">
-                <div className="why-choose-four__img mx-auto">
-                  <img
-                    src="/assets/photos/about/why-attorneys-trust-homestead.jpg"
-                    // src="/assets/images/backgrounds/image_10.jpg"
-                    alt="why-choose-us"
-                  />
+            <div
+              className="col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div className="service-details__item" style={{ height: "100%" }}>
+                <div className="service-details__item__icon">
+                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
+                  <span className="service-details__item__icon__zoom">
+                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
+                  </span>
+                </div>
+                <div className="service-details__item__content">
+                  <h4 className="service-details__item__title text-white">
+                    Partnership Without Barriers
+                  </h4>
+
+                  <p className="service-details__item__text text-white">
+                    No subscriptions. No long-term contracts. Use us once or
+                    make us part of your intake process, our commitment stays
+                    the same
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div className="service-details__item" style={{ height: "100%" }}>
+                <div className="service-details__item__icon">
+                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
+                  <span className="service-details__item__icon__zoom">
+                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
+                  </span>
+                </div>
+                <div className="service-details__item__content">
+                  <h4 className="service-details__item__title text-white">
+                    People Before Process{" "}
+                  </h4>
+
+                  <p className="service-details__item__text text-white">
+                    Behind every referral is a person. We honor the human side
+                    of litigation by treating every case with the care, urgency,
+                    and respect it deserves.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay="100ms"
+            >
+              <div className="service-details__item" style={{ height: "100%" }}>
+                <div className="service-details__item__icon"> 
+                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
+                  <span className="service-details__item__icon__zoom"> 
+                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
+                  </span>
+                </div>
+                <div className="service-details__item__content">
+                  <h4 className="service-details__item__title text-white">
+                    Excellence in Every Detail
+                  </h4>
+
+                  <p className="service-details__item__text text-white">
+                    From recruitment to report, we manage each case with
+                    precision so nothing falls through the cracks.
+                  </p>
                 </div>
               </div>
             </div>
@@ -467,128 +367,8 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Stand For */}
-      <section className="team-one" style={{ background: "#0E222A" }}>
-        <div className="container">
-          {/* <h3 className="service-details__sub-title text-white">Why Choose Our ProCounsel?</h3> */}
-
-          <div className="sec-title text-left">
-            <h3 className="sec-title__title bw-split-in-up text-white">
-              What We <span>Stand For</span>
-            </h3>
-          </div>
-          <div className="row gutter-y-30">
-            <div
-              className="col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="00ms"
-            >
-              <div className="service-details__item" style={{ height: "100%" }}>
-                <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
-                  {/* <i className="icon-idea-1"></i> */}
-                  <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
-                    {/* <i className="icon-idea-1"></i> */}
-                  </span>
-                </div>
-                <div className="service-details__item__content">
-                  <h4 className="service-details__item__title text-white">
-                    Integrity First
-                  </h4>
-
-                  <p className="service-details__item__text text-white">
-                    We believe credibility is earned, not claimed. We only place
-                    experts we believe in and never force a fit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <div className="service-details__item" style={{ height: "100%" }}>
-                <div className="service-details__item__icon">
-                  {/* <i className="icon-idea-1"></i> */}
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
-                  <span className="service-details__item__icon__zoom">
-                    {/* <i className="icon-idea-1"></i> */}
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
-                  </span>
-                </div>
-                <div className="service-details__item__content">
-                  <h4 className="service-details__item__title text-white">
-                    Partnership Without Barriers
-                  </h4>
-
-                  <p className="service-details__item__text text-white">
-                    No subscriptions. No long-term contracts. Use us once or
-                    make us part of your intake process, our commitment stays
-                    the same
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <div className="service-details__item" style={{ height: "100%" }}>
-                <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
-                  {/* <i className="icon-address-book-1"></i> */}
-                  <span className="service-details__item__icon__zoom">
-                    {/* <i className="icon-address-book-1"></i> */}
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
-
-                  </span>
-                </div>
-                <div className="service-details__item__content">
-                  <h4 className="service-details__item__title text-white">
-                    People Before Process{" "}
-                  </h4>
-
-                  <p className="service-details__item__text text-white">
-                    Behind every referral is a person. We honor the human side
-                    of litigation by treating every case with the care, urgency,
-                    and respect it deserves.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <div className="service-details__item" style={{ height: "100%" }}>
-                <div className="service-details__item__icon">
-                  {/* <i className="icon-address-book-1"></i> */}
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
-                  <span className="service-details__item__icon__zoom">
-                    {/* <i className="icon-address-book-1"></i> */}
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
-                  </span>
-                </div>
-                <div className="service-details__item__content">
-                  <h4 className="service-details__item__title text-white">
-                    Excellence in Every Detail{" "}
-                  </h4>
-
-                  <p className="service-details__item__text text-white">
-                    From recruitment to report, we manage each case with
-                    precision so nothing falls through the cracks.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Testimonials3 />
-
-      {/* Expert Partner, */}
+ 
+      {/* Expert Partner */}
       <section className="about-one" id="about" style={{ position: "relative", backgroundColor: "#0E222A", }}>
         <Image src="/assets/images/backgrounds/section-2-1-b-new.png" fill
           style={{ objectFit: "cover", objectPosition: "bottom", overflow: "hidden", }} alt="about-background" />

@@ -2,11 +2,33 @@
 
 import ScriptsLoader from "@/components/ScriptsLoader";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
-import Banner4CaseStrategy from "@/sections/home/Banner4CaseStrategy";
 import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
 import Banner8Contact from "@/sections/home/Banner8Contact";
 import Image from "next/image";
 import { useEffect } from "react";
+
+const items = [
+  {
+    number: "01",
+    title: "Submit Case",
+    text: ` We begin with a detailed intake to understand your case objectives and the type of expertise required. Our process ensures every search starts with clarity and precision.`,
+  },
+  {
+    number: "02",
+    title: "Expert Search",
+    text: ` Leveraging our nationwide network, we identify qualified experts across disciplines. When needed, our team conducts targeted outreach to find the precise fit your case demands.`,
+  },
+  {
+    number: "03",
+    title: "Vetting",
+    text: ` Each expert is verified for credentials, relevance, and experience. We review qualifications, case history, and communication style to ensure they meet your standards.`,
+  },
+  {
+    number: "04",
+    title: "Connection",
+    text: `You’re introduced to top candidates ready to discuss your case. We manage all scheduling, communication, and documentation to keep your process seamless from start to finish.`,
+  },
+];
 
 export default function Home() {
   useEffect(() => {
@@ -37,9 +59,7 @@ export default function Home() {
         carousel.each(function () {
           const elm = $(this);
           const options = elm.data("owl-options");
-          elm.owlCarousel(
-            typeof options === "object" ? options : JSON.parse(options)
-          );
+          elm.owlCarousel(typeof options === "object" ? options : JSON.parse(options));
         });
       }
     })();
@@ -53,12 +73,167 @@ export default function Home() {
       <div className="page-wrapper">
         <Banner1Swiper />
 
+        {/* Why Attorneys */}
+        <section className="why-choose-four">
+          <div
+            className="why-choose-four__bg jarallax"
+            data-jarallax
+            data-speed="0.3"
+            style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
+          <div className="container">
+            <div className="margin-about">
+              <div className="row">
+                <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
+                  <div className="why-choose-four__content">
+                    <div className="sec-title text-left">
+                      <h3 className="sec-title__title bw-split-in-up">
+                        Why Choose <br />
+                        <span> NONSTOP DISTRIBUTORS</span>
+                      </h3>
+                    </div>
+
+                    <div className="why-choose-four__list">
+                      <div className="why-choose-four__item">
+                        <div className="why-choose-four__item__top">
+                          <div className="why-choose-four__item__icon">
+                            {/* <i className="icon-innovation"></i> */}
+                            <Image width={22} height={22} src="/assets/images/shapes/icon-01.png" alt="response" />
+                            {/* <i className="icon-podium"></i> */}
+                          </div>
+                          <h3 className="why-choose-four__item__title">
+                            Independent and <br /> Attorney-Focused.
+                          </h3>
+                        </div>
+                        <p className="why-choose-four__item__text text-white">
+                          Because we answer only to our clients, we prioritize
+                          long-term trust and measurable results.
+                        </p>
+                      </div>
+                      <div className="why-choose-four__item">
+                        <div className="why-choose-four__item__top">
+                          <div className="why-choose-four__item__icon">
+                            <i className="icon-collaboration"></i>
+                          </div>
+                          <h3 className="why-choose-four__item__title">
+                            Transparency <br /> You Can Trust.
+                          </h3>
+                        </div>
+                        <p className="why-choose-four__item__text text-white">
+                          Clear pricing, open communication, and no hidden fees.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="why-choose-four__list">
+                      <div className="why-choose-four__item">
+                        <div className="why-choose-four__item__top">
+                          <div className="why-choose-four__item__icon">
+                            {/* <i className="icon-podium"></i> */}
+                            <Image width={22} height={22} src="/assets/images/shapes/icon-03.png" alt="response" />
+                          </div>
+                          <h3 className="why-choose-four__item__title">
+                            National Network. <br />
+                            Local Attention.
+                          </h3>
+                        </div>
+                        <p className="why-choose-four__item__text text-white">
+                          Thousands of vetted experts across every state and
+                          specialty.
+                        </p>
+                      </div>
+                      <div className="why-choose-four__item">
+                        <div className="why-choose-four__item__top">
+                          <div className="why-choose-four__item__icon">
+                            {/* <i className="icon-collaboration"></i> */}
+                            <Image width={22} height={22} src="/assets/images/shapes/icon-04.png" alt="response" />
+                          </div>
+                          <h3 className="why-choose-four__item__title">
+                            Responsive <br /> and Reliable
+                          </h3>
+                        </div>
+                        <p className="why-choose-four__item__text text-white">
+                          Our process keeps cases moving and clients supported when
+                          timing matters most.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
+                  <div className="why-choose-four__right">
+                    <div className="why-choose-four__img mx-auto">
+                      <img
+                        src="/assets/photos/about/why-attorneys-trust-homestead.jpg"
+                        // src="/assets/images/backgrounds/image_10.jpg"
+                        alt="why-choose-us"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* our process  */}
+        <section className="team-one" style={{ background: "#0E222A" }}>
+          <div className="container">
+            <div className="sec-title text-left">
+              <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
+                How We <br /> <span>Find and Vet Experts</span>
+              </h2>
+            </div>
+            <div className="custom-max-width2">
+              <p className="why-choose-four__content__text text-white">
+                Each Homestead expert is sourced through a rigorous process of
+                credential verification, experience review, and case-specific
+                matching. Our in-house team handles outreach, screening, and
+                coordination so you can focus on case strategy. From the first
+                consultation to final testimony, we ensure every expert is
+                prepared, professional, and aligned with your case needs.
+              </p>
+            </div>
+
+            <div className="row gutter-y-30">
+              {items.map((item, index) => (
+                <div
+                  key={index}
+                  className="col-lg-3 col-md-6 wow fadeInUp"
+                  data-wow-delay={`${index * 100}ms`}
+                >
+                  <div
+                    className="service-details__item text-white"
+                    style={{ height: "100%", alignItems: "start" }}
+                  >
+                    <div className="service-details__item__content">
+                      <div
+                        className="number-badge"
+                        style={{
+                          fontSize: "28px",
+                          fontWeight: "700",
+                          color: "#247BA0",
+                          marginBottom: "10px",
+                        }}
+                      >
+                        {item.number}
+                      </div>
+                      <h4 className="service-details__item__title text-white">
+                        {item.title}
+                      </h4>
+                      <p className="service-details__item__text text-white mt-3">
+                        {item.text}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div></div>
+          </div>
+        </section>
+
         {/* Experts You Can */}
-        <section
-          className="about-one"
-          id="about"
-          style={{ position: "relative", backgroundColor: "#0E222A" }}
-        >
+        <section className="about-one" id="about" style={{ position: "relative", backgroundColor: "#0E222A" }}>
           <Image
             src="/assets/images/backgrounds/section-2-1-b-new.png"
             fill
@@ -70,60 +245,59 @@ export default function Home() {
             alt="about-background"
           />
           <div className="container position-relative z-3">
-            <div className="margin-about">
-              <div className="wow fadeInRight" data-wow-delay="300ms">
-                <div className="about-one__inner1">
-                  <div className="about-one__content1">
-                    <div className="sec-title text-left ">
-                      <h3 className="sec-title__title bw-split-in-up text-white">
-                        Experts You Can <span> Build On</span>
-                      </h3>
-                      <h4 className="font-Merriweather mt-2 fw-normal text-white">
-                        Credibility You Can Rely On, Coast to Coast
-                      </h4>
-                    </div>
+            {/* <div className="margin-about"> */}
+            <div className="wow fadeInRight" data-wow-delay="300ms">
+              <div className="about-one__inner1">
+                <div className="about-one__content1">
+                  <div className="sec-title text-left ">
+                    <h3 className="sec-title__title bw-split-in-up text-white">
+                      Experts You Can <span> Build On</span>
+                    </h3>
+                    <h4 className="font-Merriweather mt-2 fw-normal text-white">
+                      Credibility You Can Rely On, Coast to Coast
+                    </h4>
+                  </div>
 
-                    <p className="about-one__content__text text-white">
-                      Every expert in our network is hand-vetted for
-                      <br className="d-none d-lg-inline" /> qualifications,
-                      credibility, and courtroom readiness. With
-                      <br className="d-none d-lg-inline" /> national reach and
-                      specialized knowledge across
-                      <br className="d-none d-lg-inline" />
-                      disciplines, we match you with professionals who support
-                      <br className="d-none d-lg-inline" /> your case with
-                      clarity and conviction.
-                    </p>
+                  <p className="about-one__content__text text-white">
+                    Every expert in our network is hand-vetted for
+                    <br className="d-none d-lg-inline" /> qualifications, credibility, and
+                    courtroom readiness. With
+                    <br className="d-none d-lg-inline" /> national reach and specialized
+                    knowledge across
+                    <br className="d-none d-lg-inline" />
+                    disciplines, we match you with professionals who support
+                    <br className="d-none d-lg-inline" /> your case with clarity and conviction.
+                  </p>
 
-                    <ul className="list-unstyled about-four__list">
-                      <li className="about-four__item text-white">
-                        <i className="icon-check mt-2"></i>
-                        <p className="mb-0">Rigorously Vetted Professionals</p>
-                      </li>
+                  <ul className="list-unstyled about-four__list">
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">Rigorously Vetted Professionals</p>
+                    </li>
 
-                      <li className="about-four__item text-white">
-                        <i className="icon-check mt-2"></i>
-                        <p className="mb-0">Nationwide Network</p>
-                      </li>
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">Nationwide Network</p>
+                    </li>
 
-                      <li className="about-four__item text-white">
-                        <i className="icon-check mt-2"></i>
-                        <p className="mb-0">Trial-Tested Experience</p>
-                      </li>
-                    </ul>
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">Trial-Tested Experience</p>
+                    </li>
+                  </ul>
 
-                    <div className="">
-                      <div className="d-flex flex-column justify-content-between align-items-start">
-                        <a href="#contact-service" className="procounsel-btn">
-                          <i>SPEAK TO AN EXPERT</i>
-                          <span>SPEAK TO AN EXPERT</span>
-                        </a>
-                      </div>
+                  <div className="">
+                    <div className="d-flex flex-column justify-content-between align-items-start">
+                      <a href="#contact-service" className="procounsel-btn">
+                        <i>SPEAK TO AN EXPERT</i>
+                        <span>SPEAK TO AN EXPERT</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            {/* </div> */}
           </div>
         </section>
 
@@ -148,10 +322,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className="tailored-redline1 test"
-            style={{ position: "relative", objectFit: "cover" }}
-          >
+          <div className="tailored-redline1 test" style={{ position: "relative", objectFit: "cover" }}>
             <Image
               src="/assets/images/backgrounds/red-line-09.png"
               alt="redline"
@@ -187,46 +358,32 @@ export default function Home() {
                     maxWidth: "750px",
                   }}
                 >
-                  We don&apos;t pull from static databases. When your case calls
-                  for niche expertise, our team actively recruits and verifies
-                  new experts on your behalf, managing outreach, vetting, and
-                  scheduling so you can stay focused on strategy.
+                  We don&apos;t pull from static databases. When your case calls for niche expertise,
+                  our team actively recruits and verifies new experts on your behalf, managing
+                  outreach, vetting, and scheduling so you can stay focused on strategy.
                 </p>
-                <a href="#contact-service" className="tailored-btn">
-                  <i>REQUEST AN EXPERT</i>
-                  <span>REQUEST AN EXPERT</span>
-                </a>
+                {/* <a href="#contact-service" className="tailored-btn">
+                                    <i>REQUEST AN EXPERT</i>
+                                    <span>REQUEST AN EXPERT</span>
+                                </a> */}
               </div>
             </div>
           </div>
         </section>
-
-        {/*case strategy  */}
-        <Banner4CaseStrategy />
-
+ 
         {/* case study */}
         <Banner5CaseStudy />
 
         <Banner8Contact />
 
-        {/* <ExpertPartner /> */}
       </div>
 
       <div className="search-popup">
         <div className="search-popup__overlay search-toggler"></div>
         <div className="search-popup__content">
-          <form
-            role="search"
-            method="get"
-            className="search-popup__form"
-            action="#"
-          >
+          <form role="search" method="get" className="search-popup__form" action="#">
             <input type="text" id="search" placeholder="Search Here..." />
-            <button
-              type="submit"
-              aria-label="search submit"
-              className="procounsel-btn"
-            >
+            <button type="submit" aria-label="search submit" className="procounsel-btn">
               <i>
                 <i className="icon-search"></i>
               </i>

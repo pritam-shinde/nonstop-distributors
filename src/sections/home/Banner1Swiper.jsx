@@ -9,8 +9,7 @@ import Link from "next/link";
 
 export const sliderData = [
   {
-    bg: "/assets/photos/home/hero_1.jpg",
-    // bg: "/assets/images/backgrounds/banner_slide1-new.jpg",
+    bg: "/assets/photos/home/hero_1.jpg", 
     title: (
       <>
         Trusted. Vetted. <br />
@@ -27,42 +26,40 @@ export const sliderData = [
       </>
     ),
   },
-  {
-    bg: "/assets/photos/home/hero_2.jpg",
-    // bg: "/assets/images/backgrounds/slider-1-2-new.jpg",
-    title: (
-      <>
-        Speed When It <br /> Matters Most.
-      </>
-    ),
-    text: (
-      <>
-        <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-          Your case can’t wait — neither should your search for the right
-          expert. We deliver tailored matches quickly, without sacrificing rigor
-          or credibility.
-        </p>
-      </>
-    ),
-  },
-  {
-    bg: "/assets/photos/home/hero_3.jpg",
-    // bg: "/assets/images/backgrounds/slider-3-new.jpg",
-    title: (
-      <>
-        Experts in Every Specialty. <br /> Nationwide Reach.
-      </>
-    ),
-    text: (
-      <>
-        <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-          Our network of experts spans every field and jurisdiction. From
-          medicine and engineering to finance and construction. Wherever your
-          case takes you, we connect you with the right expert.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   bg: "/assets/photos/home/hero_2.jpg", 
+  //   title: (
+  //     <>
+  //       Speed When It <br /> Matters Most.
+  //     </>
+  //   ),
+  //   text: (
+  //     <>
+  //       <p style={{ marginBottom: "20px" }} className="custom-max-width2">
+  //         Your case can’t wait — neither should your search for the right
+  //         expert. We deliver tailored matches quickly, without sacrificing rigor
+  //         or credibility.
+  //       </p>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   bg: "/assets/photos/home/hero_3.jpg", 
+  //   title: (
+  //     <>
+  //       Experts in Every Specialty. <br /> Nationwide Reach.
+  //     </>
+  //   ),
+  //   text: (
+  //     <>
+  //       <p style={{ marginBottom: "20px" }} className="custom-max-width2">
+  //         Our network of experts spans every field and jurisdiction. From
+  //         medicine and engineering to finance and construction. Wherever your
+  //         case takes you, we connect you with the right expert.
+  //       </p>
+  //     </>
+  //   ),
+  // },
 ];
 
 const Banner1Swiper = () => {
