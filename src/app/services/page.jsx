@@ -2,29 +2,73 @@ import ScriptsLoader from "@/components/ScriptsLoader";
 import Image from "next/image";
 import Link from "next/link";
 
-const services = [
+// const services = [
+//   {
+//     title: "Expert Witness Recruitment",
+//     img: "/assets/images/shapes/expert-witness-requirement.png",
+//     sectionId: "expert-witness",
+//     description:
+//       "We recruit qualified experts across every field, with depth in medical, product liability, personal injury, and forensic cases.",
+//   },
+//   {
+//     title: "Merit Reviews & Legal Nurse Services",
+//     img: "/assets/images/shapes/legal-nurse.png",
+//     sectionId: "nurse-services",
+//     description:
+//       "In-house legal nurses and paralegals analyze medical records to determine case merit accurately.",
+//   },
+//   {
+//     title: "Expert Background Checks",
+//     sectionId: "expert-witness-profile-challenge-study",
+//     img: "/assets/images/shapes/background-check.png",
+//     description:
+//       "We verify expert credibility with thorough background research, challenge studies, and detailed expert profiles.",
+//   },
+// ];
+
+const coveragesItem = [
   {
-    title: "Expert Witness Recruitment",
+    title: "Modern Trade",
     img: "/assets/images/shapes/expert-witness-requirement.png",
-    sectionId: "expert-witness",
+    sectionId: "#",
     description:
-      "We recruit qualified experts across every field, with depth in medical, product liability, personal injury, and forensic cases.",
+      "Supermarkets. Hypermarkets, Department Stores",
   },
   {
-    title: "Merit Reviews & Legal Nurse Services",
+    title: "General Trade",
     img: "/assets/images/shapes/legal-nurse.png",
-    sectionId: "nurse-services",
+    sectionId: "#",
     description:
-      "In-house legal nurses and paralegals analyze medical records to determine case merit accurately.",
+      "Kirana Stores, Neighborhood Retailers",
   },
   {
-    title: "Expert Background Checks",
-    sectionId: "expert-witness-profile-challenge-study",
+    title: "Convenience",
+    sectionId: "#",
     img: "/assets/images/shapes/background-check.png",
     description:
-      "We verify expert credibility with thorough background research, challenge studies, and detailed expert profiles.",
+      "24/7 Stores, Mini-marts, Gas Stations",
+  },
+  {
+    title: "HoReCa",
+    img: "/assets/images/shapes/expert-witness-requirement.png",
+    sectionId: "#",
+    description: "Hotels, Restaurants, Cafes, Caterers"
+  },
+  {
+    title: "E-commerce",
+    img: "/assets/images/shapes/legal-nurse.png",
+    sectionId: "#",
+    description:
+      "Online Marketplaces, D2C Platforms",
+  },
+  {
+    title: "Institutional",
+    sectionId: "#",
+    img: "/assets/images/shapes/background-check.png",
+    description: "Corporate, Schools, Hospitals"
   },
 ];
+
 
 export const ServiceSteps = [
   {
@@ -98,26 +142,26 @@ const ServicePage = () => {
           <div className="content container home-content">
             <div className="custom-max-width3">
               <p style={{ marginTop: "80px" }} className="mb-2">
-                <span style={{ color: "#fb3640" }} className="fw-bold">
-                  SERVICES
+                <span style={{ color: "#fb3640" }} className="fw-bold text-capitalize">
+                  OUR SERVICES
                 </span>
               </p>
               <h1 className="">
-                Our Expert Witness & <br /> Case Support Services
+                Lorem ipsum dolor sit. <br /> Lorem, ipsum dolor.
               </h1>
 
               <p style={{ marginBottom: "0px" }}>
-                Supporting attorneys with trusted experts, tailored recruitment,
-                and reliable results.
+                Comprehensive distribution solutions designed to maximize your
+                brand's reach and visibility across landscape.
               </p>
 
               <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4 mt-3">
                 <a
-                  href="#contact-service"
+                  href="/contact-us/#contact-service/"
                   className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                 >
-                  <i>Request an Expert Witness</i>
-                  <span className="">Request an Expert Witness</span>
+                  <i>Contact Us</i>
+                  <span className="">Contact Us</span>
                 </a>
               </div>
             </div>
@@ -125,13 +169,17 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Why Attorneys */}
+      {/* Why Attorneys / What We offer */}
       <section className="why-choose-four">
         <div
           className="why-choose-four__bg jarallax"
           data-jarallax
           data-speed="0.3"
-          style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
+          style={{
+            backgroundImage:
+              "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
+          }}
+        ></div>
         <div className="container">
           <div className="margin-about">
             <div className="row">
@@ -139,26 +187,34 @@ const ServicePage = () => {
                 <div className="why-choose-four__content">
                   <div className="sec-title text-left">
                     <h3 className="sec-title__title bw-split-in-up">
-                      Why Choose <br />
-                      <span> NONSTOP DISTRIBUTORS</span>
+                      What We <br />
+                      <span> Offer</span>
                     </h3>
+                    <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+                      End-to-end distribution services tailored to your brand's
+                      unique needs
+                    </h4>
                   </div>
 
                   <div className="why-choose-four__list">
                     <div className="why-choose-four__item">
                       <div className="why-choose-four__item__top">
                         <div className="why-choose-four__item__icon">
-                          {/* <i className="icon-innovation"></i> */}
-                          <Image width={22} height={22} src="/assets/images/shapes/icon-01.png" alt="response" />
-                          {/* <i className="icon-podium"></i> */}
+                          <Image
+                            width={22}
+                            height={22}
+                            src="/assets/images/shapes/icon-01.png"
+                            alt="response"
+                          />
                         </div>
                         <h3 className="why-choose-four__item__title">
-                          Independent and <br /> Attorney-Focused.
+                          Full-Scale <br /> Distribution.
                         </h3>
                       </div>
                       <p className="why-choose-four__item__text text-white">
-                        Because we answer only to our clients, we prioritize
-                        long-term trust and measurable results.
+                        Complete distribution management from warehouse to
+                        retail shelf, ensuring your products reach to your
+                        store.
                       </p>
                     </div>
                     <div className="why-choose-four__item">
@@ -167,11 +223,12 @@ const ServicePage = () => {
                           <i className="icon-collaboration"></i>
                         </div>
                         <h3 className="why-choose-four__item__title">
-                          Transparency <br /> You Can Trust.
+                          Logistics & <br /> Supply Chain.
                         </h3>
                       </div>
                       <p className="why-choose-four__item__text text-white">
-                        Clear pricing, open communication, and no hidden fees.
+                        Efficient logistics solutions temperature control, and
+                        optimized delivery routes.
                       </p>
                     </div>
                   </div>
@@ -180,32 +237,39 @@ const ServicePage = () => {
                     <div className="why-choose-four__item">
                       <div className="why-choose-four__item__top">
                         <div className="why-choose-four__item__icon">
-                          {/* <i className="icon-podium"></i> */}
-                          <Image width={22} height={22} src="/assets/images/shapes/icon-03.png" alt="response" />
+                          <Image
+                            width={22}
+                            height={22}
+                            src="/assets/images/shapes/icon-03.png"
+                            alt="response"
+                          />
                         </div>
                         <h3 className="why-choose-four__item__title">
-                          National Network. <br />
-                          Local Attention.
+                          Retail <br /> Coverage.
                         </h3>
                       </div>
                       <p className="why-choose-four__item__text text-white">
-                        Thousands of vetted experts across every state and
-                        specialty.
+                        Deep penetration across modern trade, general trade, and
+                        emerging retail formats.
                       </p>
                     </div>
                     <div className="why-choose-four__item">
                       <div className="why-choose-four__item__top">
                         <div className="why-choose-four__item__icon">
-                          {/* <i className="icon-collaboration"></i> */}
-                          <Image width={22} height={22} src="/assets/images/shapes/icon-04.png" alt="response" />
+                          <Image
+                            width={22}
+                            height={22}
+                            src="/assets/images/shapes/icon-04.png"
+                            alt="response"
+                          />
                         </div>
                         <h3 className="why-choose-four__item__title">
-                          Responsive <br /> and Reliable
+                          E-commerce <br /> Distribution
                         </h3>
                       </div>
                       <p className="why-choose-four__item__text text-white">
-                        Our process keeps cases moving and clients supported when
-                        timing matters most.
+                        Seamless integration with major online marketplaces and
+                        D2C fulfillment solutions.
                       </p>
                     </div>
                   </div>
@@ -216,7 +280,6 @@ const ServicePage = () => {
                   <div className="why-choose-four__img mx-auto">
                     <img
                       src="/assets/photos/about/why-attorneys-trust-homestead.jpg"
-                      // src="/assets/images/backgrounds/image_10.jpg"
                       alt="why-choose-us"
                     />
                   </div>
@@ -227,8 +290,7 @@ const ServicePage = () => {
         </div>
       </section>
 
-
-      {/*services  */}
+      {/*services 1/ Full-Scale Distribution  */}
       <section
         className="team-one"
         id="expert-witness"
@@ -238,23 +300,23 @@ const ServicePage = () => {
           <div className="custom-max-width">
             <div className="sec-title text-left">
               <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                Expert Witness Recruitment
+                Full-Scale Distribution
               </h2>
-              <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-                Recruiting experts across every specialty.
-              </p>
+              {/* <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+               Our comprehensive distribution network ensures your products reach to your store. auan.comacol indie From matropellion cities to tier towns, we have the infrastructure and expertise to manage your brand's complete distribution needs.
+              </p> */}
             </div>
 
             <div className="wow fadeInUp" data-wow-delay="0ms">
               <div style={{ marginLeft: 0, marginRight: 0 }}>
                 <p className="about-four__text text-white">
-                  Homestead provides hands-on recruitment for attorneys who need
-                  qualified, credible experts in every field. Our team combines
-                  established relationships with new outreach to identify the
-                  best-fit professionals for your case.
+                  Our comprehensive distribution network ensures your products
+                  reach to your store. auan.comacol indie From matropellion
+                  cities to tier towns, we have the infrastructure and expertise
+                  to manage your brand's complete distribution needs.
                 </p>
 
-                <p className="about-four__text text-white">
+                {/* <p className="about-four__text text-white">
                   We recruit for a wide range of case types, with particular
                   depth in <strong>medical malpractice</strong>,{" "}
                   <strong>product liability</strong>,{" "}
@@ -262,59 +324,44 @@ const ServicePage = () => {
                   <strong>forensic matters</strong>. For medical cases, we also
                   coordinate independent medical examinations and record reviews
                   as needed to support your expert strategy.
-                </p>
-
-                <p className="about-four__text text-white">
-                  Every search is customized, communication is transparent, and
-                  you only pay once your expert is retained
-                </p>
-
-                <p className="text-white mt-4">
-                  <strong>How We Work: </strong>
-                </p>
+                </p> */}
 
                 <ul className="list-unstyled about-four__list">
                   <li className="about-four__item text-white">
                     <i className="icon-check mt-2"></i>
                     <p className="mb-0">
-                      <strong>Custom recruitment </strong> for unique or
-                      subspecialized expertise
+                      Warehouse network in strategic locations
+                    </p>
+                  </li>
+
+                  <li className="about-four__item text-white">
+                    <i className="icon-check mt-2"></i>
+                    <p className="mb-0">Real time inventory management</p>
+                  </li>
+
+                  <li className="about-four__item text-white">
+                    <i className="icon-check mt-2"></i>
+                    <p className="mb-0">
+                      Dedicated sales team for each territory
                     </p>
                   </li>
 
                   <li className="about-four__item text-white">
                     <i className="icon-check mt-2"></i>
                     <p className="mb-0">
-                      <strong>Experts sourced </strong> through both established
-                      relationships and new outreach
-                    </p>
-                  </li>
-
-                  <li className="about-four__item text-white">
-                    <i className="icon-check mt-2"></i>
-                    <p className="mb-0">
-                      <strong>Complimentary 15-minute consult calls </strong>{" "}
-                      before retention
-                    </p>
-                  </li>
-
-                  <li className="about-four__item text-white">
-                    <i className="icon-check mt-2"></i>
-                    <p className="mb-0">
-                      <strong>No finder’s fees </strong> until you retain your
-                      expert
+                      Scalable solutions for seasonal demands
                     </p>
                   </li>
                 </ul>
 
                 <div className="about-four__btns">
                   <a
-                    href="/expert-witness/"
+                    href="#"
                     className="procounsel-btn"
                     style={{ fontSize: "14px", whiteSpace: "normal" }}
                   >
-                    <i>Learn More About Expert Recruitment</i>
-                    <span>Learn More About Expert Recruitment</span>
+                    <i>Learn More About Distribution</i>
+                    <span>Learn More About Distribution</span>
                   </a>
                 </div>
               </div>
@@ -323,7 +370,7 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* section 2 */}
+      {/* section 2 / Logistics & Supply Chain */}
       <section
         className="team-one"
         id="nurse-services"
@@ -334,69 +381,54 @@ const ServicePage = () => {
             <div className="custom-max-width">
               <div className="sec-title text-left">
                 <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
-                  Merit Reviews & Legal Nurse Services
+                  Logistics & Supply Chain
                 </h2>
 
-                <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+                {/* <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
                   Clinical clarity from experienced Legal Nurse Consultants.
-                </p>
+                </p> */}
               </div>
 
               <div className="wow fadeInUp" data-wow-delay="0ms">
                 <div style={{ marginLeft: 0, marginRight: 0 }}>
                   <p className="about-four__text text-white">
-                    Our in-house nurse consultants provide independent insight
-                    and documentation support at every stage of your case.
-                    Whether you’re assessing the strength of a claim or
-                    preparing for trial, our team ensures the medical facts are
-                    clear, credible, and defensible.
-                  </p>
-
-                  <p className="text-white mt-4">
-                    <strong>Services Include: </strong>
+                    Our state-of-the-art logistics infrastructure ensures timely
+                    delivery while maintaining product integrity. We leverage
+                    technology and best practices to optimize every mile of the
+                    journey.
                   </p>
 
                   <ul className="list-unstyled about-four__list">
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
                       <p className="mb-0">
-                        <strong>Merit Reviews: </strong> Objective evaluation of
-                        case validity based on medical records and timelines.
+                        Fleet of temperature-controlled vehicles
                       </p>
                     </li>
 
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
                       <p className="mb-0">
-                        <strong>Medical Summaries: </strong> Concise
-                        documentation that highlights key events and clinical
-                        milestones.
+                        Lorem ipsum dolor sit amet consectetur.
                       </p>
                     </li>
 
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
                       <p className="mb-0">
-                        <strong>Medical Chronologies: </strong>
-                        Detailed timelines of care for litigation, deposition,
-                        and trial preparation.
+                        Lorem ipsum dolor sit amet consectetur.
                       </p>
                     </li>
                   </ul>
 
-                  <p className="about-four__text text-white">
-                    Homestead’s nurse team bridges the gap between medicine and
-                    law, helping you understand what really happened, what
-                    matters most, and what’s worth pursuing.
-                  </p>
                   <div className="about-four__btns">
                     <a
-                      href="/nurse-services/"
+                      href="#"
                       className="procounsel-btn"
                       style={{ fontSize: "14px", whiteSpace: "normal" }}
                     >
-                      <i>Learn More About Nurse Services</i>
-                      <span>Learn More About Nurse Services</span>
+                      <i>Learn More About Logistic</i>
+                      <span>Learn More About Logistic</span>
                     </a>
                   </div>
                 </div>
@@ -416,60 +448,66 @@ const ServicePage = () => {
           <div className="custom-max-width custom-max-width2">
             <div className="sec-title text-left">
               <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                Expert Background Checks
+                Retail Coverage
               </h2>
-              <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+              {/* <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
                 Ensuring the credibility of every expert before they take the
                 stand.
-              </p>
+              </p> */}
             </div>
 
             <div className="wow fadeInUp" data-wow-delay="0ms">
               <div style={{ marginLeft: 0, marginRight: 0 }}>
                 <p className="about-four__text text-white">
-                  Even the most qualified expert can face credibility
-                  challenges. Our background check services help you confirm
-                  professional integrity, uncover potential vulnerabilities, and
-                  prepare with confidence.
+                  We ensure your products are visible and available across all
+                  retail formats. Our retail team maintains strong relationships
+                  with store owners and category managers to secure the best
+                  shelf positions.
                 </p>
 
-                <p className="text-white mt-4">
+                {/* <p className="text-white mt-4">
                   <strong>Services Include: </strong>
-                </p>
+                </p> */}
 
                 <ul className="list-unstyled about-four__list">
                   <li className="about-four__item text-white">
                     <i className="icon-check mt-2"></i>
                     <p className="mb-0">
-                      <strong>Preliminary Report: </strong> A concise assessment
-                      of professional background, qualifications, and red flags.
+                      Modern Trade (Supermarkets, Hypermarkets)
                     </p>
                   </li>
 
                   <li className="about-four__item text-white">
                     <i className="icon-check mt-2"></i>
                     <p className="mb-0">
-                      <strong>Challenge Study: </strong> Deep research into
-                      prior testimony, public statements, and potential
-                      conflicts.
+                      General Trade (Kirana stores, Local retailers)
                     </p>
                   </li>
 
                   <li className="about-four__item text-white">
                     <i className="icon-check mt-2"></i>
+                    <p className="mb-0">Convenience stores and Mini-marts</p>
+                  </li>
+
+                  <li className="about-four__item text-white">
+                    <i className="icon-check mt-2"></i>
                     <p className="mb-0">
-                      <strong>Enhanced Expert Profile: </strong> Comprehensive
-                      dossier integrating credential review, litigation history,
-                      and publication analysis.
+                      Institutional Sales (Hotels, Restaurants, Cafes)
+                    </p>
+                  </li>
+
+                  <li className="about-four__item text-white">
+                    <i className="icon-check mt-2"></i>
+                    <p className="mb-0">Wholesale and Cash & Carry</p>
+                  </li>
+                  <li className="about-four__item text-white">
+                    <i className="icon-check mt-2"></i>
+                    <p className="mb-0">
+                      {" "}
+                      Specialty retail and Premium outlets
                     </p>
                   </li>
                 </ul>
-
-                <p className="about-four__text text-white">
-                  These services are ideal before retention, during discovery,
-                  or ahead of trial to protect your case from surprises and
-                  strengthen your expert strategy.
-                </p>
 
                 <div className="about-four__btns">
                   <a
@@ -477,8 +515,8 @@ const ServicePage = () => {
                     className="procounsel-btn"
                     style={{ fontSize: "14px", whiteSpace: "normal" }}
                   >
-                    <i>Learn More About Background Checks</i>
-                    <span>Learn More About Background Checks</span>
+                    <i>Learn More About RETAIL COVERAGE</i>
+                    <span>Learn More About RETAIL COVERAGE</span>
                   </a>
                 </div>
               </div>
@@ -498,69 +536,48 @@ const ServicePage = () => {
             <div className="custom-max-width">
               <div className="sec-title text-left">
                 <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
-                  Merit Reviews & Legal Nurse Services
+                  E-commerce Distribution
                 </h2>
-
-                <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-                  Clinical clarity from experienced Legal Nurse Consultants.
-                </p>
               </div>
 
               <div className="wow fadeInUp" data-wow-delay="0ms">
                 <div style={{ marginLeft: 0, marginRight: 0 }}>
                   <p className="about-four__text text-white">
-                    Our in-house nurse consultants provide independent insight
-                    and documentation support at every stage of your case.
-                    Whether you’re assessing the strength of a claim or
-                    preparing for trial, our team ensures the medical facts are
-                    clear, credible, and defensible.
-                  </p>
-
-                  <p className="text-white mt-4">
-                    <strong>Services Include: </strong>
+                    Tap into India's booming e-commerce market with our digital
+                    distribution solutions. We manage your brand's presence
+                    across all major online platforms with seamless fulfillment.
                   </p>
 
                   <ul className="list-unstyled about-four__list">
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
                       <p className="mb-0">
-                        <strong>Merit Reviews: </strong> Objective evaluation of
-                        case validity based on medical records and timelines.
+                        Amazon Flipkart, and marketplace management
                       </p>
                     </li>
 
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
-                      <p className="mb-0">
-                        <strong>Medical Summaries: </strong> Concise
-                        documentation that highlights key events and clinical
-                        milestones.
-                      </p>
+                      <p className="mb-0">D2C fulfillment and delivery</p>
+                    </li>
+
+                    <li className="about-four__item text-white">
+                      <i className="icon-check mt-2"></i>
+                      <p className="mb-0">Catalog and content management</p>
                     </li>
 
                     <li className="about-four__item text-white">
                       <i className="icon-check mt-2"></i>
                       <p className="mb-0">
-                        <strong>Medical Chronologies: </strong>
-                        Detailed timelines of care for litigation, deposition,
-                        and trial preparation.
+                        Returns and customer service handling
                       </p>
                     </li>
                   </ul>
 
-                  <p className="about-four__text text-white">
-                    Homestead’s nurse team bridges the gap between medicine and
-                    law, helping you understand what really happened, what
-                    matters most, and what’s worth pursuing.
-                  </p>
                   <div className="about-four__btns">
-                    <a
-                      href="/nurse-services/"
-                      className="procounsel-btn"
-                      style={{ fontSize: "14px", whiteSpace: "normal" }}
-                    >
-                      <i>Learn More About Nurse Services</i>
-                      <span>Learn More About Nurse Services</span>
+                    <a href="#" className="procounsel-btn" style={{ fontSize: "14px", whiteSpace: "normal" }}>
+                      <i>Learn More About E-COMMERCE</i>
+                      <span>Learn More About E-COMMERCE</span>
                     </a>
                   </div>
                 </div>
@@ -570,7 +587,7 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Services Grid /Channel Coverage*/}
       <section
         className="service-one service-two--page"
         style={{
@@ -582,8 +599,16 @@ const ServicePage = () => {
         }}
       >
         <div className="container">
+          <div className="sec-title text-left">
+            <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
+              Channel Coverage
+            </h2>
+            <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+              Complete access to every retail format in India
+            </p>
+          </div>
           <div className="row gutter-y-30">
-            {services.map((item, index) => (
+            {coveragesItem.map((item, index) => (
               <div
                 key={index}
                 className="col-lg-4 col-sm-6 wow fadeInUp"
@@ -608,40 +633,6 @@ const ServicePage = () => {
                     style={{ display: "flex", flexDirection: "column" }}
                   >
                     <div>
-                      {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 100 100"
-                        fill="none"
-                      >
-                        <rect width="100" height="100" fill="none" />
-                        <g
-                          stroke="#0B2C5A"
-                          strokeWidth="4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <rect
-                            x="15"
-                            y="30"
-                            width="70"
-                            height="45"
-                            rx="5"
-                            ry="5"
-                            fill="none"
-                          />
-                          <path
-                            d="M35 30v-8a4 4 0 0 1 4-4h22a4 4 0 0 1 4 4v8"
-                            fill="none"
-                          />
-
-                          <circle cx="70" cy="70" r="14" fill="none" />
-                          <line x1="80" y1="80" x2="90" y2="90" />
-                          <circle cx="70" cy="66" r="4" fill="none" />
-                          <path d="M62 76c2-4 14-4 16 0" fill="none" />
-                        </g>
-                      </svg> */}
                       <Image
                         src={item.img}
                         alt={item.title}
@@ -673,8 +664,7 @@ const ServicePage = () => {
                       {item.description}
                     </p>
 
-                    <Link
-                      href={`#${item.sectionId}`}
+                    <Link href="#"
                       className="procounsel-btn mt-3"
                       style={{ fontSize: "14px", whiteSpace: "normal" }}
                     >
@@ -691,55 +681,32 @@ const ServicePage = () => {
 
       {/* How We Work */}
       <section className="why-choose-three">
-        <div
-          className="why-choose-three__bg"
-          style={{ backgroundImage: "url('assets/images/shapes/why-choose-three-bg.png')", }}>
-        </div>
-        {/* <div className="why-choose-three__right wow slideInRight" style={{ backgroundImage: "url('assets/images/backgrounds/why-choose-three-bg.jpg')" }}></div> */}
+        <div className="why-choose-three__bg" style={{ backgroundImage: "url('assets/images/shapes/why-choose-three-bg.png')" }}></div>
         <div className="container">
           <div className="row">
-            {/* <div className="col-xl-8 col-lg-9"> */}
             <div className="col-xl-6">
               <div className="why-choose-three__content wow fadeInUp" data-wow-delay="300ms">
                 <div className="sec-title text-left">
                   <h3 className="sec-title__title bw-split-in-up">
                     How We <span> Work</span>
                   </h3>
+                  <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+                    Our proven partnership process
+                  </p>
                 </div>
 
                 <div className="why-choose-three__box">
                   <div className="why-choose-three__box__left">
                     <div className="why-choose-three__box__left-item">
                       <p className="why-choose-three__box__left-text">
-                        No-Risk, No-Commitment Model
+                        Consultation
                       </p>
                     </div>
                   </div>
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        You don’t pay until you’ve spoken with your expert and
-                        are ready to retain. ensuring every engagement starts
-                        with trust and certainty.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Fast, Reliable Expert Matching
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        We identify the best-fit expert for your matter and
-                        confirm availability quickly, so your case continues
-                        moving without delay.
+                        We understand your brand, goals, and market aspirations through detailed discussions.
                       </p>
                     </div>
                   </div>
@@ -749,17 +716,14 @@ const ServicePage = () => {
                   <div className="why-choose-three__box__left">
                     <div className="why-choose-three__box__left-item">
                       <p className="why-choose-three__box__left-text">
-                        End-to-End Case Management
+                        Strategy
                       </p>
                     </div>
                   </div>
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        Your dedicated case manager handles everything from
-                        introductions and scheduling to billing and
-                        communication so your team can focus on strategy, not
-                        logistics.
+                        Our team crafts a customized distribution strategy aligned with your objectives.
                       </p>
                     </div>
                   </div>
@@ -769,14 +733,31 @@ const ServicePage = () => {
                   <div className="why-choose-three__box__left">
                     <div className="why-choose-three__box__left-item">
                       <p className="why-choose-three__box__left-text">
-                        Merit Review Services
+                        Execution
                       </p>
                     </div>
                   </div>
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        For medical or malpractice matters, our in-house legal nurse consultants can review records to assess case viability before you commit time or expense.
+                        We deploy our resources and network to bring your products to market efficiently
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="why-choose-three__box">
+                  <div className="why-choose-three__box__left">
+                    <div className="why-choose-three__box__left-item">
+                      <p className="why-choose-three__box__left-text">
+                        Growth
+                      </p>
+                    </div>
+                  </div>
+                  <div className="why-choose-three__box__right">
+                    <div className="why-choose-three__box__right-item">
+                      <p className="why-choose-three__box__right-text">
+                        Continuous optimization and scaling to maximize your brand's market potential.
                       </p>
                     </div>
                   </div>
@@ -784,10 +765,7 @@ const ServicePage = () => {
               </div>
             </div>
             <div className="col-xl-6">
-              <div className="why-choose-three__right wow slideInRight"
-                style={{ backgroundImage: "url('/assets/photos/about/how_we_work.jpg')" }}
-              // style={{ backgroundImage: "url('assets/images/backgrounds/why-choose-three-bg.jpg')" }}
-              ></div>
+              <div className="why-choose-three__right wow slideInRight" style={{ backgroundImage: "url('/assets/photos/about/how_we_work.jpg')" }}></div>
             </div>
           </div>
         </div>
@@ -814,16 +792,14 @@ const ServicePage = () => {
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
                       <h4 className="text-white">
-                        Do you only refer experts already in your network?
+                        Lorem ipsum dolor sit amet consectetur adipisicing?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                       </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          No. While we maintain a large network of trusted
-                          professionals, we regularly recruit new experts to
-                          meet the specific needs of each case.
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quaerat mollitia totam repellat, voluptas nemo!
                         </p>
                       </div>
                     </div>
@@ -832,18 +808,14 @@ const ServicePage = () => {
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
                       <h4 className="text-white">
-                        How long does it take to find an expert?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                       </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          Typical turnaround is 7–14 business days, depending on
-                          the complexity of the case. Most are completed sooner.
-                          If you need an expert within 10 days, select Rush
-                          Matter on the request form. Please note, a $500
-                          retention fee applies to rush requests.
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae doloribus, dolorum fugiat magnam ratione unde facere. Ut sint rem alias!
                         </p>
                       </div>
                     </div>
@@ -860,15 +832,14 @@ const ServicePage = () => {
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
                     <h4 className="text-white">
-                      Do you serve both plaintiff and defense attorneys?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
                     </h4>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">
                       <p className="text-white">
-                        Yes. Homestead provides impartial expert witness
-                        referrals for both sides of litigation.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem veritatis quis repudiandae exercitationem cupiditate quaerat voluptas officia sunt magnam ipsa.
                       </p>
                     </div>
                   </div>
@@ -877,14 +848,14 @@ const ServicePage = () => {
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
                     <h4 className="text-white">
-                      Is the initial consultation free?
+                      Lorem ipsum dolor sit amet consectetur?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
                     </h4>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">
                       <p className="text-white">
-                        Yes, all initial expert consult calls are complimentary.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       </p>
                     </div>
                   </div>
@@ -894,6 +865,47 @@ const ServicePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Newsletter */}
+      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
+        <div className="circle-newsletter"
+
+        />
+
+        <div className="container position-relative">
+          <div className="row justify-content-center">
+            <div className="col-md-10 col-sm-12">
+              <h2 className="fw-bold text-white mb-3" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
+                Join Our Growing Network
+              </h2>
+
+              <p className="text-white mb-4" style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9, }}>
+                Whether you're a brand looking for distribution or a professional
+                seeking opportunities, we'd love to hear from you.
+              </p>
+
+              <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="#"
+                  className=" fw-semibold custom-btn"
+                >
+                  REQUEST A PROPOSAL
+                </a>
+
+                <a href="#"
+                  className=" fw-semibold custom-btn"
+                >
+                  LEARN ABOUT DISTRIBUTION
+                </a>
+                <a href="#" className=" fw-semibold custom-btn">
+                  VIEW OUR PARTNERS
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ScriptsLoader />
     </>
   );

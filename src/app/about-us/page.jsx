@@ -1,14 +1,14 @@
 "use client";
 
 import ScriptsLoader from "@/components/ScriptsLoader";
-import { ExpertWitnessAbout } from "@/sections/about/ExpertWitnessAbout";
+import { VisionMission } from "@/sections/about/VisionMission";
 import Image from "next/image";
 
 const About = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Seth Lefberg",
+      name: "Pritam Shinde",
       designation: "Founder & CEO",
       img: "/assets/photos/about/me4suit.jpg",
       // img: "/assets/images/team/team-1-1.jpg",
@@ -16,17 +16,10 @@ const About = () => {
     },
     {
       id: 2,
-      name: "Heather Durbin",
-      designation: "Senior Case Manager",
+      name: "Team Member 2",
+      designation: "CTO",
       img: "/assets/images/team/team-1-2.png",
       delay: "100ms",
-    },
-    {
-      id: 3,
-      name: "Melissa Rosen",
-      designation: "Expert Witness Recruiter",
-      img: "/assets/images/team/team-1-3.jpg",
-      delay: "200ms",
     },
   ];
 
@@ -48,31 +41,22 @@ const About = () => {
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
-            <p style={{ marginTop: "80px" }} className="mb-2">
-              ABOUT <span style={{ color: "#fb3640" }} className="fw-bold"> HOMESTEAD EXPERTS
+            <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
+              ABOUT <span style={{ color: "#fb3640" }} className="fw-bold"> NONSTOP Distributors
               </span>
             </p>
             <h1 className="">
-              The Right Expert Witness <br /> Exactly When You Need Them.
+              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
             </h1>
             <div>
               <p style={{ marginBottom: "0px" }}>
-                When your case depends on expert testimony, time and credibility
-                matter most. Homestead
-                <br className="d-none d-lg-inline" /> connects attorneys with
-                qualified, trial-ready experts across every specialty, quickly
-                and <br className="d-none d-lg-inline" /> without upfront cost.
-              </p>
-              <p style={{ marginTop: "10px", marginBottom: "20px" }}>
-                Our experts strengthen your arguments, enhance your credibility,
-                and help you achieve <br className="d-none d-lg-inline" />{" "}
-                better results in court.
+                Powering FMCG distribution with excellence, integrity, and an unwavering commitment <br className="d-none d-lg-inline" /> to our partners success.
               </p>
             </div>
-            <div className="d-flex flex-column justify-content-between align-items-start">
+            <div className="d-flex flex-column justify-content-between align-items-start mt-3">
               <a href="/contact-us#contact-service" className="procounsel-btn">
-                <i>SPEAK TO AN EXPERT</i>
-                <span>SPEAK TO AN EXPERT</span>
+                <i>Contact Us</i>
+                <span>Contact Us</span>
               </a>
             </div>
           </div>
@@ -99,23 +83,18 @@ const About = () => {
               <div className="why-choose-four__content">
                 <div className="sec-title text-left">
                   <h3 className="sec-title__title bw-split-in-up">
-                    Our <span> Story</span>
+                    Who We <span> Are</span>
                   </h3>
                 </div>
 
                 <p className="why-choose-four__content__text text-white fs-5 fw-bold">
-                  Founded in 2015, Homestead was built to give attorneys a
-                  smarter, more dependable way to find expert witnesses.
+                  NONSTOP Distributors is of leading FMCG distribution partners, connecting premium consumer brands to every major sales channel.
                 </p>
                 <p className="why-choose-four__content__text text-white">
-                  Today, we support law firms nationwide with professionals
-                  across every discipline from medicine and engineering to
-                  finance, construction, and technology.
+                  With decades of experience and an extensive distribution network, we specialize in managing and scaling brands across food and beverages, body care, luxury chocolates, laundry, stationery, and many other FMCG categories.
                 </p>
                 <p className="why-choose-four__content__text text-white">
-                  <strong> Our focus is simple: </strong> connecting your team
-                  with the right expert, at the right time, with the confidence
-                  that every referral meets the highest standard of credibility.
+                  Our team of dedicated professionals works tirelessly to ensure that every brand we represent achieves maximum market penetration, strong product visibility, and sustainable growth across every retail channel.
                 </p>
               </div>
             </div>
@@ -134,10 +113,10 @@ const About = () => {
                     <h3 className="why-choose-four__box__count">
                       <span
                         className="count-text"
-                        data-stop="10"
+                        data-stop="20"
                         data-speed="1500"
                       >
-                        10
+                        20
                       </span>
                     </h3>
                     <p className="why-choose-four__box__text">
@@ -156,7 +135,8 @@ const About = () => {
                       </span>
                     </h3>
                     <p className="why-choose-four__box__text">
-                      Experts Sourced <br /> Nation Wide
+                      Lorem, ipsum. <br /> Lorem, ipsum.
+                      {/* Experts Sourced <br /> Nation Wide */}
                     </p>
                   </div>
                   <div className="why-choose-four__box count-box">
@@ -171,7 +151,8 @@ const About = () => {
                       </span>
                     </h3>
                     <p className="why-choose-four__box__text">
-                      Law Firms <br /> Served
+                      Lorem, ipsum. <br /> Lorem, ipsum.
+                      {/* Law Firms <br /> Served */}
                     </p>
                   </div>
                 </div>
@@ -181,8 +162,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Expert Witnesses  */}
-      <ExpertWitnessAbout />
+      {/* Vision Mission */}
+      <VisionMission />
 
       {/* Stand For /Core values*/}
       <section className="team-one" style={{ background: "#0E222A" }}>
@@ -190,8 +171,10 @@ const About = () => {
           {/* <h3 className="service-details__sub-title text-white">Why Choose Our ProCounsel?</h3> */}
           <div className="sec-title text-left">
             <h3 className="sec-title__title bw-split-in-up text-white">
-              What We <span>Stand For</span>
+              Our Core <span> Values</span>
             </h3>
+
+            <h4 className="tailored-subtitle font-Merriweather text-white mt-2">The principle that guide everything we do</h4>
           </div>
           <div className="row gutter-y-30">
             <div
@@ -207,12 +190,11 @@ const About = () => {
                 </div>
                 <div className="service-details__item__content">
                   <h4 className="service-details__item__title text-white">
-                    Integrity First
+                    Excellence
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    We believe credibility is earned, not claimed. We only place
-                    experts we believe in and never force a fit.
+                    We strive for excellence in every aspect of our operations, from logistics to customer service.
                   </p>
                 </div>
               </div>
@@ -230,13 +212,11 @@ const About = () => {
                 </div>
                 <div className="service-details__item__content">
                   <h4 className="service-details__item__title text-white">
-                    Partnership Without Barriers
+                    Integrity
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    No subscriptions. No long-term contracts. Use us once or
-                    make us part of your intake process, our commitment stays
-                    the same
+                    We conduct business with the highest ethical standards, building trust with every interaction.
                   </p>
                 </div>
               </div>
@@ -254,13 +234,11 @@ const About = () => {
                 </div>
                 <div className="service-details__item__content">
                   <h4 className="service-details__item__title text-white">
-                    People Before Process{" "}
+                    Partnership
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    Behind every referral is a person. We honor the human side
-                    of litigation by treating every case with the care, urgency,
-                    and respect it deserves.
+                    We believe in building long-term partnerships, treating every brand's success as our own.
                   </p>
                 </div>
               </div>
@@ -278,12 +256,11 @@ const About = () => {
                 </div>
                 <div className="service-details__item__content">
                   <h4 className="service-details__item__title text-white">
-                    Excellence in Every Detail
+                    Sustainability
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    From recruitment to report, we manage each case with
-                    precision so nothing falls through the cracks.
+                    We are committed to sustainable practices that benefit our community and environment.
                   </p>
                 </div>
               </div>
@@ -297,7 +274,7 @@ const About = () => {
         <div className="container">
           <div className="sec-title text-left">
             <h3 className="sec-title__title bw-split-in-up text-white">
-              Meet the Team <br /> <span>Behind Homestead</span>
+              Meet the Team <br /> <span>Behind Nonstop Distributors</span>
             </h3>
           </div>
           <div className="row gutter-y-30">
@@ -361,7 +338,7 @@ const About = () => {
               </div>
             ))}
             <div className="d-flex justify-content-center align-items-center">
-              <a href="/our-team/" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
+              <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
                 <i>VIEW All</i>
                 <span className="">VIEW All</span>
               </a>
@@ -369,6 +346,41 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Newsletter */}
+      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
+        <div className="circle-newsletter" />
+
+        <div className="container position-relative">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 col-md-10 col-sm-12">
+              <h2 className="fw-bold text-white mb-3" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
+                Join Our Growing Network
+              </h2>
+
+              <p className="text-white mb-4" style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9, }}>
+                Whether you're a brand looking for distribution or a professional
+                seeking opportunities, we'd love to hear from you.
+              </p>
+
+              <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="#" onClick={(e) => e.preventDefault()}
+                  className="custom-btn fw-semibold"
+                >
+                  PARTNER WITH US
+                </a>
+
+                <a href="#" onClick={(e) => e.preventDefault()}
+                  className="custom-btn fw-semibold"
+                >
+                  CAREER OPPORTUNITIES
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ScriptsLoader />
     </>
   );

@@ -23511,6 +23511,13 @@ body.boxed-wrapper .main-header {
   height: 60px;
 }
 
+.portfolio-one__item.active .portfolio-one__item__rm span i {
+  background-color: var(--procounsel-white, #fff);
+  color: var(--procounsel-base, #c7954a);
+  width: 60px;
+  height: 60px;
+}
+
 .portfolio-one__item.active .portfolio-one__item__content {
   visibility: visible;
   opacity: 1;
@@ -23637,6 +23644,16 @@ body.boxed-wrapper .main-header {
 }
 
 .portfolio-one__item__title a:hover {
+  background-size: 100% 1px;
+}
+
+.portfolio-one__item__title span {
+  color: inherit;
+  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+  transition: all 500ms ease;
+}
+
+.portfolio-one__item__title span:hover {
   background-size: 100% 1px;
 }
 

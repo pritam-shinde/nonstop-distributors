@@ -524,16 +524,18 @@ a {
 .truncate-2-lines {
   display: -webkit-box;
   line-clamp: 2;
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.hover-btn-experts:hover{
+.hover-btn-experts:hover {
   color: #fb3640 !important;
   text-decoration: underline;
 }
+
 @media (min-width: 1200px) {
   .text-xl-nowrap {
     white-space: nowrap;
@@ -542,6 +544,39 @@ a {
 
 .hover-underline:hover {
   text-decoration: underline !important;
-  color:#fb3640 !important; 
+  color: #fb3640 !important;
 }
 
+.newsletter-section {
+  min-height: 400px;
+  background: linear-gradient(135deg, #f03b4d, #ff6b6b);
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.newsletter-section .circle-newsletter {
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+ .custom-btn {
+    border: 2px solid #fff !important;
+    color: #fff;
+    background: transparent;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .custom-btn:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+  }

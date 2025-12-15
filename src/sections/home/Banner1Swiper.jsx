@@ -9,19 +9,17 @@ import Link from "next/link";
 
 export const sliderData = [
   {
-    bg: "/assets/photos/home/hero_1.jpg", 
+    bg: "/assets/photos/home/hero_1.jpg",
     title: (
       <>
-        Trusted. Vetted. <br />
-        Trial-Ready.
+        Powering Brands <br /> Across the City.
+        {/* Trusted. Vetted. <br /> Trial-Ready. */}
       </>
     ),
     text: (
       <>
         <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-          Homestead connects attorneys with leading expert witnesses across
-          every discipline. Rigorously vetted, court-tested, and ready when you
-          are.
+          Connecting premium consumer brands to every major sales channel with decades of experience, operational excellence, and an extensive distribution network.
         </p>
       </>
     ),
@@ -77,17 +75,17 @@ const Banner1Swiper = () => {
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="hero-slide "
-              style={{ backgroundImage: `url(${slide.bg})` }}
-            >
+            <div className="hero-slide" style={{ backgroundImage: `url(${slide.bg})` }}>
               {/* <div className="overlay"></div> */}
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container home-content">
-                <h1 className="">{slide.title}</h1>
-                <div
-                // style={{ maxWidth: "520px" }}
-                >
+                <p className="border rounded-5 d-inline px-4 py-2"
+                  style={{ fontSize: "18px", fontWeight: "600", letterSpacing: "0.5px", }}>
+                  Leading FMCG Distributor
+                </p>
+
+                <h1 className="mt-3">{slide.title}</h1>
+                <div>
                   {slide.text}
                 </div>
 
@@ -97,8 +95,8 @@ const Banner1Swiper = () => {
                       href="#contact-service"
                       className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                     >
-                      <i>REQUEST AN EXPERT</i>
-                      <span className="">REQUEST AN EXPERT</span>
+                      <i>GET STARTED</i>
+                      <span className="">GET STARTED</span>
                     </a>
                   </div>
                   <div>
@@ -106,8 +104,8 @@ const Banner1Swiper = () => {
                       href="/onboard/"
                       className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                     >
-                      <i>BECOME AN EXPERT</i>
-                      <span className="">BECOME AN EXPERT</span>
+                      <i>LEARN MORE</i>
+                      <span className="">LEARN MORE</span>
                     </a>
                   </div>
                 </div>
@@ -147,7 +145,8 @@ const Banner1Swiper = () => {
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
-                        Find Your <br /> Expert Witness
+                        20+ Years <br /> of Experience
+                        {/* Find Your <br /> Expert Witness */}
                       </Link>
                     </h3>
                   </div>
@@ -162,7 +161,8 @@ const Banner1Swiper = () => {
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
-                        Get a Free <br /> Case Assessment
+                        25+ Partner <br /> Brands
+                        {/* Get a Free <br /> Case Assessment */}
                       </Link>
                     </h3>
                   </div>
@@ -177,7 +177,8 @@ const Banner1Swiper = () => {
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="/onboard/" className="text-white">
-                        Join Our <br /> Expert Network
+                        5000+ Retail <br /> Points
+                        {/* Join Our <br /> Expert Network */}
                       </Link>
                     </h3>
                   </div>

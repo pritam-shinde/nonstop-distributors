@@ -4,9 +4,8 @@ import ScriptsLoader from "@/components/ScriptsLoader";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
 import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect } from "react";
- 
+
 const items = [
   {
     number: "01",
@@ -27,30 +26,6 @@ const items = [
     number: "04",
     title: "Connection",
     text: `You’re introduced to top candidates ready to discuss your case. We manage all scheduling, communication, and documentation to keep your process seamless from start to finish.`,
-  },
-];
-
-const services = [
-  {
-    title: "Expert Witness Recruitment",
-    img: "/assets/images/shapes/expert-witness-requirement.png",
-    sectionId: "expert-witness",
-    description:
-      "We recruit qualified experts across every field, with depth in medical, product liability, personal injury, and forensic cases.",
-  },
-  {
-    title: "Merit Reviews & Legal Nurse Services",
-    img: "/assets/images/shapes/legal-nurse.png",
-    sectionId: "nurse-services",
-    description:
-      "In-house legal nurses and paralegals analyze medical records to determine case merit accurately.",
-  },
-  {
-    title: "Expert Background Checks",
-    sectionId: "expert-witness-profile-challenge-study",
-    img: "/assets/images/shapes/background-check.png",
-    description:
-      "We verify expert credibility with thorough background research, challenge studies, and detailed expert profiles.",
   },
 ];
 
@@ -160,11 +135,7 @@ export default function Home() {
             className="why-choose-four__bg jarallax"
             data-jarallax
             data-speed="0.3"
-            style={{
-              backgroundImage:
-                "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
-            }}
-          ></div>
+            style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
           <div className="container">
             <div className="margin-about">
               <div className="row">
@@ -175,28 +146,30 @@ export default function Home() {
                         Why Choose <br />
                         <span> NONSTOP DISTRIBUTORS</span>
                       </h3>
+
+                      <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+                        We bring unparalleled expertise and a commitment to excellence that drives brand success.
+                      </h4>
                     </div>
 
                     <div className="why-choose-four__list">
                       <div className="why-choose-four__item">
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
-                            {/* <i className="icon-innovation"></i> */}
                             <Image
                               width={22}
                               height={22}
                               src="/assets/images/shapes/icon-01.png"
                               alt="response"
                             />
-                            {/* <i className="icon-podium"></i> */}
                           </div>
                           <h3 className="why-choose-four__item__title">
-                            Independent and <br /> Attorney-Focused.
+                            Multi-Category  <br /> Expertise
+                            {/* Independent and <br /> Attorney-Focused. */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Because we answer only to our clients, we prioritize
-                          long-term trust and measurable results.
+                          Specialized handling across food & beverages, body care, luxury chocolates, laundry, and stationery categories.
                         </p>
                       </div>
                       <div className="why-choose-four__item">
@@ -206,10 +179,11 @@ export default function Home() {
                           </div>
                           <h3 className="why-choose-four__item__title">
                             Transparency <br /> You Can Trust.
+                            {/* Transparency <br /> You Can Trust. */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Clear pricing, open communication, and no hidden fees.
+                          Deep penetration in modern trade, general trade, e-commerce, institutional sales, and HoReCa segments.
                         </p>
                       </div>
                     </div>
@@ -218,7 +192,6 @@ export default function Home() {
                       <div className="why-choose-four__item">
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
-                            {/* <i className="icon-podium"></i> */}
                             <Image
                               width={22}
                               height={22}
@@ -227,19 +200,17 @@ export default function Home() {
                             />
                           </div>
                           <h3 className="why-choose-four__item__title">
-                            National Network. <br />
-                            Local Attention.
+                            Brand <br />  Partnership
+                            {/* National Network. <br /> Local Attention. */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Thousands of vetted experts across every state and
-                          specialty.
+                          We don't just distribute, We become strategic partners invested in your brand's long-term success.
                         </p>
                       </div>
                       <div className="why-choose-four__item">
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
-                            {/* <i className="icon-collaboration"></i> */}
                             <Image
                               width={22}
                               height={22}
@@ -248,12 +219,12 @@ export default function Home() {
                             />
                           </div>
                           <h3 className="why-choose-four__item__title">
-                            Responsive <br /> and Reliable
+                            Operational <br /> Excellence
+                            {/* Responsive <br /> and Reliable */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Our process keeps cases moving and clients supported
-                          when timing matters most.
+                          Efficient supply chain management ensuring timely deliveries, optimal inventory, and minimal wastage.
                         </p>
                       </div>
                     </div>
@@ -287,10 +258,10 @@ export default function Home() {
             >
               <div style={{ maxWidth: "780px", width: "100%" }}>
                 <h3 className="sec-title__title text-white bw-split-in-up">
-                  Tailored Search. Every Time.
+                  Lorem ipsum dolor sit.
                 </h3>
                 <h4 className="tailored-subtitle font-Merriweather text-white">
-                  Custom Recruitment for Complex Matters
+                  Lorem ipsum dolor sit amet.
                 </h4>
               </div>
             </div>
@@ -335,10 +306,7 @@ export default function Home() {
                     maxWidth: "750px",
                   }}
                 >
-                  We don&apos;t pull from static databases. When your case calls
-                  for niche expertise, our team actively recruits and verifies
-                  new experts on your behalf, managing outreach, vetting, and
-                  scheduling so you can stay focused on strategy.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est totam fugit laborum odio. Excepturi similique corporis soluta recusandae fuga eveniet vero hic voluptas nostrum. Totam eos ipsam dolore quia in voluptates earum sint iste.
                 </p>
                 <a href="#contact-service" className="tailored-btn">
                   <i>REQUEST AN EXPERT</i>
@@ -346,63 +314,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* our process  */}
-        <section className="team-one" style={{ background: "#0E222A" }}>
-          <div className="container">
-            <div className="sec-title text-left">
-              <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                How We <br /> <span>Find and Vet Experts</span>
-              </h2>
-            </div>
-            <div className="custom-max-width2">
-              <p className="why-choose-four__content__text text-white">
-                Each Homestead expert is sourced through a rigorous process of
-                credential verification, experience review, and case-specific
-                matching. Our in-house team handles outreach, screening, and
-                coordination so you can focus on case strategy. From the first
-                consultation to final testimony, we ensure every expert is
-                prepared, professional, and aligned with your case needs.
-              </p>
-            </div>
-
-            <div className="row gutter-y-30">
-              {items.map((item, index) => (
-                <div
-                  key={index}
-                  className="col-lg-3 col-md-6 wow fadeInUp"
-                  data-wow-delay={`${index * 100}ms`}
-                >
-                  <div
-                    className="service-details__item text-white"
-                    style={{ height: "100%", alignItems: "start" }}
-                  >
-                    <div className="service-details__item__content">
-                      <div
-                        className="number-badge"
-                        style={{
-                          fontSize: "28px",
-                          fontWeight: "700",
-                          color: "#247BA0",
-                          marginBottom: "10px",
-                        }}
-                      >
-                        {item.number}
-                      </div>
-                      <h4 className="service-details__item__title text-white">
-                        {item.title}
-                      </h4>
-                      <p className="service-details__item__text text-white mt-3">
-                        {item.text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div></div>
           </div>
         </section>
 
