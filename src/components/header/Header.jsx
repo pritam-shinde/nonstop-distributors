@@ -86,13 +86,17 @@ const Header = () => {
                 <Image
                   src={
                     scrolled
-                      ? "/assets/images/logos/homestead-experts-logo-dark01.png"
-                      : "/assets/images/logos/homestead-experts-logo-light.png"
+                      ? "/assets/distributor-img/nonstop-distributor-dark.png"
+                      : "/assets/distributor-img/nonstop-distributor-light.png"
                   }
                   alt="Procounsel"
-                  width={160}
-                  height={40}
-                  style={{ width: "100%", objectFit: "contain", marginBottom: "4px !important" }}
+                  width={103}
+                  height={37}
+                  style={{
+                    width: "100%",
+                    objectFit: "contain",
+                    marginBottom: "4px !important",
+                  }}
                 />
               </a>
             </div>

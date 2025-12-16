@@ -1,112 +1,141 @@
 import Image from "next/image";
 
 const Footer = () => {
-    const footerLinks = [
+  const footerLinks = [
+    {
+      title: "Services",
+      href: "/services/",
+      delay: "200ms",
+      links: [
+        { label: "Expert Witness", href: "/expert-witness/" },
+        { label: "Nurse Services", href: "/nurse-services/" },
         {
-            title: "Services",
-            href:"/services/",
-            delay: "200ms",
-            links: [
-                { label: "Expert Witness", href: "/expert-witness/" },
-                { label: "Nurse Services", href: "/nurse-services/" },
-                { label: "Background Checks", href: "/expert-witness-profile-challenge-study/" },
-                // { label: "Lorem ipsum", href: "#" },
-            ],
+          label: "Background Checks",
+          href: "/expert-witness-profile-challenge-study/",
         },
-        {
-            title: "Experts",
-            href:"/experts/",
-            delay: "100ms",
-            links: [
-                { label: "Medical Malpractice", href: "/medical-malpractice/" },
-                { label: "Product Liability", href: "/product-liability/" },
-                { label: "Personal Injury", href: "/personal-injury/" },
-                { label: "Forensic", href: "/forensic/" },
-            ],
-        },
-        {
-            title: "Quick Links",
-            delay: "100ms",
-            links: [
-                { label: "About Us", href: "/about-us/" },
-                { label: "Contact Us", href: "/contact-us/" },
-                { label: "Pricing", href: "/pricing/" },
-                { label: "Blog", href: "/blog/" },
-            ],
-        },
+        // { label: "Lorem ipsum", href: "#" },
+      ],
+    },
+    {
+      title: "Experts",
+      href: "/experts/",
+      delay: "100ms",
+      links: [
+        { label: "Medical Malpractice", href: "/medical-malpractice/" },
+        { label: "Product Liability", href: "/product-liability/" },
+        { label: "Personal Injury", href: "/personal-injury/" },
+        { label: "Forensic", href: "/forensic/" },
+      ],
+    },
+    {
+      title: "Quick Links",
+      delay: "100ms",
+      links: [
+        { label: "About Us", href: "/about-us/" },
+        { label: "Contact Us", href: "/contact-us/" },
+        { label: "Pricing", href: "/pricing/" },
+        { label: "Blog", href: "/blog/" },
+      ],
+    },
+  ];
 
-    ];
+  const contactInfo = [
+    {
+      icon: "icon-telephone-call-1",
+      content: (
+        <a href="tel:+18772443703" aria-label="Call us at (877) 244-3703">
+          (877) 244-3703
+        </a>
+      ),
+    },
+    {
+      icon: "icon-mail",
+      content: (
+        <a href="mailto:info@homesteadexperts.com">info@homesteadexperts.com</a>
+      ),
+    },
+  ];
 
-    const contactInfo = [
-        {
-            icon: "icon-telephone-call-1",
-            content: (
-                <a href="tel:+18772443703" aria-label="Call us at (877) 244-3703">
-                    (877) 244-3703
+  const socialLinks = [
+    { href: "https://facebook.com", icon: "icon-facebook", label: "Facebook" },
+    {
+      href: "https://pinterest.com",
+      icon: "icon-pinterest",
+      label: "Pinterest",
+    },
+    { href: "https://twitter.com", icon: "icon-twitter", label: "Twitter" },
+    { href: "https://youtube.com", icon: "icon-youtube", label: "Youtube" },
+  ];
+
+  return (
+    <footer className="main-footer">
+      <div
+        className="main-footer__bg"
+        style={{
+          backgroundImage: "url('/assets/distributor-img/footer.jpg')",
+          backgroundPosition: "bottom center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+      <div className="main-footer__top">
+        <div className="container">
+          <div className="row">
+            {/* Logo + About */}
+            <div
+              className="col-md-6 col-xl-5 wow fadeInUp"
+              data-wow-delay="00ms"
+            >
+              <div className="footer-widget footer-widget--about">
+                <a href="#" className="footer-widget__logo">
+                  <Image
+                    src="/assets/images/logos/homestead-experts-logo-light.png"
+                    width={250}
+                    height={40}
+                    alt="Homestead Logo"
+                  />
                 </a>
-            ),
-        },
-        {
-            icon: "icon-mail",
-            content: (
-                <a href="mailto:info@homesteadexperts.com">
-                    info@homesteadexperts.com
-                </a>
-            ),
-        },
-    ];
+                <p className="footer-widget__text">
+                  Discover a unique approach with our dedicated attorneys,
+                  committed effective legal solutions.
+                </p>
+              </div>
+            </div>
 
-    const socialLinks = [
-        { href: "https://facebook.com", icon: "icon-facebook", label: "Facebook" },
-        { href: "https://pinterest.com", icon: "icon-pinterest", label: "Pinterest" },
-        { href: "https://twitter.com", icon: "icon-twitter", label: "Twitter" },
-        { href: "https://youtube.com", icon: "icon-youtube", label: "Youtube" },
-    ];
+            {/* Dynamic Link Sections */}
+            <div className="col-md-6 col-xl-7">
+              {" "}
+              <div className="row">
+                {footerLinks.map((section, index) => (
+                  <div
+                    key={index}
+                    className="col-md-6 col-xl-4 wow fadeInUp"
+                    data-wow-delay={section.delay}
+                  >
+                    <div className="footer-widget footer-widget--links">
+                      <h2 className="footer-widget__title read-more-btn">
+                        {section.href ? (
+                          <a href={section.href}>{section.title}</a>
+                        ) : (
+                          section.title
+                        )}
+                      </h2>
+                      <ul className="list-unstyled footer-widget__links">
+                        {section.links.map((link, idx) => (
+                          <li key={idx}>
+                            <a className="text-white" href={link.href}>
+                              {link.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-    return (
-        <footer className="main-footer">
-            <div className="main-footer__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/footer-bg.png')" }}></div>
-            <div className="main-footer__top">
-                <div className="container">
-                    <div className="row">
-                        {/* Logo + About */}
-                        <div className="col-md-6 col-xl-5 wow fadeInUp" data-wow-delay="00ms">
-                            <div className="footer-widget footer-widget--about">
-                                <a href="#" className="footer-widget__logo">
-                                    <Image src="/assets/images/logos/homestead-experts-logo-light.png" width={250} height={40}
-                                        alt="Homestead Logo" />
-                                </a>
-                                <p className="footer-widget__text">
-                                    Discover a unique approach with our dedicated attorneys,
-                                    committed effective legal solutions.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Dynamic Link Sections */}
-                        <div className="col-md-6 col-xl-7"> <div className="row">
-                            {footerLinks.map((section, index) => (
-                                <div key={index} className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay={section.delay}>
-                                    <div className="footer-widget footer-widget--links">
-                                        <h2 className="footer-widget__title read-more-btn" >
-                                          {section.href ?<a href={section.href}>{section.title}</a>:section.title}
-                                          </h2>
-                                        <ul className="list-unstyled footer-widget__links">
-                                            {section.links.map((link, idx) => (
-                                                <li key={idx}>
-                                                    <a className="text-white" href={link.href}>{link.label}</a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        </div>
-
-
-                        {/* Newsletter */}
-                        {/* <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="300ms">
+            {/* Newsletter */}
+            {/* <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget footer-widget--mail">
                                 <h2 className="footer-widget__title">
                                     Signup for our latest news
@@ -128,10 +157,10 @@ const Footer = () => {
                                 <div className="mc-form__response"></div>
                             </div>
                         </div> */}
-                    </div>
+          </div>
 
-                    {/* Contact + Social */}
-                    {/* <div className="main-footer__info">
+          {/* Contact + Social */}
+          {/* <div className="main-footer__info">
                         <div className="row">
                             <div className="col-lg-8">
                                 <div className="main-footer__info__inner">
@@ -174,22 +203,22 @@ const Footer = () => {
                             </div>
                         </div>
                     </div> */}
-                </div>
-            </div>
+        </div>
+      </div>
 
-            {/* Footer Bottom */}
-            <div className="main-footer__bottom wow fadeInUp" data-wow-delay="00ms">
-                <div className="container">
-                    <div className="main-footer__bottom__inner">
-                        <p className="main-footer__copyright text-white">
-                            &copy; Copyright <span className="dynamic-year"></span> by
-                            Homestead Experts.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+      {/* Footer Bottom */}
+      <div className="main-footer__bottom wow fadeInUp" data-wow-delay="00ms">
+        <div className="container">
+          <div className="main-footer__bottom__inner">
+            <p className="main-footer__copyright text-white">
+              &copy; Copyright <span className="dynamic-year"></span> by
+              Homestead Experts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -603,9 +603,9 @@ a {
 }
 
 .bgimg-services {
-  background-image: url("/assets/photos/services/services_hero.jpg") !important;
+  background-image: url("/assets/distributor-img/services-page-banner.jpg") !important;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 

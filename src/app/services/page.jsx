@@ -11,41 +11,37 @@ const coveragesItem = [
     title: "Modern Trade",
     img: "/assets/images/shapes/expert-witness-requirement.png",
     sectionId: "#",
-    description:
-      "Supermarkets. Hypermarkets, Department Stores",
+    description: "Supermarkets. Hypermarkets, Department Stores",
   },
   {
     title: "General Trade",
     img: "/assets/images/shapes/legal-nurse.png",
     sectionId: "#",
-    description:
-      "Kirana Stores, Neighborhood Retailers",
+    description: "Kirana Stores, Neighborhood Retailers",
   },
   {
     title: "Convenience",
     sectionId: "#",
     img: "/assets/images/shapes/background-check.png",
-    description:
-      "24/7 Stores, Mini-marts, Gas Stations",
+    description: "24/7 Stores, Mini-marts, Gas Stations",
   },
   {
     title: "HoReCa",
     img: "/assets/images/shapes/expert-witness-requirement.png",
     sectionId: "#",
-    description: "Hotels, Restaurants, Cafes, Caterers"
+    description: "Hotels, Restaurants, Cafes, Caterers",
   },
   {
     title: "E-commerce",
     img: "/assets/images/shapes/legal-nurse.png",
     sectionId: "#",
-    description:
-      "Online Marketplaces, D2C Platforms",
+    description: "Online Marketplaces, D2C Platforms",
   },
   {
     title: "Institutional",
     sectionId: "#",
     img: "/assets/images/shapes/background-check.png",
-    description: "Corporate, Schools, Hospitals"
+    description: "Corporate, Schools, Hospitals",
   },
 ];
 
@@ -201,7 +197,11 @@ const ServicePage = () => {
                   </ul>
 
                   <div className="about-four__btns">
-                    <a href="#" className="procounsel-btn" style={{ fontSize: "14px", whiteSpace: "normal" }}>
+                    <a
+                      href="#"
+                      className="procounsel-btn"
+                      style={{ fontSize: "14px", whiteSpace: "normal" }}
+                    >
                       <i>Learn More About E-COMMERCE</i>
                       <span>Learn More About E-COMMERCE</span>
                     </a>
@@ -232,7 +232,8 @@ const ServicePage = () => {
                 data-wow-delay={`${index * 100}ms`}
               >
                 <div className="service-details__item text-white h-100 card-box">
-                  <div className="service-details__item__content h-100"
+                  <div
+                    className="service-details__item__content h-100"
                     style={{ display: "flex", flexDirection: "column" }}
                   >
                     <div>
@@ -245,15 +246,14 @@ const ServicePage = () => {
                       />
                     </div>
 
-                    <h3 className="card-title">
-                      {item.title}
-                    </h3>
+                    <h3 className="card-title">{item.title}</h3>
 
-                    <p className="card-description mb-0">
-                      {item.description}
-                    </p>
+                    <p className="card-description mb-0">{item.description}</p>
 
-                    <Link href="#" className="procounsel-btn procounsel-btn--sm mt-3">
+                    <Link
+                      href="#"
+                      className="procounsel-btn procounsel-btn--sm mt-3"
+                    >
                       <i>Learn More</i>
                       <span>Learn More</span>
                     </Link>
@@ -267,11 +267,20 @@ const ServicePage = () => {
 
       {/* How We Work */}
       <section className="why-choose-three">
-        <div className="why-choose-three__bg" style={{ backgroundImage: "url('assets/images/shapes/why-choose-three-bg.png')" }}></div>
+        <div
+          className="why-choose-three__bg"
+          style={{
+            backgroundImage:
+              "url('assets/images/shapes/why-choose-three-bg.png')",
+          }}
+        ></div>
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
-              <div className="why-choose-three__content wow fadeInUp" data-wow-delay="300ms">
+              <div
+                className="why-choose-three__content wow fadeInUp"
+                data-wow-delay="300ms"
+              >
                 <div className="sec-title text-left">
                   <h3 className="sec-title__title bw-split-in-up">
                     How We <span> Work</span>
@@ -292,7 +301,8 @@ const ServicePage = () => {
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        We understand your brand, goals, and market aspirations through detailed discussions.
+                        We understand your brand, goals, and market aspirations
+                        through detailed discussions.
                       </p>
                     </div>
                   </div>
@@ -309,7 +319,8 @@ const ServicePage = () => {
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        Our team crafts a customized distribution strategy aligned with your objectives.
+                        Our team crafts a customized distribution strategy
+                        aligned with your objectives.
                       </p>
                     </div>
                   </div>
@@ -326,7 +337,8 @@ const ServicePage = () => {
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        We deploy our resources and network to bring your products to market efficiently
+                        We deploy our resources and network to bring your
+                        products to market efficiently
                       </p>
                     </div>
                   </div>
@@ -335,15 +347,14 @@ const ServicePage = () => {
                 <div className="why-choose-three__box">
                   <div className="why-choose-three__box__left">
                     <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Growth
-                      </p>
+                      <p className="why-choose-three__box__left-text">Growth</p>
                     </div>
                   </div>
                   <div className="why-choose-three__box__right">
                     <div className="why-choose-three__box__right-item">
                       <p className="why-choose-three__box__right-text">
-                        Continuous optimization and scaling to maximize your brand's market potential.
+                        Continuous optimization and scaling to maximize your
+                        brand's market potential.
                       </p>
                     </div>
                   </div>
@@ -351,7 +362,13 @@ const ServicePage = () => {
               </div>
             </div>
             <div className="col-xl-6">
-              <div className="why-choose-three__right wow slideInRight" style={{ backgroundImage: "url('/assets/photos/about/how_we_work.jpg')" }}></div>
+              <div
+                className="why-choose-three__right wow slideInRight"
+                style={{
+                  backgroundImage:
+                    "url('/assets/distributor-img/how-we-work.jpg')",
+                }}
+              ></div>
             </div>
           </div>
         </div>
@@ -385,7 +402,9 @@ const ServicePage = () => {
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quaerat mollitia totam repellat, voluptas nemo!
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aliquam quaerat mollitia totam repellat,
+                          voluptas nemo!
                         </p>
                       </div>
                     </div>
@@ -394,14 +413,17 @@ const ServicePage = () => {
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
                       <h4 className="text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.?
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                       </h4>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae doloribus, dolorum fugiat magnam ratione unde facere. Ut sint rem alias!
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Recusandae doloribus, dolorum fugiat magnam
+                          ratione unde facere. Ut sint rem alias!
                         </p>
                       </div>
                     </div>
@@ -425,7 +447,9 @@ const ServicePage = () => {
                   <div className="accrodion-content">
                     <div className="inner">
                       <p className="text-white">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem veritatis quis repudiandae exercitationem cupiditate quaerat voluptas officia sunt magnam ipsa.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Autem veritatis quis repudiandae exercitationem
+                        cupiditate quaerat voluptas officia sunt magnam ipsa.
                       </p>
                     </div>
                   </div>
@@ -453,7 +477,7 @@ const ServicePage = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
+      {/* <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
         <div className="circle-newsletter" />
         <div className="container position-relative">
           <div className="row justify-content-center">
@@ -461,9 +485,12 @@ const ServicePage = () => {
               <h2 className="fw-bold text-white mb-3 section-subheading">
                 Join Our Growing Network
               </h2>
-              <p className="text-white mb-4" style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9, }}>
-                Whether you're a brand looking for distribution or a professional
-                seeking opportunities, we'd love to hear from you.
+              <p
+                className="text-white mb-4"
+                style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9 }}
+              >
+                Whether you're a brand looking for distribution or a
+                professional seeking opportunities, we'd love to hear from you.
               </p>
 
               <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
@@ -482,7 +509,7 @@ const ServicePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <ScriptsLoader />
     </>

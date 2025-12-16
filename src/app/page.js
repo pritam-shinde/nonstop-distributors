@@ -115,7 +115,9 @@ export default function Home() {
         carousel.each(function () {
           const elm = $(this);
           const options = elm.data("owl-options");
-          elm.owlCarousel(typeof options === "object" ? options : JSON.parse(options));
+          elm.owlCarousel(
+            typeof options === "object" ? options : JSON.parse(options)
+          );
         });
       }
     })();
@@ -135,7 +137,11 @@ export default function Home() {
             className="why-choose-four__bg jarallax"
             data-jarallax
             data-speed="0.3"
-            style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)" }}></div>
+            style={{
+              backgroundImage:
+                "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
+            }}
+          ></div>
           <div className="container">
             <div className="margin-about">
               <div className="row">
@@ -148,7 +154,8 @@ export default function Home() {
                       </h3>
 
                       <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
-                        We bring unparalleled expertise and a commitment to excellence that drives brand success.
+                        We bring unparalleled expertise and a commitment to
+                        excellence that drives brand success.
                       </h4>
                     </div>
 
@@ -165,12 +172,14 @@ export default function Home() {
                             />
                           </div>
                           <h3 className="why-choose-four__item__title">
-                            Multi-Category  <br /> Expertise
+                            Multi-Category <br /> Expertise
                             {/* Independent and <br /> Attorney-Focused. */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Specialized handling across food & beverages, body care, luxury chocolates, laundry, and stationery categories.
+                          Specialized handling across food & beverages, body
+                          care, luxury chocolates, laundry, and stationery
+                          categories.
                         </p>
                       </div>
                       <div className="why-choose-four__item">
@@ -191,7 +200,8 @@ export default function Home() {
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Deep penetration in modern trade, general trade, e-commerce, institutional sales, and HoReCa segments.
+                          Deep penetration in modern trade, general trade,
+                          e-commerce, institutional sales, and HoReCa segments.
                         </p>
                       </div>
                     </div>
@@ -209,12 +219,13 @@ export default function Home() {
                             />
                           </div>
                           <h3 className="why-choose-four__item__title">
-                            Brand <br />  Partnership
+                            Brand <br /> Partnership
                             {/* National Network. <br /> Local Attention. */}
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          We don't just distribute, We become strategic partners invested in your brand's long-term success.
+                          We don't just distribute, We become strategic partners
+                          invested in your brand's long-term success.
                         </p>
                       </div>
                       <div className="why-choose-four__item">
@@ -234,7 +245,8 @@ export default function Home() {
                           </h3>
                         </div>
                         <p className="why-choose-four__item__text text-white">
-                          Efficient supply chain management ensuring timely deliveries, optimal inventory, and minimal wastage.
+                          Efficient supply chain management ensuring timely
+                          deliveries, optimal inventory, and minimal wastage.
                         </p>
                       </div>
                     </div>
@@ -242,11 +254,15 @@ export default function Home() {
                 </div>
                 <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
                   <div className="why-choose-four__right">
-                    <div className="why-choose-four__img mx-auto">
+                    <div className="why-choose-four__img mx-auto"  style={{width:"100%"}}>
                       <img
-                        src="/assets/photos/about/why-attorneys-trust-homestead.jpg" 
+                        src="\assets\distributor-img\why-choose-nonstop-distributor.jpg"
                         // src="/assets/images/backgrounds/image_10.jpg"
                         alt="why-choose-us"
+                        style={{
+                          objectPosition: "left center",
+                          objectFit: "cover",
+                        }}
                       />
                     </div>
                   </div>
@@ -316,7 +332,10 @@ export default function Home() {
                     maxWidth: "750px",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est totam fugit laborum odio. Excepturi similique corporis soluta recusandae fuga eveniet vero hic voluptas nostrum. Totam eos ipsam dolore quia in voluptates earum sint iste.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                  totam fugit laborum odio. Excepturi similique corporis soluta
+                  recusandae fuga eveniet vero hic voluptas nostrum. Totam eos
+                  ipsam dolore quia in voluptates earum sint iste.
                 </p>
                 <a href="#contact-service" className="tailored-btn">
                   <i>REQUEST AN EXPERT</i>

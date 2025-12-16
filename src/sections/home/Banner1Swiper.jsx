@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const sliderData = [
   {
-    bg: "/assets/photos/home/hero_1.jpg",
+    bg: "/assets/distributor-img/home-page-banner.jpg",
     title: (
       <>
         Powering Brands <br /> Across the City.
@@ -20,13 +20,15 @@ export const sliderData = [
     text: (
       <>
         <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-          Connecting premium consumer brands to every major sales channel with decades of experience, operational excellence, and an extensive distribution network.
+          Connecting premium consumer brands to every major sales channel with
+          decades of experience, operational excellence, and an extensive
+          distribution network.
         </p>
       </>
     ),
   },
   // {
-  //   bg: "/assets/photos/home/hero_2.jpg", 
+  //   bg: "/assets/photos/home/hero_2.jpg",
   //   title: (
   //     <>
   //       Speed When It <br /> Matters Most.
@@ -43,7 +45,7 @@ export const sliderData = [
   //   ),
   // },
   // {
-  //   bg: "/assets/photos/home/hero_3.jpg", 
+  //   bg: "/assets/photos/home/hero_3.jpg",
   //   title: (
   //     <>
   //       Experts in Every Specialty. <br /> Nationwide Reach.
@@ -76,19 +78,31 @@ const Banner1Swiper = () => {
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="hero-slide" style={{ backgroundImage: `url(${slide.bg})` }}>
+            <div
+              className="hero-slide"
+              style={{
+                backgroundImage: `url(${slide.bg})`,
+                backgroundPosition: "left center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            >
               {/* <div className="overlay"></div> */}
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container home-content">
-                <p className="border rounded-5 d-inline px-4 py-2"
-                  style={{ fontSize: "18px", fontWeight: "600", letterSpacing: "0.5px", }}>
+                <p
+                  className="border rounded-5 d-inline px-4 py-2"
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "600",
+                    letterSpacing: "0.5px",
+                  }}
+                >
                   Leading FMCG Distributor
                 </p>
 
                 <h1 className="mt-3">{slide.title}</h1>
-                <div>
-                  {slide.text}
-                </div>
+                <div>{slide.text}</div>
 
                 <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
                   <div>
@@ -143,7 +157,13 @@ const Banner1Swiper = () => {
                   <div className="feature-one__item ">
                     <div className="feature-one__item__icon text-white">
                       {/* <i className="icon-calendar"></i> */}
-                      <Image width={54} height={54} src="/assets/distributor-img/year-of-exp.png" className="object-cover" alt="Year of Experience"/>
+                      <Image
+                        width={54}
+                        height={54}
+                        src="/assets/distributor-img/year-of-exp.png"
+                        className="object-cover"
+                        alt="Year of Experience"
+                      />
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
@@ -160,7 +180,13 @@ const Banner1Swiper = () => {
                   <div className="feature-one__item feature-one__item--border-left justify-content-center">
                     <div className="feature-one__item__icon text-white">
                       {/* <i className="icon-payment"></i> */}
-                        <Image width={54} height={54} src="/assets/distributor-img/partner-brands.png" className="object-cover" alt="Partner Brands"/>
+                      <Image
+                        width={54}
+                        height={54}
+                        src="/assets/distributor-img/partner-brands.png"
+                        className="object-cover"
+                        alt="Partner Brands"
+                      />
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
@@ -177,7 +203,13 @@ const Banner1Swiper = () => {
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
                       {/* <i className="icon-advice"></i> */}
-                        <Image width={54} height={54} src="/assets/distributor-img/retail-point.png" className="object-cover" alt="Retail Point"/>
+                      <Image
+                        width={54}
+                        height={54}
+                        src="/assets/distributor-img/retail-point.png"
+                        className="object-cover"
+                        alt="Retail Point"
+                      />
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="/onboard/" className="text-white">
