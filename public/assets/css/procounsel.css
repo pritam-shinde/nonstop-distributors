@@ -7474,8 +7474,16 @@ body.megamenu-popup-active .mobile-nav__content {
   transition: all 500ms ease;
 }
 
+.inner-image {
+  background-color: white !important;
+}
+
 @media (max-width: 767px) {
   .why-choose-four__item__icon {
+    flex-shrink: 0;
+  }
+
+  .why-choose-four__item__icon .inner-image {
     flex-shrink: 0;
   }
 }
@@ -7483,6 +7491,10 @@ body.megamenu-popup-active .mobile-nav__content {
 .why-choose-four__item:hover .why-choose-four__item__icon {
   background-color: var(--procounsel-base, #c7954a);
 }
+.why-choose-four__item:hover .why-choose-four__item__icon .inner-image {
+  background-color: var(--procounsel-base, #c7954a) !important;
+}
+
 
 .why-choose-four__item__title {
   font-weight: 400;

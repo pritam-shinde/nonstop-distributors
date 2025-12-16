@@ -61,36 +61,25 @@ const Contact = () => {
                         <div className="main-slider-one__overlay-one-about-page"></div>
                         <div className="content container home-content">
                             <p style={{ marginTop: "80px" }} className="mb-2">
-                                CONTACT <span style={{ color: "#fb3640" }} className="fw-bold">
-                                    HOMESTEAD EXPERTS
+                                GET <span className="fw-bold read-more-btn"> IN TOUCH
                                 </span>
                             </p>
                             <h1 className="">
-                                The Right Expert Witness <br /> Exactly When You Need Them.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </h1>
                             <div>
                                 <p style={{ marginBottom: "0px" }}>
-                                    When your case depends on expert testimony, time and credibility
-                                    matter most. Homestead
-                                    <br className="d-none d-lg-inline" /> connects attorneys with
-                                    qualified, trial-ready experts across every specialty, quickly
-                                    and <br className="d-none d-lg-inline" /> without upfront cost.
-                                </p>
-                                <p style={{ marginTop: "10px", marginBottom: "20px" }}>
-                                    Our experts strengthen your arguments, enhance your credibility,
-                                    and help you achieve <br className="d-none d-lg-inline" />{" "}
-                                    better results in court.
+                                    Have questions about our distribution services? Ready to partner with us? <br className="d-none d-lg-inline" /> We'd love to hear from you.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <Banner8Contact />
-                {/* <ContactSection/> */}
-
+                <Banner8Contact /> 
                 <div className="google-map google-map__contact">
-                    <iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5592796999927!2d-74.65019869999999!3d40.3521217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e6e792c00001%3A0xcb47c72e557e582f!2s259%20Nassau%20St%20Suite%202%20%23552%2C%20Princeton%2C%20NJ%2008540%2C%20USA!5e0!3m2!1sen!2sin!4v1758706287458!5m2!1sen!2sin" className="map__contact" allowFullScreen></iframe>
+                    <iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29783.966928937327!2d79.0275979042053!3d21.072827323858306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf7f336e0a13%3A0x44f6d37cf2cffa29!2sNONSTOP!5e0!3m2!1sen!2sin!4v1765860790089!5m2!1sen!2sin"
+                    className="map__contact" allowFullScreen></iframe>
                 </div>
             </div>
 

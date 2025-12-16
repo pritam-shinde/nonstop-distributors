@@ -157,9 +157,10 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             <Image
-                              width={22}
-                              height={22}
-                              src="/assets/images/shapes/icon-01.png"
+                              width={28}
+                              height={28}
+                              src="/assets/distributor-img/brand-partnership-new.png"
+                              //  src="/assets/images/shapes/icon-01.png"
                               alt="response"
                             />
                           </div>
@@ -175,7 +176,14 @@ export default function Home() {
                       <div className="why-choose-four__item">
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
-                            <i className="icon-collaboration"></i>
+                            {/* <i className="icon-collaboration"></i> */}
+                            <Image
+                              width={28}
+                              height={28}
+                              src="/assets/distributor-img/multi-category-expertise-new.png"
+                              //  src="/assets/images/shapes/icon-01.png"
+                              alt="response"
+                            />
                           </div>
                           <h3 className="why-choose-four__item__title">
                             Transparency <br /> You Can Trust.
@@ -193,9 +201,10 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             <Image
-                              width={22}
-                              height={22}
-                              src="/assets/images/shapes/icon-03.png"
+                              width={28}
+                              height={28}
+                              src="/assets/distributor-img/operational-excellence-new.png"
+                              //  src="/assets/images/shapes/icon-03.png"
                               alt="response"
                             />
                           </div>
@@ -212,9 +221,10 @@ export default function Home() {
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
                             <Image
-                              width={22}
-                              height={22}
-                              src="/assets/images/shapes/icon-04.png"
+                              width={28}
+                              height={28}
+                              src="/assets/distributor-img/retail-channel-new.png"
+                              //  src="/assets/images/shapes/icon-04.png"
                               alt="response"
                             />
                           </div>
@@ -234,7 +244,7 @@ export default function Home() {
                   <div className="why-choose-four__right">
                     <div className="why-choose-four__img mx-auto">
                       <img
-                        src="/assets/photos/about/why-attorneys-trust-homestead.jpg"
+                        src="/assets/photos/about/why-attorneys-trust-homestead.jpg" 
                         // src="/assets/images/backgrounds/image_10.jpg"
                         alt="why-choose-us"
                       />

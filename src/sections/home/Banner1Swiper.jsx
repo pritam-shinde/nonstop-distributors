@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from "next/link";
+import Image from "next/image";
 
 export const sliderData = [
   {
@@ -141,7 +142,8 @@ const Banner1Swiper = () => {
                 >
                   <div className="feature-one__item ">
                     <div className="feature-one__item__icon text-white">
-                      <i className="icon-calendar"></i>
+                      {/* <i className="icon-calendar"></i> */}
+                      <Image width={54} height={54} src="/assets/distributor-img/year-of-exp.png" className="object-cover" alt="Year of Experience"/>
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
@@ -157,7 +159,8 @@ const Banner1Swiper = () => {
                 >
                   <div className="feature-one__item feature-one__item--border-left justify-content-center">
                     <div className="feature-one__item__icon text-white">
-                      <i className="icon-payment"></i>
+                      {/* <i className="icon-payment"></i> */}
+                        <Image width={54} height={54} src="/assets/distributor-img/partner-brands.png" className="object-cover" alt="Partner Brands"/>
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="#contact-service" className="text-white">
@@ -173,7 +176,8 @@ const Banner1Swiper = () => {
                 >
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
-                      <i className="icon-advice"></i>
+                      {/* <i className="icon-advice"></i> */}
+                        <Image width={54} height={54} src="/assets/distributor-img/retail-point.png" className="object-cover" alt="Retail Point"/>
                     </div>
                     <h3 className="feature-one__item__title">
                       <Link href="/onboard/" className="text-white">

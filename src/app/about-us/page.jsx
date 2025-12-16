@@ -42,7 +42,7 @@ const About = () => {
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
-              ABOUT <span style={{ color: "#fb3640" }} className="fw-bold"> NONSTOP Distributors
+              ABOUT <span className="fw-bold read-more-btn"> NONSTOP Distributors
               </span>
             </p>
             <h1 className="">
@@ -183,9 +183,9 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
+                  <Image width={31} height={31} src="/assets/distributor-img/excellence.png" alt="response" />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_1.png" alt="response" />
+                    <Image width={31} height={31} src="/assets/distributor-img/excellence.png" alt="response" />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -205,9 +205,9 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
+                  <Image width={31} height={31} src="/assets/distributor-img/market-penetration.png" alt="response" />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_2.png" alt="response" />
+                    <Image width={31} height={31} src="/assets/distributor-img/market-penetration.png" alt="response" />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -227,9 +227,9 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
+                  <Image width={31} height={31} src="/assets/distributor-img/partnership.png" alt="response" />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_3.png" alt="response" />
+                    <Image width={31} height={31} src="/assets/distributor-img/partnership.png" alt="response" />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -249,9 +249,9 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
+                  <Image width={31} height={31} src="/assets/distributor-img/growth-focus.png" alt="response" />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/images/shapes/stand_for_4.png" alt="response" />
+                    <Image width={31} height={31} src="/assets/distributor-img/growth-focus.png" alt="response" />
                   </span>
                 </div>
                 <div className="service-details__item__content">

@@ -2,7 +2,6 @@ const Banner8Contact = () => {
   return (
     <>
       <section className="contact-one" id="contact-service">
-        {/* <div className="tailored-redline" style={{ position: "unset" }}></div> */}
         <div
           style={{
             transform: "rotateY(180deg)",
@@ -17,35 +16,23 @@ const Banner8Contact = () => {
             style={{ position: "unset", height: "14px" }}
           ></div>
         </div>
-        {/* <div className="contact-one__bg" style={{ background: "#0E222A" }}></div> */}
-        {/* <div className="contact-one__overlay"></div> */}
         <div className="container">
           <div className="contact-one__wrapper">
             <div className="row">
               <div className="col-xl-6">
                 <div className="sec-title text-left">
                   <h3 className="sec-title__title bw-split-in-up">
-                    <span className="text-white">Get Matched With</span> <br />
-                    <span> Your Expert</span>{" "}
+                    <span className="text-white">Contact </span> <span> Information</span>
                   </h3>
 
-                  <p
-                    className="contact-one__info__text text-white font-Merriweather"
+                  <p className="contact-one__info__text text-white font-Merriweather"
                     style={{ fontSize: "clamp(18px,3vw,20px)" }}
                   >
-                    {" "}
                     Just a few details will get us started.
                   </p>
                 </div>
 
                 <div className="contact-one__content">
-                  {/* <div
-                    className="contact-one__content__bg bw-img-anim-left"
-                    style={{
-                      backgroundImage:
-                        "url(assets/images/resources/contact-1-1.jpg)",
-                    }}
-                  ></div> */}
                   <ul className="list-unstyled contact-one__info">
                     <li className="contact-one__info__item">
                       <div className="contact-one__info__icon">
@@ -58,15 +45,15 @@ const Banner8Contact = () => {
                         <div className="contact-one__info__text">
                           <p className="main-footer__info__text">
                             <a
-                              href="tel:8772443703"
-                              aria-label="Call us at (877) 244-3703"
+                              href="tel:89564 15939"
+                              aria-label="Call us at 89564 15939"
                               className="text-white"
                               style={{ fontSize: "14px" }}
                             >
-                              (877) 244-3703
+                              89564 15939
                             </a>
                           </p>
-                          <p className="main-footer__info__text">
+                          {/* <p className="main-footer__info__text">
                             <a
                               href="tel:7327438003"
                               aria-label="Call us at +21 9555-0114"
@@ -75,7 +62,7 @@ const Banner8Contact = () => {
                             >
                               (732) 743-8003
                             </a>
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -86,16 +73,28 @@ const Banner8Contact = () => {
                           <i className="icon-map-pin"></i>
                         </span>
                       </div>
-
                       <div className="contact-one__info__content">
+                        <a
+                          href="mailto:info@nonstopdistributors.com"
+                          className="text-white"
+                        >
+                          <p
+                            className="contact-one__info__text text-white"
+                            style={{ fontSize: "14px" }}
+                          >
+                            info@nonstopdistributors.com
+                          </p>
+                        </a>
+                      </div>
+                      {/* <div className="contact-one__info__content">
                         <p
                           className="contact-one__info__text text-white"
                           style={{ fontSize: "14px" }}
                         >
-                          259 Nassau St. Suite 2 #552
-                          <br /> Princeton, NJ 08542
+                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society, Wardha Rd, 
+                          <br /> opposite Bhawan's School, Nagpur, Maharashtra 440037
                         </p>
-                      </div>
+                      </div> */}
                     </li>
                     <li className="contact-one__info__item">
                       <div className="contact-one__info__icon">
@@ -104,18 +103,27 @@ const Banner8Contact = () => {
                           <i className="icon-glove"></i>
                         </span>
                       </div>
-                      <div className="contact-one__info__content">
+                      {/* <div className="contact-one__info__content">
                         <a
-                          href="mailto:info@homesteadexperts.com"
+                          href="mailto:info@nonstopdistributors.com"
                           className="text-white"
                         >
                           <p
                             className="contact-one__info__text text-white"
                             style={{ fontSize: "14px" }}
                           >
-                            info@homesteadexperts.com
+                            info@nonstopdistributors.com
                           </p>
                         </a>
+                      </div> */}
+                      <div className="contact-one__info__content">
+                        <p
+                          className="contact-one__info__text text-white"
+                          style={{ fontSize: "14px" }}
+                        >
+                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society,  <br />  Wardha Rd,
+                          opposite Bhawan's School, <br />  Nagpur, Maharashtra 440037
+                        </p>
                       </div>
                     </li>
                   </ul>
@@ -131,19 +139,19 @@ const Banner8Contact = () => {
                   <div className="form-one__group">
                     <div className="form-one__control form-one__control--full">
                       <input
-                        id="firstname"
+                        id="fullname"
                         type="text"
-                        name="firstname"
-                        placeholder="First Name"
+                        name="fullname"
+                        placeholder="Full Name"
                       />
                     </div>
 
                     <div className="form-one__control form-one__control--full">
                       <input
-                        id="lastname"
+                        id="companyname"
                         type="text"
-                        name="lastname"
-                        placeholder="Last Name"
+                        name="companyname"
+                        placeholder="Company Name"
                       />
                     </div>
 
@@ -158,17 +166,46 @@ const Banner8Contact = () => {
 
                     <div className="form-one__control form-one__control--full">
                       <input
-                        id="casename"
+                        id="phone-number"
                         type="text"
-                        name="casename"
-                        placeholder="Case Name"
+                        name="phonenumber"
+                        placeholder="phone number"
                       />
                     </div>
 
+                    <div className="form-one__control form-one__control--full mt-2" style={{ position: "relative" }}>
+                      <select id="enquiry-type" name="enquiryType" defaultValue="" required>
+                        <option value="" disabled>
+                          Type of Enquiry
+                        </option>
+                        <option value="distribution">Distribution Partnership</option>
+                        <option value="bulk-order">Bulk Order</option>
+                        <option value="retail">Retail Supply</option>
+                        <option value="logistics">Logistics Support</option>
+                        <option value="support">Customer Support</option>
+                        <option value="other">Other</option>
+                      </select>
+
+                      <span className="dropdown-arrow">▼</span>
+                    </div>
+
+
+                    <div className="form-one__control form-one__control--full">
+                      <textarea
+                        id="subject"
+                        name="subject"
+                        className="form-one__textarea border rounded-3 px-3"
+                        placeholder="Enter your subject or message"
+                        rows={4}
+                        required
+                      ></textarea>
+                    </div>
+
+
                     <div className="form-one__control form-one__control--full">
                       <a href="#" className="procounsel-btn text-uppercase">
-                        <i>Case Details</i>
-                        <span>Case Details</span>
+                        <i>Send Message</i>
+                        <span>Send Message</span>
                       </a>
                     </div>
                   </div>
@@ -177,16 +214,9 @@ const Banner8Contact = () => {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            transform: "rotateY(180deg)",
-            width: "100%",
-            position: "relative",
-          }}
-        >
+        <div style={{ transform: "rotateY(180deg)", width: "100%", position: "relative" }}>
           <div className="tailored-redline"></div>
         </div>
-        {/* <div className="tailored-redline" style={{ position: "unset", }}></div> */}
       </section>
     </>
   );

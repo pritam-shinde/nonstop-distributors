@@ -1,6 +1,6 @@
 const Banner5CaseStudy = () => {
   return (
-    <> 
+    <>
       <section className="portfolio-one" id="caseStudy">
         <div className="container">
           <div className="sec-title ">
@@ -15,10 +15,11 @@ const Banner5CaseStudy = () => {
 
         <div className="container">
           <div className="portfolio-one__wrapper">
-            
+
             <div className="portfolio-one__item">
               <img
-                src="/assets/photos/home/areas_1_medical_malpractice.jpg"
+                src="/assets/distributor-img/luxury-chocalate.jpg"
+                // src="/assets/photos/home/areas_1_medical_malpractice.jpg"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
@@ -38,7 +39,8 @@ const Banner5CaseStudy = () => {
 
             <div className="portfolio-one__item">
               <img
-                src="/assets/photos/home/areas_2_product_liability.jpg"
+                src="/assets/distributor-img/food-and-beverages.jpg"
+                // src="/assets/photos/home/areas_2_product_liability.jpg"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
@@ -58,7 +60,8 @@ const Banner5CaseStudy = () => {
 
             <div className="portfolio-one__item">
               <img
-                src="/assets/photos/home/areas_3_personal_injury.jpg"
+                src="/assets/distributor-img/body-care.jpg"
+                // src="/assets/photos/home/areas_3_personal_injury.jpg"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
@@ -78,7 +81,8 @@ const Banner5CaseStudy = () => {
 
             <div className="portfolio-one__item active">
               <img
-                src="/assets/photos/home/areas_4_forensic.jpg"
+                src="/assets/distributor-img/office-stationery.jpg"
+                // src="/assets/photos/home/areas_4_forensic.jpg"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
@@ -90,7 +94,7 @@ const Banner5CaseStudy = () => {
                 <h3 className="portfolio-one__item__title">
                   <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>Stationery</a>
                 </h3>
-                <div className="portfolio-one__item__cat mt-2"> 
+                <div className="portfolio-one__item__cat mt-2">
                   Office & School Supplies
                 </div>
               </div>
@@ -107,7 +111,7 @@ export default Banner5CaseStudy;
 
 // const Banner5CaseStudy = () => {
 //   return (
-//     <> 
+//     <>
 //       <section className="portfolio-one" id="caseStudy">
 //         <div className="container">
 //           <div className="sec-title ">
@@ -192,7 +196,7 @@ export default Banner5CaseStudy;
 //                 <h3 className="portfolio-one__item__title">
 //                   <a href="/forensic/">Stationery</a>
 //                 </h3>
-//                 <div className="portfolio-one__item__cat mt-2"> 
+//                 <div className="portfolio-one__item__cat mt-2">
 //                   Office & School Supplies.
 //                 </div>
 //               </div>
@@ -208,7 +212,7 @@ export default Banner5CaseStudy;
 
 // const Banner5CaseStudy = () => {
 //   return (
-//     <> 
+//     <>
 //       <section className="portfolio-one" id="caseStudy">
 //         <div className="container">
 //           <div className="sec-title ">

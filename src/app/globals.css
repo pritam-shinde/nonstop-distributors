@@ -74,7 +74,7 @@ a {
   text-align: center;
 }
 
-.service-procounsel-btn > i {
+.service-procounsel-btn>i {
   padding: 13px 40px;
   font-style: normal;
   display: flex;
@@ -86,12 +86,12 @@ a {
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
 
-.service-procounsel-btn:hover > i {
+.service-procounsel-btn:hover>i {
   transform-origin: bottom center;
   transform: translateY(-100%) translateZ(150px) scaleY(0) rotateX(90deg);
 }
 
-.service-procounsel-btn > span {
+.service-procounsel-btn>span {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -108,7 +108,7 @@ a {
   transform-origin: bottom center;
 }
 
-.service-procounsel-btn:hover > span {
+.service-procounsel-btn:hover>span {
   transition: transform 500ms ease, top 500ms ease;
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
@@ -409,7 +409,7 @@ a {
   text-transform: uppercase;
 }
 
-.tailored-btn > i {
+.tailored-btn>i {
   padding: 13px 40px;
   font-style: normal;
   display: flex;
@@ -421,12 +421,12 @@ a {
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
 
-.tailored-btn:hover > i {
+.tailored-btn:hover>i {
   transform-origin: bottom center;
   transform: translateY(-100%) translateZ(150px) scaleY(0) rotateX(90deg);
 }
 
-.tailored-btn > span {
+.tailored-btn>span {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -443,7 +443,7 @@ a {
   transform-origin: bottom center;
 }
 
-.tailored-btn:hover > span {
+.tailored-btn:hover>span {
   transition: transform 500ms ease, top 500ms ease;
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
@@ -565,18 +565,92 @@ a {
   border-radius: 50%;
 }
 
- .custom-btn {
-    border: 2px solid #fff !important;
-    color: #fff;
-    background: transparent;
-    padding: 12px 28px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-  }
+.custom-btn {
+  border: 2px solid #fff !important;
+  color: #fff;
+  background: transparent;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
 
-  .custom-btn:hover {
-    background: #fff;
-    color: #000;
-    transition: all 0.3s ease;
-  }
+.custom-btn:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+#enquiry-type {
+  width: 100%;
+  padding: 14px 40px 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  background-color: #ffffff;
+  appearance: none;
+  cursor: pointe;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.bgimg-services {
+  background-image: url("/assets/photos/services/services_hero.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-grid-bg {
+  background-image: url("/assets/images/backgrounds/section-2-bg.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #0E222A;
+}
+
+.card-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px !important;
+  color: #0e222a !important;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #0e222a;
+  flex: 1;
+}
+
+.procounsel-btn.procounsel-btn--sm {
+  font-size: 14px;
+  white-space: normal;
+}
+
+.section-subheading {
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+.section-dark {
+  background: #0e222a !important;
+}
