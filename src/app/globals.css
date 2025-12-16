@@ -549,7 +549,8 @@ a {
 
 .newsletter-section {
   min-height: 400px;
-  background: linear-gradient(135deg, #f03b4d, #ff6b6b);
+  background: #0e222a;
+  /* background: linear-gradient(135deg, #0e222a,#123341 ); */
   position: relative;
   overflow: hidden;
   padding: 60px 20px;
@@ -653,4 +654,41 @@ a {
 
 .section-dark {
   background: #0e222a !important;
+}
+
+.featured-dimension {
+  width: 100%;
+  z-index: 10;
+  background-color: #0E222A;
+  padding: 40px 40px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+}
+
+.custom-container {
+  max-width: 780px !important;
+  width: 100%;
+}
+
+.footer-widget__contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  margin-bottom: 12px;
+}
+
+.footer-widget__contact li i {
+  color: #ffffff;        /* icon color */
+  font-size: 18px;
+  min-width: 18px;       /* keeps alignment consistent */
+}
+
+.footer-widget__contact li a,
+.footer-widget__contact li span {
+  color: #ffffff;
+  line-height: 1.5;
 }

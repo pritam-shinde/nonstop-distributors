@@ -72,7 +72,7 @@ const Banner1Swiper = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 8000, disableOnInteraction: false }}
-        speed={3000} // 1.5s smooth transition speed
+        speed={3000} // 3s smooth transition speed
         pagination={{ clickable: true }}
         className="heroSwiper"
       >
@@ -85,19 +85,10 @@ const Banner1Swiper = () => {
                 backgroundPosition: "left center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-              }}
-            >
-              {/* <div className="overlay"></div> */}
+              }}>
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container home-content">
-                <p
-                  className="border rounded-5 d-inline px-4 py-2"
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "600",
-                    letterSpacing: "0.5px",
-                  }}
-                >
+                <p className="border rounded-5 d-inline px-4 py-2">
                   Leading FMCG Distributor
                 </p>
 
@@ -106,19 +97,13 @@ const Banner1Swiper = () => {
 
                 <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
                   <div>
-                    <a
-                      href="#contact-service"
-                      className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
-                    >
+                    <a href="#contact-service" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
                       <i>GET STARTED</i>
                       <span className="">GET STARTED</span>
                     </a>
                   </div>
                   <div>
-                    <a
-                      href="/onboard/"
-                      className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
-                    >
+                    <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
                       <i>LEARN MORE</i>
                       <span className="">LEARN MORE</span>
                     </a>
@@ -132,31 +117,12 @@ const Banner1Swiper = () => {
 
       <div className="container">
         <div className="feature-one">
-          <div
-            className="feature-one home-banner-service-info"
-            style={{
-              // maxWidth: "1190px",
-              width: "100%",
-              zIndex: 10,
-              backgroundColor: " #0E222A",
-              padding: "40px 40px 0",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.9)",
-              position: "absolute",
-              margin: "0 auto",
-              left: "50%",
-              transform: "translateX(-50%)",
-              top: "100%",
-            }}
-          >
+          <div className="feature-one home-banner-service-info featured-dimension">
             <div className="feature-one__inner">
               <div className="row gutter-y-0">
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item ">
                     <div className="feature-one__item__icon text-white">
-                      {/* <i className="icon-calendar"></i> */}
                       <Image
                         width={54}
                         height={54}
@@ -165,21 +131,17 @@ const Banner1Swiper = () => {
                         alt="Year of Experience"
                       />
                     </div>
-                    <h3 className="feature-one__item__title">
+                    <h2 className="feature-one__item__title font-Montserrat">
                       <Link href="#contact-service" className="text-white">
                         20+ Years <br /> of Experience
                         {/* Find Your <br /> Expert Witness */}
                       </Link>
-                    </h3>
+                    </h2>
                   </div>
                 </div>
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item feature-one__item--border-left justify-content-center">
                     <div className="feature-one__item__icon text-white">
-                      {/* <i className="icon-payment"></i> */}
                       <Image
                         width={54}
                         height={54}
@@ -188,21 +150,17 @@ const Banner1Swiper = () => {
                         alt="Partner Brands"
                       />
                     </div>
-                    <h3 className="feature-one__item__title">
+                    <h2 className="feature-one__item__title font-Montserrat">
                       <Link href="#contact-service" className="text-white">
                         25+ Partner <br /> Brands
                         {/* Get a Free <br /> Case Assessment */}
                       </Link>
-                    </h3>
+                    </h2>
                   </div>
                 </div>
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
-                      {/* <i className="icon-advice"></i> */}
                       <Image
                         width={54}
                         height={54}
@@ -211,12 +169,12 @@ const Banner1Swiper = () => {
                         alt="Retail Point"
                       />
                     </div>
-                    <h3 className="feature-one__item__title">
+                    <h2 className="feature-one__item__title font-Montserrat">
                       <Link href="/onboard/" className="text-white">
                         5000+ Retail <br /> Points
                         {/* Join Our <br /> Expert Network */}
                       </Link>
-                    </h3>
+                    </h2>
                   </div>
                 </div>
               </div>

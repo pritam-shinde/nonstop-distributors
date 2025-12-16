@@ -21,39 +21,26 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Recursive render function for dropdowns
-  // const renderMenu = (items) => (
-  //   <ul className="sub-menu">
-  //     {items.map((item, i) => (
-  //       <li key={i} className={item.children ? "dropdown" : ""}>
-  //         <a href={item.href || "#"}>{item.label}</a>
-  //         {item.children && renderMenu(item.children)}
-  //       </li>
-  //     ))}
-  //   </ul>
-  // );
-
   const renderMenu = (items, level = 0) => (
     <ul className={level === 0 ? "main-menu__list" : "sub-menu"}>
-      {(items.isAlphabeticFormate
-        ? items.sort((a, b) => a.label.localeCompare(b.label))
-        : items
-      ).map((item, i) => {
-        const hasChildren = !!item.children;
-        const liClass = [
-          hasChildren ? "dropdown" : "",
-          `menu-level-${level}`, // 👈 class based on depth
-        ]
-          .join(" ")
-          .trim();
+      {(items.isAlphabeticFormate ? items.sort((a, b) => a.label.localeCompare(b.label)) : items).map(
+        (item, i) => {
+          const hasChildren = !!item.children;
+          const liClass = [
+            hasChildren ? "dropdown" : "",
+            `menu-level-${level}`, // 👈 class based on depth
+          ]
+            .join(" ")
+            .trim();
 
-        return (
-          <li key={i} className={liClass}>
-            <a href={item.href || "#"}>{item.label}</a>
-            {hasChildren && renderMenu(item.children, level + 1)}
-          </li>
-        );
-      })}
+          return (
+            <li key={i} className={liClass}>
+              <a href={item.href || "#"}>{item.label}</a>
+              {hasChildren && renderMenu(item.children, level + 1)}
+            </li>
+          );
+        }
+      )}
     </ul>
   );
 
@@ -73,15 +60,9 @@ const Header = () => {
         }}
       >
         <div className="container-fluid">
-          <div
-            className="main-header__inner"
-            style={{ width: "100%", margin: 0 }}
-          >
+          <div className="main-header__inner" style={{ width: "100%", margin: 0 }}>
             {/* Logo */}
-            <div
-              className="main-header__logo"
-              style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}
-            >
+            <div className="main-header__logo" style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}>
               <a href="/" style={{ width: "100%" }}>
                 <Image
                   src={
@@ -90,8 +71,8 @@ const Header = () => {
                       : "/assets/distributor-img/nonstop-distributor-light.png"
                   }
                   alt="Procounsel"
-                  width={103}
-                  height={37}
+                  width={180}
+                  height={52}
                   style={{
                     width: "100%",
                     objectFit: "contain",
@@ -114,14 +95,8 @@ const Header = () => {
             >
               <ul className="main-menu__list">
                 {menuData.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className={item.children || item.megaMenu ? "dropdown" : ""}
-                  >
-                    <a
-                      href={item.href || "#"}
-                      style={{ color: scrolled ? "#000000" : "#ffffff" }}
-                    >
+                  <li key={idx} className={item.children || item.megaMenu ? "dropdown" : ""}>
+                    <a href={item.href || "#"} style={{ color: scrolled ? "#000000" : "#ffffff" }}>
                       {item.label}
                     </a>
 
@@ -154,7 +129,9 @@ const Header = () => {
                                                 }}
                                               >
                                                 <i>{link.label}</i>
-                                                <span>{link.label}</span>
+                                                <span>
+                                                  {link.label}
+                                                </span>
                                               </a>
                                             ))}
                                           </div>
@@ -194,18 +171,11 @@ const Header = () => {
             {/* Right Section */}
             <div className="main-header__right">
               <div className="mobile-nav__btn mobile-nav__toggler">
-                <span
-                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
-                ></span>
-                <span
-                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
-                ></span>
-                <span
-                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
-                ></span>
+                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
+                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
+                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
               </div>
               <div className="main-header__btn">
-                {/* <a href='#' className="free-consultation-btn text-uppercase" style={{ whiteSpace: "nowrap" }}>Request an Expert</a> */}
                 <a
                   href="/contact-us/#contact-service"
                   className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
@@ -222,15 +192,14 @@ const Header = () => {
                   </span>
                 </div>
                 <div>
-                  {/* <span className="main-header__info__text" style={{ color: scrolled ? "#000000" : "#ffffff" }}>Call anytime</span> */}
                   <a
-                    href="tel:+8772443703"
+                    href="tel:+89564 15939"
                     style={{
                       color: scrolled ? "#000000" : "#ffffff",
                       whiteSpace: "nowrap",
                     }}
                   >
-                    (877) 244-3703
+                   89564 15939
                   </a>
                 </div>
               </div>
@@ -240,7 +209,6 @@ const Header = () => {
         {/* mobile-nav__wrapper start */}
         <div className="mobile-nav__wrapper">
           <div className="mobile-nav__overlay mobile-nav__toggler"></div>
-          {/* <!-- /.mobile-nav__overlay --> */}
           <div className="mobile-nav__content">
             <span className="mobile-nav__close mobile-nav__toggler">
               <i className="fa fa-times"></i>
@@ -249,11 +217,11 @@ const Header = () => {
             <div className="logo-box">
               <a href="/" aria-label="logo image">
                 <Image
-                  src={"/assets/images/logos/homestead-experts-logo-light.png"}
+                  src={"/assets/distributor-img/nonstop-distributor-light.png"}
                   alt="Homestead Experts"
                   width={140}
-                  height={30}
-                  style={{ width: "100%", objectFit: "contain" }}
+                  height={40}
+                // style={{ width: "100%", objectFit: "contain" }}
                 />
               </a>
             </div>
@@ -262,13 +230,11 @@ const Header = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fa fa-envelope"></i>
-                <a href="mailto:needhelp@procounsel.com">
-                  needhelp@procounsel.com
-                </a>
+                <a href="mailto:needhelp@procounsel.com">needhelp@procounsel.com</a>
               </li>
               <li>
                 <i className="fa fa-phone-alt"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
+                <a href="tel:89564 15939">89564 15939</a>
               </li>
             </ul>
 

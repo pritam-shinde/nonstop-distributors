@@ -148,15 +148,15 @@ export default function Home() {
                 <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
                   <div className="why-choose-four__content">
                     <div className="sec-title text-left">
-                      <h3 className="sec-title__title bw-split-in-up">
+                      <h2 className="sec-title__title bw-split-in-up font-Montserrat">
                         Why Choose <br />
                         <span> NONSTOP DISTRIBUTORS</span>
-                      </h3>
+                      </h2>
 
-                      <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+                      <h3 className="tailored-subtitle font-Merriweather text-white mt-2 fs-4">
                         We bring unparalleled expertise and a commitment to
                         excellence that drives brand success.
-                      </h4>
+                      </h3>
                     </div>
 
                     <div className="why-choose-four__list">
@@ -171,10 +171,10 @@ export default function Home() {
                               alt="response"
                             />
                           </div>
-                          <h3 className="why-choose-four__item__title">
+                          <h4 className="why-choose-four__item__title">
                             Multi-Category <br /> Expertise
                             {/* Independent and <br /> Attorney-Focused. */}
-                          </h3>
+                          </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
                           Specialized handling across food & beverages, body
@@ -194,10 +194,10 @@ export default function Home() {
                               alt="response"
                             />
                           </div>
-                          <h3 className="why-choose-four__item__title">
+                          <h4 className="why-choose-four__item__title">
                             Transparency <br /> You Can Trust.
                             {/* Transparency <br /> You Can Trust. */}
-                          </h3>
+                          </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
                           Deep penetration in modern trade, general trade,
@@ -218,10 +218,10 @@ export default function Home() {
                               alt="response"
                             />
                           </div>
-                          <h3 className="why-choose-four__item__title">
+                          <h4 className="why-choose-four__item__title">
                             Brand <br /> Partnership
                             {/* National Network. <br /> Local Attention. */}
-                          </h3>
+                          </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
                           We don't just distribute, We become strategic partners
@@ -239,10 +239,10 @@ export default function Home() {
                               alt="response"
                             />
                           </div>
-                          <h3 className="why-choose-four__item__title">
+                          <h4 className="why-choose-four__item__title">
                             Operational <br /> Excellence
                             {/* Responsive <br /> and Reliable */}
-                          </h3>
+                          </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
                           Efficient supply chain management ensuring timely
@@ -254,7 +254,7 @@ export default function Home() {
                 </div>
                 <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
                   <div className="why-choose-four__right">
-                    <div className="why-choose-four__img mx-auto"  style={{width:"100%"}}>
+                    <div className="why-choose-four__img mx-auto" style={{ width: "100%" }}>
                       <img
                         src="\assets\distributor-img\why-choose-nonstop-distributor.jpg"
                         // src="/assets/images/backgrounds/image_10.jpg"
@@ -275,28 +275,19 @@ export default function Home() {
         {/*Tailored Section  */}
         <section className="tailored-section" id="tailored-background">
           <div className="container">
-            <div
-              style={{
-                textAlign: "start",
-                display: "flex",
-                justifyContent: "end",
-              }}
-            >
-              <div style={{ maxWidth: "780px", width: "100%" }}>
-                <h3 className="sec-title__title text-white bw-split-in-up">
+            <div className="d-flex justify-content-end text-start">
+              <div  className="custom-container">
+                <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
                   Lorem ipsum dolor sit.
-                </h3>
-                <h4 className="tailored-subtitle font-Merriweather text-white">
+                </h2>
+                <h3 className="tailored-subtitle font-Merriweather text-white fs-4">
                   Lorem ipsum dolor sit amet.
-                </h4>
+                </h3>
               </div>
             </div>
           </div>
 
-          <div
-            className="tailored-redline1 test"
-            style={{ position: "relative", objectFit: "cover" }}
-          >
+          <div className="tailored-redline1" style={{ position: "relative", objectFit: "cover" }}>
             <Image
               src="/assets/images/backgrounds/red-line-09.png"
               alt="redline"
@@ -311,19 +302,8 @@ export default function Home() {
           </div>
 
           <div className="container">
-            <div
-              style={{
-                textAlign: "start",
-                display: "flex",
-                justifyContent: "end",
-              }}
-            >
-              <div
-                style={{
-                  maxWidth: "780px",
-                  width: "100%",
-                }}
-              >
+            <div className="d-flex justify-content-end text-start">
+              <div  className="custom-container">
                 <p
                   className="tailored-para about-one__content__text"
                   style={{
