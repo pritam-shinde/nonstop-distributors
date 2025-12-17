@@ -8,12 +8,11 @@ const WhatWeOffer = () => {
         data-jarallax
         data-speed="0.3"
         style={{
-          backgroundImage:
-            "url(/assets/distributor-img/footer.jpg)",
+          backgroundImage: "url(/assets/distributor-img/footer.jpg)",
         }}
       ></div>
       <div className="container">
-        <div className="margin-about">
+        <div>
           <div className="row">
             <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
               <div className="why-choose-four__content">

@@ -1,12 +1,11 @@
 "use client";
+
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { menuData } from ".";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
 
   // Optimized Scroll Handler
   useEffect(() => {
@@ -23,24 +22,25 @@ const Header = () => {
 
   const renderMenu = (items, level = 0) => (
     <ul className={level === 0 ? "main-menu__list" : "sub-menu"}>
-      {(items.isAlphabeticFormate ? items.sort((a, b) => a.label.localeCompare(b.label)) : items).map(
-        (item, i) => {
-          const hasChildren = !!item.children;
-          const liClass = [
-            hasChildren ? "dropdown" : "",
-            `menu-level-${level}`, // 👈 class based on depth
-          ]
-            .join(" ")
-            .trim();
+      {(items.isAlphabeticFormate
+        ? items.sort((a, b) => a.label.localeCompare(b.label))
+        : items
+      ).map((item, i) => {
+        const hasChildren = !!item.children;
+        const liClass = [
+          hasChildren ? "dropdown" : "",
+          `menu-level-${level}`, // 👈 class based on depth
+        ]
+          .join(" ")
+          .trim();
 
-          return (
-            <li key={i} className={liClass}>
-              <a href={item.href || "#"}>{item.label}</a>
-              {hasChildren && renderMenu(item.children, level + 1)}
-            </li>
-          );
-        }
-      )}
+        return (
+          <li key={i} className={liClass}>
+            <a href={item.href || "#"}>{item.label}</a>
+            {hasChildren && renderMenu(item.children, level + 1)}
+          </li>
+        );
+      })}
     </ul>
   );
 
@@ -60,10 +60,16 @@ const Header = () => {
         }}
       >
         <div className="container-fluid">
-          <div className="main-header__inner" style={{ width: "100%", margin: 0 }}>
+          <div
+            className="main-header__inner"
+            style={{ width: "100%", margin: 0 }}
+          >
             {/* Logo */}
-            <div className="main-header__logo" style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}>
-              <a href="/" style={{ width: "100%" }}>
+            <div
+              className="main-header__logo"
+              style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}
+            >
+              <a href="/" style={{ width: "100%", display: "flex" }}>
                 <Image
                   src={
                     scrolled
@@ -71,12 +77,13 @@ const Header = () => {
                       : "/assets/distributor-img/nonstop-distributor-light.png"
                   }
                   alt="Procounsel"
-                  width={180}
+                  width={145}
                   height={52}
                   style={{
-                    width: "100%",
-                    objectFit: "contain",
-                    marginBottom: "4px !important",
+                    margin: "auto",
+                    // width: "100%",
+                    // objectFit: "contain",
+                    // marginBottom: "4px !important",
                   }}
                 />
               </a>
@@ -95,8 +102,14 @@ const Header = () => {
             >
               <ul className="main-menu__list">
                 {menuData.map((item, idx) => (
-                  <li key={idx} className={item.children || item.megaMenu ? "dropdown" : ""}>
-                    <a href={item.href || "#"} style={{ color: scrolled ? "#000000" : "#ffffff" }}>
+                  <li
+                    key={idx}
+                    className={item.children || item.megaMenu ? "dropdown" : ""}
+                  >
+                    <a
+                      href={item.href || "#"}
+                      style={{ color: scrolled ? "#000000" : "#ffffff" }}
+                    >
                       {item.label}
                     </a>
 
@@ -129,9 +142,7 @@ const Header = () => {
                                                 }}
                                               >
                                                 <i>{link.label}</i>
-                                                <span>
-                                                  {link.label}
-                                                </span>
+                                                <span>{link.label}</span>
                                               </a>
                                             ))}
                                           </div>
@@ -171,9 +182,15 @@ const Header = () => {
             {/* Right Section */}
             <div className="main-header__right">
               <div className="mobile-nav__btn mobile-nav__toggler">
-                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
-                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
-                <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
+                <span
+                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
+                ></span>
+                <span
+                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
+                ></span>
+                <span
+                  style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}
+                ></span>
               </div>
               <div className="main-header__btn">
                 <a
@@ -199,7 +216,7 @@ const Header = () => {
                       whiteSpace: "nowrap",
                     }}
                   >
-                   89564 15939
+                    89564 15939
                   </a>
                 </div>
               </div>
@@ -221,7 +238,7 @@ const Header = () => {
                   alt="Homestead Experts"
                   width={140}
                   height={40}
-                // style={{ width: "100%", objectFit: "contain" }}
+                  // style={{ width: "100%", objectFit: "contain" }}
                 />
               </a>
             </div>
@@ -230,7 +247,9 @@ const Header = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fa fa-envelope"></i>
-                <a href="mailto:needhelp@procounsel.com">needhelp@procounsel.com</a>
+                <a href="mailto:needhelp@procounsel.com">
+                  needhelp@procounsel.com
+                </a>
               </li>
               <li>
                 <i className="fa fa-phone-alt"></i>

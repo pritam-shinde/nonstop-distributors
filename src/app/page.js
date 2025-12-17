@@ -143,7 +143,7 @@ export default function Home() {
             }}
           ></div>
           <div className="container">
-            <div className="margin-about">
+            <div>
               <div className="row">
                 <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
                   <div className="why-choose-four__content">
@@ -254,7 +254,10 @@ export default function Home() {
                 </div>
                 <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
                   <div className="why-choose-four__right">
-                    <div className="why-choose-four__img mx-auto" style={{ width: "100%" }}>
+                    <div
+                      className="why-choose-four__img mx-auto"
+                      style={{ width: "100%" }}
+                    >
                       <img
                         src="\assets\distributor-img\why-choose-nonstop-distributor.jpg"
                         // src="/assets/images/backgrounds/image_10.jpg"
@@ -276,7 +279,7 @@ export default function Home() {
         <section className="tailored-section" id="tailored-background">
           <div className="container">
             <div className="d-flex justify-content-end text-start">
-              <div  className="custom-container">
+              <div className="custom-container">
                 <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
                   Lorem ipsum dolor sit.
                 </h2>
@@ -287,7 +290,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="tailored-redline1" style={{ position: "relative", objectFit: "cover" }}>
+          <div
+            className="tailored-redline1"
+            style={{ position: "relative", objectFit: "cover" }}
+          >
             <Image
               src="/assets/images/backgrounds/red-line-09.png"
               alt="redline"
@@ -303,7 +309,7 @@ export default function Home() {
 
           <div className="container">
             <div className="d-flex justify-content-end text-start">
-              <div  className="custom-container">
+              <div className="custom-container">
                 <p
                   className="tailored-para about-one__content__text"
                   style={{
