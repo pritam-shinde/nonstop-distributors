@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from "../icons/Social";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  XIcon,
+} from "../icons/Social";
 
 const Footer = () => {
   const footerLinks = [
@@ -27,7 +32,6 @@ const Footer = () => {
     },
   ];
 
-
   const socialLinks = [
     { href: "#", icon: <LinkedinIcon />, label: "LinkedIn" },
     { href: "#", icon: <XIcon />, label: "Twitter" },
@@ -50,29 +54,40 @@ const Footer = () => {
       <div className="main-footer__top">
         <div className="container">
           <div className="row">
-
             {/* ===== Logo + About ===== */}
             <div className="col-xl-4 col-lg-5 col-md-12">
               <div className="footer-widget footer-widget--about">
                 <a href="/" className="footer-widget__logo">
-                  <Image
-                    src="/assets/distributor-img/nonstop-distributor-light.png"
+                  {/* <Image
+                    src="/assets/distributor-img/nonstop-distributor-dark.png"
                     // src="/assets/images/logos/homestead-experts-logo-light.png"
                     width={200}
                     height={45}
                     alt="Nonstop Distributors"
+                  /> */}
+                  <Image
+                    src="/assets/distributor-img/nonstop-distributor-light.png"
+                    alt="Procounsel"
+                    width={209}
+                    height={73}
                   />
                 </a>
 
                 <p className="footer-widget__text mt-3">
                   India's leading FMCG distribution partner, connecting premium
-                  consumer brands to every major sales channel across the country.
+                  consumer brands to every major sales channel across the
+                  country.
                 </p>
 
                 {/* Social Icons */}
                 <div className="footer-widget__social mt-4">
                   {socialLinks.map((item, i) => (
-                    <a key={i} href={item.href} aria-label={item.label} className="mx-2">
+                    <a
+                      key={i}
+                      href={item.href}
+                      aria-label={item.label}
+                      className="mx-2"
+                    >
                       {item.icon}
                     </a>
                   ))}
@@ -86,14 +101,14 @@ const Footer = () => {
                 {footerLinks.map((section, index) => (
                   <div key={index} className="col-md-6">
                     <div className="footer-widget footer-widget--links">
-                      <h3 className="footer-widget__title">
-                        {section.title}
-                      </h3>
+                      <h3 className="footer-widget__title">{section.title}</h3>
 
                       <ul className="list-unstyled footer-widget__links">
                         {section.links.map((link, idx) => (
                           <li key={idx}>
-                            <a href={link.href} className=" text-white">{link.label}</a>
+                            <a href={link.href} className=" text-white">
+                              {link.label}
+                            </a>
                           </li>
                         ))}
                       </ul>
@@ -111,16 +126,24 @@ const Footer = () => {
                 <ul className="list-unstyled footer-widget__contact">
                   <li>
                     <i className="pe-2 icon-pin"></i>
-                    <span className="text-white"> Nagpur, Maharashtra, India </span>
+                    <span className="text-white">
+                      {" "}
+                      Nagpur, Maharashtra, India{" "}
+                    </span>
                   </li>
                   <li>
                     <i className="pe-2 icon-telephone-call-1"></i>
-                    <a href="tel:+ 89564 15939"><span className="text-white"> 89564 15939</span></a>
+                    <a href="tel:+ 89564 15939">
+                      <span className="text-white"> 89564 15939</span>
+                    </a>
                   </li>
                   <li>
                     <i className="pe-2 icon-mail"></i>
                     <a href="mailto:info@nonstopdistributors.com">
-                      <span className="text-white"> info@nonstopdistributors.com </span>
+                      <span className="text-white">
+                        {" "}
+                        info@nonstopdistributors.com{" "}
+                      </span>
                     </a>
                   </li>
                   <li>
@@ -130,7 +153,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -140,7 +162,8 @@ const Footer = () => {
         <div className="container">
           <div className="main-footer__bottom__inner text-center">
             <p className="text-white mb-0">
-              © {new Date().getFullYear()} NONSTOP Distributors. All Rights Reserved.
+              © {new Date().getFullYear()} NONSTOP Distributors. All Rights
+              Reserved.
             </p>
           </div>
         </div>
@@ -150,7 +173,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
 
 // import Image from "next/image";
 
@@ -338,9 +360,6 @@ export default Footer;
 // };
 
 // export default Footer;
-
-
-
 
 // import Image from "next/image";
 

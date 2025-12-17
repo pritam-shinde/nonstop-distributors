@@ -77,7 +77,7 @@ const Header = () => {
                       : "/assets/distributor-img/nonstop-distributor-light.png"
                   }
                   alt="Procounsel"
-                  width={145}
+                  width={scrolled ? 147 : 149}
                   height={52}
                   style={{
                     margin: "auto",

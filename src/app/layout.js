@@ -30,22 +30,17 @@ export default function RootLayout({ children }) {
         {/* favicons */}
         <link
           rel="icon"
-          sizes="180x180"
-          href="/assets/images/favicons/favicon_180x180.png"
-        />
-        <link
-          rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/assets/images/favicons/favicon_180x180.png"
+          href="/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/assets/images/favicons/favicon_180x180.png"
+          href="/favicon-16x16.png"
         />
-        <link rel="manifest" href="/assets/images/favicons/site.webmanifest" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         <meta
           name="description"
