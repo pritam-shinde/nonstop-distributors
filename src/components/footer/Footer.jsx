@@ -7,30 +7,6 @@ import {
 } from "../icons/Social";
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      title: "Quick Links",
-      delay: "100ms",
-      links: [
-        { label: "Home", href: "/" },
-        { label: "About Us", href: "/about-us/" },
-        { label: "Our Services", href: "/services/" },
-        { label: "Partner Brands", href: "/partners/" },
-        { label: "Contact Us", href: "/contact-us/" },
-      ],
-    },
-    {
-      title: "Services",
-      delay: "200ms",
-      links: [
-        { label: "Distribution", href: "/distribution/" },
-        { label: "Logistics", href: "/logistics/" },
-        { label: "Retail Coverage", href: "/retail-coverage/" },
-        { label: "Market Insights", href: "/market-insights/" },
-        { label: "Brand Building", href: "/brand-building/" },
-      ],
-    },
-  ];
 
   const socialLinks = [
     { href: "#", icon: <LinkedinIcon />, label: "LinkedIn" },
@@ -55,7 +31,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             {/* ===== Logo + About ===== */}
-            <div className="col-xl-4 col-lg-5 col-md-12">
+            <div className="col-xl-5 col-lg-5 col-md-6 col-12">
               <div className="footer-widget footer-widget--about">
                 <a href="/" className="footer-widget__logo">
                   {/* <Image
@@ -95,64 +71,63 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* ===== Quick Links + Services ===== */}
-            <div className="col-xl-5 col-lg-4 col-md-7">
+            <div className="col-xl-7 col-lg-7 col-md-6 col-12">
               <div className="row">
-                {footerLinks.map((section, index) => (
-                  <div key={index} className="col-md-6">
-                    <div className="footer-widget footer-widget--links">
-                      <h3 className="footer-widget__title">{section.title}</h3>
+                <div className="col-xl-6 col-lg-4 col-md-6 col-sm-6">
+                  <div className="footer-widget footer-widget--links">
+                    <h3 className="footer-widget__title">Quick Links</h3>
 
-                      <ul className="list-unstyled footer-widget__links">
-                        {section.links.map((link, idx) => (
-                          <li key={idx}>
-                            <a href={link.href} className=" text-white">
-                              {link.label}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <ul className="list-unstyled footer-widget__links">
+                      {[
+                        { label: "Home", href: "/" },
+                        { label: "About Us", href: "/about-us/" },
+                        { label: "Our Services", href: "/services/" },
+                        { label: "Partner Brands", href: "/partners/" },
+                        { label: "Contact Us", href: "/contact-us/" },
+                      ].map((link, idx) => (
+                        <li key={idx}>
+                          <a href={link.href} className=" text-white">
+                            {link.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                ))}
+                </div>
+                <div className="col-xl-6 col-lg-8 col-md-8 col-sm-6">
+                  <div className="footer-widget footer-widget--contact">
+                    <h3 className="footer-widget__title">Contact</h3>
+                    <ul className="list-unstyled footer-widget__contact">
+                      <li>
+                        <i className="pe-2 icon-pin"></i>
+                        <span className="text-white">
+                          Nagpur, Maharashtra, India
+                        </span>
+                      </li>
+                      <li>
+                        <i className="pe-2 icon-telephone-call-1"></i>
+                        <a href="tel:+ 89564 15939">
+                          <span className="text-white">89564 15939</span>
+                        </a>
+                      </li>
+                      <li>
+                        <i className="pe-2 icon-mail"></i>
+                        <a href="mailto:info@nonstopdistributors.com">
+                          <span className="text-white">
+                            info@nonstopdistributors.com
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <i className="pe-2 icon-clock"></i>
+                        <span className="text-white">Mon - Sat: 9AM - 6PM</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* ===== Contact ===== */}
-            <div className="col-xl-3 col-lg-3 col-md-5">
-              <div className="footer-widget footer-widget--contact">
-                <h3 className="footer-widget__title">Contact</h3>
-
-                <ul className="list-unstyled footer-widget__contact">
-                  <li>
-                    <i className="pe-2 icon-pin"></i>
-                    <span className="text-white">
-                      {" "}
-                      Nagpur, Maharashtra, India{" "}
-                    </span>
-                  </li>
-                  <li>
-                    <i className="pe-2 icon-telephone-call-1"></i>
-                    <a href="tel:+ 89564 15939">
-                      <span className="text-white"> 89564 15939</span>
-                    </a>
-                  </li>
-                  <li>
-                    <i className="pe-2 icon-mail"></i>
-                    <a href="mailto:info@nonstopdistributors.com">
-                      <span className="text-white">
-                        {" "}
-                        info@nonstopdistributors.com{" "}
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <i className="pe-2 icon-clock"></i>
-                    <span className="text-white"> Mon - Sat: 9AM - 6PM </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
