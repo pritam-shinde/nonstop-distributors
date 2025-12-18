@@ -57,8 +57,8 @@ const Contact = () => {
                 <section className="" style={{ background: "#0E222A" }}>
                     <div
                         className="hero-slide hero-about-slide"
-                        // style={{ backgroundImage: "url('/assets/distributor-img/contact-banner2.jpg')" }}>
-                        style={{ backgroundImage: "url('assets/images/backgrounds/banner_contact.jpg')" }}>
+                        style={{ backgroundImage: "url('/assets/distributor-img/contact-banner2.jpg')" }}>
+                        {/* style={{ backgroundImage: "url('assets/images/backgrounds/banner_contact.jpg')" }}> */}
                         <div className="main-slider-one__overlay-one-about-page"></div>
                         <div className="content container home-content">
                             <p style={{ marginTop: "80px" }} className="mb-2">
