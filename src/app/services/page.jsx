@@ -477,7 +477,7 @@ const ServicePage = () => {
       </section>
 
       {/* Newsletter */}
-      {/* <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
+      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
         <div className="circle-newsletter" />
         <div className="container position-relative">
           <div className="row justify-content-center">
@@ -509,7 +509,7 @@ const ServicePage = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <ScriptsLoader />
     </>

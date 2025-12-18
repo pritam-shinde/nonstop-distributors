@@ -10,7 +10,9 @@ import Image from "next/image";
 
 export const sliderData = [
   {
-    bg: "/assets/distributor-img/home-page-banner.jpg",
+    bg: "/assets/distributor-img/banner-warehouse.jpg",
+    // bg: "/assets/distributor-img/istockphoto-banner.jpg",
+    // bg: "/assets/distributor-img/home-page-banner.jpg",
     title: (
       <>
         Powering Brands <br /> Across the City.
@@ -87,6 +89,8 @@ const Banner1Swiper = () => {
                 backgroundSize: "cover",
               }}>
               <div className="main-slider-one__overlay-one"></div>
+              {/* Dark Overlay */}
+              {/* <div style={{ position: "absolute", inset: 0, background: "rgba(0, 0, 0, 0.55)", zIndex: 1 }} /> */}
               <div className="content container home-content">
                 <p className="border rounded-5 d-inline px-4 py-2">
                   Leading FMCG Distributor

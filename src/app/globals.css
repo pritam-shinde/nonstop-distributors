@@ -604,18 +604,19 @@ a {
 }
 
 .bgimg-services {
-  background-image: url("/assets/distributor-img/services-page-banner.jpg") !important;
+  background-image: url("/assets/distributor-img/service-banner.jpg") !important;
+  /* background-image: url("/assets/distributor-img/services-page-banner.jpg") !important; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .service-grid-bg {
-  background-image: url("/assets/images/backgrounds/section-2-bg.png") !important;
+  /* background-image: url("/assets/images/backgrounds/section-2-bg.png") !important; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #0E222A;
+  background-color: #0E222A !important;
 }
 
 .card-box {

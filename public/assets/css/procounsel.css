@@ -3881,7 +3881,8 @@ h2 {
   bottom: 0;
   background-size: cover;
   background-position: center center;
-  opacity: 0.05;
+  opacity: 0.2;
+  /* opacity: 0.05; */
 }
 
 .main-footer .container {

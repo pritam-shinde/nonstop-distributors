@@ -20,8 +20,9 @@ const Footer = () => {
       <div
         className="main-footer__bg"
         style={{
-          backgroundImage: "url('/assets/distributor-img/footer.jpg')",
-          backgroundPosition: "bottom center",
+          backgroundImage: "url('/assets/distributor-img/footer-istockphoto.jpg')",
+          // backgroundImage: "url('/assets/distributor-img/footer.jpg')",
+          backgroundPosition: "100% 100%",
           backgroundRepeat: "no-repeat",
         }}
       />
