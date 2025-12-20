@@ -53,6 +53,15 @@ a {
     background-repeat: no-repeat;
     height: 120% !important;
   }
+
+  .custom-btn {
+    margin: 0 auto;
+    max-width: 250px;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
 }
 
 .service-procounsel-btn {
@@ -678,14 +687,17 @@ a {
 .footer-widget__contact li {
   display: flex;
   align-items: center;
-  gap: 12px; /* space between icon and text */
+  gap: 12px;
+  /* space between icon and text */
   margin-bottom: 12px;
 }
 
 .footer-widget__contact li i {
-  color: #ffffff;        /* icon color */
+  color: #ffffff;
+  /* icon color */
   font-size: 18px;
-  min-width: 18px;       /* keeps alignment consistent */
+  min-width: 18px;
+  /* keeps alignment consistent */
 }
 
 .footer-widget__contact li a,
@@ -693,5 +705,3 @@ a {
   color: #ffffff;
   line-height: 1.5;
 }
-
-

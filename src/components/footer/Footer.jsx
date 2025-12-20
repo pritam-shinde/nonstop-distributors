@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="container">
           <div className="main-footer__bottom__inner text-center">
             <p className="text-white mb-0">
-              © {new Date().getFullYear()} NONSTOP Distributors. All Rights
+              © {new Date().getFullYear()} <a href="/">NONSTOP Distributors</a>. All Rights
               Reserved.
             </p>
           </div>

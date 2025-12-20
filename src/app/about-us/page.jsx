@@ -112,7 +112,7 @@ const About = () => {
                     src="/assets/photos/about/our_story.jpg"
                     // src="/assets/images/backgrounds/why_choose_us_3rd_section.jpg"
                     alt="why-choose-us"
-                  /> */}
+                  /> */} 
                   <Image src="/assets/photos/about/me4suit.jpg" width={340} height={570} alt="why-choose-us" />
                 </div>
                 <div className="why-choose-four__right__wrapper">
