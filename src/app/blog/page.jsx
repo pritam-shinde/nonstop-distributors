@@ -1,6 +1,5 @@
 import BlogSkeleton from "@/components/BlogSkeleton";
 import NewsLetter from "@/components/NewsLetter";
-import PaginationButton from "@/components/PaginationButton";
 import ScriptsLoader from "@/components/ScriptsLoader";
 import { Suspense } from "react";
 
@@ -35,7 +34,11 @@ const MainBlogSection = async ({ searchParams }) => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('assets/images/backgrounds/banner_slide1-new.jpg')",
+              "url('/assets/distributor-img/blog-page-banner.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "top  center",
+            backgroundRepeat: "no-repeat",
+            height: "800px",
           }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
@@ -77,98 +80,75 @@ const MainBlogSection = async ({ searchParams }) => {
       <section className="blog-three section-color">
         <div className="container">
           <Suspense fallback={<BlogSkeleton />}>
-            <section className="blog-three">
-              <div className="container">
-                <div className="row gutter-y-30">
-                  {data?.map((post, index) => {
-                    const date = getFormattedDate(post.date);
-                    return (
+            <div className="container">
+              <div className="row gutter-y-30">
+                {data?.map((post, index) => {
+                  const date = getFormattedDate(post.date);
+                  return (
+                    <div
+                      key={post.id}
+                      className="col-lg-4 col-md-6"
+                      id={`blog-${index}`}
+                    >
                       <div
-                        key={post.id}
-                        className="col-lg-4 col-md-6"
-                        id={`blog-${index}`}
+                        className="blog-card wow fadeInUp"
+                        data-wow-duration="1500ms"
+                        data-wow-delay="00ms"
                       >
-                        <div
-                          className="blog-card wow fadeInUp"
-                          data-wow-duration="1500ms"
-                          data-wow-delay="00ms"
-                        >
-                          <div className="blog-card__content">
-                            <h3 className="blog-card__title">
-                              <a
-                                href={`/blog/${post.slug}`}
+                        <div className="blog-card__content">
+                          <h3 className="blog-card__title">
+                            <a
+                              href={`/blog/${post.slug}`}
+                              dangerouslySetInnerHTML={{
+                                __html: post.title,
+                              }}
+                              className="truncate-2-lines"
+                            />
+                          </h3>
+                        </div>
+
+                        <div className="blog-card__image">
+                          <div className="blog-card__image__inner">
+                            <img
+                              src={post.featured_image}
+                              alt={post.title}
+                              style={{ minHeight: "240px" }}
+                            />
+                            <img
+                              src={post.featured_image}
+                              alt={post.title}
+                              style={{ minHeight: "240px" }}
+                            />
+                            <a
+                              href={`/blog/${post.slug}`}
+                              className="blog-card__image__link"
+                            >
+                              <span
+                                className="sr-only"
                                 dangerouslySetInnerHTML={{
                                   __html: post.title,
                                 }}
-                                className="truncate-2-lines"
                               />
-                            </h3>
+                            </a>
                           </div>
 
-                          <div className="blog-card__image">
-                            <div className="blog-card__image__inner">
-                              <img
-                                src={post.featured_image}
-                                alt={post.title}
-                                style={{ minHeight: "240px" }}
-                              />
-                              <img
-                                src={post.featured_image}
-                                alt={post.title}
-                                style={{ minHeight: "240px" }}
-                              />
-                              <a
-                                href={`/blog/${post.slug}`}
-                                className="blog-card__image__link"
-                              >
-                                <span
-                                  className="sr-only"
-                                  dangerouslySetInnerHTML={{
-                                    __html: post.title,
-                                  }}
-                                />
-                              </a>
-                            </div>
-
-                            <div className="blog-card__date">
-                              <span>{date.day}</span>
-                              {date.month}
-                            </div>
+                          <div className="blog-card__date">
+                            <span>{date.day}</span>
+                            {date.month}
                           </div>
-
-                          <ul className="list-unstyled blog-card__meta ">
-                            <li className="w-100 border-0 text-white">
-                              <a href={`/blog/${post.slug}`}>Read More</a>
-                            </li>
-                          </ul>
                         </div>
-                      </div>
-                    );
-                  })}
-                  {total_page && (
-                    <div className="col-lg-12">
-                      <ul className="post-pagination list-unstyled">
-                        {Array.from({ length: total_page }, (_, index) => {
-                          const pageNumber = index + 1;
-                          const isActive = page === pageNumber;
 
-                          return (
-                            <li key={pageNumber}>
-                              <PaginationButton
-                                href={`/blog?page=${pageNumber}`}
-                                isActive={isActive}
-                              >
-                                {pageNumber}
-                              </PaginationButton>
-                            </li>
-                          );
-                        })}
-                      </ul>
+                        <ul className="list-unstyled blog-card__meta ">
+                          <li className="w-100 border-0 text-white">
+                            <a href={`/blog/${post.slug}`}>Read More</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  )}
-                </div>
+                  );
+                })}
               </div>
-            </section>
+            </div>
           </Suspense>
         </div>
       </section>

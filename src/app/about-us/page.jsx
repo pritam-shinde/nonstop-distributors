@@ -45,13 +45,12 @@ const About = () => {
         <div
           className="hero-slide hero-about-slide"
           style={{
-            backgroundImage: "url('/assets/distributor-img/about-banner2.jpg')",
+            backgroundImage: "url('/assets/distributor-img/about-banner.png')",
             backgroundSize: "cover",
             backgroundPosition: "top  center",
             backgroundRepeat: "no-repeat",
             height: "800px",
           }}
-          // style={{ backgroundImage: "url('/assets/photos/about/about_hero.jpg')", }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
@@ -134,7 +133,7 @@ const About = () => {
                     alt="why-choose-us"
                   /> */}
                   <Image
-                    src="/assets/photos/about/me4suit.jpg"
+                    src="\assets\distributor-img\who-we-are.png"
                     width={340}
                     height={570}
                     alt="why-choose-us"

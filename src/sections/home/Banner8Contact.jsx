@@ -2,30 +2,19 @@ const Banner8Contact = () => {
   return (
     <>
       <section className="contact-one" id="contact-service">
-        <div
-          style={{
-            transform: "rotateY(180deg)",
-            width: "100%",
-            position: "relative",
-            marginBottom: "20px",
-            marginTop: "8px",
-          }}
-        >
-          <div
-            className="tailored-redline"
-            style={{ position: "unset", height: "14px" }}
-          ></div>
-        </div>
+        <div className="tailored-redline-new" />
         <div className="container">
           <div className="contact-one__wrapper">
             <div className="row">
               <div className="col-xl-6">
                 <div className="sec-title text-left">
                   <h3 className="sec-title__title bw-split-in-up">
-                    <span className="text-white">Contact </span> <span> Information</span>
+                    <span className="text-white">Contact </span>{" "}
+                    <span> Information</span>
                   </h3>
 
-                  <p className="contact-one__info__text text-white font-Merriweather"
+                  <p
+                    className="contact-one__info__text text-white font-Merriweather"
                     style={{ fontSize: "clamp(18px,3vw,20px)" }}
                   >
                     Just a few details will get us started.
@@ -121,8 +110,9 @@ const Banner8Contact = () => {
                           className="contact-one__info__text text-white"
                           style={{ fontSize: "14px" }}
                         >
-                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society,  <br />  Wardha Rd,
-                          opposite Bhawan's School, <br />  Nagpur, Maharashtra 440037
+                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society,{" "}
+                          <br /> Wardha Rd, opposite Bhawan's School, <br />{" "}
+                          Nagpur, Maharashtra 440037
                         </p>
                       </div>
                     </li>
@@ -173,12 +163,22 @@ const Banner8Contact = () => {
                       />
                     </div>
 
-                    <div className="form-one__control form-one__control--full mt-2" style={{ position: "relative" }}>
-                      <select id="enquiry-type" name="enquiryType" defaultValue="" required>
+                    <div
+                      className="form-one__control form-one__control--full mt-2"
+                      style={{ position: "relative" }}
+                    >
+                      <select
+                        id="enquiry-type"
+                        name="enquiryType"
+                        defaultValue=""
+                        required
+                      >
                         <option value="" disabled>
                           Type of Enquiry
                         </option>
-                        <option value="distribution">Distribution Partnership</option>
+                        <option value="distribution">
+                          Distribution Partnership
+                        </option>
                         <option value="bulk-order">Bulk Order</option>
                         <option value="retail">Retail Supply</option>
                         <option value="logistics">Logistics Support</option>
@@ -188,7 +188,6 @@ const Banner8Contact = () => {
 
                       <span className="dropdown-arrow">▼</span>
                     </div>
-
 
                     <div className="form-one__control form-one__control--full">
                       <textarea
@@ -200,7 +199,6 @@ const Banner8Contact = () => {
                         required
                       ></textarea>
                     </div>
-
 
                     <div className="form-one__control form-one__control--full">
                       <a href="#" className="procounsel-btn text-uppercase">
@@ -214,9 +212,10 @@ const Banner8Contact = () => {
             </div>
           </div>
         </div>
-        <div style={{ transform: "rotateY(180deg)", width: "100%", position: "relative" }}>
-          <div className="tailored-redline"></div>
-        </div>
+        <div
+          className="tailored-redline-new"
+          style={{ rotate: "0deg", top: "unset", bottom: 0 }}
+        />
       </section>
     </>
   );

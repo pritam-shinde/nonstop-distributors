@@ -139,7 +139,7 @@ export default function Home() {
             data-speed="0.3"
             style={{
               backgroundImage:
-                "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
+                "url(/assets/distributor-img/why-choose-nonstop-distributor.png)",
             }}
           ></div>
           <div className="container">
@@ -253,18 +253,22 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
-                  <div className="why-choose-four__right">
+                  <div
+                    className="why-choose-four__right"
+                    style={{ height: "100%", marginTop: 0 }}
+                  >
                     <div
                       className="why-choose-four__img mx-auto"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%", height: "80%" }}
                     >
                       <img
-                        src="\assets\distributor-img\why-choose-nonstop-distributor.jpg"
-                        // src="/assets/images/backgrounds/image_10.jpg"
+                        src="\assets\distributor-img\why-choose-nonstop-distributor.png"
                         alt="why-choose-us"
                         style={{
-                          objectPosition: "left center",
+                          objectPosition: "right center",
                           objectFit: "cover",
+                          height: "100%",
+                          width: "100%",
                         }}
                       />
                     </div>

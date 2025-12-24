@@ -8,7 +8,7 @@ const WhatWeOffer = () => {
         data-jarallax
         data-speed="0.3"
         style={{
-          backgroundImage: "url(/assets/distributor-img/footer.jpg)",
+          backgroundImage: "url(/assets/distributor-img/what-we-offer-nagpur.png)",
         }}
       ></div>
       <div className="container">
@@ -106,14 +106,23 @@ const WhatWeOffer = () => {
               </div>
             </div>
             <div className="col-xl-4 wow fadeInUp" data-wow-delay="100ms">
-              <div className="why-choose-four__right">
+              <div
+                className="why-choose-four__right"
+                style={{ height: "100%", marginTop: 0 }}
+              >
                 <div
                   className="why-choose-four__img mx-auto"
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", height: "80%" }}
                 >
                   <img
-                    src="\assets\distributor-img\what-we-offer.jpg"
+                    src="\assets\distributor-img\what-we-offer-nagpur.png"
                     alt="why-choose-us"
+                    style={{
+                      objectPosition: "right center",
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
                   />
                 </div>
               </div>

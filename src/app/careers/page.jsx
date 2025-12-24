@@ -10,7 +10,7 @@ const MainBlogSection = () => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('assets/images/backgrounds/banner_slide1-new.jpg')",
+              "url('/assets/distributor-img/careers-page-banner.png')",
           }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
