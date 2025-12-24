@@ -1,8 +1,14 @@
 "use client";
 
+import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
+// import { handlerMetaDetails } from "@/constants/seo";
 import { VisionMission } from "@/sections/about/VisionMission";
 import Image from "next/image";
+
+// export const generateMetadata = () => {
+//   return handlerMetaDetails("about-us");
+// };
 
 const About = () => {
   const teamMembers = [
@@ -36,7 +42,8 @@ const About = () => {
   return (
     <>
       <section className="" style={{ background: "#0E222A" }}>
-        <div className="hero-slide hero-about-slide"
+        <div
+          className="hero-slide hero-about-slide"
           style={{
             backgroundImage: "url('/assets/distributor-img/about-banner2.jpg')",
             backgroundSize: "cover",
@@ -44,12 +51,15 @@ const About = () => {
             backgroundRepeat: "no-repeat",
             height: "800px",
           }}
-        // style={{ backgroundImage: "url('/assets/photos/about/about_hero.jpg')", }}
+          // style={{ backgroundImage: "url('/assets/photos/about/about_hero.jpg')", }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
-              ABOUT <span className="fw-bold read-more-btn"> NONSTOP Distributors
+              ABOUT{" "}
+              <span className="fw-bold read-more-btn">
+                {" "}
+                NONSTOP Distributors
               </span>
             </p>
             <h1 className="">
@@ -57,7 +67,9 @@ const About = () => {
             </h1>
             <div>
               <p style={{ marginBottom: "0px" }}>
-                Powering FMCG distribution with excellence, integrity, and an unwavering commitment <br className="d-none d-lg-inline" /> to our partners success.
+                Powering FMCG distribution with excellence, integrity, and an
+                unwavering commitment <br className="d-none d-lg-inline" /> to
+                our partners success.
               </p>
             </div>
             <div className="d-flex flex-column justify-content-between align-items-start mt-3">
@@ -70,7 +82,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story who we are */}
       <section className="why-choose-four">
         <div
           className="why-choose-four__bg jarallax"
@@ -95,13 +107,21 @@ const About = () => {
                 </div>
 
                 <p className="why-choose-four__content__text text-white fs-5 fw-bold">
-                  NONSTOP Distributors is of leading FMCG distribution partners, connecting premium consumer brands to every major sales channel.
+                  NONSTOP Distributors is of leading FMCG distribution partners,
+                  connecting premium consumer brands to every major sales
+                  channel.
                 </p>
                 <p className="why-choose-four__content__text text-white">
-                  With decades of experience and an extensive distribution network, we specialize in managing and scaling brands across food and beverages, body care, luxury chocolates, laundry, stationery, and many other FMCG categories.
+                  With decades of experience and an extensive distribution
+                  network, we specialize in managing and scaling brands across
+                  food and beverages, body care, luxury chocolates, laundry,
+                  stationery, and many other FMCG categories.
                 </p>
                 <p className="why-choose-four__content__text text-white">
-                  Our team of dedicated professionals works tirelessly to ensure that every brand we represent achieves maximum market penetration, strong product visibility, and sustainable growth across every retail channel.
+                  Our team of dedicated professionals works tirelessly to ensure
+                  that every brand we represent achieves maximum market
+                  penetration, strong product visibility, and sustainable growth
+                  across every retail channel.
                 </p>
               </div>
             </div>
@@ -112,8 +132,13 @@ const About = () => {
                     src="/assets/photos/about/our_story.jpg"
                     // src="/assets/images/backgrounds/why_choose_us_3rd_section.jpg"
                     alt="why-choose-us"
-                  /> */} 
-                  <Image src="/assets/photos/about/me4suit.jpg" width={340} height={570} alt="why-choose-us" />
+                  /> */}
+                  <Image
+                    src="/assets/photos/about/me4suit.jpg"
+                    width={340}
+                    height={570}
+                    alt="why-choose-us"
+                  />
                 </div>
                 <div className="why-choose-four__right__wrapper">
                   <div className="why-choose-four__box count-box">
@@ -122,12 +147,28 @@ const About = () => {
                         className="count-text"
                         data-stop="20"
                         data-speed="1500"
+                        data-suffix="+"
                       >
                         20
                       </span>
                     </h3>
                     <p className="why-choose-four__box__text">
-                      Years in <br /> Business
+                      Years <br /> of Experience
+                    </p>
+                  </div>
+                  <div className="why-choose-four__box count-box">
+                    <h3 className="why-choose-four__box__count">
+                      <span
+                        className="count-text"
+                        data-stop="25"
+                        data-speed="1500"
+                        data-suffix="+"
+                      >
+                        25+
+                      </span>
+                    </h3>
+                    <p className="why-choose-four__box__text">
+                      Partner <br /> Brands
                     </p>
                   </div>
                   <div className="why-choose-four__box count-box">
@@ -142,24 +183,7 @@ const About = () => {
                       </span>
                     </h3>
                     <p className="why-choose-four__box__text">
-                      Lorem, ipsum. <br /> Lorem, ipsum.
-                      {/* Experts Sourced <br /> Nation Wide */}
-                    </p>
-                  </div>
-                  <div className="why-choose-four__box count-box">
-                    <h3 className="why-choose-four__box__count">
-                      <span
-                        className="count-text"
-                        data-stop="1000"
-                        data-speed="1500"
-                        data-suffix="+"
-                      >
-                        1,000+
-                      </span>
-                    </h3>
-                    <p className="why-choose-four__box__text">
-                      Lorem, ipsum. <br /> Lorem, ipsum.
-                      {/* Law Firms <br /> Served */}
+                      Retail <br /> Points
                     </p>
                   </div>
                 </div>
@@ -172,16 +196,17 @@ const About = () => {
       {/* Vision Mission */}
       <VisionMission />
 
-      {/* Stand For /Core values*/}
+      {/* Core values / Stand For */}
       <section className="team-one" style={{ background: "#0E222A" }}>
         <div className="container">
-          {/* <h3 className="service-details__sub-title text-white">Why Choose Our ProCounsel?</h3> */}
           <div className="sec-title text-left">
             <h3 className="sec-title__title bw-split-in-up text-white">
               Our Core <span> Values</span>
             </h3>
 
-            <h4 className="tailored-subtitle font-Merriweather text-white mt-2">The principle that guide everything we do</h4>
+            <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+              The principle that guide everything we do
+            </h4>
           </div>
           <div className="row gutter-y-30">
             <div
@@ -190,9 +215,19 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/distributor-img/excellence.png" alt="response" />
+                  <Image
+                    width={31}
+                    height={31}
+                    src="/assets/distributor-img/excellence.png"
+                    alt="response"
+                  />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/distributor-img/excellence.png" alt="response" />
+                    <Image
+                      width={31}
+                      height={31}
+                      src="/assets/distributor-img/excellence.png"
+                      alt="response"
+                    />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -201,7 +236,8 @@ const About = () => {
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    We strive for excellence in every aspect of our operations, from logistics to customer service.
+                    We strive for excellence in every aspect of our operations,
+                    from logistics to customer service.
                   </p>
                 </div>
               </div>
@@ -212,9 +248,19 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/distributor-img/market-penetration.png" alt="response" />
+                  <Image
+                    width={31}
+                    height={31}
+                    src="/assets/distributor-img/market-penetration.png"
+                    alt="response"
+                  />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/distributor-img/market-penetration.png" alt="response" />
+                    <Image
+                      width={31}
+                      height={31}
+                      src="/assets/distributor-img/market-penetration.png"
+                      alt="response"
+                    />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -223,7 +269,8 @@ const About = () => {
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    We conduct business with the highest ethical standards, building trust with every interaction.
+                    We conduct business with the highest ethical standards,
+                    building trust with every interaction.
                   </p>
                 </div>
               </div>
@@ -234,9 +281,19 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/distributor-img/partnership.png" alt="response" />
+                  <Image
+                    width={31}
+                    height={31}
+                    src="/assets/distributor-img/partnership.png"
+                    alt="response"
+                  />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/distributor-img/partnership.png" alt="response" />
+                    <Image
+                      width={31}
+                      height={31}
+                      src="/assets/distributor-img/partnership.png"
+                      alt="response"
+                    />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -245,7 +302,8 @@ const About = () => {
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    We believe in building long-term partnerships, treating every brand's success as our own.
+                    We believe in building long-term partnerships, treating
+                    every brand's success as our own.
                   </p>
                 </div>
               </div>
@@ -256,9 +314,19 @@ const About = () => {
             >
               <div className="service-details__item" style={{ height: "100%" }}>
                 <div className="service-details__item__icon">
-                  <Image width={31} height={31} src="/assets/distributor-img/growth-focus.png" alt="response" />
+                  <Image
+                    width={31}
+                    height={31}
+                    src="/assets/distributor-img/growth-focus.png"
+                    alt="response"
+                  />
                   <span className="service-details__item__icon__zoom">
-                    <Image width={31} height={31} src="/assets/distributor-img/growth-focus.png" alt="response" />
+                    <Image
+                      width={31}
+                      height={31}
+                      src="/assets/distributor-img/growth-focus.png"
+                      alt="response"
+                    />
                   </span>
                 </div>
                 <div className="service-details__item__content">
@@ -267,7 +335,8 @@ const About = () => {
                   </h4>
 
                   <p className="service-details__item__text text-white">
-                    We are committed to sustainable practices that benefit our community and environment.
+                    We are committed to sustainable practices that benefit our
+                    community and environment.
                   </p>
                 </div>
               </div>
@@ -277,7 +346,7 @@ const About = () => {
       </section>
 
       {/* The Team */}
-      <section className="team-one">
+      {/* <section className="team-one">
         <div className="container">
           <div className="sec-title text-left">
             <h3 className="sec-title__title bw-split-in-up text-white">
@@ -310,26 +379,11 @@ const About = () => {
                     <div className="team-card__content">
                       <h3 className="team-card__title">
                         <div>{member.name}</div>
-                        {/* <a href="#">{member.name}</a> */}
                       </h3>
                       <p className="team-card__designation">
                         {member.designation}
                       </p>
-                    </div>
-
-                    {/* <div className="team-card__hover">
-                      <span className="team-card__hover__btn">
-                        <i className="icon-plus"></i>
-                      </span>
-                      <div className="team-card__hover__social">
-                        {socialLinks.map((link, index) => (
-                          <a href={link.href} key={index}>
-                            <i className={link.icon}></i>
-                            <span className="sr-only">{link.label}</span>
-                          </a>
-                        ))}
-                      </div>
-                    </div> */}
+                    </div> 
 
                     <img
                       src={member.img}
@@ -352,41 +406,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter */}
-      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
-        <div className="circle-newsletter" />
-
-        <div className="container position-relative">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 col-md-10 col-sm-12">
-              <h2 className="fw-bold text-white mb-3" style={{ fontSize: "clamp(24px, 4vw, 36px)" }}>
-                Join Our Growing Network
-              </h2>
-
-              <p className="text-white mb-4" style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9, }}>
-                Whether you're a brand looking for distribution or a professional
-                seeking opportunities, we'd love to hear from you.
-              </p>
-
-              <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                <a href="#" onClick={(e) => e.preventDefault()}
-                  className="custom-btn fw-semibold"
-                >
-                  PARTNER WITH US
-                </a>
-
-                <a href="#" onClick={(e) => e.preventDefault()}
-                  className="custom-btn fw-semibold"
-                >
-                  CAREER OPPORTUNITIES
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewsLetter />
 
       <ScriptsLoader />
     </>

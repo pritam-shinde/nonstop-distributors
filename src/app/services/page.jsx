@@ -1,10 +1,17 @@
+import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
+import { handlerMetaDetails } from "@/constants/seo";
 import FullScaleDistribution from "@/sections/services/FullScaleDistribution";
+import HowWeWork from "@/sections/services/HowWeWork";
 import LogisticsSupplyChain from "@/sections/services/LogisticsSupplyChain";
 import RetailCoverage from "@/sections/services/RetailCoverage";
 import WhatWeOffer from "@/sections/services/WhatWeOffer";
 import Image from "next/image";
 import Link from "next/link";
+
+export const generateMetadata = () => {
+  return handlerMetaDetails("services");
+};
 
 const coveragesItem = [
   {
@@ -151,7 +158,7 @@ const ServicePage = () => {
       {/* section 3 */}
       <RetailCoverage />
 
-      {/* section 4 */}
+      {/* section 4 - E-commerce Distribution */}
       <section className="team-one section-dark" id="nurse-services">
         <div className="container">
           <div style={{ display: "flex", justifyContent: "end" }}>
@@ -213,7 +220,7 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Services Grid /Channel Coverage*/}
+      {/* Services Grid - Channel Coverage*/}
       <section className="service-one service-two--page service-grid-bg">
         <div className="container">
           <div className="sec-title text-left">
@@ -266,113 +273,7 @@ const ServicePage = () => {
       </section>
 
       {/* How We Work */}
-      <section className="why-choose-three">
-        <div
-          className="why-choose-three__bg"
-          style={{
-            backgroundImage:
-              "url('assets/images/shapes/why-choose-three-bg.png')",
-          }}
-        ></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6">
-              <div
-                className="why-choose-three__content wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
-                    How We <span> Work</span>
-                  </h3>
-                  <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-                    Our proven partnership process
-                  </p>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Consultation
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        We understand your brand, goals, and market aspirations
-                        through detailed discussions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Strategy
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        Our team crafts a customized distribution strategy
-                        aligned with your objectives.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">
-                        Execution
-                      </p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        We deploy our resources and network to bring your
-                        products to market efficiently
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="why-choose-three__box">
-                  <div className="why-choose-three__box__left">
-                    <div className="why-choose-three__box__left-item">
-                      <p className="why-choose-three__box__left-text">Growth</p>
-                    </div>
-                  </div>
-                  <div className="why-choose-three__box__right">
-                    <div className="why-choose-three__box__right-item">
-                      <p className="why-choose-three__box__right-text">
-                        Continuous optimization and scaling to maximize your
-                        brand's market potential.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div
-                className="why-choose-three__right wow slideInRight"
-                style={{
-                  backgroundImage:
-                    "url('/assets/distributor-img/how-we-work.jpg')",
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HowWeWork />
 
       {/* faq */}
       <section className="faq-one" style={{ background: "#0E222A" }}>
@@ -477,39 +378,7 @@ const ServicePage = () => {
       </section>
 
       {/* Newsletter */}
-      <section className="container-fluid d-flex align-items-center justify-content-center text-center newsletter-section">
-        <div className="circle-newsletter" />
-        <div className="container position-relative">
-          <div className="row justify-content-center">
-            <div className="col-md-10 col-sm-12">
-              <h2 className="fw-bold text-white mb-3 section-subheading">
-                Join Our Growing Network
-              </h2>
-              <p
-                className="text-white mb-4"
-                style={{ fontSize: "clamp(14px, 2vw, 18px)", opacity: 0.9 }}
-              >
-                Whether you're a brand looking for distribution or a
-                professional seeking opportunities, we'd love to hear from you.
-              </p>
-
-              <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                <a href="#" className=" fw-semibold custom-btn">
-                  REQUEST A PROPOSAL
-                </a>
-
-                <a href="#" className=" fw-semibold custom-btn">
-                  LEARN ABOUT DISTRIBUTION
-                </a>
-
-                <a href="#" className=" fw-semibold custom-btn">
-                  VIEW OUR PARTNERS
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewsLetter />
 
       <ScriptsLoader />
     </>

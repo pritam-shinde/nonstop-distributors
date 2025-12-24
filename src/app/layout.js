@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homestead Experts - Medical Expert Witness Services</title>
+        <title>Nonstop Distributors - Distributing Excellence</title>
 
         {/* favicons */}
         <link
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
 
         <meta
           name="description"
-          content="Homestead Experts provides trusted medical expert witness services, connecting legal teams with certified specialists across all medical fields."
+          content="Nonstop Distributors provides trusted distribution services, connecting businesses with certified specialists across all distribution fields."
         />
 
         {/* vendor CSS */}

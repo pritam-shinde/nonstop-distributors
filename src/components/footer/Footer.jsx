@@ -7,7 +7,6 @@ import {
 } from "../icons/Social";
 
 const Footer = () => {
-
   const socialLinks = [
     { href: "#", icon: <LinkedinIcon />, label: "LinkedIn" },
     { href: "#", icon: <XIcon />, label: "Twitter" },
@@ -20,7 +19,8 @@ const Footer = () => {
       <div
         className="main-footer__bg"
         style={{
-          backgroundImage: "url('/assets/distributor-img/footer-istockphoto.jpg')",
+          backgroundImage:
+            "url('/assets/distributor-img/footer-istockphoto.jpg')",
           // backgroundImage: "url('/assets/distributor-img/footer.jpg')",
           backgroundPosition: "100% 100%",
           backgroundRepeat: "no-repeat",
@@ -81,10 +81,10 @@ const Footer = () => {
                     <ul className="list-unstyled footer-widget__links">
                       {[
                         { label: "Home", href: "/" },
-                        { label: "About Us", href: "/about-us/" },
                         { label: "Our Services", href: "/services/" },
-                        { label: "Partner Brands", href: "/partners/" },
+                        { label: "About Us", href: "/about-us/" },
                         { label: "Contact Us", href: "/contact-us/" },
+                        { label: "Careers", href: "/careers/" },
                       ].map((link, idx) => (
                         <li key={idx}>
                           <a href={link.href} className=" text-white">
@@ -100,19 +100,60 @@ const Footer = () => {
                     <h3 className="footer-widget__title">Contact</h3>
                     <ul className="list-unstyled footer-widget__contact">
                       <li>
-                        <i className="pe-2 icon-pin"></i>
+                        {/* <i className="pe-2 icon-pin"></i> */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>
                         <span className="text-white">
                           Nagpur, Maharashtra, India
                         </span>
                       </li>
                       <li>
-                        <i className="pe-2 icon-telephone-call-1"></i>
+                        {/* <i className="pe-2 icon-telephone-call-1"></i> */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                        </svg>
                         <a href="tel:+ 89564 15939">
                           <span className="text-white">89564 15939</span>
                         </a>
                       </li>
                       <li>
-                        <i className="pe-2 icon-mail"></i>
+                        {/* <i className="pe-2 icon-mail"></i> */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                          <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>
                         <a href="mailto:info@nonstopdistributors.com">
                           <span className="text-white">
                             info@nonstopdistributors.com
@@ -120,7 +161,21 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <i className="pe-2 icon-clock"></i>
+                        {/* <i className="pe-2 icon-clock"></i> */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 6v6l4 2" />
+                          <circle cx="12" cy="12" r="10" />
+                        </svg>
                         <span className="text-white">Mon - Sat: 9AM - 6PM</span>
                       </li>
                     </ul>
@@ -128,7 +183,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -138,8 +192,8 @@ const Footer = () => {
         <div className="container">
           <div className="main-footer__bottom__inner text-center">
             <p className="text-white mb-0">
-              © {new Date().getFullYear()} <a href="/">NONSTOP Distributors</a>. All Rights
-              Reserved.
+              © {new Date().getFullYear()} <a href="/">NONSTOP Distributors</a>.
+              All Rights Reserved.
             </p>
           </div>
         </div>

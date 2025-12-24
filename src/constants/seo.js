@@ -1,28 +1,38 @@
 const metaDetails = {
-    home: {
-        title: "Homestead Experts - Medical Expert Witness Services",
-        description:
-            "Homestead Experts provides trusted medical expert witness services, connecting legal teams with certified specialists across all medical fields.",
-        canonical: "https://homesteadexperts.com/",
-    },
-    about: {
-        title: "Know About Us - Legal Expertise - Homestead Experts",
-        description:
-            "Homestead Experts connects legal teams with trusted, board-certified medical professionals for expert opinions, case reviews, and testimony.",
-        canonical: "https://homesteadexperts.com/about/",
-    },
-    contact: {
-        title: "Contact Us for Legal Help - Homestead Experts",
-        description:
-            "Do you have issues or require professional assistance with your case? For reliable medical witness services get in touch with Homestead Experts.",
-        canonical: "https://homesteadexperts.com/contact/",
-    },
-    "not-found": {
-        title: "Page Not Found | Homestead Experts",
-        description:
-            "Oops! The page you're looking for doesn't exist. Return to Homestead Experts's homepage or explore our services",
-        canonical: "https://homesteadexperts.com/404/",
-    },
+  home: {
+    title: "Nonstop Distribution | Trusted FMCG & Goods Distributor in India",
+    description:
+      "Nonstop Distribution is a reliable goods and FMCG distribution company in India, ensuring efficient supply chain management, timely deliveries, and strong market reach across the city.",
+    canonical: "https://homesteadexperts.com/",
+  },
+
+  "about-us": {
+    title: "About Nonstop Distribution | Reliable Goods Distributor in India",
+    description:
+      "Learn about Nonstop Distribution, a trusted Indian distribution company delivering excellence in FMCG, consumer goods, and supply chain operations with a commitment to growth and reliability.",
+    canonical: "https://homesteadexperts.com/about/",
+  },
+
+  "contact-us": {
+    title: "Contact Nonstop Distribution | FMCG & Goods Distribution Partner",
+    description:
+      "Looking for a dependable goods distribution partner in India? Contact Nonstop Distribution for efficient FMCG distribution, logistics support, and business collaboration.",
+    canonical: "https://homesteadexperts.com/contact/",
+  },
+
+  services: {
+    title: "Distribution Services | FMCG & Goods Supply Chain Solutions",
+    description:
+      "Discover Nonstop Distribution’s services including FMCG distribution, inventory management, logistics coordination, and last-mile delivery solutions across the city.",
+    canonical: "https://homesteadexperts.com/services/",
+  },
+
+  "not-found": {
+    title: "Page Not Found | Nonstop Distribution",
+    description:
+      "The page you’re looking for doesn’t exist. Visit the Nonstop Distribution homepage to explore our FMCG and goods distribution services in India.",
+    canonical: "https://homesteadexperts.com/404/",
+  },
 };
 
 export function handlerMetaDetails(key) {
@@ -30,18 +40,18 @@ export function handlerMetaDetails(key) {
 
     if (!data) {
         return {
-            title: "Homestead Experts",
+            title: "Nonstop Distribution",
             description: "Default meta description",
             alternates: { canonical: "https://homesteadexperts.com/" },
             robots: "index, follow",
             openGraph: {
-                title: "Homestead Experts",
+                title: "Nonstop Distribution",
                 description: "Default Open Graph description",
                 type: "website",
                 url: "https://homesteadexperts.com/",
             },
             twitter: {
-                title:  "Homestead Experts",
+                title: "Nonstop Distribution",
                 description: "Default Twitter description",
                 card: "summary_large_image",
             },

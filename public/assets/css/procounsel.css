@@ -3766,7 +3766,8 @@ h2 {
   background-color: var(--procounsel-gray2, #ededed);
   color: var(--procounsel-text, #838790);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
+  /* font-weight: 600; */
   font-size: 14px;
   line-height: 25px;
   border: none;

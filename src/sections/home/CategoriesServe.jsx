@@ -1,4 +1,4 @@
-const Banner5CaseStudy = () => {
+const CategoriesServe = () => {
   return (
     <>
       <section className="portfolio-one" id="caseStudy">
@@ -109,7 +109,7 @@ const Banner5CaseStudy = () => {
   );
 };
 
-export default Banner5CaseStudy;
+export default CategoriesServe;
 
 // const Banner5CaseStudy = () => {
 //   return (

@@ -1,4 +1,5 @@
 import BlogSkeleton from "@/components/BlogSkeleton";
+import NewsLetter from "@/components/NewsLetter";
 import PaginationButton from "@/components/PaginationButton";
 import ScriptsLoader from "@/components/ScriptsLoader";
 import { Suspense } from "react";
@@ -22,7 +23,7 @@ const MainBlogSection = async ({ searchParams }) => {
     const response = await fetch(url, { cache: "no-store" });
 
     fetchedData = await response.json();
-  } catch (error) { }
+  } catch (error) {}
 
   const { data, total_page, page } = fetchedData || {};
 
@@ -82,7 +83,11 @@ const MainBlogSection = async ({ searchParams }) => {
                   {data?.map((post, index) => {
                     const date = getFormattedDate(post.date);
                     return (
-                      <div key={post.id} className="col-lg-4 col-md-6" id={`blog-${index}`}>
+                      <div
+                        key={post.id}
+                        className="col-lg-4 col-md-6"
+                        id={`blog-${index}`}
+                      >
                         <div
                           className="blog-card wow fadeInUp"
                           data-wow-duration="1500ms"
@@ -169,7 +174,7 @@ const MainBlogSection = async ({ searchParams }) => {
       </section>
 
       {/* contact */}
-      <section className="contact-one" id="contact-service">
+      {/* <section className="contact-one" id="contact-service">
         <div
           style={{
             transform: "rotateY(180deg)",
@@ -345,7 +350,8 @@ const MainBlogSection = async ({ searchParams }) => {
         >
           <div className="tailored-redline"></div>
         </div>
-      </section>
+      </section> */}
+      <NewsLetter />
 
       <ScriptsLoader />
     </>

@@ -3,6 +3,10 @@ import Banner8Contact from '@/sections/home/Banner8Contact';
 import Script from 'next/script';
 import { useEffect } from 'react';
 
+// export const generateMetadata = () => {
+//   return handlerMetaDetails("services");
+// };
+
 const Contact = () => {
     useEffect(() => {
         const scriptUrls = [
@@ -43,17 +47,6 @@ const Contact = () => {
     return (
         <>
             <div className="page-wrapper">
-                {/* <section className="page-header">
-                    <div className="page-header__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/banner_contact.jpg')" }}></div>
-                    <div className="container">
-                        <h2 className="page-header__title bw-split-in-right">Contact</h2>
-                        <ul className="procounsel-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><span>Contact</span></li>
-                        </ul>
-                    </div>
-                </section> */}
-
                 <section className="" style={{ background: "#0E222A" }}>
                     <div
                         className="hero-slide hero-about-slide"
@@ -76,11 +69,14 @@ const Contact = () => {
                         </div>
                     </div>
                 </section>
+                
+                {/* Contact form */}
+                <Banner8Contact />
 
-                <Banner8Contact /> 
+                {/* Map */}
                 <div className="google-map google-map__contact">
                     <iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29783.966928937327!2d79.0275979042053!3d21.072827323858306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf7f336e0a13%3A0x44f6d37cf2cffa29!2sNONSTOP!5e0!3m2!1sen!2sin!4v1765860790089!5m2!1sen!2sin"
-                    className="map__contact" allowFullScreen></iframe>
+                        className="map__contact" allowFullScreen></iframe>
                 </div>
             </div>
 

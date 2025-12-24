@@ -2,7 +2,7 @@
 
 import ScriptsLoader from "@/components/ScriptsLoader";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
-import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
+import CategoriesServe from "@/sections/home/CategoriesServe";
 import Image from "next/image";
 import { useEffect } from "react";
 
@@ -131,7 +131,7 @@ export default function Home() {
       <div className="page-wrapper">
         <Banner1Swiper />
 
-        {/* Why Attorneys */}
+        {/* Why Choose section */}
         <section className="why-choose-four">
           <div
             className="why-choose-four__bg jarallax"
@@ -332,8 +332,49 @@ export default function Home() {
           </div>
         </section>
 
-        {/* case study */}
-        <Banner5CaseStudy />
+        {/* Categories We Serve */}
+        <CategoriesServe />
+
+        {/* Brands */}
+        <div
+          style={{
+            position: "relative",
+            // background: "linear-gradient(to right, #247ba0, #0E222A )",
+          }}
+          className="why-choose-four"
+        >
+          <div className="tailored-redline-new" />
+          <div className="d-flex gap-5 justify-content-center">
+            {[
+              {
+                label: "Patanjali",
+                imgSrc: "/assets/distributor-img/patanjali-brand.png",
+                width: 214,
+                height: 60,
+              },
+              {
+                label: "Britannia",
+                imgSrc:
+                  "/assets/distributor-img/britannia-industries-brand.png",
+                width: 168,
+                height: 60,
+              },
+            ].map((brand, index) => (
+              <div key={index}>
+                <Image
+                  src={brand.imgSrc}
+                  width={brand.width}
+                  height={brand.height}
+                  alt={brand.label}
+                />
+              </div>
+            ))}
+          </div>
+          <div
+            className="tailored-redline-new"
+            style={{ rotate: "0deg", top: "unset", bottom: 0 }}
+          />
+        </div>
       </div>
 
       <div className="search-popup">

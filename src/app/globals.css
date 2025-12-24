@@ -83,7 +83,7 @@ a {
   text-align: center;
 }
 
-.service-procounsel-btn>i {
+.service-procounsel-btn > i {
   padding: 13px 40px;
   font-style: normal;
   display: flex;
@@ -95,12 +95,12 @@ a {
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
 
-.service-procounsel-btn:hover>i {
+.service-procounsel-btn:hover > i {
   transform-origin: bottom center;
   transform: translateY(-100%) translateZ(150px) scaleY(0) rotateX(90deg);
 }
 
-.service-procounsel-btn>span {
+.service-procounsel-btn > span {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -117,7 +117,7 @@ a {
   transform-origin: bottom center;
 }
 
-.service-procounsel-btn:hover>span {
+.service-procounsel-btn:hover > span {
   transition: transform 500ms ease, top 500ms ease;
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
@@ -204,6 +204,19 @@ a {
   width: 100%;
   z-index: 1;
   transform: translateY(-50%) scaleX(-1);
+}
+
+.tailored-redline-new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  background-image: url("/assets/images/backgrounds/red-line-09.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+  rotate: 180deg;
 }
 
 .tailored-content {
@@ -418,7 +431,7 @@ a {
   text-transform: uppercase;
 }
 
-.tailored-btn>i {
+.tailored-btn > i {
   padding: 13px 40px;
   font-style: normal;
   display: flex;
@@ -430,12 +443,12 @@ a {
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
 
-.tailored-btn:hover>i {
+.tailored-btn:hover > i {
   transform-origin: bottom center;
   transform: translateY(-100%) translateZ(150px) scaleY(0) rotateX(90deg);
 }
 
-.tailored-btn>span {
+.tailored-btn > span {
   position: absolute;
   top: -1px;
   left: -1px;
@@ -452,7 +465,7 @@ a {
   transform-origin: bottom center;
 }
 
-.tailored-btn:hover>span {
+.tailored-btn:hover > span {
   transition: transform 500ms ease, top 500ms ease;
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
@@ -625,7 +638,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #0E222A !important;
+  background-color: #0e222a !important;
 }
 
 .card-box {
@@ -669,7 +682,7 @@ a {
 .featured-dimension {
   width: 100%;
   z-index: 10;
-  background-color: #0E222A;
+  background-color: #0e222a;
   padding: 40px 40px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
   position: absolute;

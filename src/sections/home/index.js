@@ -1,5 +1,5 @@
 const { default: Banner1 } = require("./Banner1");
-const { default: Banner5CaseStudy } = require("./Banner5CaseStudy");
+const { default: Banner5CaseStudy } = require("./CategoriesServe");
 const { default: Banner6Team } = require("./Banner6Team");
 const { default: Banner7Testimonial } = require("./Banner7Testimonial");
 const { default: Banner8Contact } = require("./Banner8Contact"); 
