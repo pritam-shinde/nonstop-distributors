@@ -10,7 +10,7 @@ const MainBlogSection = () => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('/assets/distributor-img/careers-page-banner.png')",
+              "url('/assets/distributor-img/careers-page-banner.jpg')",
           }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
@@ -188,7 +188,7 @@ const MainBlogSection = () => {
                   </div>
                   <div className="service-one__item__image">
                     <img
-                      src="assets/images/resources/service-1-1.png"
+                      src="/assets/images/resources/service-1-1.png"
                       alt="procounsel"
                     />
 

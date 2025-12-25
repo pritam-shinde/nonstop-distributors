@@ -626,7 +626,7 @@ a {
 }
 
 .bgimg-services {
-  background-image: url("/assets/distributor-img/service-banner.png") !important;
+  background-image: url("/assets/distributor-img/service-banner.jpg") !important;
   /* background-image: url("/assets/distributor-img/services-page-banner.jpg") !important; */
   background-size: cover;
   background-position: top center;

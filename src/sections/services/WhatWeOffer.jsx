@@ -8,7 +8,7 @@ const WhatWeOffer = () => {
         data-jarallax
         data-speed="0.3"
         style={{
-          backgroundImage: "url(/assets/distributor-img/what-we-offer-nagpur.png)",
+          backgroundImage: "url(/assets/distributor-img/what-we-offer-nagpur.jpg)",
         }}
       ></div>
       <div className="container">
@@ -115,7 +115,7 @@ const WhatWeOffer = () => {
                   style={{ width: "100%", height: "80%" }}
                 >
                   <img
-                    src="\assets\distributor-img\what-we-offer-nagpur.png"
+                    src="\assets\distributor-img\what-we-offer-nagpur.jpg"
                     alt="why-choose-us"
                     style={{
                       objectPosition: "right center",

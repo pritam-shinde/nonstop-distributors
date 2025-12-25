@@ -52,7 +52,7 @@ const Contact = () => {
             className="hero-slide hero-about-slide"
             style={{
               backgroundImage:
-                "url('/assets/distributor-img/contact-banner2.png')",
+                "url('/assets/distributor-img/contact-banner2.jpg')",
             }}
           >
             {/* style={{ backgroundImage: "url('assets/images/backgrounds/banner_contact.jpg')" }}> */}

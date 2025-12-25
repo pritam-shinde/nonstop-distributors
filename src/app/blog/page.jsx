@@ -34,7 +34,7 @@ const MainBlogSection = async ({ searchParams }) => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('/assets/distributor-img/blog-page-banner.png')",
+              "url('/assets/distributor-img/blog-page-banner.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "top  center",
             backgroundRepeat: "no-repeat",

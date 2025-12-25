@@ -16,8 +16,7 @@ const About = () => {
       id: 1,
       name: "Pritam Shinde",
       designation: "Founder & CEO",
-      img: "/assets/photos/about/me4suit.jpg",
-      // img: "/assets/images/team/team-1-1.jpg",
+      img: "/assets/photos/about/me4suit.jpg", 
       delay: "000ms",
     },
     {
@@ -28,24 +27,14 @@ const About = () => {
       delay: "100ms",
     },
   ];
-
-  const socialLinks = [
-    { href: "https://facebook.com", icon: "icon-facebook", label: "Facebook" },
-    {
-      href: "https://pinterest.com",
-      icon: "icon-pinterest",
-      label: "Pinterest",
-    },
-    { href: "https://twitter.com", icon: "icon-twitter", label: "Twitter" },
-    { href: "https://youtube.com", icon: "icon-youtube", label: "Youtube" },
-  ];
+ 
   return (
     <>
       <section className="" style={{ background: "#0E222A" }}>
         <div
           className="hero-slide hero-about-slide"
           style={{
-            backgroundImage: "url('/assets/distributor-img/about-banner.png')",
+            backgroundImage: "url('/assets/distributor-img/about-banner.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "top  center",
             backgroundRepeat: "no-repeat",
@@ -133,7 +122,7 @@ const About = () => {
                     alt="why-choose-us"
                   /> */}
                   <Image
-                    src="\assets\distributor-img\who-we-are.png"
+                    src="\assets\distributor-img\who-we-are.jpg"
                     width={340}
                     height={570}
                     alt="why-choose-us"

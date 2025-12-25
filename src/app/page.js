@@ -139,7 +139,7 @@ export default function Home() {
             data-speed="0.3"
             style={{
               backgroundImage:
-                "url(/assets/distributor-img/why-choose-nonstop-distributor.png)",
+                "url(/assets/distributor-img/why-choose-nonstop-distributor.jpg)",
             }}
           ></div>
           <div className="container">
@@ -167,13 +167,11 @@ export default function Home() {
                               width={28}
                               height={28}
                               src="/assets/distributor-img/brand-partnership-new.png"
-                              //  src="/assets/images/shapes/icon-01.png"
                               alt="response"
                             />
                           </div>
                           <h4 className="why-choose-four__item__title">
                             Multi-Category <br /> Expertise
-                            {/* Independent and <br /> Attorney-Focused. */}
                           </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
@@ -185,18 +183,15 @@ export default function Home() {
                       <div className="why-choose-four__item">
                         <div className="why-choose-four__item__top">
                           <div className="why-choose-four__item__icon">
-                            {/* <i className="icon-collaboration"></i> */}
                             <Image
                               width={28}
                               height={28}
                               src="/assets/distributor-img/multi-category-expertise-new.png"
-                              //  src="/assets/images/shapes/icon-01.png"
                               alt="response"
                             />
                           </div>
                           <h4 className="why-choose-four__item__title">
                             Transparency <br /> You Can Trust.
-                            {/* Transparency <br /> You Can Trust. */}
                           </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
@@ -214,13 +209,11 @@ export default function Home() {
                               width={28}
                               height={28}
                               src="/assets/distributor-img/operational-excellence-new.png"
-                              //  src="/assets/images/shapes/icon-03.png"
                               alt="response"
                             />
                           </div>
                           <h4 className="why-choose-four__item__title">
                             Brand <br /> Partnership
-                            {/* National Network. <br /> Local Attention. */}
                           </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
@@ -235,13 +228,11 @@ export default function Home() {
                               width={28}
                               height={28}
                               src="/assets/distributor-img/retail-channel-new.png"
-                              //  src="/assets/images/shapes/icon-04.png"
                               alt="response"
                             />
                           </div>
                           <h4 className="why-choose-four__item__title">
                             Operational <br /> Excellence
-                            {/* Responsive <br /> and Reliable */}
                           </h4>
                         </div>
                         <p className="why-choose-four__item__text text-white">
@@ -262,7 +253,7 @@ export default function Home() {
                       style={{ width: "100%", height: "80%" }}
                     >
                       <img
-                        src="\assets\distributor-img\why-choose-nonstop-distributor.png"
+                        src="\assets\distributor-img\why-choose-nonstop-distributor.jpg"
                         alt="why-choose-us"
                         style={{
                           objectPosition: "right center",
