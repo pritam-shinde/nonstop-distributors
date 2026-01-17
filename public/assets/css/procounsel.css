@@ -447,8 +447,8 @@ h2 {
   /* background-color: var(--procounsel-base, #c7954a); */
   color: var(--procounsel-white, #fff);
   font-size: 16px;
-  font-weight: 800;
-  /* font-weight: 600; */
+  /* font-weight: 800; */
+  font-weight: 600;
   transition: 500ms;
   position: relative;
   overflow: hidden;
@@ -14558,6 +14558,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .faq-one__accordion .accrodion-title__icon {

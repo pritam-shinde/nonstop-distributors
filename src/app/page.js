@@ -278,7 +278,7 @@ export default function Home() {
                 <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
                   Lorem ipsum dolor sit.
                 </h2>
-                <h3 className="tailored-subtitle font-Merriweather text-white fs-4">
+                <h3 className="tailored-subtitle font-Merriweather text-white fs-4 mt-2">
                   Lorem ipsum dolor sit amet.
                 </h3>
               </div>
@@ -331,9 +331,7 @@ export default function Home() {
         <CategoriesServe />
 
         {/* Brands */}
-        <div
-          style={{
-            position: "relative",
+        <div style={{position: "relative",
             // background: "linear-gradient(to right, #247ba0, #0E222A )",
           }}
           className="why-choose-four"
@@ -343,14 +341,14 @@ export default function Home() {
             {[
               {
                 label: "Patanjali",
-                imgSrc: "/assets/distributor-img/patanjali-brand.png",
+                imgSrc: "/assets/distributor-img/pantanjali.png",
                 width: 214,
                 height: 60,
               },
               {
                 label: "Britannia",
                 imgSrc:
-                  "/assets/distributor-img/britannia-industries-brand.png",
+                  "/assets/distributor-img/britannia.png",
                 width: 168,
                 height: 60,
               },

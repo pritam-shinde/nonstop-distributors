@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const sliderData = [
   {
-    bg: "/assets/distributor-img/banner-home.jpg",
+    bg: "/assets/distributor-img/banner-home-new.jpg",
     // bg: "/assets/distributor-img/banner-warehouse.jpg",
     title: (
       <>

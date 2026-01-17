@@ -247,8 +247,8 @@ const Header = () => {
             <ul className="mobile-nav__contact list-unstyled">
               <li>
                 <i className="fa fa-envelope"></i>
-                <a href="mailto:needhelp@procounsel.com">
-                  needhelp@procounsel.com
+                <a href="mailto:info@nonstopdistributors.com">
+                  info@nonstopdistributors.com
                 </a>
               </li>
               <li>

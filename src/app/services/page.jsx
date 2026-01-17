@@ -16,38 +16,38 @@ export const generateMetadata = () => {
 const coveragesItem = [
   {
     title: "Modern Trade",
-    img: "/assets/images/shapes/expert-witness-requirement.png",
+    img: "/assets/distributor-img/modern-trade.png",
     sectionId: "#",
     description: "Supermarkets. Hypermarkets, Department Stores",
   },
   {
     title: "General Trade",
-    img: "/assets/images/shapes/legal-nurse.png",
+    img: "/assets/distributor-img/general-trade.png",
     sectionId: "#",
     description: "Kirana Stores, Neighborhood Retailers",
   },
   {
     title: "Convenience",
     sectionId: "#",
-    img: "/assets/images/shapes/background-check.png",
+    img: "/assets/distributor-img/convenience.png",
     description: "24/7 Stores, Mini-marts, Gas Stations",
   },
   {
     title: "HoReCa",
-    img: "/assets/images/shapes/expert-witness-requirement.png",
+    img: "/assets/distributor-img/horeca.png",
     sectionId: "#",
     description: "Hotels, Restaurants, Cafes, Caterers",
   },
   {
     title: "E-commerce",
-    img: "/assets/images/shapes/legal-nurse.png",
+    img: "/assets/distributor-img/e-commerce.png",
     sectionId: "#",
     description: "Online Marketplaces, D2C Platforms",
   },
   {
     title: "Institutional",
     sectionId: "#",
-    img: "/assets/images/shapes/background-check.png",
+    img: "/assets/distributor-img/institutional.png",
     description: "Corporate, Schools, Hospitals",
   },
 ];
@@ -259,7 +259,7 @@ const ServicePage = () => {
 
                     <Link
                       href="#"
-                      className="procounsel-btn procounsel-btn--sm mt-3"
+                      className="procounsel-btn procounsel-btn--sm mt-3 pe-none"
                     >
                       <i>Learn More</i>
                       <span>Learn More</span>
