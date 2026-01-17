@@ -10,9 +10,8 @@ import Image from "next/image";
 
 export const sliderData = [
   {
-    bg: "/assets/distributor-img/banner-warehouse.jpg",
-    // bg: "/assets/distributor-img/istockphoto-banner.jpg",
-    // bg: "/assets/distributor-img/home-page-banner.jpg",
+    bg: "/assets/distributor-img/banner-home.jpg",
+    // bg: "/assets/distributor-img/banner-warehouse.jpg",
     title: (
       <>
         Powering Brands <br /> Across the City.
@@ -29,40 +28,6 @@ export const sliderData = [
       </>
     ),
   },
-  // {
-  //   bg: "/assets/photos/home/hero_2.jpg",
-  //   title: (
-  //     <>
-  //       Speed When It <br /> Matters Most.
-  //     </>
-  //   ),
-  //   text: (
-  //     <>
-  //       <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-  //         Your case can’t wait — neither should your search for the right
-  //         expert. We deliver tailored matches quickly, without sacrificing rigor
-  //         or credibility.
-  //       </p>
-  //     </>
-  //   ),
-  // },
-  // {
-  //   bg: "/assets/photos/home/hero_3.jpg",
-  //   title: (
-  //     <>
-  //       Experts in Every Specialty. <br /> Nationwide Reach.
-  //     </>
-  //   ),
-  //   text: (
-  //     <>
-  //       <p style={{ marginBottom: "20px" }} className="custom-max-width2">
-  //         Our network of experts spans every field and jurisdiction. From
-  //         medicine and engineering to finance and construction. Wherever your
-  //         case takes you, we connect you with the right expert.
-  //       </p>
-  //     </>
-  //   ),
-  // },
 ];
 
 const Banner1Swiper = () => {
@@ -87,7 +52,8 @@ const Banner1Swiper = () => {
                 backgroundPosition: "left center",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-              }}>
+              }}
+            >
               <div className="main-slider-one__overlay-one"></div>
               {/* Dark Overlay */}
               {/* <div style={{ position: "absolute", inset: 0, background: "rgba(0, 0, 0, 0.55)", zIndex: 1 }} /> */}
@@ -101,13 +67,19 @@ const Banner1Swiper = () => {
 
                 <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
                   <div>
-                    <a href="#contact-service" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
+                    <a
+                      href="#contact-service"
+                      className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
+                    >
                       <i>GET STARTED</i>
                       <span className="">GET STARTED</span>
                     </a>
                   </div>
                   <div>
-                    <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
+                    <a
+                      href="#"
+                      className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
+                    >
                       <i>LEARN MORE</i>
                       <span className="">LEARN MORE</span>
                     </a>
@@ -124,7 +96,10 @@ const Banner1Swiper = () => {
           <div className="feature-one home-banner-service-info featured-dimension">
             <div className="feature-one__inner">
               <div className="row gutter-y-0">
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                <div
+                  className="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="00ms"
+                >
                   <div className="feature-one__item ">
                     <div className="feature-one__item__icon text-white">
                       <Image
@@ -143,7 +118,10 @@ const Banner1Swiper = () => {
                     </h2>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                <div
+                  className="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="00ms"
+                >
                   <div className="feature-one__item feature-one__item--border-left justify-content-center">
                     <div className="feature-one__item__icon text-white">
                       <Image
@@ -162,7 +140,10 @@ const Banner1Swiper = () => {
                     </h2>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                <div
+                  className="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="00ms"
+                >
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
                       <Image

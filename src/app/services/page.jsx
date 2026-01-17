@@ -149,7 +149,7 @@ const ServicePage = () => {
       {/* Why Attorneys / What We offer */}
       <WhatWeOffer />
 
-      {/*services 1/ Full-Scale Distribution  */}
+      {/*services 1/ Translation Services  */}
       <FullScaleDistribution />
 
       {/* section 2 / Logistics & Supply Chain */}

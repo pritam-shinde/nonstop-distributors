@@ -12,9 +12,7 @@ const FullScaleDistribution = () => {
                         <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
                             Full-Scale Distribution
                         </h2>
-                        {/* <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-               Our comprehensive distribution network ensures your products reach to your store. auan.comacol indie From matropellion cities to tier towns, we have the infrastructure and expertise to manage your brand's complete distribution needs.
-              </p> */}
+                  
                     </div>
 
                     <div className="wow fadeInUp" data-wow-delay="0ms">
