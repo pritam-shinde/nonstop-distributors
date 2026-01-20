@@ -1,12 +1,14 @@
+"use client";
+
 const CategoriesServe = () => {
   return (
     <>
       <section className="portfolio-one" id="caseStudy">
         <div className="container">
-          <div className="sec-title "> 
-              <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white text-start">
+          <div className="sec-title ">
+            <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white text-start">
               Categories We Serve
-              </h2> 
+            </h2>
             <h3 className="about-one__content__text text-white mt-2 tailored-subtitle font-Merriweather fs-4">
               Specialized distribution expertise across diverse FMCG categories
             </h3>

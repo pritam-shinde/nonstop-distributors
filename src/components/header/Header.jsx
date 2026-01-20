@@ -59,16 +59,10 @@ const Header = () => {
           transition: "all 0.3s ease-in-out",
         }}
       >
-        <div className="container-fluid">
-          <div
-            className="main-header__inner"
-            style={{ width: "100%", margin: 0 }}
-          >
+        <div className="container">
+          <div className="main-header__inner" style={{ width: "100%", margin: 0 }}>
             {/* Logo */}
-            <div
-              className="main-header__logo"
-              style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}
-            >
+            <div className="main-header__logo" style={{ maxWidth: "250px", width: "100%", marginRight: 0 }}>
               <a href="/" style={{ width: "100%", display: "flex" }}>
                 <Image
                   src={
@@ -79,12 +73,6 @@ const Header = () => {
                   alt="Procounsel"
                   width={scrolled ? 147 : 149}
                   height={52}
-                  style={{
-                    margin: "auto",
-                    // width: "100%",
-                    // objectFit: "contain",
-                    // marginBottom: "4px !important",
-                  }}
                 />
               </a>
             </div>
@@ -238,7 +226,7 @@ const Header = () => {
                   alt="Homestead Experts"
                   width={140}
                   height={40}
-                  // style={{ width: "100%", objectFit: "contain" }}
+                // style={{ width: "100%", objectFit: "contain" }}
                 />
               </a>
             </div>

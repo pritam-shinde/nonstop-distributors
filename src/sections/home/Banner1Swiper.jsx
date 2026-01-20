@@ -111,7 +111,7 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="#contact-service" className="text-white">
+                      <Link href="/about-us/" className="text-white">
                         20+ Years <br /> of Experience
                         {/* Find Your <br /> Expert Witness */}
                       </Link>
@@ -133,9 +133,8 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="#contact-service" className="text-white">
-                        25+ Partner <br /> Brands
-                        {/* Get a Free <br /> Case Assessment */}
+                      <Link href="/about-us/" className="text-white">
+                        25+ Partner <br /> Brands 
                       </Link>
                     </h2>
                   </div>
@@ -155,9 +154,8 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="/onboard/" className="text-white">
-                        5000+ Retail <br /> Points
-                        {/* Join Our <br /> Expert Network */}
+                      <Link href="/about-us/" className="text-white">
+                        5000+ Retail <br /> Points 
                       </Link>
                     </h2>
                   </div>
