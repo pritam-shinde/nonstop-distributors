@@ -279,10 +279,10 @@ const ServicePage = () => {
       <section className="faq-one" style={{ background: "#0E222A" }}>
         <div className="container">
           <div className="sec-title text-left">
-            <h3 className="sec-title__title bw-split-in-up text-white">
+            <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
               Homestead Experts <br />
               <span>Frequently Asked Questions </span>
-            </h3>
+            </h2>
           </div>
 
           <div className="row">
@@ -295,10 +295,10 @@ const ServicePage = () => {
                   <div className="accrodion active">
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
-                      <h4 className="text-white">
+                      <h3 className="fs-6 text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                      </h4>
+                      </h3>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
@@ -313,11 +313,11 @@ const ServicePage = () => {
                   <div className="accrodion">
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
-                      <h4 className="text-white">
+                      <h3 className="fs-6 text-white">
                         Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                      </h4>
+                      </h3>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
@@ -340,10 +340,10 @@ const ServicePage = () => {
                 <div className="accrodion">
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
-                    <h4 className="text-white">
+                    <h3 className="fs-6 text-white">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                    </h4>
+                    </h3>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">
@@ -358,10 +358,10 @@ const ServicePage = () => {
                 <div className="accrodion">
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
-                    <h4 className="text-white">
+                    <h3 className="fs-6 text-white">
                       Lorem ipsum dolor sit amet consectetur?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                    </h4>
+                    </h3>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">

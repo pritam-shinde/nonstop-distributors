@@ -1,33 +1,14 @@
-"use client";
-
 import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
-// import { handlerMetaDetails } from "@/constants/seo";
+import { handlerMetaDetails } from "@/constants/seo";
 import { VisionMission } from "@/sections/about/VisionMission";
 import Image from "next/image";
 
-// export const generateMetadata = () => {
-//   return handlerMetaDetails("about-us");
-// };
+export const generateMetadata = () => {
+  return handlerMetaDetails("about-us");
+};
 
 const About = () => {
-  const teamMembers = [
-    {
-      id: 1,
-      name: "Pritam Shinde",
-      designation: "Founder & CEO",
-      img: "/assets/photos/about/me4suit.jpg", 
-      delay: "000ms",
-    },
-    {
-      id: 2,
-      name: "Team Member 2",
-      designation: "CTO",
-      img: "/assets/images/team/team-1-2.png",
-      delay: "100ms",
-    },
-  ];
- 
   return (
     <>
       <section className="" style={{ background: "#0E222A" }}>
@@ -44,9 +25,8 @@ const About = () => {
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
-              ABOUT{" "}
+              ABOUT
               <span className="fw-bold read-more-btn">
-                {" "}
                 NONSTOP Distributors
               </span>
             </p>
@@ -76,7 +56,6 @@ const About = () => {
           className="why-choose-four__bg jarallax"
           data-jarallax
           data-speed="0.3"
-          // data-imgposition="50% -100%"
           style={{
             backgroundImage:
               "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
@@ -89,16 +68,16 @@ const About = () => {
             <div className="col-xl-6 wow fadeInUp" data-wow-delay="00ms">
               <div className="why-choose-four__content">
                 <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
+                  <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat">
                     Who We <span> Are</span>
-                  </h3>
+                  </h2>
                 </div>
 
-                <p className="why-choose-four__content__text text-white fs-5 fw-bold">
+                <h3 className="why-choose-four__content__text text-white custom-heading-h3 fs-5 fw-bold">
                   NONSTOP Distributors is of leading FMCG distribution partners,
                   connecting premium consumer brands to every major sales
                   channel.
-                </p>
+                </h3>
                 <p className="why-choose-four__content__text text-white">
                   With decades of experience and an extensive distribution
                   network, we specialize in managing and scaling brands across
@@ -116,11 +95,6 @@ const About = () => {
             <div className="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
               <div className=" why-choose-four__right">
                 <div className="why-choose-four__img">
-                  {/* <img
-                    src="/assets/photos/about/our_story.jpg"
-                    // src="/assets/images/backgrounds/why_choose_us_3rd_section.jpg"
-                    alt="why-choose-us"
-                  /> */}
                   <Image
                     src="\assets\distributor-img\who-we-are.jpg"
                     width={340}
@@ -130,7 +104,7 @@ const About = () => {
                 </div>
                 <div className="why-choose-four__right__wrapper">
                   <div className="why-choose-four__box count-box">
-                    <h3 className="why-choose-four__box__count">
+                    {/* <h3 className="why-choose-four__box__count">
                       <span
                         className="count-text"
                         data-stop="20"
@@ -139,13 +113,22 @@ const About = () => {
                       >
                         20
                       </span>
-                    </h3>
+                    </h3> */}
+                    <span
+                      style={{ lineHeight: "49px" }}
+                      className="why-choose-four__box__count count-text custom-heading-all"
+                      data-stop="20"
+                      data-speed="1500"
+                      data-suffix="+"
+                    >
+                      20
+                    </span>
                     <p className="why-choose-four__box__text">
                       Years <br /> of Experience
                     </p>
                   </div>
                   <div className="why-choose-four__box count-box">
-                    <h3 className="why-choose-four__box__count">
+                    {/* <h3 className="why-choose-four__box__count">
                       <span
                         className="count-text"
                         data-stop="25"
@@ -154,13 +137,22 @@ const About = () => {
                       >
                         25+
                       </span>
-                    </h3>
+                    </h3> */}
+                    <span
+                      style={{ lineHeight: "49px" }}
+                      className="why-choose-four__box__count count-text custom-heading-all"
+                      data-stop="25"
+                      data-speed="1500"
+                      data-suffix="+"
+                    >
+                      25+
+                    </span>
                     <p className="why-choose-four__box__text">
                       Partner <br /> Brands
                     </p>
                   </div>
                   <div className="why-choose-four__box count-box">
-                    <h3 className="why-choose-four__box__count">
+                    {/* <h3 className="why-choose-four__box__count">
                       <span
                         className="count-text"
                         data-stop="5000"
@@ -169,7 +161,16 @@ const About = () => {
                       >
                         5,000+
                       </span>
-                    </h3>
+                    </h3> */}
+                    <span
+                      style={{ lineHeight: "49px" }}
+                      className="why-choose-four__box__count count-text custom-heading-all"
+                      data-stop="5000"
+                      data-speed="1500"
+                      data-suffix="+"
+                    >
+                      5000+
+                    </span>
                     <p className="why-choose-four__box__text">
                       Retail <br /> Points
                     </p>
@@ -188,13 +189,15 @@ const About = () => {
       <section className="team-one" style={{ background: "#0E222A" }}>
         <div className="container">
           <div className="sec-title text-left">
-            <h3 className="sec-title__title bw-split-in-up text-white">
+            <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
               Our Core <span> Values</span>
-            </h3>
-
-            <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+            </h2>
+            {/* <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
               The principle that guide everything we do
-            </h4>
+            </h4> */}
+            <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0">
+              The principle that guide everything we do
+            </h3>
           </div>
           <div className="row gutter-y-30">
             <div
@@ -333,70 +336,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* The Team */}
-      {/* <section className="team-one">
-        <div className="container">
-          <div className="sec-title text-left">
-            <h3 className="sec-title__title bw-split-in-up text-white">
-              Meet the Team <br /> <span>Behind Nonstop Distributors</span>
-            </h3>
-          </div>
-          <div className="row gutter-y-30">
-            {teamMembers.map((member) => (
-              <div className="col-lg-4 col-md-6" key={member.id}>
-                <div
-                  className="team-card wow fadeInUp animated"
-                  data-wow-duration="1500ms"
-                  data-wow-delay={member.delay}
-                  style={{
-                    height: "100%", // ensure full height usage
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <div className="team-card__image bw-img-anim-left"
-                    style={{
-                      height: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "space-between",
-                      clipPath: "polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%)"
-                    }}
-                  >
-                    <div className="team-card__content">
-                      <h3 className="team-card__title">
-                        <div>{member.name}</div>
-                      </h3>
-                      <p className="team-card__designation">
-                        {member.designation}
-                      </p>
-                    </div> 
-
-                    <img
-                      src={member.img}
-                      alt={member.name}
-                      style={{
-                        width: "100%",
-                        height: "425px", // fixed height for all images
-                        objectFit: "cover", // crops to fit nicely
-                      }}
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-            <div className="d-flex justify-content-center align-items-center">
-              <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
-                <i>VIEW All</i>
-                <span className="">VIEW All</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Newsletter */}
       <NewsLetter />
 
       <ScriptsLoader />

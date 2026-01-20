@@ -23,13 +23,12 @@ export const VisionMission = () => {
     >
       <div className="container">
         <div className="sec-title text-left">
-          <h3 className="sec-title__title bw-split-in-up text-white">
+          <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
             Our Mission <span> & Vision</span>
-          </h3>
+          </h2>
 
-          <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
-            Guided by purpose, driven by excellence
-          </h4>
+          <h3 className="why-choose-four__content__text text-white custom-heading-h3 tailored-subtitle mt-2 fs-5 fw-bold"> Guided by purpose, driven by excellence</h3>
+
           {/* <p className="why-choose-four__item__text text-white custom-max-width2">
         Homestead Experts partners with attorneys, law firms, and insurance organizations that rely on credible, courtroom-ready expert witnesses to support litigation and claims. Whether you’re building a complex medical malpractice case or reviewing an accident reconstruction, our team connects you with specialists who bring clarity, credibility, and experience to every matter.
                     </p> */}

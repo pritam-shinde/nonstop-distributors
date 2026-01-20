@@ -8,17 +8,17 @@ const Banner8Contact = () => {
             <div className="row">
               <div className="col-xl-6">
                 <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
-                    <span className="text-white">Contact </span>{" "}
+                 <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
+                    <span className="text-white">Contact </span> 
                     <span> Information</span>
-                  </h3>
-
-                  <p
+                  </h2>
+  {/* <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0"> </h3> */}
+                  <h3
                     className="contact-one__info__text text-white font-Merriweather"
                     style={{ fontSize: "clamp(18px,3vw,20px)" }}
                   >
                     Just a few details will get us started.
-                  </p>
+                  </h3>
                 </div>
 
                 <div className="contact-one__content">

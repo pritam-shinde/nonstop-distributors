@@ -9,20 +9,23 @@ const HowWeWork = () => {
                     <div className="col-xl-6">
                         <div className="why-choose-three__content wow fadeInUp" data-wow-delay="300ms">
                             <div className="sec-title text-left">
-                                <h3 className="sec-title__title bw-split-in-up">
+                               <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
                                     How We <span> Work</span>
-                                </h3>
-                                <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
+                                </h2>
+                                {/* <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
                                     Our proven partnership process
-                                </p>
+                                </p> */}
+                                  <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0">
+                                    Our proven partnership process
+                                </h3>
                             </div>
 
                             <div className="why-choose-three__box">
                                 <div className="why-choose-three__box__left">
                                     <div className="why-choose-three__box__left-item">
-                                        <p className="why-choose-three__box__left-text">
+                                        <h4 className="why-choose-three__box__left-text">
                                             Consultation
-                                        </p>
+                                        </h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-three__box__right">
@@ -38,9 +41,9 @@ const HowWeWork = () => {
                             <div className="why-choose-three__box">
                                 <div className="why-choose-three__box__left">
                                     <div className="why-choose-three__box__left-item">
-                                        <p className="why-choose-three__box__left-text">
+                                        <h4 className="why-choose-three__box__left-text">
                                             Strategy
-                                        </p>
+                                        </h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-three__box__right">
@@ -56,9 +59,9 @@ const HowWeWork = () => {
                             <div className="why-choose-three__box">
                                 <div className="why-choose-three__box__left">
                                     <div className="why-choose-three__box__left-item">
-                                        <p className="why-choose-three__box__left-text">
+                                        <h4 className="why-choose-three__box__left-text">
                                             Execution
-                                        </p>
+                                        </h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-three__box__right">
@@ -74,7 +77,7 @@ const HowWeWork = () => {
                             <div className="why-choose-three__box">
                                 <div className="why-choose-three__box__left">
                                     <div className="why-choose-three__box__left-item">
-                                        <p className="why-choose-three__box__left-text">Growth</p>
+                                        <h4 className="why-choose-three__box__left-text">Growth</h4>
                                     </div>
                                 </div>
                                 <div className="why-choose-three__box__right">

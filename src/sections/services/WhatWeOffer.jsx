@@ -17,14 +17,19 @@ const WhatWeOffer = () => {
             <div className="col-xl-8 wow fadeInUp" data-wow-delay="00ms">
               <div className="why-choose-four__content">
                 <div className="sec-title text-left">
-                  <h3 className="sec-title__title bw-split-in-up">
+                  <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
                     What We
                     <span> Offer</span>
-                  </h3>
-                  <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
+                  </h2>
+                  {/* <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
                     End-to-end distribution services tailored to your brand's
                     unique needs
-                  </h4>
+                  </h4> */}
+                  <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0">
+                    End-to-end distribution services tailored to your brand's
+                    unique needs
+                  </h3>
+
                 </div>
 
                 <div className="why-choose-four__list">
@@ -38,9 +43,9 @@ const WhatWeOffer = () => {
                           alt="response"
                         />
                       </div>
-                      <h3 className="why-choose-four__item__title">
+                      <h4 className="why-choose-four__item__title">
                         Full-Scale <br /> Distribution.
-                      </h3>
+                      </h4>
                     </div>
                     <p className="why-choose-four__item__text text-white">
                       Complete distribution management from warehouse to retail
@@ -52,9 +57,9 @@ const WhatWeOffer = () => {
                       <div className="why-choose-four__item__icon">
                         <i className="icon-collaboration"></i>
                       </div>
-                      <h3 className="why-choose-four__item__title">
+                      <h4 className="why-choose-four__item__title">
                         Logistics & <br /> Supply Chain.
-                      </h3>
+                      </h4>
                     </div>
                     <p className="why-choose-four__item__text text-white">
                       Efficient logistics solutions temperature control, and
@@ -74,9 +79,9 @@ const WhatWeOffer = () => {
                           alt="response"
                         />
                       </div>
-                      <h3 className="why-choose-four__item__title">
+                      <h4 className="why-choose-four__item__title">
                         Retail <br /> Coverage.
-                      </h3>
+                      </h4>
                     </div>
                     <p className="why-choose-four__item__text text-white">
                       Deep penetration across modern trade, general trade, and
@@ -93,9 +98,9 @@ const WhatWeOffer = () => {
                           alt="response"
                         />
                       </div>
-                      <h3 className="why-choose-four__item__title">
+                      <h4 className="why-choose-four__item__title">
                         E-commerce <br /> Distribution
-                      </h3>
+                      </h4>
                     </div>
                     <p className="why-choose-four__item__text text-white">
                       Seamless integration with major online marketplaces and

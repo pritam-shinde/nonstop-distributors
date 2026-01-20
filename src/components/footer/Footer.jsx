@@ -75,7 +75,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-xl-6 col-lg-4 col-md-6 col-sm-6">
                   <div className="footer-widget footer-widget--links">
-                    <h3 className="footer-widget__title">Quick Links</h3>
+                    <p className="footer-widget__title custom-heading-h3 fs-5 fw-bold">Quick Links</p>
 
                     <ul className="list-unstyled footer-widget__links">
                       {[
@@ -96,7 +96,7 @@ const Footer = () => {
                 </div>
                 <div className="col-xl-6 col-lg-8 col-md-8 col-sm-6">
                   <div className="footer-widget footer-widget--contact">
-                    <h3 className="footer-widget__title">Contact</h3>
+                    <p className="footer-widget__title custom-heading-h3 fs-5 fw-bold">Contact</p>
                     <ul className="list-unstyled footer-widget__contact">
                       <li>
                         {/* <i className="pe-2 icon-pin"></i> */}
