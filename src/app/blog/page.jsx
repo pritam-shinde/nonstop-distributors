@@ -54,23 +54,25 @@ const MainBlogSection = async () => {
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
+            <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
+              OUR <span className="fw-bold read-more-btn"> BLOG</span>
+            </p>
             <h1 className="">
-              Insights That Strengthen
+              Insights that power smarter
               <br />
-              <span style={{ color: "#fb3640" }}>Your Case Strategy</span>
+              <span style={{ color: "#fb3640" }}>FMCG distribution</span>
             </h1>
 
             <p style={{ marginBottom: "0px" }}>
-              Expert guidance, practical takeaways, and perspectives from the
-              intersection of law, medicine, and expert witness practice.
+              Market trends, channel strategies, and practical ideas to help
+              your brand grow faster across modern and general trade.
             </p>
             <p style={{ marginTop: "10px", marginBottom: "20px" }}>
-              The Homestead Blog is where attorneys, legal teams, and
-              professionals gain a deeper understanding of expert witness
-              strategy and case preparation. Each article is built on real-world
-              experience, from sourcing the right expert to managing complex
-              litigation timelines, helping you stay informed, prepared, and
-              confident at every stage of your case.
+              The NONSTOP Distributors blog shares real-world learnings from
+              FMCG distribution, including retail expansion, supply chain
+              planning, merchandising, and e-commerce execution. Explore
+              actionable content built to support better decisions and stronger
+              market presence.
             </p>
 
             <div>
@@ -79,8 +81,8 @@ const MainBlogSection = async () => {
                   href="#blog-0"
                   className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                 >
-                  <i>Explore the Latest Articles</i>
-                  <span className="">Explore the Latest Articles</span>
+                  <i>Explore Latest Articles</i>
+                  <span className="">Explore Latest Articles</span>
                 </a>
               </div>
             </div>

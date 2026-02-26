@@ -36,8 +36,6 @@ export const menuData = [
     label: "Contact",
     href: "/contact-us/",
   },
-  {
-    label: "Blog",
-    href: "/blog/"
-  },
+  {    label: "Careers",    href: "/careers/"  },
+  // {    label: "Blog",    href: "/blog/"  },
 ];

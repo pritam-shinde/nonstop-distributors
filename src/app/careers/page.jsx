@@ -124,7 +124,7 @@ const MainBlogSection = () => {
                 experience: "1-3 years",
                 jobType: "Full Time",
                 responsibilities: [
-                  "Coordinate between sales, warehouse, and delivery teams",
+                  "Coordinate sales, warehouse, and delivery teams.",
                   "Track daily operations and reports",
                   "Support order processing and dispatch planning",
                   "Assist management with operational tasks",
