@@ -25,9 +25,7 @@ const About = () => {
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
-              ABOUT
-              <span className="fw-bold read-more-btn">
-                NONSTOP Distributors
+              ABOUT <span className="fw-bold read-more-btn"> NONSTOP Distributors
               </span>
             </p>
             <h1 className="">
