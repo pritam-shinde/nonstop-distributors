@@ -198,13 +198,13 @@ const Header = () => {
                 </div>
                 <div>
                   <a
-                    href="tel:+89564 15939"
+                    href="tel:+89566 41833"
                     style={{
                       color: scrolled ? "#000000" : "#ffffff",
                       whiteSpace: "nowrap",
                     }}
                   >
-                    89564 15939
+                    89566 41833
                   </a>
                 </div>
               </div>
@@ -241,7 +241,7 @@ const Header = () => {
               </li>
               <li>
                 <i className="fa fa-phone-alt"></i>
-                <a href="tel:89564 15939">89564 15939</a>
+                <a href="tel:89566 41833">89566 41833</a>
               </li>
             </ul>
 

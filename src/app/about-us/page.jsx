@@ -31,7 +31,7 @@ const About = () => {
               </span>
             </p>
             <h1 className="">
-              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
+              Built on trust, driven by service,  <br /> and focused on moving your <br /> business forward.
             </h1>
             <div>
               <p style={{ marginBottom: "0px" }}>

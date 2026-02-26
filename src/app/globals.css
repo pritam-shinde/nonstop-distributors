@@ -693,7 +693,8 @@ a {
 }
 
 .custom-container {
-  max-width: 780px !important;
+  max-width: 970px !important;
+  /* max-width: 780px !important; */
   width: 100%;
 }
 

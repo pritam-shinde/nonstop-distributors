@@ -241,10 +241,10 @@ export default function Home() {
             <div className="d-flex justify-content-end text-start">
               <div className="custom-container">
                 <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white">
-                  Lorem ipsum dolor sit.
+                  Trusted partner in FMCG distribution
                 </h2>
                 <h3 className="tailored-subtitle font-Merriweather text-white fs-4 mt-2">
-                  Lorem ipsum dolor sit amet.
+                  Empowering FMCG growth
                 </h3>
               </div>
             </div>
@@ -278,14 +278,11 @@ export default function Home() {
                     maxWidth: "750px",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-                  totam fugit laborum odio. Excepturi similique corporis soluta
-                  recusandae fuga eveniet vero hic voluptas nostrum. Totam eos
-                  ipsam dolore quia in voluptates earum sint iste.
+                  We strategically partner with brands to ensure their products reach retailers and consumers seamlessly. We combine deep market insight, a powerful distribution network, and tailored strategies to help FMCG brands thrive. 
                 </p>
                 <a href="#contact-service" className="tailored-btn">
-                  <i>REQUEST AN EXPERT</i>
-                  <span>REQUEST AN EXPERT</span>
+                  <i>Let's Connect</i>
+                  <span>Let's Connect</span>
                 </a>
               </div>
             </div>

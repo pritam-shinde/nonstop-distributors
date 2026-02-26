@@ -62,7 +62,7 @@ const Contact = () => {
                 GET <span className="fw-bold read-more-btn"> IN TOUCH</span>
               </p>
               <h1 className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Your gateway to FMCG growth
               </h1>
               <div>
                 <p style={{ marginBottom: "0px" }}>

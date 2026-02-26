@@ -124,7 +124,7 @@ const ServicePage = () => {
                 </span>
               </p>
               <h1>
-                Lorem ipsum dolor sit. <br /> Lorem, ipsum dolor.
+                Efficient and widespread  <br /> distribution of FMCG products
               </h1>
 
               <p style={{ marginBottom: "0px" }}>

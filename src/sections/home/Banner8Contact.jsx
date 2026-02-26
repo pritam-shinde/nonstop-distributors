@@ -34,12 +34,12 @@ const Banner8Contact = () => {
                         <div className="contact-one__info__text">
                           <p className="main-footer__info__text">
                             <a
-                              href="tel:89564 15939"
-                              aria-label="Call us at 89564 15939"
+                              href="tel:89566 41833"
+                              aria-label="Call us at 89566 41833"
                               className="text-white"
                               style={{ fontSize: "14px" }}
                             >
-                              89564 15939
+                              89566 41833
                             </a>
                           </p>
                           {/* <p className="main-footer__info__text">
