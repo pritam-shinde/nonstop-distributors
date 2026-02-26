@@ -119,7 +119,7 @@ const ServicePage = () => {
           <div className="content container home-content">
             <div className="custom-max-width3">
               <p style={{ marginTop: "80px" }} className="mb-2">
-                <span className="fw-bold text-capitalize read-more-btn">
+                <span className="fw-bold text-capitalize">
                   OUR <span className="fw-bold read-more-btn"> SERVICES</span>
                 </span>
               </p>
