@@ -81,7 +81,7 @@ const OurTeam = () => {
             <p style={{ marginTop: "80px" }} className="mb-2">
               OUR TEAM{" "}
               <span style={{ color: "#fb3640" }} className="fw-bold">
-                HOMESTEAD EXPERTS
+                Nonstop Distribution
               </span>
             </p>
             <h1 className="">
@@ -90,7 +90,7 @@ const OurTeam = () => {
             <div>
               <p style={{ marginBottom: "0px" }}>
                 When your case depends on expert testimony, time and credibility
-                matter most. Homestead
+                matter most. Nonstop Distribution
                 <br className="d-none d-lg-inline" /> connects attorneys with
                 qualified, trial-ready experts across every specialty, quickly
                 and <br className="d-none d-lg-inline" /> without upfront cost.

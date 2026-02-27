@@ -223,7 +223,7 @@ const Header = () => {
               <a href="/" aria-label="logo image">
                 <Image
                   src={"/assets/distributor-img/nonstop-distributor-light.png"}
-                  alt="Homestead Experts"
+                  alt="Nonstop Distribution"
                   width={140}
                   height={40}
                 // style={{ width: "100%", objectFit: "contain" }}

@@ -31,7 +31,7 @@ const Banner4CaseStrategy = () => {
 
             <div>
               <p className="about-one__content__text">
-                From expert selection to courtroom support, Homestead is built
+                From expert selection to courtroom support, Nonstop Distribution is built
                 to serve your firm at <br className="d-none d-lg-inline" />{" "}
                 every stage. We don’t just match you with a qualified expert, we
                 manage the process <br className="d-none d-lg-inline" /> with

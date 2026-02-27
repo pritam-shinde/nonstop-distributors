@@ -16,7 +16,7 @@ const testimonialsData = [
         alt: "Hena Wiano",
         name: "Hena Wiano",
         designation: "Customer",
-        desc: "Homestead Experts find and provide quality experts fast.  Their staff is friendly, responsive, and wants to learn about the types of experts I want to work with.",
+        desc: "Nonstop Distribution find and provide quality experts fast.  Their staff is friendly, responsive, and wants to learn about the types of experts I want to work with.",
         delay: "100ms",
     },
     {

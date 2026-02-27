@@ -280,7 +280,7 @@ const ServicePage = () => {
         <div className="container">
           <div className="sec-title text-left">
             <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
-              Homestead Experts <br />
+              Nonstop Distribution <br />
               <span>Frequently Asked Questions </span>
             </h2>
           </div>

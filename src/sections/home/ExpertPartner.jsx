@@ -15,7 +15,7 @@ const ExpertPartner = () => {
                                     <h3 className="sec-title__title bw-split-in-up text-white">The Expert Witness Partner <br /> <span>Attorneys Trust</span></h3>
                                 </div>
                                 <p className="why-choose-one__text text-white">
-                                    For over two decades, Homestead has been helping law firms secure trial-ready experts across <br className="d-none d-lg-inline" />   every discipline. Our hands-on process, national reach, and no-shortcuts vetting make us the <br className="d-none d-lg-inline" /> partner attorneys turn to when credibility matters most.
+                                    For over two decades, Nonstop Distribution has been helping law firms secure trial-ready experts across <br className="d-none d-lg-inline" />   every discipline. Our hands-on process, national reach, and no-shortcuts vetting make us the <br className="d-none d-lg-inline" /> partner attorneys turn to when credibility matters most.
                                 </p>
                                 
                                 <div className="why-choose-one__item">

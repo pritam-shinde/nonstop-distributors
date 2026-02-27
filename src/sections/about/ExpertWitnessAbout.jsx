@@ -40,7 +40,7 @@ export const ExpertWitnessAbout = () => {
             Expert Witnesses Across Every <br /> <span>Major Discipline</span>
           </h3>
           <p className="why-choose-four__item__text text-white custom-max-width2">
-            Homestead Experts partners with attorneys, law firms, and insurance
+            Nonstop Distribution partners with attorneys, law firms, and insurance
             organizations that rely on credible, courtroom-ready expert
             witnesses to support litigation and claims. Whether you’re building
             a complex medical malpractice case or reviewing an accident

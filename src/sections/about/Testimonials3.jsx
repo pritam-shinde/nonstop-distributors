@@ -49,7 +49,7 @@ const Testimonials3 = () => {
                                 What Attorneys  <br />
                                 <span>Are Saying</span>
                             </h3>
-                            <p className="text-white  mt-2 why-choose-four__content__text fs-4">Real feedback from attorneys who’ve trusted Homestead with their most critical cases.</p>
+                            <p className="text-white  mt-2 why-choose-four__content__text fs-4">Real feedback from attorneys who’ve trusted Nonstop Distribution with their most critical cases.</p>
                         </div>
                         <div className="testimonials-three__info">
                             <div className="testimonials-three__info__rating">
