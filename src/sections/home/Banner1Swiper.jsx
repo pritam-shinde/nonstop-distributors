@@ -111,10 +111,10 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="/about-us/" className="text-white">
+                      {/* <Link href="/about-us/" className="text-white"> */}
                         20+ Years <br /> of Experience
                         {/* Find Your <br /> Expert Witness */}
-                      </Link>
+                      {/* </Link> */}
                     </h2>
                   </div>
                 </div>
@@ -133,9 +133,9 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="/about-us/" className="text-white">
+                      {/* <Link href="/about-us/" className="text-white"> */}
                         100+ <br /> Brands
-                      </Link>
+                      {/* </Link> */}
                     </h2>
                   </div>
                 </div>
@@ -154,9 +154,9 @@ const Banner1Swiper = () => {
                       />
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
-                      <Link href="/about-us/" className="text-white">
+                      {/* <Link href="/about-us/" className="text-white"> */}
                         2000+ Retail <br /> Points
-                      </Link>
+                      {/* </Link> */}
                     </h2>
                   </div>
                 </div>

@@ -66,7 +66,7 @@ const CategoriesServe = () => {
                     className="pe-none"
                     onClick={(e) => e.preventDefault()}
                   >
-                    Kitchen
+                    Kitchen Essentials
                   </a>
                 </h3>
                 <div className="portfolio-one__item__cat mt-2">
