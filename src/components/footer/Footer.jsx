@@ -34,13 +34,6 @@ const Footer = () => {
             <div className="col-xl-5 col-lg-5 col-md-6 col-12">
               <div className="footer-widget footer-widget--about">
                 <a href="/" className="footer-widget__logo">
-                  {/* <Image
-                    src="/assets/distributor-img/nonstop-distributor-dark.png"
-                    // src="/assets/images/logos/homestead-experts-logo-light.png"
-                    width={200}
-                    height={45}
-                    alt="Nonstop Distributors"
-                  /> */}
                   <Image
                     src="/assets/distributor-img/nonstop-distributor-light.png"
                     alt="Procounsel"
@@ -221,4 +214,3 @@ const Footer = () => {
 };
 
 export default Footer;
- 

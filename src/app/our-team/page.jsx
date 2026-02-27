@@ -111,7 +111,7 @@ const OurTeam = () => {
         style={{ position: "relative", backgroundColor: "#0E222A" }}
       >
         <Image
-          src="/assets/photos/our-team/homestead-site-assets-02.png"
+          src="/assets/photos/our-team/nonstop-site-assets-02.png"
           fill
           style={{
             objectFit: "cover",
