@@ -1,7 +1,12 @@
 import BlogSkeleton from "@/components/BlogSkeleton";
 import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
+import { handlerMetaDetails } from "@/constants/seo";
 import { Suspense } from "react";
+
+export const generateMetadata = () => {
+  return handlerMetaDetails("blog");
+};
 
 function getFormattedDate(inputDate) {
   const date = inputDate ? new Date(inputDate) : new Date();

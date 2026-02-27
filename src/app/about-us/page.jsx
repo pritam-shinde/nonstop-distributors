@@ -17,7 +17,7 @@ const About = () => {
           style={{
             backgroundImage: "url('/assets/distributor-img/about-banner.jpg')",
             backgroundSize: "cover",
-            backgroundPosition: "top  center",
+            backgroundPosition: "right top",
             backgroundRepeat: "no-repeat",
             height: "800px",
           }}
@@ -25,11 +25,14 @@ const About = () => {
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2 text-capitalize">
-              ABOUT <span className="fw-bold read-more-btn"> NONSTOP Distributors
+              ABOUT{" "}
+              <span className="fw-bold read-more-btn">
+                NONSTOP Distributors
               </span>
             </p>
             <h1 className="">
-              Built on trust, driven by service,  <br /> and focused on moving your <br /> business forward.
+              Built on trust, driven by service, <br /> and focused on moving
+              your <br /> business forward.
             </h1>
             <div>
               <p style={{ marginBottom: "0px" }}>
@@ -56,7 +59,7 @@ const About = () => {
           data-speed="0.3"
           style={{
             backgroundImage:
-              "url(assets/images/backgrounds/bg_why_choose_us.jpg)",
+              "url(/assets/images/backgrounds/bg_why_choose_us.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -139,15 +142,13 @@ const About = () => {
                     <span
                       style={{ lineHeight: "49px" }}
                       className="why-choose-four__box__count count-text custom-heading-all"
-                      data-stop="25"
+                      data-stop="100"
                       data-speed="1500"
                       data-suffix="+"
                     >
-                      25+
+                      100+
                     </span>
-                    <p className="why-choose-four__box__text">
-                      Partner <br /> Brands
-                    </p>
+                    <p className="why-choose-four__box__text">Brands</p>
                   </div>
                   <div className="why-choose-four__box count-box">
                     {/* <h3 className="why-choose-four__box__count">
@@ -163,11 +164,11 @@ const About = () => {
                     <span
                       style={{ lineHeight: "49px" }}
                       className="why-choose-four__box__count count-text custom-heading-all"
-                      data-stop="5000"
+                      data-stop="2000"
                       data-speed="1500"
                       data-suffix="+"
                     >
-                      5000+
+                      2000+
                     </span>
                     <p className="why-choose-four__box__text">
                       Retail <br /> Points

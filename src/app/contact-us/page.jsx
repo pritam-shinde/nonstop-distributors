@@ -1,51 +1,17 @@
-"use client";
+import { handlerMetaDetails } from "@/constants/seo";
+import ContactPageHelper from "@/sections/ContactPageHelper";
 import Banner8Contact from "@/sections/home/Banner8Contact";
 import Script from "next/script";
-import { useEffect } from "react";
 
-// export const generateMetadata = () => {
-//   return handlerMetaDetails("services");
-// };
+export const generateMetadata = () => {
+  return handlerMetaDetails("contact-us");
+};
 
 const Contact = () => {
-  useEffect(() => {
-    const scriptUrls = [
-      "/assets/vendors/jquery/jquery-3.7.1.min.js",
-      "/assets/vendors/owl-carousel/js/owl.carousel.min.js",
-    ];
-
-    const loadScript = (src) =>
-      new Promise((resolve) => {
-        const script = document.createElement("script");
-        script.src = src;
-        script.async = false; // preserve order
-        script.onload = resolve;
-        document.body.appendChild(script);
-      });
-
-    (async () => {
-      // Load scripts sequentially
-      for (const src of scriptUrls) {
-        await loadScript(src);
-      }
-
-      // Now jQuery and Owl Carousel are ready
-      const $ = window.jQuery;
-      const carousel = $(".procounsel-owl__carousel");
-      if (carousel.length && typeof $.fn.owlCarousel === "function") {
-        carousel.each(function () {
-          const elm = $(this);
-          const options = elm.data("owl-options");
-          elm.owlCarousel(
-            typeof options === "object" ? options : JSON.parse(options)
-          );
-        });
-      }
-    })();
-  }, []);
-
   return (
     <>
+      <ContactPageHelper />
+
       <div className="page-wrapper">
         <section className="" style={{ background: "#0E222A" }}>
           <div
@@ -61,9 +27,7 @@ const Contact = () => {
               <p style={{ marginTop: "80px" }} className="mb-2">
                 GET <span className="fw-bold read-more-btn"> IN TOUCH</span>
               </p>
-              <h1 className="">
-                Your gateway to FMCG growth
-              </h1>
+              <h1 className="">Your gateway to FMCG growth</h1>
               <div>
                 <p style={{ marginBottom: "0px" }}>
                   Have questions about our distribution services? Ready to

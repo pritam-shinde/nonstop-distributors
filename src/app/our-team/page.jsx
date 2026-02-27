@@ -1,5 +1,10 @@
 import ScriptsLoader from "@/components/ScriptsLoader";
+import { handlerMetaDetails } from "@/constants/seo";
 import Image from "next/image";
+
+export const generateMetadata = () => {
+  return handlerMetaDetails("our-team");
+};
 
 const OurTeam = () => {
   const teamMembers = [
@@ -66,14 +71,16 @@ const OurTeam = () => {
         <div
           className="hero-slide hero-about-slide"
           style={{
-            backgroundImage: "url('assets/images/backgrounds/our-team-banner.png')",
+            backgroundImage:
+              "url('/assets/images/backgrounds/our-team-banner.png')",
             // backgroundImage: "url('assets/images/backgrounds/banner_team.jpg')",
           }}
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
             <p style={{ marginTop: "80px" }} className="mb-2">
-              OUR TEAM <span style={{ color: "#fb3640" }} className="fw-bold">
+              OUR TEAM{" "}
+              <span style={{ color: "#fb3640" }} className="fw-bold">
                 HOMESTEAD EXPERTS
               </span>
             </p>

@@ -1,9 +1,12 @@
-
-
 import ScriptsLoader from "@/components/ScriptsLoader";
+import { handlerMetaDetails } from "@/constants/seo";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
 import CategoriesServe from "@/sections/home/CategoriesServe";
 import Image from "next/image";
+
+export const generateMetadata = () => {
+  return handlerMetaDetails("home");
+};
 
 const items = [
   {
@@ -86,8 +89,6 @@ export const ServiceSteps = [
 ];
 
 export default function Home() {
- 
-
   return (
     <>
       <div className="custom-cursor__cursor"></div>
@@ -278,7 +279,10 @@ export default function Home() {
                     maxWidth: "750px",
                   }}
                 >
-                  We strategically partner with brands to ensure their products reach retailers and consumers seamlessly. We combine deep market insight, a powerful distribution network, and tailored strategies to help FMCG brands thrive. 
+                  We strategically partner with brands to ensure their products
+                  reach retailers and consumers seamlessly. We combine deep
+                  market insight, a powerful distribution network, and tailored
+                  strategies to help FMCG brands thrive.
                 </p>
                 <a href="#contact-service" className="tailored-btn">
                   <i>Let's Connect</i>
@@ -293,7 +297,9 @@ export default function Home() {
         <CategoriesServe />
 
         {/* Brands */}
-        <div style={{position: "relative",
+        <div
+          style={{
+            position: "relative",
             // background: "linear-gradient(to right, #247ba0, #0E222A )",
           }}
           className="why-choose-four"
@@ -309,9 +315,14 @@ export default function Home() {
               },
               {
                 label: "Britannia",
-                imgSrc:
-                  "/assets/distributor-img/britannia.png",
+                imgSrc: "/assets/distributor-img/britannia.png",
                 width: 168,
+                height: 60,
+              },
+              {
+                label: "Hersheys",
+                imgSrc: "/assets/distributor-img/hersheys.jpg",
+                width: 150,
                 height: 60,
               },
             ].map((brand, index) => (

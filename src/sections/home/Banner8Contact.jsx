@@ -1,6 +1,136 @@
+"use client";
+
+import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import ThankYouModal from "@/components/modals/ThankYouModal";
+
 const Banner8Contact = () => {
+  const captchaRef = useRef(null);
+
+  const [form, setForm] = useState({
+    fullname: "",
+    companyname: "",
+    email: "",
+    phonenumber: "",
+    enquiryType: "",
+    subject: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [isThankYouOpen, setIsThankYouOpen] = useState(false);
+
+  // ✅ Handle input change
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+
+    if (errors[e.target.name]) {
+      setErrors({ ...errors, [e.target.name]: "" });
+    }
+  };
+
+  // ✅ Validation
+  const validate = () => {
+    const newErrors = {};
+
+    if (!form.fullname.trim()) {
+      newErrors.fullname = "Full name is required";
+    }
+
+    if (!form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+      newErrors.email = "Enter a valid email";
+    }
+
+    if (!form.phonenumber.trim()) {
+      newErrors.phonenumber = "Phone number is required";
+    } else if (!/^[0-9]{10}$/.test(form.phonenumber)) {
+      newErrors.phonenumber = "Enter valid 10-digit number";
+    }
+
+    if (!form.enquiryType) {
+      newErrors.enquiryType = "Please select enquiry type";
+    }
+
+    if (!form.subject.trim()) {
+      newErrors.subject = "Message is required";
+    }
+
+    return newErrors;
+  };
+
+  // ✅ Submit
+  const handleSubmit = async (e) => {
+    console.log("Hello");
+    return;
+
+    setIsThankYouOpen(false);
+
+    const validationErrors = validate();
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length > 0) return;
+
+    if (!captchaToken) {
+      setErrors({ captcha: "Please verify captcha" });
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      console.log({
+        ...form,
+        token: captchaToken,
+      });
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...form,
+          token: captchaToken,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data?.message || "Something went wrong. Try again.");
+      }
+
+      // ✅ success
+      setForm({
+        fullname: "",
+        companyname: "",
+        email: "",
+        phonenumber: "",
+        enquiryType: "",
+        subject: "",
+      });
+
+      setErrors({});
+
+      setIsThankYouOpen(true);
+    } catch (err) {
+      setErrors({ submit: err?.message || "Something went wrong. Try again." });
+    } finally {
+      captchaRef.current?.reset();
+      setCaptchaToken(null);
+
+      setLoading(false);
+    }
+  };
+
   return (
     <>
+      <ThankYouModal
+        open={isThankYouOpen}
+        onClose={() => setIsThankYouOpen(false)}
+      />
       <section className="contact-one" id="contact-service">
         <div className="tailored-redline-new" />
         <div className="container">
@@ -8,11 +138,11 @@ const Banner8Contact = () => {
             <div className="row">
               <div className="col-xl-6">
                 <div className="sec-title text-left">
-                 <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
-                    <span className="text-white">Contact </span> 
+                  <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
+                    <span className="text-white">Contact </span>
                     <span> Information</span>
                   </h2>
-  {/* <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0"> </h3> */}
+                  {/* <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0"> </h3> */}
                   <h3
                     className="contact-one__info__text text-white font-Merriweather"
                     style={{ fontSize: "clamp(18px,3vw,20px)" }}
@@ -42,20 +172,37 @@ const Banner8Contact = () => {
                               89566 41833
                             </a>
                           </p>
-                          {/* <p className="main-footer__info__text">
-                            <a
-                              href="tel:7327438003"
-                              aria-label="Call us at +21 9555-0114"
-                              className="text-white"
-                              style={{ fontSize: "14px" }}
-                            >
-                              (732) 743-8003
-                            </a>
-                          </p> */}
                         </div>
                       </div>
                     </li>
                     <li className="contact-one__info__item" style={{ flex: 1 }}>
+                      <div className="contact-one__info__icon">
+                        <i
+                          className="icon-mail"
+                          style={{ fontSize: "14px" }}
+                        ></i>
+                        <span className="contact-one__info__icon__zoom">
+                          <i
+                            className="icon-mail"
+                            style={{ fontSize: "14px" }}
+                          ></i>
+                        </span>
+                      </div>
+                      <div className="contact-one__info__content">
+                        <a
+                          href="mailto:info@nonstopdistributors.com"
+                          className="text-white"
+                        >
+                          <p
+                            className="contact-one__info__text text-white"
+                            style={{ fontSize: "14px" }}
+                          >
+                            info@nonstopdistributors.com
+                          </p>
+                        </a>
+                      </div>
+                    </li>
+                    <li className="contact-one__info__item">
                       <div className="contact-one__info__icon">
                         <i className="icon-map-pin"></i>
                         <span className="contact-one__info__icon__zoom">
@@ -63,56 +210,15 @@ const Banner8Contact = () => {
                         </span>
                       </div>
                       <div className="contact-one__info__content">
-                        <a
-                          href="mailto:info@nonstopdistributors.com"
-                          className="text-white"
-                        >
-                          <p
-                            className="contact-one__info__text text-white"
-                            style={{ fontSize: "14px" }}
-                          >
-                            info@nonstopdistributors.com
-                          </p>
-                        </a>
-                      </div>
-                      {/* <div className="contact-one__info__content">
                         <p
                           className="contact-one__info__text text-white"
                           style={{ fontSize: "14px" }}
                         >
-                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society, Wardha Rd, 
-                          <br /> opposite Bhawan's School, Nagpur, Maharashtra 440037
-                        </p>
-                      </div> */}
-                    </li>
-                    <li className="contact-one__info__item">
-                      <div className="contact-one__info__icon">
-                        <i className="icon-glove"></i>
-                        <span className="contact-one__info__icon__zoom">
-                          <i className="icon-glove"></i>
-                        </span>
-                      </div>
-                      {/* <div className="contact-one__info__content">
-                        <a
-                          href="mailto:info@nonstopdistributors.com"
-                          className="text-white"
-                        >
-                          <p
-                            className="contact-one__info__text text-white"
-                            style={{ fontSize: "14px" }}
-                          >
-                            info@nonstopdistributors.com
-                          </p>
-                        </a>
-                      </div> */}
-                      <div className="contact-one__info__content">
-                        <p
-                          className="contact-one__info__text text-white"
-                          style={{ fontSize: "14px" }}
-                        >
-                          NONSTOP Distributors, Chinchbhavan, 97 Crown Society,{" "}
-                          <br /> Wardha Rd, opposite Bhawan's School, <br />{" "}
-                          Nagpur, Maharashtra 440037
+                          NONSTOP Distributors, 97 Crown Society,
+                          <br />
+                          Wardha Rd, near Bhawan's School,
+                          <br />
+                          Nagpur, Maharashtra 440005
                         </p>
                       </div>
                     </li>
@@ -120,20 +226,25 @@ const Banner8Contact = () => {
                 </div>
               </div>
               <div className="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
-                <form
-                  className="contact-one__form contact-form-validated form-one"
-                  action="inc/sendemail.php"
-                >
+                <div className="contact-one__form contact-form-validated form-one">
                   <div className="contact-one__form__bg-one"></div>
                   <div className="contact-one__form__bg-two"></div>
-                  <div className="form-one__group">
+                  <div
+                    className="form-one__group"
+                    style={{ position: "relative", background: "white" }}
+                  >
                     <div className="form-one__control form-one__control--full">
                       <input
                         id="fullname"
                         type="text"
                         name="fullname"
                         placeholder="Full Name"
+                        value={form.fullname}
+                        onChange={handleChange}
                       />
+                      {errors.fullname ? (
+                        <small className="text-danger">{errors.fullname}</small>
+                      ) : null}
                     </div>
 
                     <div className="form-one__control form-one__control--full">
@@ -142,6 +253,8 @@ const Banner8Contact = () => {
                         type="text"
                         name="companyname"
                         placeholder="Company Name"
+                        value={form.companyname}
+                        onChange={handleChange}
                       />
                     </div>
 
@@ -151,7 +264,12 @@ const Banner8Contact = () => {
                         type="email"
                         name="email"
                         placeholder="Email"
+                        value={form.email}
+                        onChange={handleChange}
                       />
+                      {errors.email ? (
+                        <small className="text-danger">{errors.email}</small>
+                      ) : null}
                     </div>
 
                     <div className="form-one__control form-one__control--full">
@@ -160,7 +278,14 @@ const Banner8Contact = () => {
                         type="text"
                         name="phonenumber"
                         placeholder="phone number"
+                        value={form.phonenumber}
+                        onChange={handleChange}
                       />
+                      {errors.phonenumber ? (
+                        <small className="text-danger">
+                          {errors.phonenumber}
+                        </small>
+                      ) : null}
                     </div>
 
                     <div
@@ -170,7 +295,8 @@ const Banner8Contact = () => {
                       <select
                         id="enquiry-type"
                         name="enquiryType"
-                        defaultValue=""
+                        value={form.enquiryType}
+                        onChange={handleChange}
                         required
                       >
                         <option value="" disabled>
@@ -187,6 +313,11 @@ const Banner8Contact = () => {
                       </select>
 
                       <span className="dropdown-arrow">▼</span>
+                      {errors.enquiryType ? (
+                        <small className="text-danger d-block mt-1">
+                          {errors.enquiryType}
+                        </small>
+                      ) : null}
                     </div>
 
                     <div className="form-one__control form-one__control--full">
@@ -197,17 +328,52 @@ const Banner8Contact = () => {
                         placeholder="Enter your subject or message"
                         rows={4}
                         required
+                        value={form.subject}
+                        onChange={handleChange}
                       ></textarea>
+                      {errors.subject ? (
+                        <small className="text-danger">{errors.subject}</small>
+                      ) : null}
                     </div>
 
+                    <ReCAPTCHA
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                      ref={captchaRef}
+                      onChange={(token) => setCaptchaToken(token)}
+                      onExpired={() => {
+                        setCaptchaToken(null);
+                        captchaRef.current?.reset();
+                      }}
+                      onErrored={() => {
+                        setCaptchaToken(null);
+                        captchaRef.current?.reset();
+                      }}
+                    />
+                    {errors.captcha ? (
+                      <small className="text-danger d-block mt-2">
+                        {errors.captcha}
+                      </small>
+                    ) : null}
+
+                    {errors.submit ? (
+                      <small className="text-danger d-block mt-2">
+                        {errors.submit}
+                      </small>
+                    ) : null}
+
                     <div className="form-one__control form-one__control--full">
-                      <a href="#" className="procounsel-btn text-uppercase">
-                        <i>Send Message</i>
-                        <span>Send Message</span>
-                      </a>
+                      <button
+                        className="procounsel-btn text-uppercase"
+                        disabled={loading ? true : false}
+                        style={{ cursor: loading ? "not-allowed" : "pointer" }}
+                        onClick={loading ? handleSubmit : undefined}
+                      >
+                        <i>{loading ? "Sending..." : "Send Message"}</i>
+                        <span>{loading ? "Sending..." : "Send Message"}</span>
+                      </button>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>

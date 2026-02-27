@@ -75,7 +75,7 @@ const Banner1Swiper = () => {
                       <span className="">GET STARTED</span>
                     </a>
                   </div>
-                  <div>
+                  {/* <div>
                     <a
                       href="#"
                       className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
@@ -83,7 +83,7 @@ const Banner1Swiper = () => {
                       <i>LEARN MORE</i>
                       <span className="">LEARN MORE</span>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Banner1Swiper = () => {
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
                       <Link href="/about-us/" className="text-white">
-                        25+ Partner <br /> Brands 
+                        100+ <br /> Brands
                       </Link>
                     </h2>
                   </div>
@@ -155,7 +155,7 @@ const Banner1Swiper = () => {
                     </div>
                     <h2 className="feature-one__item__title font-Montserrat">
                       <Link href="/about-us/" className="text-white">
-                        5000+ Retail <br /> Points 
+                        2000+ Retail <br /> Points
                       </Link>
                     </h2>
                   </div>

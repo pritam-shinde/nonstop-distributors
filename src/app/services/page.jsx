@@ -124,7 +124,7 @@ const ServicePage = () => {
                 </span>
               </p>
               <h1>
-                Efficient and widespread  <br /> distribution of FMCG products
+                Efficient and widespread <br /> distribution of FMCG products
               </h1>
 
               <p style={{ marginBottom: "0px" }}>
@@ -296,16 +296,18 @@ const ServicePage = () => {
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
                       <h3 className="fs-6 text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing?
+                        Which brands or products do you offer in India?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                       </h3>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Aliquam quaerat mollitia totam repellat,
-                          voluptas nemo!
+                          We help businesses by providing distribution
+                          throughout India with fast-moving consumer goods such
+                          as products from the grocery category, kitchen
+                          essentials, snacks, beverages, and other fast-moving
+                          consumer goods for developing brands.
                         </p>
                       </div>
                     </div>
@@ -314,17 +316,19 @@ const ServicePage = () => {
                     <div className="accrodion-title">
                       <span className="accrodion__number text-white"></span>
                       <h3 className="fs-6 text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.?
+                        Do you have retail/e-commerce distribution in India?
                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                       </h3>
                     </div>
                     <div className="accrodion-content">
                       <div className="inner">
                         <p className="text-white">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Recusandae doloribus, dolorum fugiat magnam
-                          ratione unde facere. Ut sint rem alias!
+                          Yes, we do! Nonstop Distributors is involved in the
+                          distribution of products to retail and wholesale
+                          partners through supermarket-level retail stores and
+                          "kirana" convenience store-type businesses, as well as
+                          e-commerce/D2C fulfillment type of services throughout
+                          the country.
                         </p>
                       </div>
                     </div>
@@ -341,16 +345,17 @@ const ServicePage = () => {
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
                     <h3 className="fs-6 text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit?
+                      How do you help brands grow in the market?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
                     </h3>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">
                       <p className="text-white">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Autem veritatis quis repudiandae exercitationem
-                        cupiditate quaerat voluptas officia sunt magnam ipsa.
+                        We offer end-to-end distribution solutions including
+                        retail placement, logistics & supply chain management,
+                        and real-time inventory control for faster market
+                        expansion.
                       </p>
                     </div>
                   </div>
@@ -359,14 +364,35 @@ const ServicePage = () => {
                   <div className="accrodion-title">
                     <span className="accrodion__number text-white"></span>
                     <h3 className="fs-6 text-white">
-                      Lorem ipsum dolor sit amet consectetur?
+                      What makes your distribution company different from
+                      others?
                       <i className="accrodion-title__icon accrodion-title__icon1"></i>
                     </h3>
                   </div>
                   <div className="accrodion-content">
                     <div className="inner">
                       <p className="text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        We combine strong retailer relationships, data driven
+                        supply chain management, and localized market expertise
+                        to help brands scale efficiently.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="accrodion">
+                  <div className="accrodion-title">
+                    <span className="accrodion__number text-white"></span>
+                    <h3 className="fs-6 text-white">
+                      How do you support long-term brand growth?
+                      <i className="accrodion-title__icon accrodion-title__icon1"></i>
+                    </h3>
+                  </div>
+                  <div className="accrodion-content">
+                    <div className="inner">
+                      <p className="text-white">
+                        As a strategic distribution partner in India, we make
+                        sure strong shelf presence, optimized inventory flow,
+                        and consistent retail execution across markets.
                       </p>
                     </div>
                   </div>

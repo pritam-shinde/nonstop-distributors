@@ -1,5 +1,11 @@
 import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
+import { handlerMetaDetails } from "@/constants/seo";
+import Image from "next/image";
+
+export const generateMetadata = () => {
+  return handlerMetaDetails("careers");
+};
 
 const MainBlogSection = () => {
   return (
@@ -15,24 +21,26 @@ const MainBlogSection = () => {
         >
           <div className="main-slider-one__overlay-one-about-page"></div>
           <div className="content container home-content">
-            <h1 className="">
-              Build Your Career With Us
-              <br />
-              <span style={{ color: "#fb3640" }}>
-                Grow, Learn & Make an Impact
-              </span>
-            </h1>
+            <div style={{ maxWidth: "85%" }}>
+              <h1 className="">
+                Build Your Career With Us
+                <br />
+                <span style={{ color: "#fb3640" }}>
+                  Grow, Learn & Make an Impact
+                </span>
+              </h1>
 
-            <p style={{ marginBottom: "0px" }}>
-              At Nonstop Distributors, we offer career opportunities in a
-              fast-growing FMCG distribution environment where dedication and
-              teamwork drive success.
-            </p>
-            <p style={{ marginTop: "10px", marginBottom: "20px" }}>
-              Join our team to work with leading brands, gain real-world
-              experience, and grow your career with long-term stability and
-              learning opportunities.
-            </p>
+              <p style={{ marginBottom: "0px" }}>
+                At Nonstop Distributors, we offer career opportunities in a
+                fast-growing FMCG distribution environment where dedication and
+                teamwork drive success.
+              </p>
+              <p style={{ marginTop: "10px", marginBottom: "20px" }}>
+                Join our team to work with leading brands, gain real-world
+                experience, and grow your career with long-term stability and
+                learning opportunities.
+              </p>
+            </div>
 
             <div>
               <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
@@ -81,6 +89,8 @@ const MainBlogSection = () => {
                   "Collect signed delivery confirmations",
                   "Coordinate with warehouse and sales teams",
                 ],
+                img: "/assets/distributor-img/careers/delivery-driver-position.png",
+                logoImg: "/assets/distributor-img/careers/delivery-driver.png",
               },
               {
                 title: "Warehouse / Godown Manager",
@@ -93,6 +103,8 @@ const MainBlogSection = () => {
                   "Coordinate loading and dispatch schedules",
                   "Ensure cleanliness and safety standards",
                 ],
+                img: "/assets/distributor-img/careers/warehouse-position.png",
+                logoImg: "/assets/distributor-img/careers/warehouse.png",
               },
               {
                 title: "Sales Executive",
@@ -105,6 +117,8 @@ const MainBlogSection = () => {
                   "Promote products and schemes",
                   "Achieve monthly sales targets",
                 ],
+                img: "/assets/distributor-img/careers/sales-executive-position.png",
+                logoImg: "/assets/distributor-img/careers/sales-executive.png",
               },
               {
                 title: "Accounts & Billing Executive",
@@ -117,6 +131,9 @@ const MainBlogSection = () => {
                   "Coordinate with sales and operations teams",
                   "Handle basic accounting documentation",
                 ],
+                img: "/assets/distributor-img/careers/account-and-billing-position.png",
+                logoImg:
+                  "/assets/distributor-img/careers/account-and-billing.png",
               },
               {
                 title: "Operations Coordinator",
@@ -129,6 +146,9 @@ const MainBlogSection = () => {
                   "Support order processing and dispatch planning",
                   "Assist management with operational tasks",
                 ],
+                img: "/assets/distributor-img/careers/operational-coordinator-position.png",
+                logoImg:
+                  "/assets/distributor-img/careers/operational-coordinator.png",
               },
             ].map((position, index) => (
               <div
@@ -187,16 +207,19 @@ const MainBlogSection = () => {
                     </ul>
                   </div>
                   <div className="service-one__item__image">
-                    <img
-                      src="/assets/images/resources/service-1-1.png"
-                      alt="procounsel"
-                    />
+                    <img src={position.img} alt="procounsel" />
 
                     <div
                       className="service-one__item__icon"
                       style={{ background: "#fb3640" }}
                     >
-                      <i className="icon-criminal-law"></i>
+                      {/* <i className="icon-criminal-law"></i> */}
+                      <Image
+                        src={position.logoImg}
+                        width={60}
+                        height={60}
+                        alt={position.title.toLowerCase()}
+                      />
                     </div>
                   </div>
 

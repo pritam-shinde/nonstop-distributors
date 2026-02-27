@@ -3,7 +3,7 @@ import React from 'react'
 const HowWeWork = () => {
     return (
         <section className="why-choose-three">
-            <div className="why-choose-three__bg" style={{ backgroundImage: "url('assets/images/shapes/why-choose-three-bg.png')" }}></div>
+            <div className="why-choose-three__bg" style={{ backgroundImage: "url('/assets/images/shapes/why-choose-three-bg.png')" }}></div>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6">

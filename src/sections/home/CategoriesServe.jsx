@@ -17,91 +17,123 @@ const CategoriesServe = () => {
 
         <div className="container">
           <div className="portfolio-one__wrapper">
-
             <div className="portfolio-one__item">
               <img
-                src="/assets/distributor-img/luxury-chocalate.jpg"
-                // src="/assets/photos/home/areas_1_medical_malpractice.jpg"
+                src="/assets/distributor-img/ghee-and-oil.png"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
-                <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>
+                <a
+                  href="#"
+                  className="pe-none"
+                  onClick={(e) => e.preventDefault()}
+                >
                   <i className="icon-right-arrow-1-4"></i>
                 </a>
               </div>
               <div className="portfolio-one__item__content">
                 <h3 className="portfolio-one__item__title">
-                  <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>Luxury Chocolates</a>
+                  <a
+                    href="#"
+                    className="pe-none"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Grocery
+                  </a>
+                </h3>
+                <div className="portfolio-one__item__cat mt-2">Oils & Ghee</div>
+              </div>
+            </div>
+
+            <div className="portfolio-one__item">
+              <img
+                src="/assets/distributor-img/masala-and-pickle.jpg"
+                alt="procounsel"
+              />
+              <div className="portfolio-one__item__rm">
+                <a
+                  href="#"
+                  className="pe-none"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <i className="icon-right-arrow-1-4"></i>
+                </a>
+              </div>
+              <div className="portfolio-one__item__content">
+                <h3 className="portfolio-one__item__title">
+                  <a
+                    href="#"
+                    className="pe-none"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Kitchen
+                  </a>
                 </h3>
                 <div className="portfolio-one__item__cat mt-2">
-                  Premium Confectionery
+                  Masala & Pickle
                 </div>
               </div>
             </div>
 
             <div className="portfolio-one__item">
               <img
-                src="/assets/distributor-img/food-and-beverages.jpg"
-                // src="/assets/photos/home/areas_2_product_liability.jpg"
+                src="/assets/distributor-img/snaks-biscuit.png"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
-                <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>
+                <a
+                  href="#"
+                  className="pe-none"
+                  onClick={(e) => e.preventDefault()}
+                >
                   <i className="icon-right-arrow-1-4"></i>
                 </a>
               </div>
               <div className="portfolio-one__item__content">
                 <h3 className="portfolio-one__item__title">
-                  <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>Food and Beverages</a>
+                  <a
+                    href="#"
+                    className="pe-none"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Snacks
+                  </a>
                 </h3>
                 <div className="portfolio-one__item__cat mt-2">
-                  F&B Distribution
-                </div>
-              </div>
-            </div>
-
-            <div className="portfolio-one__item">
-              <img
-                src="/assets/distributor-img/body-care.jpg"
-                // src="/assets/photos/home/areas_3_personal_injury.jpg"
-                alt="procounsel"
-              />
-              <div className="portfolio-one__item__rm">
-                <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>
-                  <i className="icon-right-arrow-1-4"></i>
-                </a>
-              </div>
-              <div className="portfolio-one__item__content">
-                <h3 className="portfolio-one__item__title">
-                  <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>Body Care</a>
-                </h3>
-                <div className="portfolio-one__item__cat mt-2">
-                  Personal Care Products
+                  Biscuits, Chocolates & Cookies
                 </div>
               </div>
             </div>
 
             <div className="portfolio-one__item active">
               <img
-                src="/assets/distributor-img/office-stationery.jpg"
-                // src="/assets/photos/home/areas_4_forensic.jpg"
+                src="/assets/distributor-img/hot-and-cold-beverages.png"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">
-                <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>
+                <a
+                  href="#"
+                  className="pe-none"
+                  onClick={(e) => e.preventDefault()}
+                >
                   <i className="icon-right-arrow-1-4"></i>
                 </a>
               </div>
               <div className="portfolio-one__item__content">
                 <h3 className="portfolio-one__item__title">
-                  <a href="#" className="pe-none" onClick={(e) => e.preventDefault()}>Stationery</a>
+                  <a
+                    href="#"
+                    className="pe-none"
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Drinks
+                  </a>
                 </h3>
                 <div className="portfolio-one__item__cat mt-2">
-                  Office & School Supplies
+                  Hot & Cold Beverages
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
