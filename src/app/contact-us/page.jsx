@@ -1,5 +1,4 @@
 import { handlerMetaDetails } from "@/constants/seo";
-import ContactPageHelper from "@/sections/ContactPageHelper";
 import Banner8Contact from "@/sections/home/Banner8Contact";
 import Script from "next/script";
 
@@ -10,8 +9,6 @@ export const generateMetadata = () => {
 const Contact = () => {
   return (
     <>
-      <ContactPageHelper />
-
       <div className="page-wrapper">
         <section className="" style={{ background: "#0E222A" }}>
           <div

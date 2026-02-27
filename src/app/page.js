@@ -284,7 +284,7 @@ export default function Home() {
                   market insight, a powerful distribution network, and tailored
                   strategies to help FMCG brands thrive.
                 </p>
-                <a href="#contact-service" className="tailored-btn">
+                <a href="/contact-us/" className="tailored-btn">
                   <i>Let's Connect</i>
                   <span>Let's Connect</span>
                 </a>

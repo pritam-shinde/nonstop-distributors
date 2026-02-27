@@ -46,8 +46,6 @@ const Banner8Contact = () => {
 
     if (!form.phonenumber.trim()) {
       newErrors.phonenumber = "Phone number is required";
-    } else if (!/^[0-9]{10}$/.test(form.phonenumber)) {
-      newErrors.phonenumber = "Enter valid 10-digit number";
     }
 
     if (!form.enquiryType) {
@@ -63,9 +61,6 @@ const Banner8Contact = () => {
 
   // ✅ Submit
   const handleSubmit = async (e) => {
-    console.log("Hello");
-    return;
-
     setIsThankYouOpen(false);
 
     const validationErrors = validate();
@@ -80,11 +75,6 @@ const Banner8Contact = () => {
 
     try {
       setLoading(true);
-
-      console.log({
-        ...form,
-        token: captchaToken,
-      });
 
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -336,24 +326,26 @@ const Banner8Contact = () => {
                       ) : null}
                     </div>
 
-                    <ReCAPTCHA
-                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                      ref={captchaRef}
-                      onChange={(token) => setCaptchaToken(token)}
-                      onExpired={() => {
-                        setCaptchaToken(null);
-                        captchaRef.current?.reset();
-                      }}
-                      onErrored={() => {
-                        setCaptchaToken(null);
-                        captchaRef.current?.reset();
-                      }}
-                    />
-                    {errors.captcha ? (
-                      <small className="text-danger d-block mt-2">
-                        {errors.captcha}
-                      </small>
-                    ) : null}
+                    <div>
+                      <ReCAPTCHA
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                        ref={captchaRef}
+                        onChange={(token) => setCaptchaToken(token)}
+                        onExpired={() => {
+                          setCaptchaToken(null);
+                          captchaRef.current?.reset();
+                        }}
+                        onErrored={() => {
+                          setCaptchaToken(null);
+                          captchaRef.current?.reset();
+                        }}
+                      />
+                      {errors.captcha ? (
+                        <p className="text-danger d-block mt-2">
+                          {errors.captcha}
+                        </p>
+                      ) : null}
+                    </div>
 
                     {errors.submit ? (
                       <small className="text-danger d-block mt-2">
@@ -366,7 +358,7 @@ const Banner8Contact = () => {
                         className="procounsel-btn text-uppercase"
                         disabled={loading ? true : false}
                         style={{ cursor: loading ? "not-allowed" : "pointer" }}
-                        onClick={loading ? handleSubmit : undefined}
+                        onClick={loading ? undefined : handleSubmit}
                       >
                         <i>{loading ? "Sending..." : "Send Message"}</i>
                         <span>{loading ? "Sending..." : "Send Message"}</span>

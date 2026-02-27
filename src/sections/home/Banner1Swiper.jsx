@@ -68,7 +68,7 @@ const Banner1Swiper = () => {
                 <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
                   <div>
                     <a
-                      href="#contact-service"
+                      href="/contact-us/"
                       className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                     >
                       <i>GET STARTED</i>

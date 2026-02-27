@@ -1,5 +1,5 @@
-import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export const runtime = "nodejs";
 
@@ -15,8 +15,12 @@ function sanitizeText(value) {
 
 async function verifyRecaptcha({ token }) {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
+
   if (!secret) {
-    return { ok: false, reason: "Server misconfigured: missing recaptcha secret" };
+    return {
+      ok: false,
+      reason: "Server misconfigured: missing recaptcha secret",
+    };
   }
 
   if (!token || typeof token !== "string") {
@@ -94,20 +98,22 @@ function buildHtmlBody(payload) {
 }
 
 function getTransporter() {
-  const host = process.env.SMTP_HOST;
-  const port = Number(process.env.SMTP_PORT || 587);
-  const secure = String(process.env.SMTP_SECURE || "").toLowerCase() === "true";
+  // const host = process.env.SMTP_HOST;
+  // const port = Number(process.env.SMTP_PORT || 587);
+  // const secure = String(process.env.SMTP_SECURE || "").toLowerCase() === "true";
+  const service = process.env.SMTP_SERVICE;
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
 
-  if (!host || !user || !pass) {
+  if (!service || !user || !pass) {
     throw new Error("Server misconfigured: missing SMTP settings");
   }
 
   return nodemailer.createTransport({
-    host,
-    port,
-    secure,
+    // host,
+    // port,
+    // secure,
+    service,
     auth: { user, pass },
   });
 }
@@ -129,35 +135,35 @@ export async function POST(request) {
     if (!payload.fullname) {
       return NextResponse.json(
         { success: false, message: "Full name is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     if (!isEmail(payload.email)) {
       return NextResponse.json(
         { success: false, message: "Valid email is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
-    if (!payload.phonenumber || !/^[0-9]{10}$/.test(payload.phonenumber)) {
+    if (!payload.phonenumber) {
       return NextResponse.json(
         { success: false, message: "Valid 10-digit phone number is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     if (!payload.enquiryType) {
       return NextResponse.json(
         { success: false, message: "Enquiry type is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     if (!payload.subject) {
       return NextResponse.json(
         { success: false, message: "Message is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -165,16 +171,16 @@ export async function POST(request) {
     if (!captcha.ok) {
       return NextResponse.json(
         { success: false, message: captcha.reason || "Captcha failed" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
-    const to = process.env.CONTACT_TO_EMAIL || "info@nonstopdistributors.com";
+    const to = process.env.CONTACT_TO_EMAIL;
     const from = process.env.CONTACT_FROM_EMAIL;
     if (!from) {
       return NextResponse.json(
         { success: false, message: "Server misconfigured: missing from email" },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
@@ -184,7 +190,7 @@ export async function POST(request) {
       to,
       from,
       replyTo: payload.email,
-      subject: `New inquiry (${payload.enquiryType}) - ${payload.fullname}`,
+      subject: `Nonstop Distributors | New inquiry (${payload.enquiryType}) - ${payload.fullname}`,
       text: buildTextBody(payload),
       html: buildHtmlBody(payload),
     });
@@ -194,8 +200,7 @@ export async function POST(request) {
     console.error("POST /api/contact error:", error);
     return NextResponse.json(
       { success: false, message: "Something went wrong. Please try again." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
-

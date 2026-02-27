@@ -45,7 +45,7 @@ const MainBlogSection = () => {
             <div>
               <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4">
                 <a
-                  href="#"
+                  href="#jobs-list-heading"
                   className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                 >
                   <i>Explore Opportunities</i>
@@ -66,12 +66,12 @@ const MainBlogSection = () => {
           paddingBottom: "120px",
         }}
       >
-        <div
-        // className="service-one__bg"
-        ></div>
         <div className="container-fluid">
           <div className="sec-title text-center">
-            <h3 className="sec-title__title bw-split-in-up">
+            <h3
+              className="sec-title__title bw-split-in-up"
+              id="jobs-list-heading"
+            >
               Current Job Openings <br />{" "}
               <span>Start Your Journey With Us</span>
             </h3>
@@ -225,7 +225,7 @@ const MainBlogSection = () => {
 
                   <div className="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-4 mt-4">
                     <a
-                      href="#"
+                      href="/contact-us/"
                       className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                     >
                       <i>Apply Now</i>

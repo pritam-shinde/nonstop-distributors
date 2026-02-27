@@ -66,7 +66,7 @@ const FullScaleDistribution = () => {
 
               <div className="about-four__btns">
                 <a
-                  href="#"
+                  href="/about-us/"
                   className="procounsel-btn"
                   style={{ fontSize: "14px", whiteSpace: "normal" }}
                 >

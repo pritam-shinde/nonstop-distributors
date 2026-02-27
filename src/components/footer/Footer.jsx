@@ -87,7 +87,10 @@ const Footer = () => {
                         { label: "Contact Us", href: "/contact-us/" },
                         { label: "Careers", href: "/careers/" },
                         { label: "Privacy Policy", href: "/privacy-policy/" },
-                        { label: "Terms & Conditions", href: "/terms-and-conditions/" },
+                        {
+                          label: "Terms & Conditions",
+                          href: "/terms-and-conditions/",
+                        },
                       ].map((link, idx) => (
                         <li key={idx}>
                           <a href={link.href} className=" text-white">
@@ -186,16 +189,16 @@ const Footer = () => {
                         </span>
                       </li>
                     </ul>
+                    <div>
+                      <Image
+                        src="/assets/distributor-img/dmca.png"
+                        width={187}
+                        height={60}
+                        alt="DMCA"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <Image
-                  src="/assets/distributor-img/dmca.png"
-                  width={187}
-                  height={60}
-                  alt="DMCA"
-                />
               </div>
             </div>
           </div>
@@ -206,23 +209,10 @@ const Footer = () => {
       <div className="main-footer__bottom">
         <div className="container">
           <div className="main-footer__bottom__inner text-center">
-            <div>
-              <p className="text-white mb-0">
-                © {new Date().getFullYear()}{" "}
-                <a href="/">NONSTOP Distributors</a>. All Rights Reserved.
-              </p>
-              <div
-                style={{ display: "flex", justifyContent: "center", gap: 4 }}
-              >
-                <a href="/terms-and-conditions" className="fs-6 text-white">
-                  Terms and Conditions
-                </a>
-                <span className="text-white">|</span>
-                <a href="/privacy-policy" className="fs-6 text-white">
-                  Privacy Policy
-                </a>
-              </div>
-            </div>
+            <p className="text-white mb-0">
+              © {new Date().getFullYear()} <a href="/">NONSTOP Distributors</a>.
+              All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

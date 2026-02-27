@@ -41,12 +41,12 @@ const About = () => {
                 our partners success.
               </p>
             </div>
-            <div className="d-flex flex-column justify-content-between align-items-start mt-3">
+            {/* <div className="d-flex flex-column justify-content-between align-items-start mt-3">
               <a href="/contact-us#contact-service" className="procounsel-btn">
                 <i>Contact Us</i>
                 <span>Contact Us</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

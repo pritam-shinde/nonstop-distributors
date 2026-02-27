@@ -134,7 +134,7 @@ const ServicePage = () => {
 
               <div className="d-flex flex-wrap justify-content-start align-items-center gap-2 gap-md-4 mt-3">
                 <a
-                  href="/contact-us/#contact-service/"
+                  href="/contact-us/"
                   className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start"
                 >
                   <i>Contact Us</i>
@@ -205,7 +205,7 @@ const ServicePage = () => {
 
                   <div className="about-four__btns">
                     <a
-                      href="#"
+                      href="/about-us/"
                       className="procounsel-btn"
                       style={{ fontSize: "14px", whiteSpace: "normal" }}
                     >
@@ -258,8 +258,8 @@ const ServicePage = () => {
                     <p className="card-description mb-0">{item.description}</p>
 
                     <Link
-                      href="#"
-                      className="procounsel-btn procounsel-btn--sm mt-3 pe-none"
+                      href="/about-us/"
+                      className="procounsel-btn procounsel-btn--sm mt-3"
                     >
                       <i>Learn More</i>
                       <span>Learn More</span>
