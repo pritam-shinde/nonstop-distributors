@@ -110,7 +110,7 @@ const Banner1Swiper = () => {
                         alt="Year of Experience"
                       />
                     </div>
-                    <h2 className="feature-one__item__title font-Montserrat">
+                    <h2 className="feature-one__item__title font-Montserrat text-white">
                       {/* <Link href="/about-us/" className="text-white"> */}
                         20+ Years <br /> of Experience
                         {/* Find Your <br /> Expert Witness */}
@@ -132,7 +132,7 @@ const Banner1Swiper = () => {
                         alt="Partner Brands"
                       />
                     </div>
-                    <h2 className="feature-one__item__title font-Montserrat">
+                    <h2 className="feature-one__item__title font-Montserrat text-white">
                       {/* <Link href="/about-us/" className="text-white"> */}
                         100+ <br /> Brands
                       {/* </Link> */}
@@ -150,10 +150,10 @@ const Banner1Swiper = () => {
                         height={54}
                         src="/assets/distributor-img/retail-point.png"
                         className="object-cover"
-                        alt="Retail Point"
+                        alt="Retail Points"
                       />
                     </div>
-                    <h2 className="feature-one__item__title font-Montserrat">
+                    <h2 className="feature-one__item__title font-Montserrat text-white">
                       {/* <Link href="/about-us/" className="text-white"> */}
                         2000+ Retail <br /> Points
                       {/* </Link> */}
