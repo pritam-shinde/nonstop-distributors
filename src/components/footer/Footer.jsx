@@ -10,8 +10,8 @@ const Footer = () => {
   const socialLinks = [
     { href: "#", icon: <LinkedinIcon />, label: "LinkedIn" },
     { href: "#", icon: <XIcon />, label: "Twitter" },
-    { href: "#", icon: <FacebookIcon />, label: "Facebook" },
-    { href: "#", icon: <InstagramIcon />, label: "Instagram" },
+    { href: "https://www.facebook.com/people/NonStop-Distributors/61584965491773/", icon: <FacebookIcon />, label: "Facebook" },
+    { href: "https://www.instagram.com/nonstopdistributors/", icon: <InstagramIcon />, label: "Instagram" },
   ];
 
   return (
