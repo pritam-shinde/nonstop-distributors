@@ -1,3 +1,4 @@
+import BrandSlider from "@/components/BrandSlider";
 import ScriptsLoader from "@/components/ScriptsLoader";
 import { handlerMetaDetails } from "@/constants/seo";
 import Banner1Swiper from "@/sections/home/Banner1Swiper";
@@ -297,13 +298,8 @@ export default function Home() {
         <CategoriesServe />
 
         {/* Brands */}
-        <div
-          style={{
-            position: "relative",
-            // background: "linear-gradient(to right, #247ba0, #0E222A )",
-          }}
-          className="why-choose-four"
-        >
+        <BrandSlider/>
+        {/* <div style={{ position: "relative", }} className="why-choose-four">
           <div className="tailored-redline-new" />
           <div className="d-flex gap-5 justify-content-center">
             {[
@@ -325,6 +321,12 @@ export default function Home() {
                 width: 150,
                 height: 60,
               },
+              {
+                label: "Keya",
+                imgSrc: "/assets/distributor-img/keya-logo.jpg",
+                width: 112,
+                height: 60,
+              },
             ].map((brand, index) => (
               <div key={index}>
                 <Image
@@ -340,7 +342,7 @@ export default function Home() {
             className="tailored-redline-new"
             style={{ rotate: "0deg", top: "unset", bottom: 0 }}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="search-popup">
