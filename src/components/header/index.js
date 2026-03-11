@@ -32,6 +32,10 @@ export const menuData = [
     label: "About",
     href: "/about-us/",
   },
+  // {
+  //   label: "Partners",
+  //   href: "/partners/",
+  // },
   {
     label: "Contact",
     href: "/contact-us/",

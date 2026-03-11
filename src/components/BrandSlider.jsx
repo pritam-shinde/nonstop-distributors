@@ -3,37 +3,11 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { partners } from "@/constants/partners";
 
 import "swiper/css";
 
 export default function BrandSlider() {
-    const brands = [
-        {
-            label: "Patanjali",
-            imgSrc: "/assets/distributor-img/pantanjali.png",
-            width: 214,
-            height: 60,
-        },
-        {
-            label: "Britannia",
-            imgSrc: "/assets/distributor-img/britannia.png",
-            width: 168,
-            height: 60,
-        },
-        {
-            label: "Hersheys",
-            imgSrc: "/assets/distributor-img/hersheys.jpg",
-            width: 150,
-            height: 60,
-        },
-        {
-            label: "Keya",
-            imgSrc: "/assets/distributor-img/keya-logo.jpg",
-            width: 112,
-            height: 60,
-        },
-    ];
-
     return (
         <div style={{ position: "relative" }} className="why-choose-four">
             <div className="tailored-redline-new" />
@@ -54,14 +28,14 @@ export default function BrandSlider() {
                     }}
                     className="brand-swiper"
                 >
-                    {brands.map((brand, index) => (
+                    {partners.map((partner, index) => (
                         <SwiperSlide key={index}>
                             <div className="d-flex justify-content-center align-items-center">
                                 <Image
-                                    src={brand.imgSrc}
-                                    width={brand.width}
-                                    height={brand.height}
-                                    alt={brand.label}
+                                    src={partner.logoSrc}
+                                    width={partner.width}
+                                    height={partner.height}
+                                    alt={partner.name}
                                 />
                             </div>
                         </SwiperSlide>

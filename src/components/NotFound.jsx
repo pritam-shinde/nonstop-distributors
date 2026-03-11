@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NotFound = () => {
   return (
     <>
@@ -27,18 +29,18 @@ const NotFound = () => {
             longer exists. Use the links below to get back on track.
           </p>
           <div className="error-404__btns d-flex flex-wrap gap-3">
-            <a href="/" className="procounsel-btn text-white">
+            <Link href="/" className="procounsel-btn text-white">
               <i>Back To Home</i>
               <span>Back To Home</span>
-            </a>
-            <a href="/services/" className="procounsel-btn text-white">
+            </Link>
+            <Link href="/services/" className="procounsel-btn text-white">
               <i>View Services</i>
               <span>View Services</span>
-            </a>
-            <a href="/contact-us/" className="procounsel-btn text-white">
+            </Link>
+            <Link href="/contact-us/" className="procounsel-btn text-white">
               <i>Contact Us</i>
               <span>Contact Us</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

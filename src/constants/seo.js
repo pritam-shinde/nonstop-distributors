@@ -62,6 +62,13 @@ const metaDetails = {
     canonical: "https://nonstop-distributors.vercel.app/our-team/",
   },
 
+  partners: {
+    title: "Partners | NonStop Distributors",
+    description:
+      "Explore NonStop Distributors partner brands and learn how we help FMCG products scale through strong channel coverage and reliable distribution.",
+    canonical: "https://nonstop-distributors.vercel.app/partners/",
+  },
+
   "not-found": {
     title: "Page Not Found | NonStop Distributors",
     description:

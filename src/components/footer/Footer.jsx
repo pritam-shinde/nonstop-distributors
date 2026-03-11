@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -8,7 +9,7 @@ import {
 
 const Footer = () => {
   const socialLinks = [
-    { href: "#", icon: <LinkedinIcon />, label: "LinkedIn" },
+    { href: "https://www.linkedin.com/company/nonstop-distributors/", icon: <LinkedinIcon />, label: "LinkedIn" },
     { href: "#", icon: <XIcon />, label: "Twitter" },
     { href: "https://www.facebook.com/people/NonStop-Distributors/61584965491773/", icon: <FacebookIcon />, label: "Facebook" },
     { href: "https://www.instagram.com/nonstopdistributors/", icon: <InstagramIcon />, label: "Instagram" },
@@ -33,14 +34,14 @@ const Footer = () => {
             {/* ===== Logo + About ===== */}
             <div className="col-xl-5 col-lg-5 col-md-6 col-12">
               <div className="footer-widget footer-widget--about">
-                <a href="/" className="footer-widget__logo">
+                <Link href="/" className="footer-widget__logo">
                   <Image
                     src="/assets/distributor-img/nonstop-distributor-light.png"
                     alt="Procounsel"
                     width={209}
                     height={73}
                   />
-                </a>
+                </Link>
 
                 <p className="footer-widget__text mt-3">
                   India's leading FMCG distribution partner, connecting premium
@@ -77,6 +78,7 @@ const Footer = () => {
                         { label: "Home", href: "/" },
                         { label: "Our Services", href: "/services/" },
                         { label: "About Us", href: "/about-us/" },
+                        // { label: "Partners", href: "/partners/" },
                         { label: "Contact Us", href: "/contact-us/" },
                         { label: "Careers", href: "/careers/" },
                         { label: "Privacy Policy", href: "/privacy-policy/" },
@@ -86,9 +88,9 @@ const Footer = () => {
                         },
                       ].map((link, idx) => (
                         <li key={idx}>
-                          <a href={link.href} className=" text-white">
+                          <Link href={link.href} className=" text-white">
                             {link.label}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -203,7 +205,7 @@ const Footer = () => {
         <div className="container">
           <div className="main-footer__bottom__inner text-center">
             <p className="text-white mb-0">
-              © {new Date().getFullYear()} <a href="/">NONSTOP Distributors</a>.
+              © {new Date().getFullYear()} <Link href="/">NONSTOP Distributors</Link>.
               All Rights Reserved.
             </p>
           </div>
