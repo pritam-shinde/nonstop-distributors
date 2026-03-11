@@ -66,7 +66,8 @@ export default function PartnersPage() {
         <div
           className="hero-slide partners-hero-slide"
           style={{
-            backgroundImage: "url('/assets/distributor-img/about-banner.jpg')",
+            backgroundImage: "url('/assets/distributor-img/partner-banner2.png')",
+            // backgroundImage: "url('/assets/distributor-img/about-banner.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -82,7 +83,7 @@ export default function PartnersPage() {
               Strong brands, <br /> stronger distribution.
             </h1>
             <div>
-              <p style={{ marginBottom: 0 }}>
+              <p style={{ marginBottom: 0 }} className="custom-max-width2">
                 We collaborate with trusted FMCG brands to deliver consistent
                 availability, great visibility, and sustainable growth across
                 channels.
@@ -125,7 +126,18 @@ export default function PartnersPage() {
             {partners.map((partner) => (
               <div key={partner.name} className="col-12 col-md-6 col-lg-3">
                 <article className="partners-showcase-card">
-                  <div className="partners-showcase-card__media">
+                  <div className="partners-showcase-card__media position-relative">
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        background: "rgb(74 61 59 / 50%)", 
+                        zIndex: 1,
+                      }}
+                    ></div>
                     <Image
                       src={partner.coverSrc || "/assets/distributor-img/other-fmcg-product.jpg"}
                       alt={`${partner.name} category`}
@@ -133,10 +145,10 @@ export default function PartnersPage() {
                       sizes="(max-width: 991px) 100vw, 25vw"
                       style={{ objectFit: "cover" }}
                     />
-                    {/* <div className="partners-showcase-card__badge">
-                      {partner.category || "FMCG"}
-                    </div> */}
-                    <div className="partners-showcase-card__logoBadge">
+                    <div className="partners-showcase-card__badge">
+                      {partner.subcategory || "FMCG"}
+                    </div>
+                    {/* <div className="partners-showcase-card__logoBadge">
                       <Image
                         src={partner.logoSrc}
                         width={partner.width}
@@ -144,12 +156,19 @@ export default function PartnersPage() {
                         alt={partner.name}
                         style={{ height: "auto", maxHeight: 54, width: "auto" }}
                       />
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="partners-showcase-card__body">
-                    <h3 className="partners-showcase-card__title">
+                  <div className="partners-showcase-card__body" >
+                    {/* <h3 className="partners-showcase-card__title">
                         {partner.subcategory || "FMCG"}
-                    </h3>
+                    </h3> */}
+                    <Image
+                      src={partner.logoSrc}
+                      width={partner.width}
+                      height={partner.height}
+                      alt={partner.name}
+                      style={{ height: "auto", maxHeight: 54, width: "auto", marginTop: "12px", }}
+                    />
                     <p className="partners-showcase-card__text">
                       {partner.description}
                     </p>

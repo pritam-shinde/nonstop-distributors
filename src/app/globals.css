@@ -659,8 +659,7 @@ a {
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-.partners-showcase-card:hover {
-  transform: translateY(-4px);
+.partners-showcase-card:hover { 
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
@@ -696,7 +695,7 @@ a {
 }
 
 .partners-showcase-card__body {
-  padding: 44px 18px 22px;
+  padding: 12px 18px 22px;
 }
 
 .partners-showcase-card__title {
