@@ -250,9 +250,9 @@ export default function PartnersPage() {
               <div key={item.title} className="col-12 col-md-6 col-lg-4 d-flex">
                 <div className="partners-step-card card-box w-100">
                   <div className="partners-step-card__top">
-                    <div className="partners-step-card__step">
+                    {/* <div className="partners-step-card__step">
                       {String(index + 1).padStart(2, "0")}
-                    </div>
+                    </div> */}
                     <div className="partners-step-card__icon">
                       <Image
                         width={40}
