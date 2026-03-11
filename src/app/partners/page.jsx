@@ -162,7 +162,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Channels */}
-      <section className="service-grid-bg py-5 partners-channels">
+      {/* <section className="service-grid-bg py-5 partners-channels">
         <div className="container">
           <div className="row g-4 align-items-stretch">
             <div className="col-12 col-lg-4 d-flex">
@@ -226,7 +226,7 @@ export default function PartnersPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <div className="">
         <BrandSlider />
