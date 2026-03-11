@@ -133,9 +133,9 @@ export default function PartnersPage() {
                       sizes="(max-width: 991px) 100vw, 25vw"
                       style={{ objectFit: "cover" }}
                     />
-                    <div className="partners-showcase-card__badge">
+                    {/* <div className="partners-showcase-card__badge">
                       {partner.category || "FMCG"}
-                    </div>
+                    </div> */}
                     <div className="partners-showcase-card__logoBadge">
                       <Image
                         src={partner.logoSrc}
@@ -148,7 +148,7 @@ export default function PartnersPage() {
                   </div>
                   <div className="partners-showcase-card__body">
                     <h3 className="partners-showcase-card__title">
-                      {partner.name}
+                        {partner.subcategory || "FMCG"}
                     </h3>
                     <p className="partners-showcase-card__text">
                       {partner.description}
