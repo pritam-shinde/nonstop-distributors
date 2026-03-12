@@ -13,6 +13,53 @@ export const generateMetadata = () => {
   return handlerMetaDetails("services");
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Which brands or products do you offer in India?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We help businesses by providing distribution throughout India with fast-moving consumer goods such as products from the grocery category, kitchen essentials, snacks, beverages, and other fast-moving consumer goods for developing brands.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you have retail/e-commerce distribution in India?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: 'Yes, we do! Nonstop Distributors is involved in the distribution of products to retail and wholesale partners through supermarket-level retail stores and "kirana" convenience store-type businesses, as well as e-commerce/D2C fulfillment type of services throughout the country.',
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do you help brands grow in the market?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer end-to-end distribution solutions including retail placement, logistics & supply chain management, and real-time inventory control for faster market expansion.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What makes your distribution company different from others?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We combine strong retailer relationships, data driven supply chain management, and localized market expertise to help brands scale efficiently.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How do you support long-term brand growth?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "As a strategic distribution partner in India, we make sure strong shelf presence, optimized inventory flow, and consistent retail execution across markets.",
+      },
+    },
+  ],
+};
+
 const coveragesItem = [
   {
     title: "Modern Trade",
@@ -112,6 +159,11 @@ export const ServiceSteps = [
 const ServicePage = () => {
   return (
     <>
+      <script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* banner */}
       <section className="section-dark">
         <div className="hero-slide hero-about-slide bgimg-services">

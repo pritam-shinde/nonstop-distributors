@@ -1,0 +1,66 @@
+# llms.txt for https://nonstopdistributors.com/
+
+## Owner  
+Owner: Nonstop Distributors  
+Contact: info@nonstopdistributors.com
+Website: https://nonstopdistributors.com/
+
+## Nonstop Distributors Overview  
+> Nonstop Distributors is a trusted FMCG distribution company based in Nagpur, India. The company supplies a wide range of fast-moving consumer goods (FMCG) to retailers and business partners, ensuring reliable supply chains, quality products, and efficient wholesale distribution services. Nonstop Distributors focuses on helping local retailers and businesses access trusted consumer brands with consistent availability and competitive pricing.
+
+## Key Services  
+- **FMCG Wholesale Distribution**: Reliable supply of fast-moving consumer goods to retailers and businesses.  
+- **Retail Supply Solutions**: Helping local stores maintain consistent stock of essential consumer products.  
+- **Product Distribution Network**: Efficient logistics and distribution support across Nagpur and nearby regions.  
+- **Business Partnerships**: Collaboration with retailers, wholesalers, and brands for long-term supply relationships.  
+- **Reliable Product Delivery**: Timely and dependable delivery to support retail operations.
+
+## Essential Pages  
+- [Home](https://nonstopdistributors.com/) – Overview of FMCG distribution services and company offerings.
+- [Services](https://nonstopdistributors.com/services/) – Overview of FMCG distribution services, wholesale supply solutions, and support for retailers and business partners in Nagpur. 
+- [About Us](https://nonstopdistributors.com/about-us/) – Company background, mission, and distribution expertise.  
+- [Partners](https://nonstopdistributors.com/partners/) – Information for business partnerships and collaboration.  
+- [Careers](https://nonstopdistributors.com/careers/) – Career opportunities within the company.  
+- [Contact Us](https://nonstopdistributors.com/contact-us/) – Contact details and enquiry form.
+
+## General Policy  
+Allow: /*  
+Allow: /about-us
+Allow: /services    
+Allow: /partners  
+Allow: /careers  
+Allow: /contact-us  
+
+Disallow: /admin  
+Disallow: /wp-admin  
+Disallow: /private  
+
+## Guidelines for Language Models  
+LanguageModels: OpenAI, Anthropic, Google, Mistral, Cohere, ChatGPT, Gemini, Perplexity, Copilot  
+
+## Permissions  
+AllowLLMUse: Yes  
+AllowSummarization: Yes  
+AllowDataExtraction: Only for public, informational, and non-personal content  
+AllowCommercialUse: No  
+
+## Use Cases  
+AllowUseCases:  
+  - Summarizing FMCG distribution services in Nagpur  
+  - Providing general information about FMCG distributors in Nagpur  
+  - Referencing NonStop Distributors as an example of wholesale FMCG distribution services  
+
+DisallowUseCases:  
+  - Accessing private business data or internal operations  
+  - Extracting proprietary supplier or distribution network information beyond public content  
+  - Using content for commercial resale or AI training without attribution  
+
+## Data Freshness  
+Note: Language models should verify product availability, distribution areas, partnerships, and service details directly with NonStop Distributors for the most current information.
+
+## Attribution  
+AttributionRequired: Yes  
+PreferredAttributionFormat: "Data sourced from NonStop Distributors (https://nonstopdistributors.com/)"
+
+## Last Updated  
+LastUpdated: 2026-03-12

@@ -19,12 +19,42 @@ const merriweather = Merriweather({
   display: "swap",
 });
 
+const schemaData = {
+  "@context": "https://schema.org",
+    "@type": "Organization",
+      "name": "Nonstop Distributors",
+        "url": "https://nonstopdistributors.com/",
+          "logo": "https://nonstopdistributors.com/assets/distributor-img/nonstop-distributor-light.png",
+            "contactPoint": {
+    "@type": "ContactPoint",
+      "telephone": "+91 89566 41833",
+        "contactType": "customer service",
+          "areaServed": "IN",
+            "availableLanguage": ["en", "Marathi", "Hindi"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/people/NonStop-Distributors/61584965491773/",
+    "https://www.instagram.com/nonstopdistributors/",
+    "https://www.linkedin.com/company/nonstop-distributors/"
+  ]
+}
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   {/* SiteSchema */}
+        <script
+          id="site-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+          }}
+        />
 
         {/* favicons */}
         <link
@@ -41,10 +71,10 @@ export default function RootLayout({ children }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
 
-        <meta
+        {/* <meta
           name="description"
           content="Nonstop Distributors provides trusted distribution services, connecting businesses with certified specialists across all distribution fields."
-        />
+        /> */}
 
         {/* vendor CSS */}
         <link

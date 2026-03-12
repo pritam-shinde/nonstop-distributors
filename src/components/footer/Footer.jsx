@@ -4,15 +4,15 @@ import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
-  XIcon,
+  XIcon
 } from "../icons/Social";
 
 const Footer = () => {
   const socialLinks = [
-    { href: "https://www.linkedin.com/company/nonstop-distributors/", icon: <LinkedinIcon />, label: "LinkedIn" },
-    { href: "#", icon: <XIcon />, label: "Twitter" },
     { href: "https://www.facebook.com/people/NonStop-Distributors/61584965491773/", icon: <FacebookIcon />, label: "Facebook" },
     { href: "https://www.instagram.com/nonstopdistributors/", icon: <InstagramIcon />, label: "Instagram" },
+    { href: "https://www.linkedin.com/company/nonstop-distributors/", icon: <LinkedinIcon />, label: "LinkedIn" },
+    { href: "https://x.com/NonstopDistrib/", icon: <XIcon />, label: "Twitter" },
   ];
 
   return (

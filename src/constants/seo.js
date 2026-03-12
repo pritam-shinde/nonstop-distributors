@@ -1,43 +1,43 @@
 const metaDetails = {
   home: {
-    title: "NonStop Distributors | FMCG Distribution & Supply Chain Solutions",
+    title: "FMCG Distributors in Nagpur - Nonstop Distributors",
     description:
-      "NonStop Distributors provides reliable FMCG distribution, logistics, and supply chain solutions across metropolitan and tier-2 and tier-3 markets with efficient delivery and strong infrastructure.",
+      "Nonstop Distributors is a trusted FMCG distributor in Nagpur offering reliable supply, quality products, and smooth distribution services for retailers.",
     canonical: "https://nonstopdistributors.com/",
   },
 
   services: {
-    title: "Our Services | Distribution, Logistics & Supply Chain Solutions",
+    title: "FMCG Distribution Services in Nagpur - Nonstop Distributors",
     description:
-      "Explore our full-scale distribution, logistics, and supply chain services designed to ensure timely delivery, product integrity, and seamless market reach across regions.",
+      "Nonstop Distributors offers reliable FMCG distribution services in Nagpur including retail coverage, logistics, supply chain, and e-commerce distribution.",
     canonical: "https://nonstopdistributors.com/services/",
   },
 
   "about-us": {
-    title: "About Us | NonStop Distributors",
+    title: "About Us - Nonstop Distributors Nagpur",
     description:
-      "Learn about NonStop Distributors, our mission, infrastructure, and commitment to delivering efficient distribution and supply chain solutions across diverse markets.",
+      "Nonstop Distributors is a trusted FMCG distributor in Nagpur delivering reliable supply, strong retail connections, and efficient distribution services.",
     canonical: "https://nonstopdistributors.com/about-us/",
   },
 
   "contact-us": {
-    title: "Contact Us | NonStop Distributors",
+    title: "Contact FMCG Distributors in Nagpur - Nonstop Distributor",
     description:
-      "Get in touch with NonStop Distributors for reliable distribution and logistics services. Reach out to our team for business inquiries and partnerships.",
+      "Reach out to Nonstop Distributors for professional FMCG distribution services in Nagpur including retail coverage, logistics, and supply chain support.",
     canonical: "https://nonstopdistributors.com/contact-us/",
   },
 
   "terms-and-conditions": {
-    title: "Terms and Conditions | NonStop Distributors",
+    title: "Terms & Conditions - Nonstop Distributors",
     description:
-      "Read the terms and conditions governing the use of NonStop Distributors website and services, including policies, responsibilities, and legal guidelines.",
+      "Review the Terms and Conditions of Nonstop Distributors outlining website use, legal responsibilities, and policies for visitors using our site.",
     canonical: "https://nonstopdistributors.com/terms-and-conditions/",
   },
 
   "privacy-policy": {
-    title: "Privacy Policy | NonStop Distributors",
+    title: "Privacy Policy - Nonstop Distributors",
     description:
-      "Understand how NonStop Distributors collects, uses, and protects your personal information in accordance with our privacy policy.",
+      "Read the Privacy Policy of Nonstop Distributors to learn how we collect, use, and protect your personal information when using our website and services.",
     canonical: "https://nonstopdistributors.com/privacy-policy/",
   },
 
@@ -49,9 +49,9 @@ const metaDetails = {
   },
 
   careers: {
-    title: "Careers | Join NonStop Distributors",
+    title: "FMCG Careers in Nagpur - Nonstop Distributors",
     description:
-      "Join NonStop Distributors and build your career in distribution, logistics, and supply chain. Explore opportunities to grow with a dynamic and driven team.",
+      "Join Nonstop Distributors and build your career in FMCG distribution. Explore opportunities in sales, logistics, supply chain, and retail distribution.",
     canonical: "https://nonstopdistributors.com/careers/",
   },
 
@@ -63,9 +63,9 @@ const metaDetails = {
   },
 
   partners: {
-    title: "Partners | NonStop Distributors",
+    title: "Our FMCG Brand Partners - Nonstop Distributors",
     description:
-      "Explore NonStop Distributors partner brands and learn how we help FMCG products scale through strong channel coverage and reliable distribution.",
+      "Nonstop Distributors collaborates with FMCG brands and partners to provide efficient distribution, retail coverage, and supply chain support.",
     canonical: "https://nonstopdistributors.com/partners/",
   },
 
