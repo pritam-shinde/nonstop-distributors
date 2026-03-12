@@ -68,13 +68,13 @@ const MainBlogSection = () => {
       >
         <div className="container-fluid">
           <div className="sec-title text-center">
-            <h3
-              className="sec-title__title bw-split-in-up"
+            <h2
+              className="sec-title__title bw-split-in-up font-Montserrat"
               id="jobs-list-heading"
             >
               Current Job Openings <br />{" "}
               <span>Start Your Journey With Us</span>
-            </h3>
+            </h2>
           </div>
           <div className="row gutter-y-30">
             {[

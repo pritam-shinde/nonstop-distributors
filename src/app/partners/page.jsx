@@ -8,39 +8,6 @@ export const generateMetadata = () => {
 };
 
 export default function PartnersPage() {
-  const channels = [
-    {
-      title: "General Trade",
-      text: "High-frequency retailer coverage with disciplined beats and efficient replenishment.",
-      icon: "/assets/distributor-img/general-trade.png",
-    },
-    // {
-    //   title: "Modern Trade",
-    //   text: "Stronger shelf presence through structured execution, visibility, and compliance.",
-    //   icon: "/assets/distributor-img/modern-trade.png",
-    // },
-    // {
-    //   title: "HoReCa",
-    //   text: "Reliable supply for hotels, restaurants, and catering with on-time fulfillment.",
-    //   icon: "/assets/distributor-img/horeca.png",
-    // },
-    {
-      title: "Institutional",
-      text: "Consistent service for corporate, education, and bulk procurement requirements.",
-      icon: "/assets/distributor-img/institutional.png",
-    },
-    {
-      title: "E-commerce",
-      text: "Channel-ready inventory support for online platforms with accurate dispatches.",
-      icon: "/assets/distributor-img/convenience.png",
-    },
-    {
-      title: "Convenience",
-      text: "Fast-moving assortments for quick, high-rotation outlets and local demand hubs.",
-      icon: "/assets/distributor-img/e-commerce.png",
-    },
-  ];
-
   const enablement = [
     {
       title: "Onboarding & Planning",
@@ -134,7 +101,7 @@ export default function PartnersPage() {
                         left: 0,
                         width: "100%",
                         height: "100%",
-                        background: "rgb(74 61 59 / 50%)", 
+                        background: "rgb(74 61 59 / 50%)",
                         zIndex: 1,
                       }}
                     ></div>
@@ -148,20 +115,8 @@ export default function PartnersPage() {
                     <div className="partners-showcase-card__badge">
                       {partner.subcategory || "FMCG"}
                     </div>
-                    {/* <div className="partners-showcase-card__logoBadge">
-                      <Image
-                        src={partner.logoSrc}
-                        width={partner.width}
-                        height={partner.height}
-                        alt={partner.name}
-                        style={{ height: "auto", maxHeight: 54, width: "auto" }}
-                      />
-                    </div> */}
                   </div>
                   <div className="partners-showcase-card__body" >
-                    {/* <h3 className="partners-showcase-card__title">
-                        {partner.subcategory || "FMCG"}
-                    </h3> */}
                     <Image
                       src={partner.logoSrc}
                       width={partner.width}

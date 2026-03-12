@@ -32,7 +32,7 @@ const CategoriesServe = () => {
                 </a>
               </div>
               <div className="portfolio-one__item__content">
-                <h3 className="portfolio-one__item__title">
+                <h4 className="portfolio-one__item__title">
                   <a
                     href="#"
                     className="pe-none"
@@ -40,7 +40,7 @@ const CategoriesServe = () => {
                   >
                     Grocery
                   </a>
-                </h3>
+                </h4>
                 <div className="portfolio-one__item__cat mt-2">Oils & Ghee</div>
               </div>
             </div>
@@ -60,7 +60,7 @@ const CategoriesServe = () => {
                 </a>
               </div>
               <div className="portfolio-one__item__content">
-                <h3 className="portfolio-one__item__title">
+                <h4 className="portfolio-one__item__title">
                   <a
                     href="#"
                     className="pe-none"
@@ -68,7 +68,7 @@ const CategoriesServe = () => {
                   >
                     Kitchen Essentials
                   </a>
-                </h3>
+                </h4>
                 <div className="portfolio-one__item__cat mt-2">
                   Masala & Pickle
                 </div>
@@ -90,7 +90,7 @@ const CategoriesServe = () => {
                 </a>
               </div>
               <div className="portfolio-one__item__content">
-                <h3 className="portfolio-one__item__title">
+                <h4 className="portfolio-one__item__title">
                   <a
                     href="#"
                     className="pe-none"
@@ -98,7 +98,7 @@ const CategoriesServe = () => {
                   >
                     Snacks
                   </a>
-                </h3>
+                </h4>
                 <div className="portfolio-one__item__cat mt-2">
                   Biscuits, Chocolates & Cookies
                 </div>
@@ -120,7 +120,7 @@ const CategoriesServe = () => {
                 </a>
               </div>
               <div className="portfolio-one__item__content">
-                <h3 className="portfolio-one__item__title">
+                <h4 className="portfolio-one__item__title">
                   <a
                     href="#"
                     className="pe-none"
@@ -128,7 +128,7 @@ const CategoriesServe = () => {
                   >
                     Drinks
                   </a>
-                </h3>
+                </h4>
                 <div className="portfolio-one__item__cat mt-2">
                   Hot & Cold Beverages
                 </div>

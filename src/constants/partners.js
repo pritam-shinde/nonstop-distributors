@@ -5,7 +5,7 @@ export const partners = [
     width: 214,
     height: 60,
     category: "Ghee, Oils & Staples",
-    subcategory: "Natural Wellness",
+    subcategory: "Food, Oil and Biscuits",
     coverSrc: "/assets/distributor-img/partners/patanjali.jpg",
     description:
       "Supporting the growth of Ayurvedic and natural wellness products through strong retail distribution and reliable supply networks.",

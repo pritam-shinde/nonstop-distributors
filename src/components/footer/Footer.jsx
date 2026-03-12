@@ -78,7 +78,7 @@ const Footer = () => {
                         { label: "Home", href: "/" },
                         { label: "Our Services", href: "/services/" },
                         { label: "About Us", href: "/about-us/" },
-                        // { label: "Partners", href: "/partners/" },
+                        { label: "Partners", href: "/partners/" },
                         { label: "Contact Us", href: "/contact-us/" },
                         { label: "Careers", href: "/careers/" },
                         { label: "Privacy Policy", href: "/privacy-policy/" },
@@ -102,9 +102,8 @@ const Footer = () => {
                       Contact
                     </p>
                     <ul className="list-unstyled footer-widget__contact">
-                      <li>
-                        {/* <i className="pe-2 icon-pin"></i> */}
-                        <svg
+                      <li> 
+                        <svg className="mt-1"
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
                           height="20"
@@ -119,7 +118,11 @@ const Footer = () => {
                           <circle cx="12" cy="10" r="3" />
                         </svg>
                         <span className="text-white">
-                          Nagpur, Maharashtra, India
+                          97 Crown Society, Chinchbhavan,
+                          <br />
+                          Wardha Rd, near Bhawan's School,
+                          <br />
+                          Nagpur, Maharashtra 440005
                         </span>
                       </li>
                       <li>
@@ -142,7 +145,6 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        {/* <i className="pe-2 icon-mail"></i> */}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"

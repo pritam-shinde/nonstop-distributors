@@ -204,7 +204,7 @@ const Banner8Contact = () => {
                           className="contact-one__info__text text-white"
                           style={{ fontSize: "14px" }}
                         >
-                          NONSTOP Distributors, 97 Crown Society,
+                          97 Crown Society, Chinchbhavan,
                           <br />
                           Wardha Rd, near Bhawan's School,
                           <br />

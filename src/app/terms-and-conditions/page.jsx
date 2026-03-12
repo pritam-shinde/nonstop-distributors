@@ -142,8 +142,9 @@ const TermsAndConditions = () => {
 
             <h3 className="text-white mt-4">Contact</h3>
             <p className="text-white mb-0">
-              NONSTOP Distributors, 97 Crown Society, Wardha Rd, near Bhawan's
-              School, Nagpur, Maharashtra 440005
+              97 Crown Society, Chinchbhavan,
+              Wardha Rd, near Bhawan's School,
+              Nagpur, Maharashtra 440005
             </p>
             <p className="text-white">
               Email:{" "}
