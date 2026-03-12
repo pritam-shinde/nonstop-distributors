@@ -106,7 +106,7 @@ export function handlerMetaDetails(key) {
     alternates: {
       canonical: data.canonical,
     },
-    robots: data.robots || "noindex, nofollow",
+    robots: data.robots || "index, follow",
     openGraph: {
       title: data.og_title || data.title,
       description: data.og_description || data.description,
