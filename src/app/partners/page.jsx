@@ -267,7 +267,8 @@ export default function PartnersPage() {
 
             <div className="partners-cta__media">
               <Image
-                src="/assets/distributor-img/how-we-work.jpg"
+                src="/assets/distributor-img/distribution-partner.jpg"
+                // src="/assets/distributor-img/how-we-work.jpg"
                 alt="Distribution partnership"
                 fill
                 sizes="(max-width: 991px) 100vw, 40vw"

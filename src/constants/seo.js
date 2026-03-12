@@ -73,7 +73,8 @@ const metaDetails = {
     title: "Page Not Found | NonStop Distributors",
     description:
       "The page you are looking for does not exist. Explore NonStop Distributors services or return to the homepage.",
-    canonical: "https://nonstopdistributors.com/404/",
+    canonical: "https://nonstopdistributors.com/404",
+    robots: "noindex, nofollow",
   },
 };
 

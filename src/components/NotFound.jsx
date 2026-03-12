@@ -17,7 +17,7 @@ const NotFound = () => {
             height: "100%",
           }}
         >
-          <h3 className="error-404__title text-white">Oops! Page not found</h3>
+          <h1 className="error-404__title text-white">Oops! Page not found</h1>
           <p className="error-404__text text-white" style={{ maxWidth: 720 }}>
             The page you’re looking for may have been moved, renamed, or no
             longer exists. Use the links below to get back on track.
