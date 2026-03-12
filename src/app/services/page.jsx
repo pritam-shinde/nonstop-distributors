@@ -164,6 +164,7 @@ const ServicePage = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      
       {/* banner */}
       <section className="section-dark">
         <div className="hero-slide hero-about-slide bgimg-services">
