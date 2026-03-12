@@ -4,7 +4,8 @@ import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
-  XIcon
+  XIcon,
+  XIconNew
 } from "../icons/Social";
 
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
     { href: "https://www.facebook.com/people/NonStop-Distributors/61584965491773/", icon: <FacebookIcon />, label: "Facebook" },
     { href: "https://www.instagram.com/nonstopdistributors/", icon: <InstagramIcon />, label: "Instagram" },
     { href: "https://www.linkedin.com/company/nonstop-distributors/", icon: <LinkedinIcon />, label: "LinkedIn" },
-    { href: "https://x.com/NonstopDistrib/", icon: <XIcon />, label: "Twitter" },
+    { href: "https://x.com/NonstopDistrib/", icon: <XIconNew />, label: "Twitter" },
   ];
 
   return (
@@ -57,8 +58,9 @@ const Footer = () => {
                       href={item.href}
                       aria-label={item.label}
                       className="mx-2"
+                      target="_blank"
                     >
-                      {item.icon}
+                        {item.icon}
                     </a>
                   ))}
                 </div>
@@ -102,7 +104,7 @@ const Footer = () => {
                       Contact
                     </p>
                     <ul className="list-unstyled footer-widget__contact">
-                      <li> 
+                      <li>
                         <svg className="mt-1"
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
