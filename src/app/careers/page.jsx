@@ -173,28 +173,9 @@ const MainBlogSection = () => {
                           {position.title}
                         </a>
                       </h3>
-                      {/* <span className="service-one__item__count text-white"></span> */}
                       <p className="mb-0">{position.jobType}</p>
                     </div>
                   </div>
-
-                  {/* <div className="service-one__item__text">
-                    <p className="fw-bold">Baisc Info:</p>
-                    <ul>
-                      <li>
-                        <p className="mb-0">
-                          <span>Location: </span>
-                          {position.location}
-                        </p>
-                      </li>
-                      <li>
-                        <p className="mb-0">
-                          <span>Experience: </span>
-                          {position.experience}
-                        </p>
-                      </li>
-                    </ul>
-                  </div> */}
 
                   <div className="service-one__item__text">
                     <p className="fw-bold">Responsibilities:</p>
@@ -213,7 +194,6 @@ const MainBlogSection = () => {
                       className="service-one__item__icon"
                       style={{ background: "#fb3640" }}
                     >
-                      {/* <i className="icon-criminal-law"></i> */}
                       <Image
                         src={position.logoImg}
                         width={60}

@@ -12,8 +12,7 @@ const OurTeam = () => {
       id: 1,
       name: "Seth Lefberg",
       designation: "Founder & CEO",
-      img: "/assets/photos/about/me4suit.jpg",
-      // img: "/assets/images/team/team-1-1.jpg",
+      img: "/assets/photos/about/me4suit.jpg", 
       delay: "000ms",
     },
     {
@@ -172,8 +171,8 @@ const OurTeam = () => {
                       alt={member.name}
                       style={{
                         width: "100%",
-                        height: "425px", // fixed height for all images
-                        objectFit: "cover", // crops to fit nicely
+                        height: "425px",  
+                        objectFit: "cover",  
                       }}
                     />
                   </div>

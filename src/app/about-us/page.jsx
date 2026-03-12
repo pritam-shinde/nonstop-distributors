@@ -105,16 +105,6 @@ const About = () => {
                 </div>
                 <div className="why-choose-four__right__wrapper">
                   <div className="why-choose-four__box count-box">
-                    {/* <h3 className="why-choose-four__box__count">
-                      <span
-                        className="count-text"
-                        data-stop="20"
-                        data-speed="1500"
-                        data-suffix="+"
-                      >
-                        20
-                      </span>
-                    </h3> */}
                     <span
                       style={{ lineHeight: "49px" }}
                       className="why-choose-four__box__count count-text custom-heading-all"
@@ -129,16 +119,6 @@ const About = () => {
                     </p>
                   </div>
                   <div className="why-choose-four__box count-box">
-                    {/* <h3 className="why-choose-four__box__count">
-                      <span
-                        className="count-text"
-                        data-stop="25"
-                        data-speed="1500"
-                        data-suffix="+"
-                      >
-                        25+
-                      </span>
-                    </h3> */}
                     <span
                       style={{ lineHeight: "49px" }}
                       className="why-choose-four__box__count count-text custom-heading-all"
@@ -151,16 +131,6 @@ const About = () => {
                     <p className="why-choose-four__box__text">Brands</p>
                   </div>
                   <div className="why-choose-four__box count-box">
-                    {/* <h3 className="why-choose-four__box__count">
-                      <span
-                        className="count-text"
-                        data-stop="5000"
-                        data-speed="1500"
-                        data-suffix="+"
-                      >
-                        5,000+
-                      </span>
-                    </h3> */}
                     <span
                       style={{ lineHeight: "49px" }}
                       className="why-choose-four__box__count count-text custom-heading-all"
@@ -191,9 +161,6 @@ const About = () => {
             <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
               Our Core <span> Values</span>
             </h2>
-            {/* <h4 className="tailored-subtitle font-Merriweather text-white mt-2">
-              The principle that guide everything we do
-            </h4> */}
             <h3 className="why-choose-four__content__text tailored-subtitle font-Merriweather text-white mt-2 custom-heading-h3 fs-5 fw-bold mb-0">
               The principle that guide everything we do
             </h3>

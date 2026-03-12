@@ -33,8 +33,7 @@ export default function PartnersPage() {
         <div
           className="hero-slide partners-hero-slide"
           style={{
-            backgroundImage: "url('/assets/distributor-img/partner-banner2.png')",
-            // backgroundImage: "url('/assets/distributor-img/about-banner.jpg')",
+            backgroundImage: "url('/assets/distributor-img/partner-banner2.png')", 
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

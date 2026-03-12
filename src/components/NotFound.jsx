@@ -17,12 +17,6 @@ const NotFound = () => {
             height: "100%",
           }}
         >
-          {/* <div
-            className="error-404__image wow fadeInUp"
-            data-wow-duration="1500ms"
-          >
-            <img src="/assets/images/shapes/error-404-shape.png" alt="404" />
-          </div> */}
           <h3 className="error-404__title text-white">Oops! Page not found</h3>
           <p className="error-404__text text-white" style={{ maxWidth: 720 }}>
             The page you’re looking for may have been moved, renamed, or no
