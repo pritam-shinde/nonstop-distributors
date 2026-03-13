@@ -97,7 +97,7 @@ const About = () => {
               <div className=" why-choose-four__right">
                 <div className="why-choose-four__img">
                   <Image
-                    src="\assets\distributor-img\who-we-are.jpg"
+                    src="/assets/distributor-img/who-we-are.jpg"
                     width={340}
                     height={570}
                     alt="why-choose-us"

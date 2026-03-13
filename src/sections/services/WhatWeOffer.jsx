@@ -120,7 +120,7 @@ const WhatWeOffer = () => {
                   style={{ width: "100%", height: "80%" }}
                 >
                   <img
-                    src="\assets\distributor-img\what-we-offer-nagpur.jpg"
+                    src="/assets/distributor-img/what-we-offer-nagpur.jpg"
                     alt="why-choose-us"
                     style={{
                       objectPosition: "right center",

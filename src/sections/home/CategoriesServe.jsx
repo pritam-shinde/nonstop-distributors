@@ -77,7 +77,7 @@ const CategoriesServe = () => {
 
             <div className="portfolio-one__item">
               <img
-                src="/assets/distributor-img/snaks-biscuit.png"
+                src="/assets/distributor-img/snaks-biscuit.jpg"
                 alt="procounsel"
               />
               <div className="portfolio-one__item__rm">

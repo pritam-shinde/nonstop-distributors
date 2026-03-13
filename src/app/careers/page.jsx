@@ -89,7 +89,7 @@ const MainBlogSection = () => {
                   "Collect signed delivery confirmations",
                   "Coordinate with warehouse and sales teams",
                 ],
-                img: "/assets/distributor-img/careers/delivery-driver-position.png",
+                img: "/assets/distributor-img/careers/delivery-driver-position.jpg",
                 logoImg: "/assets/distributor-img/careers/delivery-driver.png",
               },
               {
@@ -117,7 +117,7 @@ const MainBlogSection = () => {
                   "Promote products and schemes",
                   "Achieve monthly sales targets",
                 ],
-                img: "/assets/distributor-img/careers/sales-executive-position.png",
+                img: "/assets/distributor-img/careers/sales-executive-position.jpg",
                 logoImg: "/assets/distributor-img/careers/sales-executive.png",
               },
               {
@@ -131,7 +131,7 @@ const MainBlogSection = () => {
                   "Coordinate with sales and operations teams",
                   "Handle basic accounting documentation",
                 ],
-                img: "/assets/distributor-img/careers/account-and-billing-position.png",
+                img: "/assets/distributor-img/careers/account-and-billing-position.jpg",
                 logoImg:
                   "/assets/distributor-img/careers/account-and-billing.png",
               },
@@ -146,7 +146,7 @@ const MainBlogSection = () => {
                   "Support order processing and dispatch planning",
                   "Assist management with operational tasks",
                 ],
-                img: "/assets/distributor-img/careers/operational-coordinator-position.png",
+                img: "/assets/distributor-img/careers/operational-coordinator-position.jpg",
                 logoImg:
                   "/assets/distributor-img/careers/operational-coordinator.png",
               },
