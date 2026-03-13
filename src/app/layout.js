@@ -1,5 +1,5 @@
 import { Montserrat, Merriweather } from "next/font/google";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -110,6 +110,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     ></iframe>
                 </noscript>
                 {/* <!-- End Google Tag Manager (noscript) --> */}
+                
+                {/* Ga4 */}
+                <GoogleAnalytics gaId="G-JL2XDJ14FE" />
+
                 <Header />
                 {children}
                 <Footer />
