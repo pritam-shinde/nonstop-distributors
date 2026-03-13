@@ -16,7 +16,7 @@ const TermsAndConditions = () => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('/assets/images/backgrounds/bg_why_choose_us.jpg')",
+              "url('/assets/distributor-img/terms-and-conditions.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

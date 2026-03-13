@@ -16,9 +16,10 @@ const PrivacyPolicy = () => {
           className="hero-slide hero-about-slide"
           style={{
             backgroundImage:
-              "url('/assets/images/backgrounds/bg_why_choose_us.jpg')",
+              "url('/assets/distributor-img/privacy-policy-banner2.jpg')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            // backgroundPosition: " center",
+            backgroundPosition: "0% 90%",
             backgroundRepeat: "no-repeat",
           }}
         >

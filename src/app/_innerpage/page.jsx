@@ -1,13 +1,7 @@
 import NewsLetter from "@/components/NewsLetter";
 import ScriptsLoader from "@/components/ScriptsLoader";
 import { handlerMetaDetails } from "@/constants/seo";
-import FullScaleDistribution from "@/sections/services/FullScaleDistribution";
-import HowWeWork from "@/sections/services/HowWeWork";
-import LogisticsSupplyChain from "@/sections/services/LogisticsSupplyChain";
-import RetailCoverage from "@/sections/services/RetailCoverage";
-import WhatWeOffer from "@/sections/services/WhatWeOffer";
 import Image from "next/image";
-import Link from "next/link";
 
 export const generateMetadata = () => {
   return handlerMetaDetails("services");
@@ -51,262 +45,111 @@ const ServicePage = () => {
         </div>
       </section>
 
-      {/* Why Attorneys / What We offer */}
-      <WhatWeOffer />
-
-      {/*services 1/ Translation Services  */}
-      <FullScaleDistribution />
-
-      {/* section 2 / Logistics & Supply Chain */}
-      <LogisticsSupplyChain />
-
-      {/* section 3 */}
-      <RetailCoverage />
-
-      {/* section 4 - E-commerce Distribution */}
-      <section className="team-one section-dark" id="nurse-services">
-        <div className="container">
-          <div style={{ display: "flex", justifyContent: "end" }}>
-            <div className="custom-max-width">
-              <div className="sec-title text-left">
-                <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
-                  E-commerce Distribution
-                </h2>
-              </div>
-
-              <div className="wow fadeInUp" data-wow-delay="0ms">
-                <div style={{ marginLeft: 0, marginRight: 0 }}>
-                  <p className="about-four__text text-white">
-                    Tap into India's booming e-commerce market with our digital
-                    distribution solutions. We manage your brand's presence
-                    across all major online platforms with seamless fulfillment.
-                  </p>
-
-                  <ul className="list-unstyled about-four__list">
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">
-                        Amazon Flipkart, and marketplace management
-                      </p>
-                    </li>
-
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">D2C fulfillment and delivery</p>
-                    </li>
-
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">Catalog and content management</p>
-                    </li>
-
-                    <li className="about-four__item text-white">
-                      <i className="icon-check mt-2"></i>
-                      <p className="mb-0">
-                        Returns and customer service handling
-                      </p>
-                    </li>
-                  </ul>
-
-                  <div className="about-four__btns">
-                    <a
-                      href="/about-us/"
-                      className="procounsel-btn"
-                      style={{ fontSize: "14px", whiteSpace: "normal" }}
-                    >
-                      <i>Learn More About E-COMMERCE</i>
-                      <span>Learn More About E-COMMERCE</span>
-                    </a>
-                  </div>
+     <section className="service-details section-dark">
+            <div className="container">
+                <div className="row gutter-y-30">
+                    <div className="col-md-12 col-lg-4">
+                        <div className="service-sidebar">
+                            <div className="service-sidebar__single">
+                                <div className="service-sidebar__title-box">
+                                    <h3 className="service-sidebar__title">All Service</h3>
+                                </div>
+                                <ul className="list-unstyled service-sidebar__nav">
+                                    <li><a href="/services/#expert-witness">Full-Scale Distribution <i className="icon-arrow-right"></i></a></li>
+                                    <li><a href="/services/#nurse-services">Logistics & Supply Chain <i className="icon-arrow-right"></i></a></li>
+                                    <li><a href="/services/#expert-witness-profile-challenge-study">Retail Coverage <i className="icon-arrow-right"></i></a></li>
+                                    <li><a href="/services/">E-commerce Distribution <i className="icon-arrow-right"></i></a></li>
+                                    <li><a href="/services/">Modern Trade <i className="icon-arrow-right"></i></a></li>
+                                    <li><a href="/services/">General Trade <i className="icon-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                            {/* <div className="service-sidebar__single ">
+                                <div className="service-sidebar__contact">
+                                    <div className="service-sidebar__contact__image">
+                                        <img src="/assets/distributor-img/service-author.png" alt="procounsel"/>
+                                    </div>
+                                    <h3 className="service-sidebar__contact__title">Get a Free <br/> Quick Solution <br/>
+                                        for Your Distribution Needs</h3>
+                                    <a href="/contact-us/" className="procounsel-btn"><i>Contact</i><span>Contact</span></a>
+                                </div>
+                            </div> */}
+                        </div>
+                    </div>
+                    <div className="col-md-12 col-lg-8">
+                        <div className="service-details__content">
+                            {/* <div className="service-details__thumbnail">
+                                <img src="/assets/distributor-img/service-section.jpg" alt="Full-Scale Distribution"/>
+                            </div> */}
+                            <h3 className="service-details__title text-white">Full-Scale Distribution</h3>
+                            <p className="service-details__text text-white">
+                                Our comprehensive distribution network ensures your products reach the right store. From metropolitan cities to
+                                tier towns, we have the infrastructure and expertise to manage your brand’s complete distribution needs.
+                            </p>
+                            <h4 className="service-details__sub-title text-base">Built to Scale FMCG Distribution</h4>
+                            <p className="service-details__text text-white">
+                                We combine territory-wise execution, warehouse reach, and on-ground sales support to keep products available,
+                                visible, and moving—so you can grow market share without operational complexity.
+                            </p>
+                            <h3 className="service-details__sub-title text-white">Why Choose Nonstop Distributors?</h3>
+                            <div className="row gutter-y-30">
+                                <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                                    <div className="service-details__item">
+                                        <div className="service-details__item__icon">
+                                            <i className="icon-idea-1"></i>
+                                            <span className="service-details__item__icon__zoom">
+                                                <i className="icon-idea-1"></i>
+                                            </span>
+                                        </div>
+                                        <div className="service-details__item__content">
+                                            <h4 className="service-details__item__title text-white">Pan-India Reach</h4>
+                                            <p className="service-details__item__text text-white">Strategic coverage from metro markets to tier towns through a strong distribution network.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                    <div className="service-details__item">
+                                        <div className="service-details__item__icon">
+                                            <i className="icon-address-book-1"></i>
+                                            <span className="service-details__item__icon__zoom">
+                                                <i className="icon-address-book-1"></i>
+                                            </span>
+                                        </div>
+                                        <div className="service-details__item__content">
+                                            <h4 className="service-details__item__title text-white">Real-Time Visibility</h4>
+                                            <p className="service-details__item__text text-white">Inventory control and reporting that help you plan production, dispatch, and replenishment confidently.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row gutter-y-30 mt30">
+                                <div className="col-md-5">
+                                    <div className="service-details__image">
+                                        <Image src="/assets/distributor-img/distribution-partner.jpg" alt="Distribution partner" className="object-cover" width={250} height={200} style={{aspectRatio:"9/16"}}/>
+                                    </div>
+                                </div>
+                                <div className="col-md-7">
+                                    <div className="service-details__support">
+                                        <h4 className="service-details__sub-title text-white">Our Few Benefits</h4>
+                                        <p className="service-details__text text-white">
+                                            Reliable warehousing, territory execution, and scalable operations—designed to keep your products in-stock and selling across channels.
+                                        </p>
+                                        <h4 className="service-details__sub-title-two text-white">What You Get With Full-Scale Distribution</h4>
+                                        <ul className="list-unstyled service-details__list">
+                                            <li className="text-white"><i className="icon-check"></i>Warehouse network in strategic locations</li>
+                                            <li className="text-white"><i className="icon-check"></i>Real time inventory management</li>
+                                            <li className="text-white"><i className="icon-check"></i>Dedicated sales team for each territory</li>
+                                            <li className="text-white"><i className="icon-check"></i>Scalable solutions for seasonal demands</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Services Grid - Channel Coverage*/}
-      <section className="service-one service-two--page service-grid-bg">
-        <div className="container">
-          <div className="sec-title text-left">
-            <h2 className="sec-title__title bw-split-in-up text-white font-Montserrat">
-              Channel Coverage
-            </h2>
-            <p className="why-choose-four__content__text text-white fs-5 fw-bold font-Merriweather mb-0">
-              Complete access to every retail format in India
-            </p>
-          </div>
-          <div className="row gutter-y-30">
-            {coveragesItem.map((item, index) => (
-              <div
-                key={index}
-                className="col-lg-4 col-sm-6 wow fadeInUp"
-                data-wow-delay={`${index * 100}ms`}
-              >
-                <div className="service-details__item text-white h-100 card-box">
-                  <div
-                    className="service-details__item__content h-100"
-                    style={{ display: "flex", flexDirection: "column" }}
-                  >
-                    <div>
-                      <Image
-                        src={item.img}
-                        alt={item.title}
-                        width={64}
-                        height={64}
-                        className="object-cover my-2"
-                      />
-                    </div>
-
-                    <h3 className="card-title">{item.title}</h3>
-
-                    <p className="card-description mb-0">{item.description}</p>
-
-                    <Link
-                      href="/about-us/"
-                      className="procounsel-btn procounsel-btn--sm mt-3"
-                    >
-                      <i>Learn More</i>
-                      <span>Learn More</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work */}
-      <HowWeWork />
-
-      {/* faq */}
-      <section className="faq-one" style={{ background: "#0E222A" }}>
-        <div className="container">
-          <div className="sec-title text-left">
-            <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">
-              Nonstop Distribution <br />
-              <span>Frequently Asked Questions </span>
-            </h2>
-          </div>
-
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="faq-one__content">
-                <div
-                  className="faq-one__accordion procounsel-accrodion"
-                  data-grp-name="procounsel-accrodion"
-                >
-                  <div className="accrodion active">
-                    <div className="accrodion-title">
-                      <span className="accrodion__number text-white"></span>
-                      <h3 className="fs-6 text-white">
-                        Which brands or products do you offer in India?
-                        <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                      </h3>
-                    </div>
-                    <div className="accrodion-content">
-                      <div className="inner">
-                        <p className="text-white">
-                          We help businesses by providing distribution
-                          throughout India with fast-moving consumer goods such
-                          as products from the grocery category, kitchen
-                          essentials, snacks, beverages, and other fast-moving
-                          consumer goods for developing brands.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accrodion">
-                    <div className="accrodion-title">
-                      <span className="accrodion__number text-white"></span>
-                      <h3 className="fs-6 text-white">
-                        Do you have retail/e-commerce distribution in India?
-                        <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                      </h3>
-                    </div>
-                    <div className="accrodion-content">
-                      <div className="inner">
-                        <p className="text-white">
-                          Yes, we do! Nonstop Distributors is involved in the
-                          distribution of products to retail and wholesale
-                          partners through supermarket-level retail stores and
-                          "kirana" convenience store-type businesses, as well as
-                          e-commerce/D2C fulfillment type of services throughout
-                          the country.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div
-                className="faq-one__accordion procounsel-accrodion"
-                data-grp-name="procounsel-accrodion"
-              >
-                <div className="accrodion">
-                  <div className="accrodion-title">
-                    <span className="accrodion__number text-white"></span>
-                    <h3 className="fs-6 text-white">
-                      How do you help brands grow in the market?
-                      <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                    </h3>
-                  </div>
-                  <div className="accrodion-content">
-                    <div className="inner">
-                      <p className="text-white">
-                        We offer end-to-end distribution solutions including
-                        retail placement, logistics & supply chain management,
-                        and real-time inventory control for faster market
-                        expansion.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accrodion">
-                  <div className="accrodion-title">
-                    <span className="accrodion__number text-white"></span>
-                    <h3 className="fs-6 text-white">
-                      What makes your distribution company different from
-                      others?
-                      <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                    </h3>
-                  </div>
-                  <div className="accrodion-content">
-                    <div className="inner">
-                      <p className="text-white">
-                        We combine strong retailer relationships, data driven
-                        supply chain management, and localized market expertise
-                        to help brands scale efficiently.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accrodion">
-                  <div className="accrodion-title">
-                    <span className="accrodion__number text-white"></span>
-                    <h3 className="fs-6 text-white">
-                      How do you support long-term brand growth?
-                      <i className="accrodion-title__icon accrodion-title__icon1"></i>
-                    </h3>
-                  </div>
-                  <div className="accrodion-content">
-                    <div className="inner">
-                      <p className="text-white">
-                        As a strategic distribution partner in India, we make
-                        sure strong shelf presence, optimized inventory flow,
-                        and consistent retail execution across markets.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+    
 
       {/* Newsletter */}
       <NewsLetter />
