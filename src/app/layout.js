@@ -24,8 +24,8 @@ const schemaData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Nonstop Distributors",
-    url: "https://nonstopdistributors.com/",
-    logo: "https://nonstopdistributors.com/assets/distributor-img/nonstop-distributor-light.png",
+    url: "https://www.nonstopdistributors.com/",
+    logo: "https://www.nonstopdistributors.com/assets/distributor-img/nonstop-distributor-light.png",
     contactPoint: {
         "@type": "ContactPoint",
         telephone: "+91 89566 41833",

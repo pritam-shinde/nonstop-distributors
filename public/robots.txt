@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Disallow: */email-protection
-Sitemap: https://nonstopdistributors.com/sitemap.xml
+Sitemap: https://www.nonstopdistributors.com/sitemap.xml

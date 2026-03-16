@@ -91,7 +91,7 @@ export function handlerMetaDetails(key) {
         title: "Nonstop Distribution",
         description: "Default Open Graph description",
         type: "website",
-        url: "https://nonstopdistributors.com/",
+        url: "https://www.nonstopdistributors.com/",
       },
       twitter: {
         title: "Nonstop Distribution",
