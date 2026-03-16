@@ -23,8 +23,7 @@ const MainBlogSection = () => {
           <div className="content container home-content">
             <div style={{ maxWidth: "85%" }}>
               <h1 className="">
-                Build Your Career With Us
-                <br />
+                Build Your Career With Us <br />{" "}
                 <span style={{ color: "#fb3640" }}>
                   Grow, Learn & Make an Impact
                 </span>
