@@ -285,9 +285,13 @@ export default function Home() {
                   market insight, a powerful distribution network, and tailored
                   strategies to help FMCG brands thrive.
                 </p>
-                <a href="/contact-us/" className="tailored-btn">
-                  <i>Let's Connect</i>
-                  <span>Let's Connect</span>
+                {/* <a href="/contact-us/" className="tailored-btn">
+                  <i>Download Company Profile</i>
+                  <span>Download Company Profile</span>
+                </a> */}
+                <a href="/nonstop-distributor-company-profile.pdf" download className="tailored-btn">
+                  <i>Download Company Profile</i>
+                  <span>Download Company Profile</span>
                 </a>
               </div>
             </div>
@@ -298,7 +302,7 @@ export default function Home() {
         <CategoriesServe />
 
         {/* Brands */}
-        <BrandSlider/>
+        <BrandSlider />
         {/* <div style={{ position: "relative", }} className="why-choose-four">
           <div className="tailored-redline-new" />
           <div className="d-flex gap-5 justify-content-center">

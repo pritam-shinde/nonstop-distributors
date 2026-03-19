@@ -75,15 +75,12 @@ const About = () => {
                 </div>
 
                 <h3 className="why-choose-four__content__text text-white custom-heading-h3 fs-5 fw-bold">
-                  NONSTOP Distributors is of leading FMCG distribution partners,
+                  NONSTOP Distributors is a leading FMCG distribution partners,
                   connecting premium consumer brands to every major sales
                   channel.
                 </h3>
                 <p className="why-choose-four__content__text text-white">
-                  With decades of experience and an extensive distribution
-                  network, we specialize in managing and scaling brands across
-                  food and beverages, body care, luxury chocolates, laundry,
-                  stationery, and many other FMCG categories.
+                 With decades of experience and an extensive distribution network, we specialize in managing and scaling brands across grocery, kitchen essentials, snacks, drinks, and other FMCG categories.
                 </p>
                 <p className="why-choose-four__content__text text-white">
                   Our team of dedicated professionals works tirelessly to ensure
