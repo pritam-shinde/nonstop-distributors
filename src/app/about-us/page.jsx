@@ -75,7 +75,7 @@ const About = () => {
                 </div>
 
                 <h3 className="why-choose-four__content__text text-white custom-heading-h3 fs-5 fw-bold">
-                  NONSTOP Distributors is a leading FMCG distribution partners,
+                  NONSTOP Distributors is a leading FMCG distribution partner,
                   connecting premium consumer brands to every major sales
                   channel.
                 </h3>
