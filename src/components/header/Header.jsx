@@ -1,11 +1,28 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { menuData } from ".";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const normalizePath = (value) => {
+    if (!value) return "/";
+    const pathOnly = String(value).split("?")[0].split("#")[0];
+    const trimmed = pathOnly.replace(/\/+$/, "");
+    return trimmed === "" ? "/" : trimmed;
+  };
+
+  const isActiveHref = (href) => {
+    if (!href || href === "#") return false;
+    const current = normalizePath(pathname || "/");
+    const target = normalizePath(href);
+    if (target === "/") return current === "/";
+    return current === target || current.startsWith(`${target}/`);
+  };
 
   // Optimized Scroll Handler
   useEffect(() => {
@@ -27,9 +44,11 @@ const Header = () => {
         : items
       ).map((item, i) => {
         const hasChildren = !!item.children;
+        const isCurrent = isActiveHref(item.href);
         const liClass = [
           hasChildren ? "dropdown" : "",
-          `menu-level-${level}`, // 👈 class based on depth
+          isCurrent ? "route-current" : "",
+          `menu-level-${level}`, // ðŸ‘ˆ class based on depth
         ]
           .join(" ")
           .trim();
@@ -89,14 +108,28 @@ const Header = () => {
               }}
             >
               <ul className="main-menu__list">
-                {menuData.map((item, idx) => (
+                {menuData.map((item, idx) => {
+                  const isCurrent = isActiveHref(item.href);
+
+                  return (
                   <li
                     key={idx}
-                    className={item.children || item.megaMenu ? "dropdown" : ""}
+                    className={[
+                      item.children || item.megaMenu ? "dropdown" : "",
+                      isCurrent ? "route-current" : "",
+                    ]
+                      .join(" ")
+                      .trim()}
                   >
                     <a
                       href={item.href || "#"}
-                      style={{ color: scrolled ? "#000000" : "#ffffff" }}
+                      style={{
+                        color: isCurrent
+                          ? "#fb3640"
+                          : scrolled
+                            ? "#000000"
+                            : "#ffffff",
+                      }}
                     >
                       {item.label}
                     </a>
@@ -163,7 +196,8 @@ const Header = () => {
                     {/* Normal Dropdowns */}
                     {item.children && renderMenu(item.children)}
                   </li>
-                ))}
+                  );
+                })}
               </ul>
             </nav>
 
@@ -262,3 +296,4 @@ const Header = () => {
 };
 
 export default Header;
+

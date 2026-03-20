@@ -481,6 +481,18 @@ a {
   /* color: var(--procounsel-white, #fff); */
 }
 
+/* Navbar active page (red) */
+.main-menu .main-menu__list > li.route-current > a,
+.mobile-nav__container .main-menu__list > li.route-current > a {
+  color: #fb3640 !important;
+}
+
+.main-menu .main-menu__list li ul li.route-current > a,
+.mobile-nav__container .main-menu__list li ul li.route-current > a {
+  background-color: #fb3640 !important;
+  color: #ffffff !important;
+}
+
 /*  */
 .free-consultation-btn {
   background-color: #ffffff;
