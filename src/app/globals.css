@@ -737,7 +737,38 @@ a {
 
 @media (max-width: 575px) {
   .partners-showcase-slider {
-    gap: 14px;
+    gap: 6px;
+  }
+
+  .partners-showcase__navBtn {
+    width: 32px !important;
+    height: 32px !important;
+    position: static !important;
+    transform: none !important;
+    z-index: 1000 !important;
+    /* z-index: auto !important; */
+    display: inline-flex !important;
+    background: rgba(14, 34, 42, 0.72) !important;
+    border-color: rgba(255, 255, 255, 0.55) !important;
+  }
+
+  .partners-showcase-swiper {
+    min-width: 0;
+  }
+
+  .partners-showcase__navBtn i {
+    font-size: 16px !important;
+    line-height: 1;
+  }
+
+  /* Keep partner cards from becoming too tall on small screens */
+  .partners-showcase-swiper .partners-showcase-card__media {
+    height: 220px !important;
+  }
+
+  .partners-showcase-swiper .partners-showcase-card__body {
+    min-height: unset !important;
+    padding: 14px 14px 18px !important;
   }
 }
 

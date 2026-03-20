@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -38,6 +38,7 @@ export default function PartnerShowcaseSlider({ partners }) {
         type="button"
         className="partners-showcase__navBtn partners-showcase__navBtn--prev"
         aria-label="Previous partners"
+        onClick={() => swiper?.slidePrev()}
       >
         <i className="fa fa-angle-left" aria-hidden="true" />
       </button>
@@ -68,41 +69,38 @@ export default function PartnerShowcaseSlider({ partners }) {
         rewind={!shouldLoop}
         observer
         observeParents
-        resizeObserver
-        // breakpoints={{
-        //   0: { slidesPerView: 1 },
-        //   576: { slidesPerView: 1 },
-        //   768: { slidesPerView: 1 },
-        //   992: { slidesPerView: 2 },
-        // }}
-
+        resizeObserver 
         breakpoints={{
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 16,
-    },
-    576: {
-      slidesPerView: 1,
-      spaceBetween: 16,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 24,
-    },
-    992: {
-      slidesPerView: 2,
-      spaceBetween: 60,
-    },
-    1200: {
-      slidesPerView: 2,
-      spaceBetween: 52,  
-    },
-    1440: {
-      slidesPerView: 2,
-      spaceBetween: 52,  
-    },
-  }}
-        className="partners-showcase-swiper px-3 px-lg-5"
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          360: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+          },
+          1200: {
+            slidesPerView: 2,
+            spaceBetween: 52,
+          },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 52,
+          },
+        }}
+        className="partners-showcase-swiper px-lg-5"
       >
         {items.map((partner) => (
           <SwiperSlide key={partner.name}>
@@ -158,6 +156,7 @@ export default function PartnerShowcaseSlider({ partners }) {
         type="button"
         className="partners-showcase__navBtn partners-showcase__navBtn--next"
         aria-label="Next partners"
+        onClick={() => swiper?.slideNext()}
       >
         <i className="fa fa-angle-right" aria-hidden="true" />
       </button>
