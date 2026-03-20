@@ -1,4 +1,4 @@
-import ScriptsLoader from "@/components/ScriptsLoader";
+﻿import ScriptsLoader from "@/components/ScriptsLoader";
 import { partners } from "@/constants/partners";
 import { handlerMetaDetails } from "@/constants/seo";
 import Image from "next/image";
@@ -90,7 +90,7 @@ export default function PartnersPage() {
 
           <div className="row g-4 mt-4">
             {partners.map((partner) => (
-              <div key={partner.name} className="col-12 col-md-6 col-lg-3">
+              <div key={partner.name} className="col-12 col-md-6 col-lg-4 d-flex">
                 <article className="partners-showcase-card">
                   <div className="partners-showcase-card__media position-relative">
                     <div
@@ -284,3 +284,4 @@ export default function PartnersPage() {
     </>
   );
 }
+
