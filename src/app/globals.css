@@ -732,7 +732,13 @@ a {
 .partners-showcase-slider {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 22px;
+}
+
+@media (max-width: 575px) {
+  .partners-showcase-slider {
+    gap: 14px;
+  }
 }
 
 .partners-showcase__navBtn {

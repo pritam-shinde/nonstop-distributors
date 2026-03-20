@@ -95,7 +95,11 @@ export default function PartnerShowcaseSlider({ partners }) {
     },
     1200: {
       slidesPerView: 2,
-      spaceBetween: 48,  
+      spaceBetween: 52,  
+    },
+    1440: {
+      slidesPerView: 2,
+      spaceBetween: 52,  
     },
   }}
         className="partners-showcase-swiper px-3 px-lg-5"
