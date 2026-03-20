@@ -9,86 +9,6 @@ export const generateMetadata = () => {
   return handlerMetaDetails("home");
 };
 
-const items = [
-  {
-    number: "01",
-    title: "Submit Case",
-    text: ` We begin with a detailed intake to understand your case objectives and the type of expertise required. Our process ensures every search starts with clarity and precision.`,
-  },
-  {
-    number: "02",
-    title: "Expert Search",
-    text: ` Leveraging our nationwide network, we identify qualified experts across disciplines. When needed, our team conducts targeted outreach to find the precise fit your case demands.`,
-  },
-  {
-    number: "03",
-    title: "Vetting",
-    text: ` Each expert is verified for credentials, relevance, and experience. We review qualifications, case history, and communication style to ensure they meet your standards.`,
-  },
-  {
-    number: "04",
-    title: "Connection",
-    text: `You’re introduced to top candidates ready to discuss your case. We manage all scheduling, communication, and documentation to keep your process seamless from start to finish.`,
-  },
-];
-
-export const ServiceSteps = [
-  {
-    img: "/assets/images/backgrounds/support-1-icon.png",
-    alt: "support-1-icon",
-    title: "Targeted Case Intake",
-    text: (
-      <>
-        We start with a focused conversation to define your case needs and the
-        expertise required.
-        <br className="d-none d-lg-inline" />
-        Every search begins with clarity and purpose.
-      </>
-    ),
-  },
-  {
-    img: "/assets/images/backgrounds/support-2-icon.png",
-    alt: "support-2-icon",
-    title: "Expert Sourcing & Vetting",
-    text: (
-      <>
-        Our team identifies and recruits qualified experts through both trusted
-        connections and new outreach.
-        <br className="d-none d-lg-inline" />
-        Each candidate is evaluated for credentials, relevance, and
-        communication strength.
-      </>
-    ),
-  },
-  {
-    img: "/assets/images/backgrounds/support-3-icon.png",
-    alt: "support-3-icon",
-    title: "Coordination & Communication",
-    text: (
-      <>
-        We facilitate introductions, schedule consult calls, and oversee
-        document sharing.
-        <br className="d-none d-lg-inline" /> Our case managers ensure every
-        step runs smoothly.
-      </>
-    ),
-  },
-  {
-    img: "/assets/images/backgrounds/support-4-icon.png",
-    alt: "support-4-icon",
-    title: "Follow-Through Until Close",
-    text: (
-      <>
-        Our support continues through reports, deposition prep, and trial
-        appearances.
-        <br className="d-none d-lg-inline" />
-        You can depend on us for responsiveness and consistency from start to
-        finish.
-      </>
-    ),
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -284,11 +204,7 @@ export default function Home() {
                   reach retailers and consumers seamlessly. We combine deep
                   market insight, a powerful distribution network, and tailored
                   strategies to help FMCG brands thrive.
-                </p>
-                {/* <a href="/contact-us/" className="tailored-btn">
-                  <i>Download Company Profile</i>
-                  <span>Download Company Profile</span>
-                </a> */}
+                </p> 
                 <a href="/nonstop-distributor-company-profile.pdf" download className="tailored-btn">
                   <i>Download Company Profile</i>
                   <span>Download Company Profile</span>
@@ -303,50 +219,7 @@ export default function Home() {
 
         {/* Brands */}
         <BrandSlider />
-        {/* <div style={{ position: "relative", }} className="why-choose-four">
-          <div className="tailored-redline-new" />
-          <div className="d-flex gap-5 justify-content-center">
-            {[
-              {
-                label: "Patanjali",
-                imgSrc: "/assets/distributor-img/pantanjali.png",
-                width: 214,
-                height: 60,
-              },
-              {
-                label: "Britannia",
-                imgSrc: "/assets/distributor-img/britannia.png",
-                width: 168,
-                height: 60,
-              },
-              {
-                label: "Hersheys",
-                imgSrc: "/assets/distributor-img/hersheys.jpg",
-                width: 150,
-                height: 60,
-              },
-              {
-                label: "Keya",
-                imgSrc: "/assets/distributor-img/keya-logo.jpg",
-                width: 112,
-                height: 60,
-              },
-            ].map((brand, index) => (
-              <div key={index}>
-                <Image
-                  src={brand.imgSrc}
-                  width={brand.width}
-                  height={brand.height}
-                  alt={brand.label}
-                />
-              </div>
-            ))}
-          </div>
-          <div
-            className="tailored-redline-new"
-            style={{ rotate: "0deg", top: "unset", bottom: 0 }}
-          />
-        </div> */}
+        
       </div>
 
       <div className="search-popup">
