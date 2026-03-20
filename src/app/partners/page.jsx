@@ -1,4 +1,5 @@
 ﻿import ScriptsLoader from "@/components/ScriptsLoader";
+import PartnerShowcaseSlider from "@/components/partners/PartnerShowcaseSlider";
 import { partners } from "@/constants/partners";
 import { handlerMetaDetails } from "@/constants/seo";
 import Image from "next/image";
@@ -88,49 +89,7 @@ export default function PartnersPage() {
             </p>
           </div>
 
-          <div className="row g-4 mt-4">
-            {partners.map((partner) => (
-              <div key={partner.name} className="col-12 col-md-6 col-lg-4 d-flex">
-                <article className="partners-showcase-card">
-                  <div className="partners-showcase-card__media position-relative">
-                    <div
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        background: "rgb(74 61 59 / 50%)",
-                        zIndex: 1,
-                      }}
-                    ></div>
-                    <Image
-                      src={partner.coverSrc || "/assets/distributor-img/other-fmcg-product.jpg"}
-                      alt={`${partner.name} category`}
-                      fill
-                      sizes="(max-width: 991px) 100vw, 25vw"
-                      style={{ objectFit: "cover" }}
-                    />
-                    <div className="partners-showcase-card__badge">
-                      {partner.subcategory || "FMCG"}
-                    </div>
-                  </div>
-                  <div className="partners-showcase-card__body" >
-                    <Image
-                      src={partner.logoSrc}
-                      width={partner.width}
-                      height={partner.height}
-                      alt={partner.name}
-                      style={{ height: "auto", maxHeight: 54, width: "auto", marginTop: "12px", }}
-                    />
-                    <p className="partners-showcase-card__text">
-                      {partner.description}
-                    </p>
-                  </div>
-                </article>
-              </div>
-            ))}
-          </div>
+          <PartnerShowcaseSlider partners={partners} />
         </div>
       </section>
 
@@ -284,4 +243,6 @@ export default function PartnersPage() {
     </>
   );
 }
+
+
 
