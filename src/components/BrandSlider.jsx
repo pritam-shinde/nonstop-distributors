@@ -140,7 +140,108 @@ export default function BrandSlider() {
         />
       </section>
 
-   
+      {/* <section className="brands-explorerSection" aria-label="Explore brands">
+        <div className="container">
+          <div className="brands-explorer__header">
+            <div>
+              <h2 className="sec-title__title bw-split-in-up font-Montserrat text-white mb-0">
+                Explore <span>Brands</span>
+              </h2>
+              <p className="brands-explorer__sub text-white mb-0">
+                Tap a brand to see category and distribution summary.
+              </p>
+            </div>
+
+            <Link
+              href="/partners"
+              className="brands-explorer__cta"
+              aria-label="Open partners page"
+            >
+              All partners
+              <i className="fa fa-angle-right" aria-hidden="true" />
+            </Link>
+          </div>
+
+          <div className="brands-explorer">
+            <div className="brand-tabs" role="tablist" aria-label="Brand list">
+              {items.map((partner, index) => (
+                <button
+                  key={`${partner.name}-tab`}
+                  type="button"
+                  role="tab"
+                  id={`brand-tab-${index}`}
+                  aria-selected={index === safeActiveIndex}
+                  aria-controls={`brand-panel-${index}`}
+                  className="brand-tab"
+                  onClick={() => setActiveIndex(index)}
+                >
+                  <span className="brand-tab__logo" aria-hidden="true">
+                    <Image
+                      src={partner.logoSrc}
+                      width={partner.width}
+                      height={partner.height}
+                      alt=""
+                      sizes="120px"
+                      style={{ width: "auto", height: "auto", maxHeight: 34 }}
+                    />
+                  </span>
+
+                </button>
+              ))}
+            </div>
+
+            <div
+              className="brand-preview"
+              role="tabpanel"
+              id={`brand-panel-${safeActiveIndex}`}
+              aria-labelledby={
+                items.length ? `brand-tab-${safeActiveIndex}` : undefined
+              }
+            >
+              {active ? (
+                <>
+                  <div className="brand-preview__media">
+                    <Image
+                      src={
+                        active.coverSrc ||
+                        "/assets/distributor-img/other-fmcg-product.jpg"
+                      }
+                      alt="partner brand image"
+                      fill
+                      sizes="(max-width: 991px) 100vw, 58vw"
+                      style={{ objectFit: "cover" }}
+                    />
+                    <div className="brand-preview__overlay" aria-hidden="true" />
+                  </div>
+
+                  <div className="brand-preview__body">
+                    <h3 className="brand-preview__title">{active.name}</h3>
+                    <p className="brand-preview__text">
+                      {active.description ||
+                        "Trusted partner brand distributed with care and consistency."}
+                    </p>
+
+                    <div className="brand-preview__actions">
+                      <Link
+                        href="/partners"
+                        className="brand-preview__btn"
+                        aria-label="View partner details"
+                      >
+                        View details
+                        <i className="fa fa-angle-right" aria-hidden="true" />
+                      </Link>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div className="brand-preview__empty text-white">
+                  No brands available.
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section> */}
     </>
   );
 }
