@@ -1,7 +1,8 @@
 export const partners = [
   {
     name: "Patanjali",
-    logoSrc: "/assets/distributor-img/pantanjali.png",
+    logoSrc: "/assets/distributor-img/partners/patanjali.png",
+    // logoSrc: "/assets/distributor-img/pantanjali.png",
     width: 214,
     height: 60,
     category: "Ghee, Oils & Staples",
@@ -11,7 +12,8 @@ export const partners = [
   },
   {
     name: "Britannia",
-    logoSrc: "/assets/distributor-img/britannia.png",
+    logoSrc: "/assets/distributor-img/partners/britania.png",
+    // logoSrc: "/assets/distributor-img/britannia.png",
     width: 168,
     height: 60,
     category: "Foods & Beverages",
@@ -22,7 +24,8 @@ export const partners = [
   },
   {
     name: "Hershey's",
-    logoSrc: "/assets/distributor-img/hersheys.jpg",
+    logoSrc: "/assets/distributor-img/partners/hersley.png",
+    // logoSrc: "/assets/distributor-img/hersheys.jpg",
     width: 150,
     height: 60,
     category: "Confectionery",
@@ -33,7 +36,8 @@ export const partners = [
   },
   {
     name: "Keya",
-    logoSrc: "/assets/distributor-img/keya-logo.jpg",
+    logoSrc: "/assets/distributor-img/partners/keya.png",
+    // logoSrc: "/assets/distributor-img/keya-logo.jpg",
     width: 112,
     height: 60,
     category: "Spices & Seasonings",
@@ -43,7 +47,6 @@ export const partners = [
       "Established in 2009, Keya deals in premium herbs, spices, seasonings, and condiments. It is known for introducing international-quality seasonings to Indian kitchens. Ensuring efficient distribution of household essentials through structured channels and strong inventory management.",
   },
 ];
-
 // export const partners = [
 //   {
 //     name: "Patanjali",

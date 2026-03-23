@@ -41,7 +41,7 @@ export default function BrandSlider() {
   return (
     <>
       <section
-        style={{ position: "relative" }}
+        style={{ position: "relative", background: "linear-gradient(to right, #247ba0, #0E222A )" }}
         className="why-choose-four brands-marqueeSection"
         aria-label="Brands we distribute"
       >
