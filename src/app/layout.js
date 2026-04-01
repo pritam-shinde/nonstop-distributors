@@ -51,6 +51,10 @@ export default function RootLayout({ children }) {
                     name="google-site-verification"
                     content="_yVgwCQ3UWp_ThlNfpLoGVWqvZXg9wmLZlb00TcgJIw"
                 />
+                <meta
+                    name="dmca-site-verification"
+                    content="T3BmN2FQRzhuVWJualVHbENDUHBFYlU5UzREa1lMU09acVd6QjJsTmdQdz01"
+                />
                 {/* SiteSchema */}
                 <script
                     id="site-schema"
