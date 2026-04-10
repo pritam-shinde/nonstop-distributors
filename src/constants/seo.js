@@ -46,6 +46,7 @@ const metaDetails = {
     description:
       "Explore insights, trends, and expert knowledge on distribution, logistics, and supply chain management to help your business grow and scale efficiently.",
     canonical: "https://www.nonstopdistributors.com/blog/",
+    robots: "noindex, nofollow",
   },
 
   careers: {
