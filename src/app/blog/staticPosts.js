@@ -11,21 +11,38 @@ export const STATIC_BLOG_POSTS = [
     excerpt:
       "A practical breakdown of how execution differs across supermarkets and kirana stores, and what to standardize as you scale.",
     content: `
-      <p>Modern Trade and General Trade behave differently, but strong distribution fundamentals stay the same: availability, visibility, and velocity.</p>
-      <h2>Modern Trade: systems and consistency</h2>
-      <ul>
-        <li>Focus on fill rate, clean invoicing, and predictable replenishment.</li>
-        <li>Plan for promotions and secondary displays well in advance.</li>
-        <li>Track performance by store cluster to understand what actually moves.</li>
-      </ul>
-      <h2>General Trade: coverage and discipline</h2>
-      <ul>
-        <li>Beat planning and retailer coverage are the growth engine.</li>
-        <li>Prioritize top SKUs and protect assortment discipline.</li>
-        <li>Reduce stockouts with simple reorder cues and stable service cycles.</li>
-      </ul>
-      <h2>What to standardize across both</h2>
-      <p>One price architecture, one service promise, one inventory logic. When you standardize the basics, expansion becomes repeatable instead of reactive.</p>
+     <p>Modern Trade and General Trade operate with very different execution models, yet the fundamentals of strong FMCG distribution remain the same: availability, visibility, and velocity. Brands that understand how each channel behaves can create a consistent growth engine instead of managing disconnected efforts. The key is adapting execution without compromising on core distribution discipline.</p>
+
+<h2>Modern Trade: systems, data, and consistency</h2>
+<p>Modern Trade environments such as supermarkets, hypermarkets, and organized retail chains rely heavily on systems and structured processes. Success here depends on maintaining fill rates, adhering to store-level compliance, and ensuring promotional execution is flawless. Unlike General Trade, decisions are often centralized and performance is measured through data dashboards.</p>
+
+<ul>
+<li>Focus on fill rate, clean invoicing, and predictable replenishment cycles.</li>
+<li>Plan for promotions, gondola displays, and secondary placements in advance.</li>
+<li>Track store-level performance and identify high-velocity locations.</li>
+<li>Maintain compliance with planograms and merchandising guidelines.</li>
+<li>Ensure pricing accuracy and avoid mismatch across locations.</li>
+</ul>
+
+<p>Consistency in Modern Trade builds credibility with category managers and increases the chances of better shelf space, stronger promotions, and improved visibility.</p>
+
+<h2>General Trade: coverage and execution discipline</h2>
+<p>General Trade includes kirana stores, small retailers, and traditional outlets. Growth in this channel is driven by outlet coverage, strong relationships, and disciplined beat planning. Unlike Modern Trade, availability is dependent on frequent servicing and smart assortment decisions.</p>
+
+<ul>
+<li>Beat planning and structured retailer coverage drive growth.</li>
+<li>Prioritize top SKUs and protect assortment discipline.</li>
+<li>Use simple reorder cues to reduce stockouts.</li>
+<li>Maintain consistent service cycles to build retailer trust.</li>
+<li>Focus on visibility through counter display and retailer recommendation.</li>
+</ul>
+
+<p>In General Trade, execution speed matters more than complexity. Brands that simplify ordering and ensure regular servicing usually outperform competitors.</p>
+
+<h2>What to standardize across both channels</h2>
+<p>While execution differs, brands must standardize key elements across Modern Trade and General Trade to scale efficiently. A unified pricing structure, consistent service levels, and clear inventory logic create operational clarity.</p>
+
+<p>One price architecture, one service promise, and one inventory discipline reduce confusion. When the basics are standardized, expansion becomes repeatable instead of reactive, allowing brands to grow across multiple markets confidently.</p>
     `.trim(),
     metaTitle: "Modern Trade vs General Trade for FMCG Distribution",
     metaDescription:
@@ -43,22 +60,43 @@ export const STATIC_BLOG_POSTS = [
     excerpt:
       "How to structure routes, service frequency, and calls so your sales and supply chain stay aligned as outlets grow.",
     content: `
-      <p>Coverage is not just more calls, it is better calls. A scalable beat plan connects outlet potential, service frequency, and inventory flow.</p>
-      <h2>Step 1: Segment outlets by potential</h2>
-      <ul>
-        <li>A: high velocity outlets (protect availability)</li>
-        <li>B: growth outlets (expand assortment)</li>
-        <li>C: maintenance outlets (efficient service)</li>
-      </ul>
-      <h2>Step 2: Define the service promise</h2>
-      <p>Decide how often each segment is visited and how quickly stock is replenished. Consistency matters more than occasional spikes.</p>
-      <h2>Step 3: Measure the right outputs</h2>
-      <ul>
-        <li>In-stock rate on top SKUs</li>
-        <li>Order frequency and average order value</li>
-        <li>On-time delivery and return rates</li>
-      </ul>
-      <p>When coverage and supply chain follow the same logic, execution becomes predictable and growth becomes easier to sustain.</p>
+     <p>Retail coverage is not just about increasing the number of outlet visits. It is about making better calls, improving order quality, and aligning supply chain execution with outlet potential. A structured beat plan helps teams service more outlets efficiently while maintaining product availability.</p>
+
+<h2>Step 1: Segment outlets by potential</h2>
+<p>Not all outlets contribute equally. Segmenting stores based on potential allows teams to prioritize time and inventory effectively.</p>
+
+<ul>
+<li>A: high velocity outlets that require strong availability</li>
+<li>B: growth outlets where assortment expansion drives sales</li>
+<li>C: maintenance outlets requiring efficient servicing</li>
+<li>Identify seasonal outlets and treat separately</li>
+<li>Review segmentation every quarter based on performance</li>
+</ul>
+
+<h2>Step 2: Define the service promise</h2>
+<p>Each outlet segment should have a defined service frequency and replenishment cycle. Consistency in servicing improves trust and reduces lost sales due to stockouts.</p>
+
+<p>High potential outlets may require multiple visits per week, while maintenance outlets can follow a fixed weekly or bi-weekly cycle. The goal is to balance coverage and efficiency.</p>
+
+<h2>Step 3: Route planning and productivity</h2>
+<ul>
+<li>Group outlets geographically to reduce travel time</li>
+<li>Balance workload across sales representatives</li>
+<li>Ensure delivery and sales cycles are aligned</li>
+<li>Plan realistic daily call targets</li>
+<li>Track route adherence and optimize regularly</li>
+</ul>
+
+<h2>Step 4: Measure the right outputs</h2>
+<ul>
+<li>In-stock rate on priority SKUs</li>
+<li>Order frequency and order value</li>
+<li>New outlet additions</li>
+<li>Assortment width per outlet</li>
+<li>On-time delivery performance</li>
+</ul>
+
+<p>When coverage and supply chain follow the same logic, execution becomes predictable and growth becomes easier to sustain. A scalable beat plan ensures both efficiency and availability.</p>
     `.trim(),
     metaTitle: "Retail Coverage & Beat Planning for FMCG Brands",
     metaDescription:
@@ -76,21 +114,40 @@ export const STATIC_BLOG_POSTS = [
     excerpt:
       "Stockouts quietly kill growth. Here are practical levers to protect availability without overloading inventory.",
     content: `
-      <p>Stockouts do not just lose today's sale. They break repeat purchase and push shoppers to substitutes. The fix is usually discipline, not complexity.</p>
-      <h2>Start with top SKUs</h2>
-      <ul>
-        <li>Identify the SKUs that drive the majority of off-take.</li>
-        <li>Set minimum stock rules at warehouse and route levels.</li>
-        <li>Protect these SKUs during promos and seasonal peaks.</li>
-      </ul>
-      <h2>Fix the common causes</h2>
-      <ul>
-        <li>Irregular service cycles</li>
-        <li>Late replenishment signals</li>
-        <li>Mismatch between assortment and outlet potential</li>
-      </ul>
-      <h2>Use a simple weekly rhythm</h2>
-      <p>One weekly review of stock, secondary sales, and returns can prevent most availability issues. Consistency compounds.</p>
+      <p>Stockouts silently damage FMCG growth. When products are unavailable, retailers switch to alternatives and consumers form new habits. Preventing stockouts requires simple discipline, not complex systems.</p>
+
+<h2>Start with top SKUs</h2>
+<p>Most FMCG brands generate the majority of sales from a limited number of SKUs. Protecting availability for these products should be the first priority.</p>
+
+<ul>
+<li>Identify SKUs driving maximum offtake</li>
+<li>Set minimum stock levels at warehouse</li>
+<li>Maintain route-level buffer inventory</li>
+<li>Protect stock during promotional periods</li>
+<li>Monitor high-demand seasonal items</li>
+</ul>
+
+<h2>Fix the common causes</h2>
+<ul>
+<li>Irregular service cycles</li>
+<li>Delayed replenishment signals</li>
+<li>Poor demand forecasting</li>
+<li>Over-expansion of low moving SKUs</li>
+<li>Mismatch between outlet potential and assortment</li>
+</ul>
+
+<h2>Use a simple weekly rhythm</h2>
+<p>A structured weekly review helps identify issues early. Reviewing stock levels, sales movement, and returns can prevent major availability gaps.</p>
+
+<ul>
+<li>Review warehouse stock weekly</li>
+<li>Track fast moving SKU availability</li>
+<li>Monitor route-level stock levels</li>
+<li>Adjust replenishment plans</li>
+<li>Identify slow-moving inventory</li>
+</ul>
+
+<p>Consistency in review and replenishment improves availability and protects offtake. Small process improvements compound into long-term growth.</p>
     `.trim(),
     metaTitle: "Reducing Stockouts in FMCG Distribution",
     metaDescription:
@@ -108,17 +165,40 @@ export const STATIC_BLOG_POSTS = [
     excerpt:
       "A checklist for brands entering online channels: packaging, inventory allocation, SLA discipline, and returns management.",
     content: `
-      <p>Online growth is real, but e-commerce demands a different operating cadence. The best results come from clean inputs and clear SLAs.</p>
-      <h2>Packaging and damage control</h2>
-      <ul>
-        <li>Use ship-ready packaging where possible.</li>
-        <li>Standardize inner cartons and labeling for faster pick-pack.</li>
-        <li>Track damage reasons and fix the root cause quickly.</li>
-      </ul>
-      <h2>Inventory allocation</h2>
-      <p>Do not starve retail to feed online (or vice versa). Allocate inventory intentionally based on channel velocity and service commitments.</p>
-      <h2>Returns and expiry discipline</h2>
-      <p>Define clear return rules and handle near-expiry stock proactively. A small process here prevents big leakage later.</p>
+    <p>E-commerce is becoming an important growth channel for FMCG brands, but it requires different operational discipline. Success depends on packaging readiness, inventory allocation, and SLA compliance.</p>
+
+<h2>Packaging and damage control</h2>
+<ul>
+<li>Use ship-ready packaging where possible</li>
+<li>Strengthen fragile product packaging</li>
+<li>Standardize inner cartons for faster picking</li>
+<li>Ensure clear labeling and barcode visibility</li>
+<li>Track damage reasons and reduce returns</li>
+</ul>
+
+<h2>Inventory allocation</h2>
+<p>Inventory planning across online and offline channels is critical. Over-allocating to one channel can create stockouts in another.</p>
+
+<ul>
+<li>Allocate inventory by channel velocity</li>
+<li>Maintain buffer stock for online orders</li>
+<li>Plan for promotional spikes</li>
+<li>Avoid last-minute transfers</li>
+<li>Monitor daily order trends</li>
+</ul>
+
+<h2>Returns and expiry discipline</h2>
+<p>Returns management plays a major role in e-commerce profitability. Clear rules and proactive monitoring reduce leakage.</p>
+
+<ul>
+<li>Define return eligibility rules</li>
+<li>Track near-expiry inventory</li>
+<li>Monitor return reasons</li>
+<li>Improve packaging to reduce damages</li>
+<li>Handle replacements quickly</li>
+</ul>
+
+<p>Clean processes and disciplined fulfilment improve ratings, reduce returns, and support sustainable e-commerce growth.</p>
     `.trim(),
     metaTitle: "E-commerce Fulfilment for FMCG Brands",
     metaDescription:
@@ -136,17 +216,40 @@ export const STATIC_BLOG_POSTS = [
     excerpt:
       "How to approach hotels, restaurants, cafes, schools, and corporate buyers with the right assortment, pricing, and service model.",
     content: `
-      <p>HoReCa and Institutional routes can add stable volume, but they require a different service model than retail. The goal is reliability and repeat orders.</p>
-      <h2>Lead with the right assortment</h2>
-      <ul>
-        <li>Choose pack sizes and SKUs that fit usage patterns.</li>
-        <li>Offer consistent availability on a tighter set of items.</li>
-        <li>Support with basic product training and usage guidance.</li>
-      </ul>
-      <h2>Build a service model</h2>
-      <p>Define delivery cycles, payment terms, and escalation paths early. Institutional buyers value predictability more than variety.</p>
-      <h2>Protect margins with clarity</h2>
-      <p>Use transparent pricing and avoid ad-hoc deals. Long-term volume follows strong service and clean terms.</p>
+      <p>HoReCa and institutional customers provide stable and predictable demand for FMCG brands. However, servicing these channels requires a different approach compared to retail distribution.</p>
+
+<h2>Lead with the right assortment</h2>
+<ul>
+<li>Select SKUs suited for bulk usage</li>
+<li>Offer institutional pack sizes</li>
+<li>Focus on consistent availability</li>
+<li>Provide limited but reliable assortment</li>
+<li>Support with product usage guidance</li>
+</ul>
+
+<h2>Build a service model</h2>
+<p>Institutional buyers value reliability more than variety. Delivery consistency and communication play a key role.</p>
+
+<ul>
+<li>Define fixed delivery schedules</li>
+<li>Agree on payment terms</li>
+<li>Assign account managers</li>
+<li>Ensure consistent stock availability</li>
+<li>Provide order planning support</li>
+</ul>
+
+<h2>Protect margins with clarity</h2>
+<p>Long-term institutional relationships depend on pricing transparency and service quality.</p>
+
+<ul>
+<li>Avoid ad-hoc pricing deals</li>
+<li>Define volume-based pricing</li>
+<li>Maintain service consistency</li>
+<li>Track order frequency</li>
+<li>Review accounts regularly</li>
+</ul>
+
+<p>A structured HoReCa and institutional strategy builds predictable volume and supports steady growth.</p>
     `.trim(),
     metaTitle: "HoReCa & Institutional FMCG Distribution",
     metaDescription:
@@ -158,27 +261,44 @@ export const STATIC_BLOG_POSTS = [
     title: "Launch Checklist: Getting a New FMCG Brand Ready for Distribution",
     date: "2025-11-18",
     author: "NONSTOP Distributors",
-    featured_image:"/assets/distributor-img/footer-istockphoto.jpg",
+    featured_image: "/assets/distributor-img/footer-istockphoto.jpg",
     // featured_image: "/assets/images/blog/blog-1-3.jpg",
     featured_image_alt: "FMCG brand launch checklist for distribution",
     excerpt:
       "Before you push into retail or e-commerce, align on pricing, inventory, packaging, and channel priorities to avoid early friction.",
     content: `
-      <p>A good launch is less about hype and more about execution. These basics make distribution smoother and improve early offtake.</p>
-      <h2>Commercial readiness</h2>
-      <ul>
-        <li>Final MRP, trade margins, and scheme logic</li>
-        <li>Clear pack sizes and a focused starting assortment</li>
-        <li>Simple, readable invoicing and product masters</li>
-      </ul>
-      <h2>Operational readiness</h2>
-      <ul>
-        <li>Consistent barcodes and inner/master carton standards</li>
-        <li>Shelf-life and expiry handling process</li>
-        <li>Replenishment plan and minimum stock rules</li>
-      </ul>
-      <h2>Channel plan</h2>
-      <p>Start with the channels you can serve consistently. Strong execution in one route builds confidence to expand into the next.</p>
+       <p>Launching a new FMCG brand requires strong execution across pricing, packaging, and distribution planning. A structured launch reduces friction and improves early offtake.</p>
+
+<h2>Commercial readiness</h2>
+<ul>
+<li>Finalize MRP and trade margins</li>
+<li>Define introductory schemes</li>
+<li>Select focused SKU assortment</li>
+<li>Create product masters</li>
+<li>Prepare clear invoicing structure</li>
+</ul>
+
+<h2>Operational readiness</h2>
+<ul>
+<li>Standardize barcodes</li>
+<li>Define carton configurations</li>
+<li>Plan shelf-life handling</li>
+<li>Set minimum stock levels</li>
+<li>Prepare replenishment cycles</li>
+</ul>
+
+<h2>Channel plan</h2>
+<p>Start with channels that can be serviced consistently. Expanding too quickly creates operational gaps.</p>
+
+<ul>
+<li>Launch in limited geography</li>
+<li>Focus on priority outlets</li>
+<li>Build initial visibility</li>
+<li>Track early sales data</li>
+<li>Expand based on performance</li>
+</ul>
+
+<p>A disciplined launch builds retailer confidence and improves repeat orders. Strong execution during the first phase creates a foundation for scalable growth.</p>
     `.trim(),
     metaTitle: "FMCG Brand Launch Checklist for Distribution",
     metaDescription:
@@ -199,7 +319,9 @@ function normalizeSlug(input) {
 
 export function getStaticPostBySlug(slug) {
   const target = normalizeSlug(slug);
-  return STATIC_BLOG_POSTS.find((p) => normalizeSlug(p.slug) === target) || null;
+  return (
+    STATIC_BLOG_POSTS.find((p) => normalizeSlug(p.slug) === target) || null
+  );
 }
 
 export function getStaticLatestPosts(excludeSlug, limit = 6) {
