@@ -33,13 +33,13 @@ const Contact = () => {
                 </section>
 
                 {/* Contact form */}
-                <Banner8Contact />
+                <Banner8Contact /> 
 
                 {/* Map */}
                 <div className="google-map google-map__contact">
                     <iframe
                         title="template google map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29783.966928937327!2d79.0275979042053!3d21.072827323858306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf7f336e0a13%3A0x44f6d37cf2cffa29!2sNONSTOP!5e0!3m2!1sen!2sin!4v1765860790089!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4427.480265039308!2d79.06362342042581!3d21.07057391528316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf21991d267b%3A0xccaceb1568e1ce81!2sNonstop%20Distributors!5e0!3m2!1sen!2sin!4v1776336055623!5m2!1sen!2sin"
                         className="map__contact"
                         allowFullScreen
                     ></iframe>
