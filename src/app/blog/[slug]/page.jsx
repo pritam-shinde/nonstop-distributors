@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
         canonical: `${BASE_URL}/blog/${slug}`,
       },
       robots: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
       },
     };
   }
