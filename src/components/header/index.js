@@ -6,32 +6,12 @@ export const menuData = [
   {
     label: "Services",
     href: "/services/",
-    // children: [
-    //   {
-    //     label: "Expert Witness Recruitment",
-    //     href: "/expert-witness/",
-    //     children: [
-    //       {
-    //         label: "Independent Medical Exams",
-    //         href: "/independant-medical-exams/",
-    //       },
-    //       { label: "Record Review", href: "/record-review/" },
-    //     ],
-    //   },
-    //   {
-    //     label: "Nurse Services",
-    //     href: "/nurse-services/",
-    //   },
-    //   {
-    //     label: "Background Checks",
-    //     href: "/expert-witness-profile-challenge-study/",
-    //   },
-    // ],
   },
   {
     label: "About",
     href: "/about-us/",
   },
+  { label: "Blog", href: "/blog/" },
   {
     label: "Partners",
     href: "/partners/",
@@ -40,6 +20,5 @@ export const menuData = [
     label: "Contact",
     href: "/contact-us/",
   },
-  {    label: "Careers",    href: "/careers/"  },
-  // {    label: "Blog",    href: "/blog/"  },
+  { label: "Careers", href: "/careers/" },
 ];

@@ -1,4 +1,5 @@
 import ScriptsLoader from "@/components/ScriptsLoader";
+import FAQSection from "@/components/FAQSection";
 import Image from "next/image";
 import Link from "next/link";
 // import "@/app/blog.css";
@@ -329,6 +330,11 @@ const SingleBlogPage = async ({ params }) => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      {post.faqData && post.faqData.length > 0 && (
+        <FAQSection faqData={post.faqData} title="FAQ" />
+      )}
 
       <ScriptsLoader />
     </>
