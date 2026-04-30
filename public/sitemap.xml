@@ -36,8 +36,12 @@
     <priority>0.6</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://www.nonstopdistributors.com/partners/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.nonstopdistributors.com/blog/the-future-of-fmcg-distribution-in-central-india/</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
