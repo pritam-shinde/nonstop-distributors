@@ -14,7 +14,7 @@ export default function FAQSection({ faqData, title = "Frequently Asked Question
     }
 
     return (
-        <section className="faq-one pt-2" style={{ background: "#0E222A" }}>
+        <section className="faq-one pt-2 pb-5" style={{ background: "#0E222A" }}>
             <div className="container">
                 <div className="sec-title text-left pb-1">
                     <h2 className="sec-title__title bw-split-in-up custom-heading-all font-Montserrat text-white">

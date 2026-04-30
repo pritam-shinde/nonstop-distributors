@@ -106,11 +106,10 @@ const MainBlogSection = () => {
                         <Image
                           src={post.featured_image}
                           alt={post.featured_image_alt || post.title}
-                          width={400}
-                          height={270}
+                          fill
                           sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 33vw"
+                          quality={90}
                           style={{
-                            height: "100%",
                             objectFit: "cover",
                             objectPosition: "top",
                           }}
@@ -118,11 +117,10 @@ const MainBlogSection = () => {
                         <Image
                           src={post.featured_image}
                           alt={post.title}
-                          width={400}
-                          height={270}
+                          fill
                           sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 33vw"
+                          quality={90}
                           style={{
-                            height: "100%",
                             objectFit: "cover",
                             objectPosition: "top",
                           }}

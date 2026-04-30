@@ -1,5 +1,6 @@
 import ScriptsLoader from "@/components/ScriptsLoader";
 import FAQSection from "@/components/FAQSection";
+import BlogAuthorSection from "@/components/BlogAuthorSection";
 import Image from "next/image";
 import Link from "next/link";
 // import "@/app/blog.css";
@@ -53,32 +54,6 @@ function cleanContent(html) {
   return html;
 }
 
-// function formatToDayMon(input) {
-//   if (!input && input !== 0) return { day: "", month: "" };
-
-//   const date = input instanceof Date ? input : new Date(input);
-//   if (Number.isNaN(date.getTime())) return { day: "", month: "" };
-
-//   const day = String(date.getDate()).padStart(2, "0");
-//   const months = [
-//     "Jan",
-//     "Feb",
-//     "Mar",
-//     "Apr",
-//     "May",
-//     "Jun",
-//     "Jul",
-//     "Aug",
-//     "Sep",
-//     "Oct",
-//     "Nov",
-//     "Dec",
-//   ];
-//   const mon = months[date.getMonth()];
-
-//   return { day, month: mon };
-// }
-
 function formatToDayMon(input) {
   if (!input && input !== 0) return { day: "", month: "", year: "" };
 
@@ -88,12 +63,12 @@ function formatToDayMon(input) {
   const day = String(date.getDate()).padStart(2, "0");
 
   const months = [
-    "Jan","Feb","Mar","Apr","May","Jun",
-    "Jul","Aug","Sep","Oct","Nov","Dec"
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
   ];
 
   const month = months[date.getMonth()];
-  const year = date.getFullYear(); 
+  const year = date.getFullYear();
 
   return { day, month, year };
 }
@@ -226,16 +201,16 @@ const SingleBlogPage = async ({ params }) => {
               <div className="blog-details__wrapper">
                 <h1 className="blog-details__title text-white custom-heading-all mb-1">{title}</h1>
 
-                  <ul className="list-unstyled blog-details__meta mb-3">
-                    <li className="text-white">
-                      <i className="icon-user"></i> 
-                      <span className="text-white">By {post.author || "NONSTOP Distributors"}</span>
-                    </li>
-                    <li className="bg-white"></li>
-                    <li className="text-white">
-                      <i className="icon-bubble-chat-1"></i>Distribution Insights
-                    </li>
-                  </ul>
+                <ul className="list-unstyled blog-details__meta mb-3">
+                  <li className="text-white">
+                    <i className="icon-user"></i>
+                    <span className="text-white">By {post.author || "NONSTOP Distributors"}</span>
+                  </li>
+                  <li className="bg-white"></li>
+                  <li className="text-white">
+                    <i className="icon-bubble-chat-1"></i>Distribution Insights
+                  </li>
+                </ul>
 
                 <div className="blog-details__image">
                   <Image
@@ -243,11 +218,11 @@ const SingleBlogPage = async ({ params }) => {
                     alt={post.featured_image_alt || title}
                     width={770}
                     height={449}
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "100%", height: "auto", objectFit: "cover" }}
                     priority
                   />
                   <div className="blog-details__date">
-                    <p className="fw-bold fs-3 mb-0" style={{lineHeight:"34px"}}>{day}</p><span>{month}</span>
+                    <p className="fw-bold fs-3 mb-0" style={{ lineHeight: "34px" }}>{day}</p><span>{month}</span>
                     {/* <h4>{day}</h4><span>{month}</span> */}
                   </div>
                 </div>
@@ -335,6 +310,14 @@ const SingleBlogPage = async ({ params }) => {
       {post.faqData && post.faqData.length > 0 && (
         <FAQSection faqData={post.faqData} title="FAQ" />
       )}
+
+      <BlogAuthorSection
+        author={post.author}
+        image={post.author_image}
+        title={post.author_title}
+        link={post.author_link}
+        bio={post.author_bio}
+      />
 
       <ScriptsLoader />
     </>
