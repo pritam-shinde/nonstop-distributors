@@ -9,7 +9,7 @@ export const STATIC_BLOG_POSTS = [
     // author_title: "FMCG Distribution Strategist",
     author_link: "https://www.linkedin.com/in/rahul-nandanwar-nonstop-distributors/",
     author_bio:
-      "Rahul Nandanwar is the Co-founder of Nonstop Distributors, a premier FMCG distribution network servicing Nagpur and its surrounding districts. Leveraging years of corporate experience in territory sales and marketing with global brands such as Unilever and Marico Limited, Rahul drives the strategic growth and operational excellence of Nonstop Distributors. He is passionate about optimizing supply chains, forging strong retail partnerships, and sharing industry insights.",
+      "Rahul Nandanwar is the Co-founder of Nonstop Distributors, a premier FMCG distribution network servicing Nagpur and its surrounding districts. Leveraging years of corporate experience in territory sales and marketing with global brands, Rahul drives the strategic growth and operational excellence of Nonstop Distributors. He is passionate about optimizing supply chains, forging strong retail partnerships, and sharing industry insights.",
     featured_image: "/assets/distributor-img/the-future-of-fmcg-distribution-in-central-india.jpg", 
     featured_image_alt: "The Future of FMCG Distribution in Central India",
     excerpt:

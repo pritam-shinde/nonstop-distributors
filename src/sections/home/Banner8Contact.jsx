@@ -34,26 +34,60 @@ const Banner8Contact = () => {
   const validate = () => {
     const newErrors = {};
 
-    if (!form.fullname.trim()) {
+    const _fullname = form.fullname.trim();
+    if (!_fullname) {
       newErrors.fullname = "Full name is required";
+    } else if (_fullname.length < 4) {
+      newErrors.fullname = "Full name must be at least 4 characters";
+    } else if (_fullname.length > 40) {
+      newErrors.fullname = "Full name cannot exceed 40 characters";
+    } else if (!/^(?!.*  )[a-zA-Z0-9 ]+$/.test(_fullname)) {
+      newErrors.fullname =
+        "Full name can only contain letters, digits, and single spaces";
     }
 
-    if (!form.email.trim()) {
+    const _companyName = form.companyname.trim();
+    if (_companyName && _companyName.length < 8) {
+      newErrors.companyname = "Company name must be at least 8 characters";
+    } else if (_companyName && _companyName.length > 40) {
+      newErrors.companyname = "Company name cannot exceed 40 characters";
+    }
+
+    const _email = form.email.trim();
+    if (!_email) {
       newErrors.email = "Email is required";
-    } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
+    } else if (!/^\S+@\S+\.\S+$/.test(_email)) {
       newErrors.email = "Enter a valid email";
     }
 
-    if (!form.phonenumber.trim()) {
+    const _phoneNumber = form.phonenumber.trim();
+    if (!_phoneNumber) {
       newErrors.phonenumber = "Phone number is required";
+    } else if (!/^\d{10}$/.test(_phoneNumber)) {
+      newErrors.phonenumber = "Phone number must be exactly 10 digits";
     }
 
+    const allowedEnquiries = [
+      "distribution",
+      "bulk-order",
+      "retail",
+      "logistics",
+      "support",
+      "other",
+    ];
     if (!form.enquiryType) {
       newErrors.enquiryType = "Please select enquiry type";
+    } else if (!allowedEnquiries.includes(form.enquiryType)) {
+      newErrors.enquiryType = "Invalid enquiry type";
     }
 
-    if (!form.subject.trim()) {
+    const _subject = form.subject.trim();
+    if (!_subject) {
       newErrors.subject = "Message is required";
+    } else if (_subject.length < 8) {
+      newErrors.subject = "Message must be at least 8 characters";
+    } else if (_subject.length > 200) {
+      newErrors.subject = "Message cannot exceed 200 characters";
     }
 
     return newErrors;
@@ -66,7 +100,11 @@ const Banner8Contact = () => {
     const validationErrors = validate();
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length > 0) return;
+    if (Object.keys(validationErrors).length > 0) {
+      captchaRef.current?.reset();
+      setCaptchaToken(null);
+      return;
+    }
 
     if (!captchaToken) {
       setErrors({ captcha: "Please verify captcha" });
@@ -82,7 +120,12 @@ const Banner8Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          ...form,
+          fullname: form.fullname.trim(),
+          companyname: form.companyname.trim(),
+          email: form.email.trim(),
+          phonenumber: form.phonenumber.trim(),
+          enquiryType: form.enquiryType.trim(),
+          subject: form.subject.trim(),
           token: captchaToken,
         }),
       });
@@ -228,7 +271,7 @@ const Banner8Contact = () => {
                         id="fullname"
                         type="text"
                         name="fullname"
-                        placeholder="Full Name"
+                        placeholder="Full Name *"
                         value={form.fullname}
                         onChange={handleChange}
                       />
@@ -246,6 +289,11 @@ const Banner8Contact = () => {
                         value={form.companyname}
                         onChange={handleChange}
                       />
+                      {errors.companyname ? (
+                        <small className="text-danger">
+                          {errors.companyname}
+                        </small>
+                      ) : null}
                     </div>
 
                     <div className="form-one__control form-one__control--full">
@@ -253,7 +301,7 @@ const Banner8Contact = () => {
                         id="email"
                         type="email"
                         name="email"
-                        placeholder="Email"
+                        placeholder="Email *"
                         value={form.email}
                         onChange={handleChange}
                       />
@@ -267,7 +315,7 @@ const Banner8Contact = () => {
                         id="phone-number"
                         type="text"
                         name="phonenumber"
-                        placeholder="phone number"
+                        placeholder="Phone Number *"
                         value={form.phonenumber}
                         onChange={handleChange}
                       />
@@ -290,7 +338,7 @@ const Banner8Contact = () => {
                         required
                       >
                         <option value="" disabled>
-                          Type of Enquiry
+                          Type of Enquiry *
                         </option>
                         <option value="distribution">
                           Distribution Partnership
@@ -315,7 +363,7 @@ const Banner8Contact = () => {
                         id="subject"
                         name="subject"
                         className="form-one__textarea border rounded-3 px-3"
-                        placeholder="Enter your subject or message"
+                        placeholder="Enter your subject or message here *"
                         rows={4}
                         required
                         value={form.subject}
@@ -356,9 +404,16 @@ const Banner8Contact = () => {
                     <div className="form-one__control form-one__control--full">
                       <button
                         className="procounsel-btn text-uppercase"
-                        disabled={loading ? true : false}
-                        style={{ cursor: loading ? "not-allowed" : "pointer" }}
-                        onClick={loading ? undefined : handleSubmit}
+                        disabled={loading || !captchaToken ? true : false}
+                        style={{
+                          cursor:
+                            loading || !captchaToken
+                              ? "not-allowed"
+                              : "pointer",
+                        }}
+                        onClick={
+                          loading || !captchaToken ? undefined : handleSubmit
+                        }
                       >
                         <i>{loading ? "Sending..." : "Send Message"}</i>
                         <span>{loading ? "Sending..." : "Send Message"}</span>
