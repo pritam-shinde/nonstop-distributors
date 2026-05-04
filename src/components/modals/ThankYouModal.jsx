@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect } from "react";
 
 const ThankYouModal = ({
   open,
   onClose,
-  title = "Thank you!",
-  message = "Your inquiry has been sent. We’ll contact you soon.",
+  title = "Thank You!",
+  message = "Your request has been received. Our team will contact you shortly.",
 }) => {
   useEffect(() => {
     if (!open) return;
@@ -49,17 +50,31 @@ const ThankYouModal = ({
     >
       <div
         style={{
-          width: "min(560px, 100%)",
+          width: "min(850px, 95%)",
           background: "#ffffff",
-          borderRadius: 16,
-          padding: 24,
-          boxShadow: "0 16px 60px rgba(0,0,0,0.35)",
+          borderRadius: 28,
+          padding: 64,
+          boxShadow: "0 25px 100px rgba(0,0,0,0.3)",
         }}
       >
         <div className="d-flex align-items-start justify-content-between gap-3">
-          <div>
-            <h3 style={{ margin: 0, color: "#0E222A" }}>{title}</h3>
-            <p style={{ margin: "8px 0 0", color: "#334155" }}>{message}</p>
+          <div style={{ width: "100%" }}>
+            <h3 style={{ 
+              margin: 0, 
+              color: "#0E222A",
+              fontSize: "52px",
+              fontWeight: 700,
+              lineHeight: 1.2,
+              marginBottom: "28px",
+              letterSpacing: "-0.5px"
+            }}>{title}</h3>
+            <p style={{ 
+              margin: 0, 
+              color: "#334155",
+              fontSize: "18px",
+              lineHeight: 1.9,
+              fontWeight: 500
+            }}>{message}</p>
           </div>
 
           <button
@@ -69,25 +84,27 @@ const ThankYouModal = ({
             style={{
               border: "none",
               background: "transparent",
-              fontSize: 22,
+              fontSize: 40,
               lineHeight: 1,
               cursor: "pointer",
               color: "#0E222A",
+              padding: "4px 8px",
+              flexShrink: 0,
             }}
           >
             ×
           </button>
         </div>
 
-        <div className="d-flex flex-wrap gap-3 mt-4">
-          <a href="/" className="procounsel-btn text-uppercase">
+        <div className="d-flex flex-wrap gap-3 mt-5">
+          <Link href="/" className="procounsel-btn text-uppercase">
             <i>Back To Home</i>
             <span>Back To Home</span>
-          </a>
-          <a href="/services/" className="procounsel-btn text-uppercase">
+          </Link>
+          <Link href="/services/" className="procounsel-btn text-uppercase">
             <i>View Services</i>
             <span>View Services</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
