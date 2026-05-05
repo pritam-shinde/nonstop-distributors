@@ -41,7 +41,10 @@ export default function BrandSlider() {
   return (
     <>
       <section
-        style={{ position: "relative", background: "linear-gradient(to right, #247ba0, #0E222A )" }}
+        style={{
+          position: "relative",
+          background: "linear-gradient(to right, #247ba0, #0E222A )",
+        }}
         className="why-choose-four brands-marqueeSection"
         aria-label="Brands we distribute"
       >
@@ -79,7 +82,11 @@ export default function BrandSlider() {
                       height={partner.height}
                       alt={partner.name}
                       sizes="220px"
-                      style={{ width: "auto", height: "auto", maxHeight: 44 }}
+                      style={{
+                        width: "auto",
+                        height: "auto",
+                        maxHeight: partner.maxHeight || 48,
+                      }}
                     />
                   </Link>
                 ))}

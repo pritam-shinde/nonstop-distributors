@@ -69,7 +69,7 @@ export default function PartnerShowcaseSlider({ partners }) {
         rewind={!shouldLoop}
         observer
         observeParents
-        resizeObserver 
+        resizeObserver
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -139,12 +139,14 @@ export default function PartnerShowcaseSlider({ partners }) {
                   alt={partner.name}
                   style={{
                     height: "auto",
-                    maxHeight: 54,
+                    maxHeight: 40,
                     width: "auto",
                     marginTop: "12px",
                   }}
                 />
-                <p className="partners-showcase-card__text">{partner.description}</p>
+                <p className="partners-showcase-card__text">
+                  {partner.description}
+                </p>
               </div>
             </article>
           </SwiperSlide>
@@ -163,8 +165,3 @@ export default function PartnerShowcaseSlider({ partners }) {
     </div>
   );
 }
-
-
-
-
-
