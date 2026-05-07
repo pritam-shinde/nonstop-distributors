@@ -1,5 +1,10 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import {
+  CONTACT_SUBMISSION_COOKIE,
+  CONTACT_SUBMISSION_MAX_AGE,
+  serializeContactSubmission,
+} from "@/lib/contactSubmissionCookie";
 
 export const runtime = "nodejs";
 
@@ -227,7 +232,27 @@ export async function POST(request) {
       html: buildHtmlBody(body),
     });
 
-    return NextResponse.json({ success: true }, { status: 200 });
+    const response = NextResponse.json({ success: true }, { status: 200 });
+
+    response.cookies.set({
+      name: CONTACT_SUBMISSION_COOKIE,
+      value: serializeContactSubmission({
+        fullname: _fullname,
+        companyname: _companyname,
+        email: _email,
+        phonenumber: _phonenumber,
+        enquiryType: body.enquiryType,
+        subject: _subject,
+      }),
+      httpOnly: true,
+      expires: new Date(Date.now() + CONTACT_SUBMISSION_MAX_AGE * 1000),
+      maxAge: CONTACT_SUBMISSION_MAX_AGE,
+      path: "/",
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+    });
+
+    return response;
   } catch (error) {
     console.error("POST /api/contact error:", error);
     return NextResponse.json(
