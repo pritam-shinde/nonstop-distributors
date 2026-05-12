@@ -20,8 +20,8 @@ export async function generateMetadata({ params }) {
   const post = getStaticPostBySlug(slug);
 
   if (post) {
-    const title = post.metaTitle || post.title || "";
-    const description = post.metaDescription || post.excerpt || "";
+    const title = post.metaTitle || "";
+    const description = post.metaDescription || "";
 
     return {
       title,
@@ -63,8 +63,18 @@ function formatToDayMon(input) {
   const day = String(date.getDate()).padStart(2, "0");
 
   const months = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
 
   const month = months[date.getMonth()];
@@ -103,7 +113,9 @@ const SingleBlogPage = async ({ params }) => {
                       <div className="sidebar__posts flex-column flex-sm-row align-items-start align-items-sm-center gap-3">
                         <Link href="/blog/">All Posts</Link>
                         <Link href="/services/">Our Services</Link>
-                        <Link href="/contact-us/#contact-service">Contact Us</Link>
+                        <Link href="/contact-us/#contact-service">
+                          Contact Us
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -120,21 +132,29 @@ const SingleBlogPage = async ({ params }) => {
                       >
                         <h2
                           className="custom-heading-all sidebar__title"
-                          style={{ color: "#fff", borderBottomColor: "#fb3640" }}
+                          style={{
+                            color: "#fff",
+                            borderBottomColor: "#fb3640",
+                          }}
                         >
                           Latest Posts
                         </h2>
                         <ul className="sidebar__posts list-unstyled">
                           {latestPosts.map((p, i) => {
-                            const { day: pDay, month: pMon, year: pYear } =
-                              formatToDayMon(p.date);
+                            const {
+                              day: pDay,
+                              month: pMon,
+                              year: pYear,
+                            } = formatToDayMon(p.date);
                             const isLast = i === latestPosts.length - 1;
                             return (
                               <li
                                 key={p.slug}
                                 className="sidebar__posts__item"
                                 style={
-                                  !isLast ? { borderBottomColor: "#2a4a57" } : {}
+                                  !isLast
+                                    ? { borderBottomColor: "#2a4a57" }
+                                    : {}
                                 }
                               >
                                 <div className="sidebar__posts__image">
@@ -195,16 +215,19 @@ const SingleBlogPage = async ({ params }) => {
       <section className="section-color">
         <div className="container single-blog text-white">
           <div className="row gutter-y-60">
-
             {/* Main Article */}
             <div className="col-lg-8">
               <div className="blog-details__wrapper">
-                <h1 className="blog-details__title text-white custom-heading-all mb-1">{title}</h1>
+                <h1 className="blog-details__title text-white custom-heading-all mb-1">
+                  {title}
+                </h1>
 
                 <ul className="list-unstyled blog-details__meta mb-3">
                   <li className="text-white">
                     <i className="icon-user"></i>
-                    <span className="text-white">By {post.author || "NONSTOP Distributors"}</span>
+                    <span className="text-white">
+                      By {post.author || "NONSTOP Distributors"}
+                    </span>
                   </li>
                   <li className="bg-white"></li>
                   <li className="text-white">
@@ -218,11 +241,21 @@ const SingleBlogPage = async ({ params }) => {
                     alt={post.featured_image_alt || title}
                     width={770}
                     height={449}
-                    style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
                     priority
                   />
                   <div className="blog-details__date">
-                    <p className="fw-bold fs-3 mb-0" style={{ lineHeight: "34px" }}>{day}</p><span>{month}</span>
+                    <p
+                      className="fw-bold fs-3 mb-0"
+                      style={{ lineHeight: "34px" }}
+                    >
+                      {day}
+                    </p>
+                    <span>{month}</span>
                     {/* <h4>{day}</h4><span>{month}</span> */}
                   </div>
                 </div>
@@ -232,7 +265,9 @@ const SingleBlogPage = async ({ params }) => {
 
                   <div className="blog-details__post-meta mt-4">
                     <div className="blog-details__posts">
-                      <p className="custom-heading-all blog-details__posts__title text-white">Explore : </p>
+                      <p className="custom-heading-all blog-details__posts__title text-white">
+                        Explore :{" "}
+                      </p>
                       <div className="sidebar__posts flex-column flex-sm-row align-items-start align-items-sm-center gap-3">
                         <Link href="/blog/">All Posts</Link>
                         <Link href="/services/">Our Services</Link>
@@ -247,20 +282,33 @@ const SingleBlogPage = async ({ params }) => {
             <div className="col-lg-4">
               <div className="sidebar">
                 <aside className="widget-area">
-
                   {/* Latest Posts */}
                   {latestPosts.length > 0 && (
-                    <div className="sidebar__single" style={{ backgroundColor: "#1a3a47" }}>
-                      <h2 className="custom-heading-all sidebar__title" style={{ color: "#fff", borderBottomColor: "#fb3640" }}>Latest Posts</h2>
+                    <div
+                      className="sidebar__single"
+                      style={{ backgroundColor: "#1a3a47" }}
+                    >
+                      <h2
+                        className="custom-heading-all sidebar__title"
+                        style={{ color: "#fff", borderBottomColor: "#fb3640" }}
+                      >
+                        Latest Posts
+                      </h2>
                       <ul className="sidebar__posts list-unstyled">
                         {latestPosts.map((p, i) => {
-                          const { day: pDay, month: pMon, year: pYear } = formatToDayMon(p.date);
+                          const {
+                            day: pDay,
+                            month: pMon,
+                            year: pYear,
+                          } = formatToDayMon(p.date);
                           const isLast = i === latestPosts.length - 1;
                           return (
                             <li
                               key={p.slug}
                               className="sidebar__posts__item"
-                              style={!isLast ? { borderBottomColor: "#2a4a57" } : {}}
+                              style={
+                                !isLast ? { borderBottomColor: "#2a4a57" } : {}
+                              }
                             >
                               <div className="sidebar__posts__image">
                                 <Image
@@ -268,15 +316,28 @@ const SingleBlogPage = async ({ params }) => {
                                   alt={p.title}
                                   width={70}
                                   height={70}
-                                  style={{ objectFit: "cover", width: "70px", height: "70px" }}
+                                  style={{
+                                    objectFit: "cover",
+                                    width: "70px",
+                                    height: "70px",
+                                  }}
                                 />
                               </div>
                               <div className="sidebar__posts__content">
-                                <p className="sidebar__posts__meta text-white" >
-                                  <i className="far fa-clock"></i> {pDay} {pMon} {pYear}
+                                <p className="sidebar__posts__meta text-white">
+                                  <i className="far fa-clock"></i> {pDay} {pMon}{" "}
+                                  {pYear}
                                 </p>
-                                <h3 className="custom-heading-all sidebar__posts__title truncate-2-lines" style={{ color: "#fff" }}>
-                                  <Link href={`/blog/${p.slug}/`} style={{ color: "#fff" }}>{p.title}</Link>
+                                <h3
+                                  className="custom-heading-all sidebar__posts__title truncate-2-lines"
+                                  style={{ color: "#fff" }}
+                                >
+                                  <Link
+                                    href={`/blog/${p.slug}/`}
+                                    style={{ color: "#fff" }}
+                                  >
+                                    {p.title}
+                                  </Link>
                                 </h3>
                               </div>
                             </li>
@@ -287,21 +348,39 @@ const SingleBlogPage = async ({ params }) => {
                   )}
 
                   {/* CTA */}
-                  <div className="sidebar__single" style={{ backgroundColor: "#1a3a47" }}>
-                    <h2 className="custom-heading-all sidebar__title" style={{ color: "#fff", borderBottomColor: "#fb3640" }}>Need Distribution Support?</h2>
-                    <p style={{ color: "#ccc", fontSize: "14px", marginBottom: "20px" }}>
-                      Talk to our team about retail coverage, logistics, and fulfilment. We help FMCG brands improve availability and visibility across channels.
+                  <div
+                    className="sidebar__single"
+                    style={{ backgroundColor: "#1a3a47" }}
+                  >
+                    <h2
+                      className="custom-heading-all sidebar__title"
+                      style={{ color: "#fff", borderBottomColor: "#fb3640" }}
+                    >
+                      Need Distribution Support?
+                    </h2>
+                    <p
+                      style={{
+                        color: "#ccc",
+                        fontSize: "14px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      Talk to our team about retail coverage, logistics, and
+                      fulfilment. We help FMCG brands improve availability and
+                      visibility across channels.
                     </p>
-                    <Link href="/contact-us/#contact-service" className="procounsel-btn" style={{ fontSize: "14px" }}>
+                    <Link
+                      href="/contact-us/#contact-service"
+                      className="procounsel-btn"
+                      style={{ fontSize: "14px" }}
+                    >
                       <i>Contact Us</i>
                       <span>Contact Us</span>
                     </Link>
                   </div>
-
                 </aside>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -325,4 +404,3 @@ const SingleBlogPage = async ({ params }) => {
 };
 
 export default SingleBlogPage;
-
