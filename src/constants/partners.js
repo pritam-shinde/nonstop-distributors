@@ -55,4 +55,28 @@ export const partners = [
       "Established in 1945, Wipro Consumer Care offers trusted personal care and hygiene products, including popular brands. The brand is known for its soaps, skincare, and hygiene products that cater to a wide range of consumer needs.",
     maxHeight: 72,
   },
+  {
+    name: "Bansuri",
+    logoSrc: "/assets/distributor-img/partners/bansuri.png",
+    width: 94,
+    height: 72,
+    category: "FMCG & Fragrance",
+    subcategory: "Incense & Fragrance",
+    coverSrc: "/assets/distributor-img/partners/bansuri.jpg",
+    description:
+      "Bansuri is a traditional fragrance and incense brand associated with Cycle Pure (NR Group). It offers culturally inspired incense and aromatic products designed for daily पूजा, meditation, and spiritual environments, reflecting India’s fragrance heritage.",
+    maxHeight: 720,
+  },
+  {
+    name: "Sundrop",
+    logoSrc: "/assets/distributor-img/partners/sundrop.png",
+    width: 86,
+    height: 72,
+    category: "FMCG & Food Products",
+    subcategory: "Edible Oils & Food Staples",
+    coverSrc: "/assets/distributor-img/partners/sundrop.jpg",
+    description:
+      "Sundrop Brands Limited is a leading Indian FMCG company offering a diverse range of food products including edible oils, spreads, ready-to-cook snacks, and breakfast essentials. Known for quality and nutrition, Sundrop is widely used in Indian households for everyday cooking and food preparation.",
+    maxHeight: 720,
+  },
 ];

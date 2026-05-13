@@ -113,7 +113,7 @@ export default function PartnerShowcaseSlider({ partners }) {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "rgb(74 61 59 / 50%)",
+                    background: "rgb(0 0 0 / 0.7)",
                     zIndex: 1,
                   }}
                 />
@@ -130,20 +130,42 @@ export default function PartnerShowcaseSlider({ partners }) {
                 <div className="partners-showcase-card__badge">
                   {partner.subcategory || "FMCG"}
                 </div>
+
+                <div
+                  style={{
+                    position: "absolute",
+                    zIndex: 2,
+                    top: 10,
+                    right: 20,
+                  }}
+                >
+                  <Image
+                    src={partner.logoSrc}
+                    width={partner.width}
+                    height={partner.height}
+                    alt={partner.name}
+                    style={{
+                      height: "auto",
+                      maxHeight: partner.maxHeight || 40,
+                      width: "auto",
+                      marginTop: "12px",
+                    }}
+                  />
+                </div>
               </div>
               <div className="partners-showcase-card__body">
-                <Image
+                {/* <Image
                   src={partner.logoSrc}
                   width={partner.width}
                   height={partner.height}
                   alt={partner.name}
                   style={{
                     height: "auto",
-                    maxHeight: 40,
+                    maxHeight: partner.maxHeight || 40,
                     width: "auto",
                     marginTop: "12px",
                   }}
-                />
+                /> */}
                 <p className="partners-showcase-card__text">
                   {partner.description}
                 </p>
