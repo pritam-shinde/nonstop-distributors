@@ -2348,8 +2348,10 @@ h2, .custom-heading-h3 {
 }
 
 .blog-card__date {
-  width: 84px;
-  height: 84px;
+  width: 74px;
+  height: 74px;
+   /* width: 84px;
+  height: 84px; */
   background-color: var(--procounsel-primary, #19223a);
   border-radius: 50%;
   display: flex;
@@ -2375,7 +2377,8 @@ h2, .custom-heading-h3 {
   font-family: var(--procounsel-heading-font, "Marcellus", serif);
   display: block;
   margin-bottom: 3px;
-  font-size: 24px;
+  font-size: 20px;
+  /* font-size: 24px; */
   letter-spacing: 0;
 }
 
@@ -10455,21 +10458,24 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .blog-details__date {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 8px;
+  right: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 84px;
-  height: 84px;
+  /* width: 84px;
+  height: 84px; */
+   width: 74px;
+  height: 74px;
   border-radius: 50%;
   background-color: var(--procounsel-primary, #19223a);
 }
 
 .blog-details__date h4 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
+  /* font-size: 24px; */
   color: var(--procounsel-white, #fff);
   margin-bottom: 0;
 }

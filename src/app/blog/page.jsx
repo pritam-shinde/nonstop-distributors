@@ -110,7 +110,7 @@ const MainBlogSection = () => {
                           sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 33vw"
                           quality={90}
                           style={{
-                            objectFit: "cover",
+                            objectFit: "fill",
                             objectPosition: "top",
                           }}
                         />
@@ -121,7 +121,7 @@ const MainBlogSection = () => {
                           sizes="(max-width: 768px) 100vw, (max-width: 992px) 50vw, 33vw"
                           quality={90}
                           style={{
-                            objectFit: "cover",
+                            objectFit: "fill",
                             objectPosition: "top",
                           }}
                         />
@@ -251,59 +251,6 @@ const MainBlogSection = () => {
                   </ul>
                 </div>
               </div>
-              {/* <div className="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
-                <form
-                  className="contact-one__form contact-form-validated form-one"
-                  action="inc/sendemail.php"
-                >
-                  <div className="contact-one__form__bg-one"></div>
-                  <div className="contact-one__form__bg-two"></div>
-                  <div className="form-one__group">
-                    <div className="form-one__control form-one__control--full">
-                      <input
-                        id="firstname"
-                        type="text"
-                        name="firstname"
-                        placeholder="First Name"
-                      />
-                    </div>
-
-                    <div className="form-one__control form-one__control--full">
-                      <input
-                        id="lastname"
-                        type="text"
-                        name="lastname"
-                        placeholder="Last Name"
-                      />
-                    </div>
-
-                    <div className="form-one__control form-one__control--full">
-                      <input
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                      />
-                    </div>
-
-                    <div className="form-one__control form-one__control--full">
-                      <input
-                        id="casename"
-                        type="text"
-                        name="casename"
-                        placeholder="Case Name"
-                      />
-                    </div>
-
-                    <div className="form-one__control form-one__control--full">
-                      <a href="#" className="procounsel-btn text-uppercase">
-                        <i>Submit a Case</i>
-                        <span>Submit a Case</span>
-                      </a>
-                    </div>
-                  </div>
-                </form>
-              </div> */}
               <div className="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
                 <div className="contact-one__form__bg-one"></div>
                 <div className="contact-one__form__bg-two"></div>
