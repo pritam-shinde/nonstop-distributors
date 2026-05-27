@@ -58,7 +58,7 @@ export default function BlogAuthorSection({ author, image, title, link, bio }) {
             </div>
 
             <div className="col">
-              <h3 className="custom-heading-all text-white mb-1">{author || "Author"}</h3>
+              <p className="custom-heading-all text-white mb-1 fs-3">{author || "Author"}</p>
               {title && (
                 <p className="text-secondary mb-2" style={{ opacity: 0.85 }}>
                   {title}

@@ -174,7 +174,7 @@ const MainBlogSection = () => {
               <div className="col-xl-6">
                 <div className="sec-title text-left">
                   <h2 className="sec-title__title bw-split-in-up">
-                    <span className="text-white"> Ready to Scale</span>{" "}
+                    <span className="text-white"> Ready to Scale</span>
                     <br />
                     <span>Your Distribution?</span>
                   </h2>
