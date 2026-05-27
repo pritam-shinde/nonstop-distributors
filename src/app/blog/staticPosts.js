@@ -209,7 +209,7 @@ export const STATIC_BLOG_POSTS = [
       },
       {
         question: "How do logistics services India impact brand growth?",
-        answer: 'Speed-to-market is everything. Efficient logistics services India minimize delays and damages. When your distribution management is tech- enabled, you can scale into new territories without the logistical "growing pains" that typically sink expanding brands.',
+        answer: 'Speed-to-market is everything. Efficient logistics services India minimize delays and damages. When your distribution management is tech-enabled, you can scale into new territories without the logistical "growing pains" that typically sink expanding brands.',
       },
     ],
     content: `<p>In the high-stakes world of Indian FMCG, your distribution partner is much more than a logistics provider, they are the face of your brand to millions of retailers. In a landscape where a tiny distribution network gap can mean losing a customer to a competitor’s shelf space, the choice of partner becomes your most critical strategic lever.</p>
@@ -368,7 +368,7 @@ export const STATIC_BLOG_POSTS = [
 
 <p>A partner might have the trucks and the cash, but if they don't share your brand's sense of urgency or ethics, the relationship will sour. Your distribution partner is an extension of your company; their lack of operational discipline becomes your brand’s reputation problem.</p>
 
-<p>To round off this piece, we need to move away from the "sales brochure" tone and speak about Nonstop Distributors as a strategic ally. AI usually lists features; a human highlights the peace of mind and the competitive edge a specialized partner provides.</p>
+<p>To round off this piece, we need to move away from the "sales brochure" tone and speak about <a href="/">Nonstop Distributors</a> as a strategic ally. AI usually lists features; a human highlights the peace of mind and the competitive edge a specialized partner provides.</p>
 
 <h2>Why Nonstop Distributors is the Strategic Choice for Growth</h2>
 
