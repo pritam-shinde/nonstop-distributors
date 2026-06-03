@@ -21,4 +21,5 @@ export const menuData = [
     href: "/contact-us/",
   },
   { label: "Careers", href: "/careers/" },
+  // { label: "FAQ", href: "/faq/" },
 ];

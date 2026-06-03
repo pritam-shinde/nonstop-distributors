@@ -92,6 +92,7 @@ const Footer = () => {
                                                 { label: "Partners", href: "/partners/" },
                                                 { label: "Contact Us", href: "/contact-us/" },
                                                 { label: "Careers", href: "/careers/" },
+                                                { label: "FAQs", href: "/faq/" },
                                                 { label: "Privacy Policy", href: "/privacy-policy/" },
                                                 {
                                                     label: "Terms & Conditions",

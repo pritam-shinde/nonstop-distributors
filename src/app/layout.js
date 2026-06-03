@@ -22,23 +22,111 @@ const merriweather = Merriweather({
 
 const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Nonstop Distributors",
-    url: "https://www.nonstopdistributors.com/",
-    logo: "https://www.nonstopdistributors.com/assets/distributor-img/nonstop-distributor-light.png",
-    contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+91 89566 41833",
-        contactType: "customer service",
-        areaServed: "IN",
-        availableLanguage: ["en", "Marathi", "Hindi"],
-    },
-    sameAs: [
-        "https://www.facebook.com/people/NonStop-Distributors/61584965491773/",
-        "https://www.instagram.com/nonstopdistributors/",
-        "https://www.linkedin.com/company/nonstop-distributors/",
-        "https://x.com/NonstopDistrib/",
-    ],
+    "@graph": [
+        {
+            "@type": "LocalBusiness",
+            "name": "Nonstop Distributors",
+            "url": "https://www.nonstopdistributors.com/",
+            "description": "Nonstop Distributors offers reliable FMCG distribution services in Nagpur including retail coverage, logistics, supply chain, and e-commerce distribution.",
+            "telephone": "8956641833",
+            "logo": "https://www.nonstopdistributors.com/assets/distributor-img/nonstop-distributor-light.png",
+            "@id": "https://www.nonstopdistributors.com/contact-us/",
+            "image": "https://www.nonstopdistributors.com/assets/distributor-img/why-choose-nonstop-distributor.jpg",
+            "identifier": [
+                "https://www.google.com/search?q=NONSTOP+DISTRIBUTORS&oq=NONSTOP+DISTRIBUTORS&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPNIBBzg0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&sei=6zYZatfVHtKA1e8PytDcgQs"
+            ],
+            "alternateName": [
+                "Distribution Services",
+                "FMCG Distributors",
+                "Logistics & Supply Chain",
+                "Logistics and Supply Chain Management",
+                "E Commerce Distribution",
+                "E Commerce Distribution Business"
+            ],
+            "hasMap": "https://maps.app.goo.gl/1iv3UuhDnzHutmpd6",
+            "currenciesAccepted": "INR",
+            "priceRange": "₹₹",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "97 Crown Society, Chinchbhavan, Wardha Rd, near Bhawan's School",
+                "addressLocality": "Nagpur",
+                "addressRegion": "Maharashtra",
+                "postalCode": "440005",
+                "addressCountry": "IN"
+            },
+            "openingHours": [
+                "Mon 10:00-19:00",
+                "Tus 10:00-19:00",
+                "Wed 10:00-19:00",
+                "Thurs 10:00-19:00",
+                "Fri 10:00-19:00",
+                "Sat 10:00-19:00"
+            ],
+            "disambiguatingDescription": "Nonstop Distributors is a leading FMCG distribution company based in Nagpur, Maharashtra, specializing in connecting premium consumer brands with major retail and sales channels across Central India. With expertise in food, beverages, personal care, household essentials, and stationery categories, the company focuses on efficient supply chain management, strong retailer relationships, and market expansion strategies. Nonstop Distributors partners with trusted brands to ensure seamless product availability, operational excellence, and sustainable business growth.",
+            "mainEntityOfPage": "https://www.nonstopdistributors.com/",
+            "sameAs": [
+                "https://maps.app.goo.gl/1iv3UuhDnzHutmpd6",
+                "https://www.facebook.com/people/Nonstop-Distributors/61584965491773/",
+                "https://www.instagram.com/nonstopdistributors/",
+                "https://www.linkedin.com/company/nonstop-distributors/",
+                "https://x.com/NonstopDistrib/"
+            ],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 21.072836,
+                "longitude": 79.06571
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "5"
+            },
+            "areaServed": [
+                "IN",
+                "MH",
+                "Nagpur"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "FMCG products distributors",
+                "@id": "https://www.nonstopdistributors.com/contact-us/",
+                "additionalType": "FMCG distributor services",
+                "url": "https://www.nonstopdistributors.com/services/",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": [
+                            {
+                                "@type": "Service",
+                                "name": "Distribution Partner",
+                                "@id": "https://www.nonstopdistributors.com/partners/",
+                                "url": "https://www.nonstopdistributors.com/partners/",
+                                "description": "Nonstop Distributors collaborates with FMCG brands and partners to provide efficient distribution, retail coverage, and supply chain support."
+                            },
+                            {
+                                "@type": "WebSite",
+                                "publisher": {
+                                    "@id": "https://maps.app.goo.gl/1iv3UuhDnzHutmpd6"
+                                },
+                                "name": "Nonstop Distributors",
+                                "@id": "https://www.nonstopdistributors.com/",
+                                "url": "https://www.nonstopdistributors.com/",
+                                "keywords": [
+                                    "FMCG distributor in Nagpur",
+                                    "Supply Solutions",
+                                    "Full-Scale Distribution",
+                                    "Logistics & Supply Chain",
+                                    "Retail Coverage Services",
+                                    "E-commerce Distribution",
+                                    "FMCG distribution partner"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
 };
 
 export default function RootLayout({ children }) {

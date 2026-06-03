@@ -77,6 +77,14 @@ const metaDetails = {
     canonical: "https://www.nonstopdistributors.com/404",
     robots: "noindex, nofollow",
   },
+
+  faq: {
+    title: "Frequently Asked Questions - Nonstop Distributors Nagpur",
+    description:
+      "Find answers to frequently asked questions about Nonstop Distributors. Learn about our FMCG distribution, bulk ordering, delivery times, and client partnerships.",
+    canonical: "https://www.nonstopdistributors.com/faq/",
+    robots: "noindex, nofollow"
+  },
 };
 
 export function handlerMetaDetails(key) {
