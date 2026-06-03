@@ -79,7 +79,7 @@ const FAQPage = () => {
           style={{
             backgroundImage: "url('/assets/distributor-img/faq-banner.jpg')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
           }}
         >
