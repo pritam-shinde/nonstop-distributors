@@ -100,7 +100,7 @@ const FAQPage = () => {
 
       {/* FAQ Accordion Section */}
       <div style={{ background: "#0E222A", paddingTop: "80px", paddingBottom: "80px" }}>
-        <FAQSection faqData={faqData} title="Frequently Asked Questions" />
+        <FAQSection faqData={faqData} title="" />
       </div>
 
       <NewsLetter />
