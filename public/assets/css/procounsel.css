@@ -333,13 +333,15 @@ h1,
 h3,
 h4,
 h5,
-h6, .custom-heading-all {
+h6,
+.custom-heading-all {
   font-family: var(--procounsel-heading-font, "Montserrat", sans-serif) !important;
   color: var(--procounsel-black, #0e0b06);
   font-weight: 700 !important;
 }
 
-h2, .custom-heading-h3 {
+h2,
+.custom-heading-h3 {
   font-family: "Merriweather", serif !important;
   font-weight: 700 !important;
   color: var(--procounsel-black, #0e0b06);
@@ -2350,7 +2352,7 @@ h2, .custom-heading-h3 {
 .blog-card__date {
   width: 74px;
   height: 74px;
-   /* width: 84px;
+  /* width: 84px;
   height: 84px; */
   background-color: var(--procounsel-primary, #19223a);
   border-radius: 50%;
@@ -7495,6 +7497,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .why-choose-four__item:hover .why-choose-four__item__icon {
   background-color: var(--procounsel-base, #c7954a);
 }
+
 .why-choose-four__item:hover .why-choose-four__item__icon .inner-image {
   background-color: var(--procounsel-base, #c7954a) !important;
 }
@@ -10466,7 +10469,7 @@ body.megamenu-popup-active .mobile-nav__content {
   flex-direction: column;
   /* width: 84px;
   height: 84px; */
-   width: 74px;
+  width: 74px;
   height: 74px;
   border-radius: 50%;
   background-color: var(--procounsel-primary, #19223a);
@@ -14552,6 +14555,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: flex;
   align-items: center;
 }
+
 .faq-one__accordion .accrodion-title h3 {
   flex: 1;
   padding-left: 20px;

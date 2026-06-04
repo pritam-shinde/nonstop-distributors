@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -24,6 +24,14 @@ const Header = () => {
     return current === target || current.startsWith(`${target}/`);
   };
 
+  const isItemActive = (item) => {
+    if (isActiveHref(item.href)) return true;
+    if (item.children) {
+      return item.children.some((child) => isItemActive(child));
+    }
+    return false;
+  };
+
   // Optimized Scroll Handler
   useEffect(() => {
     const handleScroll = () => {
@@ -37,18 +45,18 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const renderMenu = (items, level = 0) => (
-    <ul className={level === 0 ? "main-menu__list" : "sub-menu"}>
+  const renderMenu = (items, level = 1) => (
+    <ul className={level === 0 ? "main-menu__list" : "sub-menu"} style={{ minWidth: "180px" }}>
       {(items.isAlphabeticFormate
         ? items.sort((a, b) => a.label.localeCompare(b.label))
         : items
       ).map((item, i) => {
         const hasChildren = !!item.children;
-        const isCurrent = isActiveHref(item.href);
+        const isCurrent = isItemActive(item);
         const liClass = [
           hasChildren ? "dropdown" : "",
           isCurrent ? "route-current" : "",
-          `menu-level-${level}`, // ðŸ‘ˆ class based on depth
+          `menu-level-${level}`, // 👉 class based on depth
         ]
           .join(" ")
           .trim();
@@ -109,7 +117,8 @@ const Header = () => {
             >
               <ul className="main-menu__list">
                 {menuData.map((item, idx) => {
-                  const isCurrent = isActiveHref(item.href);
+                  const isCurrent = isItemActive(item);
+
 
                   return (
                   <li
@@ -194,7 +203,7 @@ const Header = () => {
                     )}
 
                     {/* Normal Dropdowns */}
-                    {item.children && renderMenu(item.children)}
+                    {item.children && renderMenu(item.children, 1)}
                   </li>
                   );
                 })}

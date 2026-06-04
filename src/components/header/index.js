@@ -11,7 +11,6 @@ export const menuData = [
     label: "About",
     href: "/about-us/",
   },
-  { label: "Blog", href: "/blog/" },
   {
     label: "Partners",
     href: "/partners/",
@@ -20,6 +19,17 @@ export const menuData = [
     label: "Contact",
     href: "/contact-us/",
   },
-  { label: "Careers", href: "/careers/" },
-  // { label: "FAQ", href: "/faq/" },
+  {
+    label: "Careers",
+    href: "/careers/",
+  },
+  {
+    label: "Resources",
+    href: "#",
+    children: [
+      { label: "Blog", href: "/blog/" },
+      { label: "FAQ", href: "/faq/" },
+    ],
+  },
 ];
+
