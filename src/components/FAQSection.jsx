@@ -43,7 +43,7 @@ export default function FAQSection({ faqData, title = "Frequently Asked Question
                                                 style={{ cursor: "pointer" }}
                                             >
                                                 <span className="accrodion__number text-white"></span>
-                                                <h3 className="fs-6 text-white">
+                                                <h3 className="fs-6 text-white ms-2">
                                                     {item.question}
                                                     <i className="accrodion-title__icon accrodion-title__icon1"></i>
                                                 </h3>
@@ -82,7 +82,7 @@ export default function FAQSection({ faqData, title = "Frequently Asked Question
                                                     style={{ cursor: "pointer" }}
                                                 >
                                                     <span className="accrodion__number text-white"></span>
-                                                    <h3 className="fs-6 text-white">
+                                                    <h3 className="fs-6 text-white ms-2">
                                                         {item.question}
                                                         <i className="accrodion-title__icon accrodion-title__icon1"></i>
                                                     </h3>
@@ -120,7 +120,7 @@ export default function FAQSection({ faqData, title = "Frequently Asked Question
                                                         style={{ cursor: "pointer" }}
                                                     >
                                                         <span className="accrodion__number text-white"></span>
-                                                        <h3 className="fs-6 text-white">
+                                                        <h3 className="fs-6 text-white ms-2">
                                                             {item.question}
                                                             <i className="accrodion-title__icon accrodion-title__icon1"></i>
                                                         </h3>
