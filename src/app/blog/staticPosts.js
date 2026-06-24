@@ -401,7 +401,7 @@ export const STATIC_BLOG_POSTS = [
     author_link: "https://www.linkedin.com/in/rahul-nandanwar-nonstop-distributors/",
     author_bio:
       "Rahul Nandanwar is the Co-founder of Nonstop Distributors, a premier FMCG distribution network servicing Nagpur and its surrounding districts. Leveraging years of corporate experience in territory sales and marketing with global brands, Rahul drives the strategic growth and operational excellence of Nonstop Distributors. He is passionate about optimizing supply chains, forging strong retail partnerships, and sharing industry insights.",
-    featured_image: "/assets/distributor-img/inventory-management.jpg",
+    featured_image: "/assets/distributor-img/inventory-management-blog4.jpg",
     featured_image_alt: "Inventory Management: Reducing Expiry Losses for Your Store",
     faqData: [
       {
