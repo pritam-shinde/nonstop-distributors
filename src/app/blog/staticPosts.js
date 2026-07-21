@@ -38,7 +38,7 @@ export const STATIC_BLOG_POSTS = [
     <p> We’re seeing a massive shift where the "middleman" is becoming the most important person in the room. Why? Because while a brand can create a great product in a factory in Mumbai or Pune, it’s the <a href="/partners/">distribution partner</a> who actually navigates the chaos to get it into a consumer’s hands in Nagpur or a small village in Vidarbha.</p>
 
 <h2>Beyond the Spreadsheet: The Real FMCG Supply Chain India</h2>
-<p>The <a href="/">FMCG supply chain</a> India isn't just about trucks and maps. It’s about people. It’s about the distributor who knows exactly which Kirana store owner is running low on tea leaves before the owner even checks his shelf.</p>
+<p>The <a href="/services/">FMCG supply chain</a> India isn't just about trucks and maps. It’s about people. It’s about the distributor who knows exactly which Kirana store owner is running low on tea leaves before the owner even checks his shelf.</p>
 <p>However, the "gut feeling" of the 90s is now getting a digital upgrade. The modern Retail supply chain India is balancing on a tightrope. On one side, you have the rise of "Quick Commerce," where people want biscuits delivered in 10 minutes. On the other, you have the heart of India, where relationships and reliability still matter more than a flashy app.</p>
 
 <h2>The Hustle of the Logistics Industry India</h2>
@@ -538,7 +538,7 @@ export const STATIC_BLOG_POSTS = [
 <p>This works hand-in-hand with <strong>Supply Chain Automation</strong>. We aren't just talking about robots; we're talking about smart systems that handle the boring, repetitive tasks, like inventory counting and order processing, so your team can focus on solving actual problems.</p>
 
 <h3>Cracking the FMCG Code</h3>
-<p>If you’re in <a href="/services/">FMCG Supply Chain Management</a>, you know the pressure is different. You’re racing against expiry dates and razor-thin margins.</p>
+<p>If you’re in <a href="/">FMCG Supply Chain Management</a>, you know the pressure is different. You’re racing against expiry dates and razor-thin margins.</p>
 <ul>
   <li>
     <strong>Distributor Management Software</strong> is the real MVP here. It stops the "black hole" effect where you lose sight of your product the second it hits the distributor. You get to see exactly what’s sitting on shelves in real-time.
