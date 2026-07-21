@@ -6,7 +6,7 @@ import Script from "next/script";
 const Footer = () => {
     const socialLinks = [
         {
-            href: "https://www.facebook.com/people/NonStop-Distributors/61584965491773/",
+            href: "https://www.facebook.com/people/Nonstop-Distributors/61592196570787/",
             icon: <FacebookIcon />,
             label: "Facebook",
         },
