@@ -251,7 +251,7 @@ const SingleBlogPage = async ({ params }) => {
                   <div className="blog-details__date">
                     <p
                       className="fw-bold fs-3 mb-0"
-                      style={{ lineHeight: "34px" }}
+                      style={{ lineHeight: "clamp(20px, 4vw, 34px)" }}
                     >
                       {day}
                     </p>

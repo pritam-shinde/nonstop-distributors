@@ -38,7 +38,7 @@ export const STATIC_BLOG_POSTS = [
     <p> We’re seeing a massive shift where the "middleman" is becoming the most important person in the room. Why? Because while a brand can create a great product in a factory in Mumbai or Pune, it’s the <a href="/partners/">distribution partner</a> who actually navigates the chaos to get it into a consumer’s hands in Nagpur or a small village in Vidarbha.</p>
 
 <h2>Beyond the Spreadsheet: The Real FMCG Supply Chain India</h2>
-<p>The <a href="/services/">FMCG supply chain</a> India isn't just about trucks and maps. It’s about people. It’s about the distributor who knows exactly which Kirana store owner is running low on tea leaves before the owner even checks his shelf.</p>
+<p>The <a href="/">FMCG supply chain</a> India isn't just about trucks and maps. It’s about people. It’s about the distributor who knows exactly which Kirana store owner is running low on tea leaves before the owner even checks his shelf.</p>
 <p>However, the "gut feeling" of the 90s is now getting a digital upgrade. The modern Retail supply chain India is balancing on a tightrope. On one side, you have the rise of "Quick Commerce," where people want biscuits delivered in 10 minutes. On the other, you have the heart of India, where relationships and reliability still matter more than a flashy app.</p>
 
 <h2>The Hustle of the Logistics Industry India</h2>
@@ -510,7 +510,7 @@ export const STATIC_BLOG_POSTS = [
     faqData: [
       {
         question: "What exactly is Supply Chain Technology?",
-        answer: "It’s the digital \"brain\" of your business. It includes the software and hardware, like Supply Chain Automation and tracking tools, that stop you from losing track of your products and your profits.",
+        answer: "It’s the digital \"brain\" of your business. It includes the software and hardware, like <strong>Supply Chain Automation</strong> and tracking tools, that stop you from losing track of your products and your profits.",
       },
       {
         question: "Is Supply Chain Digitization just for big companies?",
@@ -518,15 +518,15 @@ export const STATIC_BLOG_POSTS = [
       },
       {
         question: "How does technology help in FMCG?",
-        answer: "In FMCG Supply Chain Management, speed is everything. Tech helps you track expiry dates, manage high volumes, and use Distributor Management Software to see exactly what’s sitting on retail shelves in real-time.",
+        answer: "In <strong>FMCG Supply Chain Management</strong>, speed is everything. Tech helps you track expiry dates, manage high volumes, and use <strong>Distributor Management Software</strong> to see exactly what’s sitting on retail shelves in real-time.",
       },
       {
         question: "Why is the \"Last Mile\" so important?",
-        answer: "The \"last mile\" is the final trip to the customer's door. Last Mile Delivery Technology uses smart routing to make sure this stage is fast and cheap, which is usually where most businesses lose the most money.",
+        answer: "The \"last mile\" is the final trip to the customer's door. <strong>Last Mile Delivery Technology</strong> uses smart routing to make sure this stage is fast and cheap, which is usually where most businesses lose the most money.",
       },
       {
         question: "Can I see my shipments in real-time?",
-        answer: "Yes. By using Supply Chain Visibility Tools, you get a live \"command center\" view of your inventory. No more guessing where a truck is, you see the data the second it updates.",
+        answer: "Yes. By using <strong>Supply Chain Visibility Tools</strong>, you get a live \"command center\" view of your inventory. No more guessing where a truck is, you see the data the second it updates.",
       },
     ],
     content:
@@ -539,8 +539,14 @@ export const STATIC_BLOG_POSTS = [
 
 <h3>Cracking the FMCG Code</h3>
 <p>If you’re in <a href="/services/">FMCG Supply Chain Management</a>, you know the pressure is different. You’re racing against expiry dates and razor-thin margins.</p>
-<p><strong>Distributor Management Software</strong> is the real MVP here. It stops the "black hole" effect where you lose sight of your product the second it hits the distributor. You get to see exactly what’s sitting on shelves in real-time.</p>
-<p><strong>Supply Chain Visibility Tools</strong> act as your early warning system. If there’s a delay at the port or a sudden spike in demand, you see it instantly. No more "I’ll check and get back to you" emails.</p>
+<ul>
+  <li>
+    <strong>Distributor Management Software</strong> is the real MVP here. It stops the "black hole" effect where you lose sight of your product the second it hits the distributor. You get to see exactly what’s sitting on shelves in real-time.
+  </li>
+  <li>
+    <strong>Supply Chain Visibility Tools</strong> act as your early warning system. If there’s a delay at the port or a sudden spike in demand, you see it instantly. No more "I’ll check and get back to you" emails.
+  </li>
+</ul>
 
 <h2>What is Supply Chain Technology, Really?</h2>
 <p>Think of <strong>Supply Chain Technology</strong> as the central nervous system of your business. It isn’t just a bunch of fancy software; it’s the tech that keeps you from flying blind. It’s the difference between knowing exactly where your stock is at 2:00 AM and spending your entire morning on the phone chasing down "lost" crates.</p>
@@ -570,7 +576,7 @@ export const STATIC_BLOG_POSTS = [
   </li>
   <li><strong>Resilience When Everything Goes Wrong</strong><br />
   <p>If the last few years have taught us anything, it’s that "normal" is a myth. From global pandemics to sudden fuel price hikes, things will break. An agile business doesn't just survive these hits; it pivots.</p>
-  <ul>
+ <ul style="list-style-type: disc; padding-left: 20px;">
   <li>
     <strong>Supply Chain Visibility Tools:</strong> These are like your early-warning radar. If a port is blocked or a factory is lagging, you see it instantly, not three weeks later when it's too late to fix.
   </li>
@@ -590,14 +596,24 @@ export const STATIC_BLOG_POSTS = [
   </li>
   <li><strong>Turning the Lights On in the "Black Box"</strong><br />
   <p>If you’re growing, your network is getting messy. You’ve got warehouses, middlemen, and retailers who all have their own way of doing things. Without <strong>Supply Chain Digitization</strong>, you have massive "black holes" in your business.</p>
-  <p><strong>The Fix:</strong> Using <strong>Distributor Management Software</strong> is like finally turning the lights on in a dark room. You see what’s actually on the shelves, what’s gathering dust, and what you need to restock before the "out of stock" panic hits.</p>
+  <ul style="list-style-type: disc; padding-left: 20px;">
+  <li>
+    <strong>The Fix:</strong> Using <strong>Distributor Management Software</strong> is like finally turning the lights on in a dark room. You see what’s actually on the shelves, what’s gathering dust, and what you need to restock before the "out of stock" panic hits.
+  </li>
+</ul>
   </li>
 </ol>
 
 <h2>What’s Actually Changing the Game?</h2>
 <p>It’s not just about "computers." It’s about tools that actually give you your time back.</p>
-<p><strong>Supply Chain Automation:</strong> This is the "invisible" worker. It’s the system that automatically flags a low inventory level or reconciles an invoice without you having to manually type a single thing. It stops the silly human errors that end up costing thousands.</p>
-<p><strong>FMCG Supply Chain Management:</strong> In this world, the clock is your biggest enemy. Things expire. Trends shift over the weekend. You need <strong>Supply Chain Visibility Tools</strong> that act like a command center. If a shipment is lagging, you need to know in minutes, not three days later when it's too late to pivot.</p>
+<ul>
+  <li>
+    <strong>Supply Chain Automation:</strong> This is the "invisible" worker. It’s the system that automatically flags a low inventory level or reconciles an invoice without you having to manually type a single thing. It stops the silly human errors that end up costing thousands.
+  </li>
+  <li>
+    <strong>FMCG Supply Chain Management:</strong> In this world, the clock is your biggest enemy. Things expire. Trends shift over the weekend. You need <strong>Supply Chain Visibility Tools</strong> that act like a command center. If a shipment is lagging, you need to know in minutes, not three days later when it's too late to pivot.
+  </li>
+</ul>
 
 <h2>The Make-or-Break Factor: FMCG Supply Chain Management</h2>
 <p>In the FMCG world, "slow" is just another word for "dead." You’re dealing with products that have an expiry date and customers who have zero loyalty if your competitor’s product is the only one on the shelf.</p>
