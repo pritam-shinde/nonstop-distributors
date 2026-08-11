@@ -131,41 +131,57 @@ export default function PartnerShowcaseSlider({ partners }) {
                   {partner.subcategory || "FMCG"}
                 </div>
 
-                <div
-                  style={{
-                    position: "absolute",
-                    zIndex: 2,
-                    top: 10,
-                    right: 20,
-                  }}
-                >
-                  <Image
-                    src={partner.logoSrc}
-                    width={partner.width}
-                    height={partner.height}
-                    alt={partner.name}
+                {partner.websiteUrl ? (
+                  <a
+                    href={partner.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
-                      height: "auto",
-                      maxHeight: partner.maxHeight || 40,
-                      width: "auto",
-                      marginTop: "12px",
+                      position: "absolute",
+                      zIndex: 2,
+                      top: 10,
+                      right: 20,
                     }}
-                  />
-                </div>
+                    title={`Visit ${partner.name} website`}
+                  >
+                    <Image
+                      src={partner.logoSrc}
+                      width={partner.width}
+                      height={partner.height}
+                      alt={partner.name}
+                      style={{
+                        height: "auto",
+                        maxHeight: partner.maxHeight || 60,
+                        width: "auto",
+                        marginTop: "12px",
+                      }}
+                    />
+                  </a>
+                ) : (
+                  <div
+                    style={{
+                      position: "absolute",
+                      zIndex: 2,
+                      top: 10,
+                      right: 20,
+                    }}
+                  >
+                    <Image
+                      src={partner.logoSrc}
+                      width={partner.width}
+                      height={partner.height}
+                      alt={partner.name}
+                      style={{
+                        height: "auto",
+                        maxHeight: partner.maxHeight || 60,
+                        width: "auto",
+                        marginTop: "12px",
+                      }}
+                    />
+                  </div>
+                )}
               </div>
               <div className="partners-showcase-card__body">
-                {/* <Image
-                  src={partner.logoSrc}
-                  width={partner.width}
-                  height={partner.height}
-                  alt={partner.name}
-                  style={{
-                    height: "auto",
-                    maxHeight: partner.maxHeight || 40,
-                    width: "auto",
-                    marginTop: "12px",
-                  }}
-                /> */}
                 <p className="partners-showcase-card__text">
                   {partner.description}
                 </p>

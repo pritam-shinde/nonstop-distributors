@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -72,7 +72,9 @@ export default function BrandSlider() {
                 {trackA.map((partner, index) => (
                   <Link
                     key={`${partner.name}-a-${index}`}
-                    href="/partners"
+                    href={partner.websiteUrl || "/partners"}
+                    target={partner.websiteUrl ? "_blank" : undefined}
+                    rel={partner.websiteUrl ? "noopener noreferrer" : undefined}
                     className="brand-pill"
                     tabIndex={-1}
                   >
@@ -97,7 +99,9 @@ export default function BrandSlider() {
               {items.map((partner) => (
                 <Link
                   key={partner.name}
-                  href="/partners"
+                  href={partner.websiteUrl || "/partners"}
+                  target={partner.websiteUrl ? "_blank" : undefined}
+                  rel={partner.websiteUrl ? "noopener noreferrer" : undefined}
                   className="brand-card"
                   aria-label={`${partner.name} - view partner details`}
                 >
@@ -108,7 +112,7 @@ export default function BrandSlider() {
                       height={partner.height}
                       alt={partner.name}
                       sizes="220px"
-                      style={{ width: "auto", height: "auto", maxHeight: 46 }}
+                      style={{ width: "auto", height: "auto", maxHeight: partner.maxHeight || 52 }}
                     />
                   </div>
                   <div className="brand-card__meta" aria-hidden="true">
@@ -124,7 +128,13 @@ export default function BrandSlider() {
             <ul className="visually-hidden" aria-label="Brand partners list">
               {items.map((partner) => (
                 <li key={partner.name}>
-                  <Link href="/partners">{partner.name}</Link>
+                  <Link
+                    href={partner.websiteUrl || "/partners"}
+                    target={partner.websiteUrl ? "_blank" : undefined}
+                    rel={partner.websiteUrl ? "noopener noreferrer" : undefined}
+                  >
+                    {partner.name}
+                  </Link>
                 </li>
               ))}
             </ul>

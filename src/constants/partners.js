@@ -44,6 +44,32 @@ export const partners = [
       "Established in 2009, Keya deals in premium herbs, spices, seasonings, and condiments. It is known for introducing international-quality seasonings to Indian kitchens. The brand is popular for oregano, chilli flakes, mixed herbs, pasta seasoning, and spice grinders.",
   },
   {
+    name: "SuperYou",
+    logoSrc: "/assets/distributor-img/partners/superyou.svg",
+    width: 160,
+    height: 50,
+    maxHeight: 50,
+    category: "Health & Nutrition",
+    subcategory: "Protein Snacks & Wafers",
+    coverSrc: "/assets/distributor-img/partners/superyou.jpg",
+    websiteUrl: "https://superyou.in/",
+    description:
+      "Founded in 2024 by actor Ranveer Singh and Nikunj Biyani, SuperYou deals in protein-packed wafers, nutrition bars, and health snacks. Designed for active lifestyles, the brand offers high-protein, fiber-rich treats crafted with zero added sugar.",
+  },
+  {
+    name: "Reckitt",
+    logoSrc: "/assets/distributor-img/partners/Reckitt_logo.svg.webp",
+    width: 160,
+    height: 55,
+    maxHeight: 55,
+    category: "Hygiene, Health & Home",
+    subcategory: "Hygiene & Personal Care",
+    coverSrc: "/assets/distributor-img/partners/reckitt-partners.png",
+    websiteUrl: "https://www.reckitt.com/",
+    description:
+      "Established in 1819, Reckitt is a global FMCG leader dealing in health, hygiene, and nutrition solutions. Trusted across households worldwide, its iconic brand portfolio includes Dettol, Lysol, Harpic, Strepsils, Vanish, and Veet.",
+  },
+  {
     name: "Wipro",
     logoSrc: "/assets/distributor-img/partners/wipro.png",
     width: 76,
@@ -64,7 +90,7 @@ export const partners = [
     subcategory: "Incense & Fragrance",
     coverSrc: "/assets/distributor-img/partners/bansuri.jpg",
     description:
-      "Bansuri is a traditional fragrance and incense brand associated with Cycle Pure (NR Group). It offers culturally inspired incense and aromatic products designed for daily पूजा, meditation, and spiritual environments, reflecting India’s fragrance heritage.",
+      "Established under NR Group (founded 1948), Bansuri deals in traditional fragrances, incense sticks, and spiritual care products associated with Cycle Pure. It offers culturally inspired aromatic products designed for daily pooja, meditation, and spiritual environments, reflecting India’s fragrance heritage.",
     maxHeight: 720,
   },
   {
@@ -76,7 +102,7 @@ export const partners = [
     subcategory: "Edible Oils & Food Staples",
     coverSrc: "/assets/distributor-img/partners/sundrop.jpg",
     description:
-      "Sundrop Brands Limited is a leading Indian FMCG company offering a diverse range of food products including edible oils, spreads, ready-to-cook snacks, and breakfast essentials. Known for quality and nutrition, Sundrop is widely used in Indian households for everyday cooking and food preparation.",
+      "Established in 1989, Sundrop Brands deals in edible oils, peanut butter, spreads, and breakfast essentials. Known for quality and nutrition, Sundrop is widely used across Indian households for everyday healthy cooking and food preparation.",
     maxHeight: 720,
   },
 ];
