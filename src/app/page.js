@@ -204,7 +204,8 @@ export default function Home() {
                   reach retailers and consumers seamlessly. We combine deep
                   market insight, a powerful distribution network, and tailored
                   strategies to help FMCG brands thrive.
-                </p> 
+                </p>
+
                 <a href="/nonstop-distributor-company-profile.pdf" download className="tailored-btn">
                   <i>Download Company Profile</i>
                   <span>Download Company Profile</span>
@@ -219,7 +220,7 @@ export default function Home() {
 
         {/* Brands */}
         <BrandSlider />
-        
+
       </div>
 
       <div className="search-popup">
