@@ -210,6 +210,7 @@ export default function Home() {
                   <i>Download Company Profile</i>
                   <span>Download Company Profile</span>
                 </a>
+
               </div>
             </div>
           </div>
