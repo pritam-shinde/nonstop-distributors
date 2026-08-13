@@ -29,6 +29,7 @@ export const partners = [
     category: "Confectionery",
     subcategory: "Chocolates",
     coverSrc: "/assets/distributor-img/partners/hersheys.jpg",
+    className: "bg-white p-1 rounded",
     description:
       "Founded in 1894, Hershey’s deals in chocolates, confectionery, and snacks, and is a globally recognized brand known for iconic products like Hershey’s Kisses and chocolate bars. The portfolio includes chocolate bars, syrups, spreads, and flavored milk products.",
   },

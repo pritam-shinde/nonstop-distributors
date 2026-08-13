@@ -206,7 +206,7 @@ export default function Home() {
                   strategies to help FMCG brands thrive.
                 </p>
 
-                <a href="/nonstop-distributor-company-profile.pdf" download className="tailored-btn">
+                <a target="_blank" href="/nonstop-distributor-company-profile.pdf" download="nonstop-distributor-company-profile.pdf" className="tailored-btn">
                   <i>Download Company Profile</i>
                   <span>Download Company Profile</span>
                 </a>

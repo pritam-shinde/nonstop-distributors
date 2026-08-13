@@ -145,6 +145,7 @@ export default function PartnerShowcaseSlider({ partners }) {
                     title={`Visit ${partner.name} website`}
                   >
                     <Image
+                      className={partner.className}
                       src={partner.logoSrc}
                       width={partner.width}
                       height={partner.height}
@@ -167,6 +168,7 @@ export default function PartnerShowcaseSlider({ partners }) {
                     }}
                   >
                     <Image
+                      className={partner.className}
                       src={partner.logoSrc}
                       width={partner.width}
                       height={partner.height}
