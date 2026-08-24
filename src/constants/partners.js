@@ -106,4 +106,16 @@ export const partners = [
       "Established in 1989, Sundrop Brands deals in edible oils, peanut butter, spreads, and breakfast essentials. Known for quality and nutrition, Sundrop is widely used across Indian households for everyday healthy cooking and food preparation.",
     maxHeight: 720,
   },
+  {
+    name: "Tata Consumer Products",
+    logoSrc: "/assets/distributor-img/partners/tata_logo.png",
+    width: 200,
+    height: 50,
+    category: "FMCG",
+    subcategory: "Beverages & Foods",
+    coverSrc: "/assets/distributor-img/partners/tata-cover.jpg",
+    websiteUrl: "https://www.tataconsumer.com/",
+    description:
+      "Established in 1962, Tata Consumer Products deals in tea, coffee, water, salt, pulses, spices, and ready-to-cook offerings. It is a focused consumer products company uniting the principal food and beverage interests of the Tata Group under one umbrella.",
+  },
 ];
