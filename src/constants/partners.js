@@ -22,18 +22,6 @@ export const partners = [
       "Established in 1892, Britannia deals in biscuits, dairy products, cakes, and breads. It is one of India’s most trusted food brands with a strong legacy and market leadership in the biscuit segment. Its popular products include Good Day, Marie Gold, Bourbon, Little Hearts, and NutriChoice.",
   },
   {
-    name: "Hershey's",
-    logoSrc: "/assets/distributor-img/partners/hersley.png",
-    width: 150,
-    height: 60,
-    category: "Confectionery",
-    subcategory: "Chocolates",
-    coverSrc: "/assets/distributor-img/partners/hersheys.jpg",
-    className: "bg-white p-1 rounded",
-    description:
-      "Founded in 1894, Hershey’s deals in chocolates, confectionery, and snacks, and is a globally recognized brand known for iconic products like Hershey’s Kisses and chocolate bars. The portfolio includes chocolate bars, syrups, spreads, and flavored milk products.",
-  },
-  {
     name: "Keya",
     logoSrc: "/assets/distributor-img/partners/keya.png",
     width: 112,
@@ -109,12 +97,13 @@ export const partners = [
   {
     name: "Tata Consumer Products",
     logoSrc: "/assets/distributor-img/partners/tata_logo.png",
-    width: 200,
+    width: 250,
     height: 50,
     category: "FMCG",
     subcategory: "Beverages & Foods",
     coverSrc: "/assets/distributor-img/partners/tata-cover.jpg",
     websiteUrl: "https://www.tataconsumer.com/",
+    className: "rounded-md",
     description:
       "Established in 1962, Tata Consumer Products deals in tea, coffee, water, salt, pulses, spices, and ready-to-cook offerings. It is a focused consumer products company uniting the principal food and beverage interests of the Tata Group under one umbrella.",
   },
