@@ -133,7 +133,7 @@ const Footer = () => {
                                                     <br />
                                                     Wardha Rd, near Bhawan's School,
                                                     <br />
-                                                    Nagpur, Maharashtra 440005
+                                                    Nagpur, Maharashtra 440037
                                                 </span>
                                             </li>
                                             <li>

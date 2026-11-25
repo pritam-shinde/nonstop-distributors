@@ -223,7 +223,7 @@ const MainBlogSection = () => {
                           style={{ fontSize: "14px" }}
                         >
                           Wardha Rd, near Bhawan&apos;s School,
-                          <br /> Nagpur, Maharashtra 440005
+                          <br /> Nagpur, Maharashtra 440037
                         </p>
                       </div>
                     </li>

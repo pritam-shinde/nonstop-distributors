@@ -51,7 +51,7 @@ const schemaData = {
                 "streetAddress": "97 Crown Society, Chinchbhavan, Wardha Rd, near Bhawan's School",
                 "addressLocality": "Nagpur",
                 "addressRegion": "Maharashtra",
-                "postalCode": "440005",
+                "postalCode": "440037",
                 "addressCountry": "IN"
             },
             "openingHours": [

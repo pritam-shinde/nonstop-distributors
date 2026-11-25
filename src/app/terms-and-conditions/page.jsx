@@ -144,7 +144,7 @@ const TermsAndConditions = () => {
             <p className="text-white mb-0">
               97 Crown Society, Chinchbhavan,
               Wardha Rd, near Bhawan's School,
-              Nagpur, Maharashtra 440005
+              Nagpur, Maharashtra 440037
             </p>
             <p className="text-white">
               Email:{" "}
